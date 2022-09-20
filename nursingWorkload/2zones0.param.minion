@@ -1,0 +1,132 @@
+MINION 3
+# CSETopLevel_number = 0
+# CSETopLevel_eliminated_expressions = 0
+# CSETopLevel_total_size = 0
+# CSE_active_number = 0
+# CSE_active_eliminated_expressions = 0
+# CSE_active_total_size = 0
+**VARIABLES**
+DISCRETE nurseZoneAssign_00001 #
+{1..2}
+DISCRETE nurseZoneAssign_00002 #
+{1..2}
+DISCRETE nurseZoneAssign_00003 #
+{1..2}
+DISCRETE nurseZoneAssign_00004 #
+{1..2}
+DISCRETE nurseZoneAssign_00005 #
+{1..2}
+DISCRETE nurseZoneAssign_00006 #
+{1..2}
+DISCRETE nurseZoneAssign_00007 #
+{1..2}
+DISCRETE nurseZoneAssign_00008 #
+{1..2}
+DISCRETE nurseZoneAssign_00009 #
+{1..2}
+DISCRETE nurseZoneAssign_00010 #
+{1..2}
+DISCRETE nurseZoneAssign_00011 #
+{1..2}
+DISCRETE nursePatientAssign_00001_00001 #
+{0..16}
+DISCRETE nursePatientAssign_00001_00002 #
+{0..16}
+DISCRETE nursePatientAssign_00001_00003 #
+{0..16}
+DISCRETE nursePatientAssign_00002_00001 #
+{0..16}
+DISCRETE nursePatientAssign_00002_00002 #
+{0..16}
+DISCRETE nursePatientAssign_00002_00003 #
+{0..16}
+BOOL aux3 #(ElementOne([nursePatientAssign_00001_00001, nursePatientAssign_00002_00001], nurseZoneAssign_00001)=tv=1)
+BOOL aux4 #(ElementOne([nursePatientAssign_00001_00002, nursePatientAssign_00002_00002], nurseZoneAssign_00001)=tv=1)
+BOOL aux5 #(ElementOne([nursePatientAssign_00001_00003, nursePatientAssign_00002_00003], nurseZoneAssign_00001)=tv=1)
+BOOL aux6 #(ElementOne([nursePatientAssign_00001_00001, nursePatientAssign_00002_00001], nurseZoneAssign_00002)=tv=2)
+BOOL aux7 #(ElementOne([nursePatientAssign_00001_00002, nursePatientAssign_00002_00002], nurseZoneAssign_00002)=tv=2)
+BOOL aux8 #(ElementOne([nursePatientAssign_00001_00003, nursePatientAssign_00002_00003], nurseZoneAssign_00002)=tv=2)
+BOOL aux9 #(ElementOne([nursePatientAssign_00001_00001, nursePatientAssign_00002_00001], nurseZoneAssign_00003)=tv=3)
+BOOL aux10 #(ElementOne([nursePatientAssign_00001_00002, nursePatientAssign_00002_00002], nurseZoneAssign_00003)=tv=3)
+BOOL aux11 #(ElementOne([nursePatientAssign_00001_00003, nursePatientAssign_00002_00003], nurseZoneAssign_00003)=tv=3)
+BOOL aux12 #(ElementOne([nursePatientAssign_00001_00001, nursePatientAssign_00002_00001], nurseZoneAssign_00004)=tv=4)
+BOOL aux13 #(ElementOne([nursePatientAssign_00001_00002, nursePatientAssign_00002_00002], nurseZoneAssign_00004)=tv=4)
+BOOL aux14 #(ElementOne([nursePatientAssign_00001_00003, nursePatientAssign_00002_00003], nurseZoneAssign_00004)=tv=4)
+BOOL aux15 #(ElementOne([nursePatientAssign_00001_00001, nursePatientAssign_00002_00001], nurseZoneAssign_00005)=tv=5)
+BOOL aux16 #(ElementOne([nursePatientAssign_00001_00002, nursePatientAssign_00002_00002], nurseZoneAssign_00005)=tv=5)
+BOOL aux17 #(ElementOne([nursePatientAssign_00001_00003, nursePatientAssign_00002_00003], nurseZoneAssign_00005)=tv=5)
+BOOL aux18 #(ElementOne([nursePatientAssign_00001_00001, nursePatientAssign_00002_00001], nurseZoneAssign_00006)=tv=6)
+BOOL aux19 #(ElementOne([nursePatientAssign_00001_00002, nursePatientAssign_00002_00002], nurseZoneAssign_00006)=tv=6)
+BOOL aux20 #(ElementOne([nursePatientAssign_00001_00003, nursePatientAssign_00002_00003], nurseZoneAssign_00006)=tv=6)
+BOOL aux21 #(ElementOne([nursePatientAssign_00001_00001, nursePatientAssign_00002_00001], nurseZoneAssign_00007)=tv=7)
+BOOL aux22 #(ElementOne([nursePatientAssign_00001_00002, nursePatientAssign_00002_00002], nurseZoneAssign_00007)=tv=7)
+BOOL aux23 #(ElementOne([nursePatientAssign_00001_00003, nursePatientAssign_00002_00003], nurseZoneAssign_00007)=tv=7)
+BOOL aux24 #(ElementOne([nursePatientAssign_00001_00001, nursePatientAssign_00002_00001], nurseZoneAssign_00008)=tv=8)
+BOOL aux25 #(ElementOne([nursePatientAssign_00001_00002, nursePatientAssign_00002_00002], nurseZoneAssign_00008)=tv=8)
+BOOL aux26 #(ElementOne([nursePatientAssign_00001_00003, nursePatientAssign_00002_00003], nurseZoneAssign_00008)=tv=8)
+BOOL aux27 #(ElementOne([nursePatientAssign_00001_00001, nursePatientAssign_00002_00001], nurseZoneAssign_00009)=tv=9)
+BOOL aux28 #(ElementOne([nursePatientAssign_00001_00002, nursePatientAssign_00002_00002], nurseZoneAssign_00009)=tv=9)
+BOOL aux29 #(ElementOne([nursePatientAssign_00001_00003, nursePatientAssign_00002_00003], nurseZoneAssign_00009)=tv=9)
+BOOL aux30 #(ElementOne([nursePatientAssign_00001_00001, nursePatientAssign_00002_00001], nurseZoneAssign_00010)=tv=10)
+BOOL aux31 #(ElementOne([nursePatientAssign_00001_00002, nursePatientAssign_00002_00002], nurseZoneAssign_00010)=tv=10)
+BOOL aux32 #(ElementOne([nursePatientAssign_00001_00003, nursePatientAssign_00002_00003], nurseZoneAssign_00010)=tv=10)
+BOOL aux33 #(ElementOne([nursePatientAssign_00001_00001, nursePatientAssign_00002_00001], nurseZoneAssign_00011)=tv=11)
+BOOL aux34 #(ElementOne([nursePatientAssign_00001_00002, nursePatientAssign_00002_00002], nurseZoneAssign_00011)=tv=11)
+BOOL aux35 #(ElementOne([nursePatientAssign_00001_00003, nursePatientAssign_00002_00003], nurseZoneAssign_00011)=tv=11)
+**TUPLELIST**
+zonePatientAcuity 2 16
+74 45 41 34 33 33 29 27 26 25 24 23 21 21 13 10 
+47 46 40 38 37 37 34 25 23 22 21 18 16 0 0 0 
+**VARIABLES**
+ALIAS zonePatientAcuity[2,16]=[[74, 45, 41, 34, 33, 33, 29, 27, 26, 25, 24, 23, 21, 21, 13, 10], [47, 46, 40, 38, 37, 37, 34, 25, 23, 22, 21, 18, 16, 0, 0, 0]]
+**VARIABLES**
+ALIAS numZonePatients[2]=[16, 13]
+**SEARCH**
+PRINT[[nurseZoneAssign_00001],[nurseZoneAssign_00002],[nurseZoneAssign_00003],[nurseZoneAssign_00004],[nurseZoneAssign_00005],[nurseZoneAssign_00006],[nurseZoneAssign_00007],[nurseZoneAssign_00008],[nurseZoneAssign_00009],[nurseZoneAssign_00010],[nurseZoneAssign_00011],[nursePatientAssign_00001_00001],[nursePatientAssign_00001_00002],[nursePatientAssign_00001_00003],[nursePatientAssign_00002_00001],[nursePatientAssign_00002_00002],[nursePatientAssign_00002_00003]]
+VARORDER STATIC [nurseZoneAssign_00001, nurseZoneAssign_00002, nurseZoneAssign_00003, nurseZoneAssign_00004, nurseZoneAssign_00005, nurseZoneAssign_00006, nurseZoneAssign_00007, nurseZoneAssign_00008, nurseZoneAssign_00009, nurseZoneAssign_00010, nurseZoneAssign_00011, nursePatientAssign_00001_00001, nursePatientAssign_00001_00002, nursePatientAssign_00001_00003, nursePatientAssign_00002_00001, nursePatientAssign_00002_00002, nursePatientAssign_00002_00003]
+**CONSTRAINTS**
+reify(watchelement_one([nursePatientAssign_00001_00001, nursePatientAssign_00002_00001], nurseZoneAssign_00001, 1), aux3)
+reify(watchelement_one([nursePatientAssign_00001_00002, nursePatientAssign_00002_00002], nurseZoneAssign_00001, 1), aux4)
+reify(watchelement_one([nursePatientAssign_00001_00003, nursePatientAssign_00002_00003], nurseZoneAssign_00001, 1), aux5)
+reify(watchelement_one([nursePatientAssign_00001_00001, nursePatientAssign_00002_00001], nurseZoneAssign_00002, 2), aux6)
+reify(watchelement_one([nursePatientAssign_00001_00002, nursePatientAssign_00002_00002], nurseZoneAssign_00002, 2), aux7)
+reify(watchelement_one([nursePatientAssign_00001_00003, nursePatientAssign_00002_00003], nurseZoneAssign_00002, 2), aux8)
+reify(watchelement_one([nursePatientAssign_00001_00001, nursePatientAssign_00002_00001], nurseZoneAssign_00003, 3), aux9)
+reify(watchelement_one([nursePatientAssign_00001_00002, nursePatientAssign_00002_00002], nurseZoneAssign_00003, 3), aux10)
+reify(watchelement_one([nursePatientAssign_00001_00003, nursePatientAssign_00002_00003], nurseZoneAssign_00003, 3), aux11)
+reify(watchelement_one([nursePatientAssign_00001_00001, nursePatientAssign_00002_00001], nurseZoneAssign_00004, 4), aux12)
+reify(watchelement_one([nursePatientAssign_00001_00002, nursePatientAssign_00002_00002], nurseZoneAssign_00004, 4), aux13)
+reify(watchelement_one([nursePatientAssign_00001_00003, nursePatientAssign_00002_00003], nurseZoneAssign_00004, 4), aux14)
+reify(watchelement_one([nursePatientAssign_00001_00001, nursePatientAssign_00002_00001], nurseZoneAssign_00005, 5), aux15)
+reify(watchelement_one([nursePatientAssign_00001_00002, nursePatientAssign_00002_00002], nurseZoneAssign_00005, 5), aux16)
+reify(watchelement_one([nursePatientAssign_00001_00003, nursePatientAssign_00002_00003], nurseZoneAssign_00005, 5), aux17)
+reify(watchelement_one([nursePatientAssign_00001_00001, nursePatientAssign_00002_00001], nurseZoneAssign_00006, 6), aux18)
+reify(watchelement_one([nursePatientAssign_00001_00002, nursePatientAssign_00002_00002], nurseZoneAssign_00006, 6), aux19)
+reify(watchelement_one([nursePatientAssign_00001_00003, nursePatientAssign_00002_00003], nurseZoneAssign_00006, 6), aux20)
+reify(watchelement_one([nursePatientAssign_00001_00001, nursePatientAssign_00002_00001], nurseZoneAssign_00007, 7), aux21)
+reify(watchelement_one([nursePatientAssign_00001_00002, nursePatientAssign_00002_00002], nurseZoneAssign_00007, 7), aux22)
+reify(watchelement_one([nursePatientAssign_00001_00003, nursePatientAssign_00002_00003], nurseZoneAssign_00007, 7), aux23)
+reify(watchelement_one([nursePatientAssign_00001_00001, nursePatientAssign_00002_00001], nurseZoneAssign_00008, 8), aux24)
+reify(watchelement_one([nursePatientAssign_00001_00002, nursePatientAssign_00002_00002], nurseZoneAssign_00008, 8), aux25)
+reify(watchelement_one([nursePatientAssign_00001_00003, nursePatientAssign_00002_00003], nurseZoneAssign_00008, 8), aux26)
+reify(watchelement_one([nursePatientAssign_00001_00001, nursePatientAssign_00002_00001], nurseZoneAssign_00009, 9), aux27)
+reify(watchelement_one([nursePatientAssign_00001_00002, nursePatientAssign_00002_00002], nurseZoneAssign_00009, 9), aux28)
+reify(watchelement_one([nursePatientAssign_00001_00003, nursePatientAssign_00002_00003], nurseZoneAssign_00009, 9), aux29)
+reify(watchelement_one([nursePatientAssign_00001_00001, nursePatientAssign_00002_00001], nurseZoneAssign_00010, 10), aux30)
+reify(watchelement_one([nursePatientAssign_00001_00002, nursePatientAssign_00002_00002], nurseZoneAssign_00010, 10), aux31)
+reify(watchelement_one([nursePatientAssign_00001_00003, nursePatientAssign_00002_00003], nurseZoneAssign_00010, 10), aux32)
+reify(watchelement_one([nursePatientAssign_00001_00001, nursePatientAssign_00002_00001], nurseZoneAssign_00011, 11), aux33)
+reify(watchelement_one([nursePatientAssign_00001_00002, nursePatientAssign_00002_00002], nurseZoneAssign_00011, 11), aux34)
+reify(watchelement_one([nursePatientAssign_00001_00003, nursePatientAssign_00002_00003], nurseZoneAssign_00011, 11), aux35)
+sumgeq([aux3,aux4,aux5],1)
+sumgeq([aux6,aux7,aux8],1)
+sumgeq([aux9,aux10,aux11],1)
+sumgeq([aux12,aux13,aux14],1)
+sumgeq([aux15,aux16,aux17],1)
+sumgeq([aux18,aux19,aux20],1)
+sumgeq([aux21,aux22,aux23],1)
+sumgeq([aux24,aux25,aux26],1)
+sumgeq([aux27,aux28,aux29],1)
+sumgeq([aux30,aux31,aux32],1)
+sumgeq([aux33,aux34,aux35],1)
+**EOF**
