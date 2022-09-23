@@ -5,81 +5,80 @@ given numNurses : int(1..)
 given minNumPatientsPerNurse : int(1..)
 given maxNumPatientsPerNurse : int(1..)
 given maxWorkloadPerNurse : int(1..)
-given zonePatientAcuity : matrix indexed by [int(1..numZones), int(1..16)] of int(0..)
+given zonePatientAcuity : matrix indexed by [int(1..numZones), int(1..10)] of int(0..)
 given numZonePatients : matrix indexed by [int(1..numZones)] of int(1..)
 
 letting zoneLength be max(numZonePatients)
 
-find nurseZoneAssign : matrix indexed by [int(1..numNurses)] of int(1..numZones)
-find nursePatientAssign : matrix indexed by [int(1..numNurses), int(minNumPatientsPerNurse..maxNumPatientsPerNurse)] of int(0..zoneLength)
+$ what zone the nurse is working in
+find nurseZoneAssign : matrix indexed by [int(1..numNurses), int(1..numZones)] of int(0..1)
 
-$ zero is no nurse
-$ find nursePatientAssign : matrix indexed by [int(1..numZones), int(1.. zoneLength)] of int(0..numNurses)
+$ what patient number the nurse is working on
+$ note patients with acuity zero cannot be attended to by a nurse
+find nursePatientAssign : matrix indexed by [int(1..numNurses), int(1..zoneLength)] of int(0..1)
+$ find nursePatientAssign : matrix indexed by [int(1..numNurses), int(minNumPatientsPerNurse..maxNumPatientsPerNurse)] of int(0..zoneLength)
 
 such that 
 
+$ nurses only work in one zone
+forAll nurse : int(1..numNurses) .
+    sum(nurseZoneAssign[nurse, ..]) = 1,
+
+
 $ forAll nurse : int(1..numNurses) .
-$     sum(nursePatientAssign[nurse]) > 0,
-
-$ forAll nurse : int(1..numNurses) .
-$     forAll patient : int(minNumPatientsPerNurse .. maxNumPatientsPerNurse) .
-$         nursePatientAssign[nurse, patient] in toSet(zonePatientAcuity)
-
-$ a patient must be assigned to a nurse
-$ forAll zone : int(1..numZones) .
-$     forAll i : int(1..zoneLength) .
-$         zonePatientAcuity[zone, i] != 0 -> nursePatientAssign[zone, i] != 0
-$         /\
-$         zonePatientAcuity[zone,i] = 0 -> nursePatientAssign[zone,i] = 0,
-
-$ forAll zone : int(1..numZones) .
-$     forAll nurse : int(1..numNurses) .
-$         nurseZoneAssign[nurse] = zone -> (
-$             $ nurses do not have more patients than max
-$             $ sum([nurse = nursePatientAssign[zone, i] | i : int(1..zoneLength)]) <= maxNumPatientsPerNurse
-$             $ /\
-$             $ nurses do not have less patients than min
-$             $ sum([nurse = nursePatientAssign[zone, i] | i : int(1..zoneLength)]) >= minNumPatientsPerNurse
-$             $ /\
-$             $ nurses do not take on more workload than max
-$             sum([zonePatientAcuity[zone, i] * (nurse=nursePatientAssign[zone,i])| i : int(1..zoneLength)]) <= maxWorkloadPerNurse
-$             $ /\ 
-$             $ $ nurses work in one zone only
-$             $ forAll i : int(1..numZones) .
-$             $     i != zone -> sum([nurse=nursePatientAssign[i,j] | j : int(1..zoneLength)]) = 0
-$             $     $ 
-$             $     $ nurse in toSet(nursePatientAssign) !(nurse in toSet(nursePatientAssign[i, ..]))
-$         )
-
-
-
-$ a patient must be assigned to a nurse
-$ forAll zone : int(1..numZones) .
-$     forAll i : int(1..zoneLength) .
-$         (zonePatientAcuity[zone, i] != 0 -> 
-$             sum([nursePatientAssign[nurse, j] = i | nurse : int(1..numNurses), j : int(minNumPatientsPerNurse..maxNumPatientsPerNurse)]) > 0)
-$         /\
-$         (zonePatientAcuity[zone,i] = 0 -> 
-$             sum([nursePatientAssign[nurse, j] = i | nurse : int(1..numNurses), j : int(minNumPatientsPerNurse..maxNumPatientsPerNurse)]) = 0),
+$     sum([nurseZoneAssign[nurse,zone]*nursePatientAssign[nurse, patient] | zone : int(1..numZones), patient : int(1..zoneLength)]) <= maxNumPatientsPerNurse
+$     /\
+$     sum([nurseZoneAssign[nurse,zone]*nursePatientAssign[nurse, patient] | zone : int(1..numZones), patient : int(1..zoneLength)]) >= minNumPatientsPerNurse
+$     /\
+$     sum([nurseZoneAssign[nurse,zone]*nursePatientAssign[nurse, patient]*zonePatientAcuity[zone,patient] | zone : int(1..numZones), patient : int(1..zoneLength)]) <= maxWorkloadPerNurse,
+$     $ sum([nurseZoneAssign[nurse,zone]*nursePatientAssign[nurse, patient]*zonePatientAcuity[zone,patient] | zone : int(1..numZones), patient : int(1..zoneLength)]) = supposedWorkload[nurse],
 
 forAll nurse : int(1..numNurses) .
-    $ nurses do not have more patients than max
-    sum([nurse = nursePatientAssign[nurseZoneAssign[nurse], i] | i : int(1..zoneLength)]) <= maxNumPatientsPerNurse
-    /\
-    $ nurses do not have less patients than min
-    sum([nurse = nursePatientAssign[nurseZoneAssign[nurse], i] | i : int(1..zoneLength)]) >= minNumPatientsPerNurse
-    /\
-    $ nurses do not take on more workload than max
-    sum([zonePatientAcuity[nurseZoneAssign[nurse], i]* nurse=nursePatientAssign[nurseZoneAssign[nurse],i]| i : int(1..zoneLength)]) <= maxWorkloadPerNurse
-    $ /\ 
-    $ $ nurses work in one zone only
-    $ forAll i : int(1..numZones) .
-    $     i != nurseZoneAssign[nurse] /\ sum([nurse=nursePatientAssign[i,j] | j : int(1..zoneLength)]) = 0
-        $ nurse in toSet(nursePatientAssign) !(nurse in toSet(nursePatientAssign[i, ..]))
-
-$ forAll i : int(1..zoneLength) .
-$     forAll nurse : int(1..numNurses) .
-$         sum([])
+    forAll zone : int(1..numZones) .
+        $ nurse working in that zone
+        nurseZoneAssign[nurse, zone] != 0 -> (
+            $ working with less than max patients
+            $ (sum(nursePatientAssign[nurse, ..]) <= maxNumPatientsPerNurse)
+            $ /\
+            $ (sum(nursePatientAssign[nurse, ..]) >= minNumPatientsPerNurse) 
+            $ /\
+            sum([zonePatientAcuity[zone,i] * nursePatientAssign[nurse,i] | i : int(1..zoneLength)]) <= maxWorkloadPerNurse
+        ),
 
 
+forAll zone : int(1..numZones) .
+    forAll patient : int(1..zoneLength) .
+        $ zonePatientAcuity[zone,patient] != 0 ->
+        $     exists j : int(1..numNurses) .
+        $         nurseZoneAssign[j,zone]+nursePatientAssign[j,patient] > 1
+        $ /\
+        $ a nurse cannot look after a non-existent patient
+        zonePatientAcuity[zone,patient] = 0 -> 
+            forAll nurse : int(1..numNurses) .
+                nurseZoneAssign[nurse,zone] = 1 ->
+                    nursePatientAssign[nurse,patient] = 0,
 
+
+$ forAll nurse : int(1..numNurses) .
+$     forAll patient : int(1..zoneLength) .
+        
+$         nursePatientAssign[nurse,patient] != 0 ->
+$             forAll zone : int(1..numZones) .
+
+$ $ each patient must have at least min num of nurses, less than max num
+$ forAll patient : int(1..zoneLength) .
+$     forAll zone : int(1..numZones) .
+$         zonePatientAcuity[zone,patient] != 0 ->
+$             (sum([nursePatientAssign[nurse,patient]*nurseZoneAssign[nurse,zone] | nurse : int(1..numNurses)]) = 1) 
+
+$ each patient must have at least min num of nurses, less than max num
+forAll patient : int(1..zoneLength) .
+    forAll zone : int(1..numZones) .
+        zonePatientAcuity[zone,patient] != 0 ->
+            (sum([nursePatientAssign[nurse,patient]*nurseZoneAssign[nurse,zone] | nurse : int(1..numNurses)]) >= minNumPatientsPerNurse) 
+            /\
+            (sum([nursePatientAssign[nurse,patient]*nurseZoneAssign[nurse,zone] | nurse : int(1..numNurses)]) <= maxNumPatientsPerNurse),
+
+$ symmetry breaking
+forAll nurse : int(1..numNurses-1) .
+    nursePatientAssign[nurse, ..] <=lex nursePatientAssign[nurse+1, ..]

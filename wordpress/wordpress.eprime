@@ -1,0 +1,125 @@
+language ESSENCE' 1.0
+
+given WPInstances : int(1..)
+given VM : int(1..) $ max number of VMs
+given NoComponents : int(1..) $ number of components of the application
+given HardwareREQ : int(1..) $ number of hardware requirements for a component (ex. CPU, Memory, Storage)
+given CompREQ : matrix indexed by [int(1..NoComponents), int(1..HardwareREQ)] of int(1..) $ requirements of each component
+given VMOffers : int(1..) $ number of VM offers
+$ VM specs
+given VMSpecs : matrix indexed by [int(1..VMOffers), int(1..HardwareREQ)] of int(1..)
+given VMPrice : matrix indexed by [int(1..VMOffers)] of int(1..)
+
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$  CONSTANTS $$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+letting Wordpress be 1
+letting MySQL be 2
+letting DNS_LoadBalancer be 3
+letting HTTP_LoadBalancer be 4
+letting Varnish be 5
+letting S be domain int(1..NoComponents)
+letting BasicAllocation be domain int(Wordpress, MySQL, Varnish)
+
+letting CPU_Index be 1
+letting Memory_Index be 2
+letting Storage_Index be 3
+
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$  Decision Variables $$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+find AssignmentMatrix : matrix indexed by [int(1..NoComponents), int(1..VM)] of int(0..1)
+find OccupancyVector : matrix indexed by [int(1..VM)] of int(0..1)
+find VMType : matrix indexed by [int(1..VM)] of int(1..VMOffers) $ COME BACK HERE
+
+find CPU : matrix indexed by [int(1..VM)] of int(1..64)
+find Memory : matrix indexed by [int(1..VM)] of int(1700..976000)
+find Storage : matrix indexed by [int(1..VM)] of int(1000..24000)
+find Price : matrix indexed by [int(1..VM)] of int(0..16000)
+
+$ minimising sum(Price)
+
+such that 
+
+$ isDeployed not used anywhere?
+
+$ BASIC ALLOCATION
+$ ensures each component deployed at least once
+forAll i : int(Wordpress, MySQL, Varnish) .
+    sum([AssignmentMatrix[i, ..]]) >= 1,
+
+$ SET TYPE
+$ ensures 0 reserved for unused VMs 
+forAll k : int(1..VM) .
+    sum(AssignmentMatrix[..,k]) >= 1 -> VMType[k] > 0,
+
+$ OCCUPANCY
+$ VMs with components assigned matches the VM is occupied
+forAll k : int(1..VM) .
+    sum(AssignmentMatrix[..,k]) >= 1 -> OccupancyVector[k] = 1,
+
+$ CAPACITY
+$ chosen components on VM is within VM specifications
+forAll k : int(1..VM) .
+    forAll h : int(1..HardwareREQ) .
+        sum([AssignmentMatrix[i,k]*CompREQ[i,h] | i : int(1..NoComponents)]) <= VMSpecs[VMType[k],h],
+
+$ LINK
+$ resource arrays match VM specs
+forAll k : int(1..VM) .
+    forAll o : int(1..VMOffers) .
+        (OccupancyVector[k] = 1 /\ VMType[k] = o) -> (
+            CPU[k] = VMSpecs[o,CPU_Index] 
+            /\ Memory[k] = VMSpecs[o, Memory_Index]
+            /\ Storage[k] = VMSpecs[o, Storage_Index]
+            /\ Price[k] = VMPrice[o]),
+
+$ NULL TYPE
+$ unused machines have a set default type
+forAll k : int(1..VM) .
+    $ If set to 0, it produces invalid index error and discards solutions which don't use all VMs
+    $ If set to 1, it doesn't affect the minimal price as the price for the said VM will be 0 if it is unoccupied
+    AssignmentMatrix[..,k] = 0 -> VMType[k] = 1,
+
+$ LOWER BOUNDS
+sum(AssignmentMatrix[Wordpress, ..]) >= WPInstances,
+sum(AssignmentMatrix[Varnish, ..]) >= 2,
+sum(AssignmentMatrix[MySQL, ..]) >= 2,
+
+$ UPPER BOUNDS
+sum(AssignmentMatrix[DNS_LoadBalancer, ..]) <= 1,
+
+$ EXCLUSIVE DEPLOYMENT
+$ choose one or the other 
+sum(AssignmentMatrix[DNS_LoadBalancer, ..]) > 0 -> sum(AssignmentMatrix[HTTP_LoadBalancer, ..]) = 0,
+sum(AssignmentMatrix[HTTP_LoadBalancer, ..]) > 0 -> sum(AssignmentMatrix[DNS_LoadBalancer, ..]) = 0,
+
+
+$ REQUIRE PROVIDE
+sum(AssignmentMatrix[DNS_LoadBalancer, ..]) > 0 -> 
+    sum(AssignmentMatrix[Wordpress, ..]) <= sum(AssignmentMatrix[DNS_LoadBalancer, ..]) * 7,
+sum(AssignmentMatrix[HTTP_LoadBalancer, ..]) > 0 -> 
+    sum(AssignmentMatrix[Wordpress, ..]) <= sum(AssignmentMatrix[HTTP_LoadBalancer, ..]) * 3,
+sum(AssignmentMatrix[Wordpress, ..]) * 2 <= sum(AssignmentMatrix[MySQL, ..]) * 3,
+
+$ CONFLICT
+$ Varnish cannot be used with DNS, HTTP, or MySQL
+forAll k : int(1..VM) .
+    forAll i : int(DNS_LoadBalancer, HTTP_LoadBalancer, MySQL) .
+        AssignmentMatrix[Varnish, k] + AssignmentMatrix[i, k] <= 1,
+
+$ DNS cannot be used with Wordpress, MySQL or Varnish
+forAll k : int(1..VM) .
+    forAll i : int(Wordpress, MySQL, Varnish) .
+        AssignmentMatrix[DNS_LoadBalancer, k] + AssignmentMatrix[i, k] <= 1,
+
+$ HTTP cannot be used with Wordpress, MySQL or Varnish
+forAll k : int(1..VM) .
+    forAll i : int(Wordpress, MySQL, Varnish) .
+        AssignmentMatrix[HTTP_LoadBalancer, k] + AssignmentMatrix[i, k] <= 1
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$  SYMMETRY $$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
