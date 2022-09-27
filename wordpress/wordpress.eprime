@@ -39,7 +39,7 @@ find Memory : matrix indexed by [int(1..VM)] of int(1700..976000)
 find Storage : matrix indexed by [int(1..VM)] of int(1000..24000)
 find Price : matrix indexed by [int(1..VM)] of int(0..16000)
 
-$ minimising sum(Price)
+minimising sum(Price)
 
 such that 
 
@@ -47,8 +47,9 @@ $ isDeployed not used anywhere?
 
 $ BASIC ALLOCATION
 $ ensures each component deployed at least once
+$ HANDLED IN LOWER BOUND???
 forAll i : int(Wordpress, MySQL, Varnish) .
-    sum([AssignmentMatrix[i, ..]]) >= 1,
+    sum(AssignmentMatrix[i,..]) >= 1,
 
 $ SET TYPE
 $ ensures 0 reserved for unused VMs 
@@ -81,44 +82,57 @@ $ unused machines have a set default type
 forAll k : int(1..VM) .
     $ If set to 0, it produces invalid index error and discards solutions which don't use all VMs
     $ If set to 1, it doesn't affect the minimal price as the price for the said VM will be 0 if it is unoccupied
-    AssignmentMatrix[..,k] = 0 -> VMType[k] = 1,
+    sum(AssignmentMatrix[..,k]) = 0 -> VMType[k] = 1,
 
 $ LOWER BOUNDS
+$ Wordpress should be deployed by at least WPInstances
 sum(AssignmentMatrix[Wordpress, ..]) >= WPInstances,
+$ At least 2 instances of Varnish must be deployed
 sum(AssignmentMatrix[Varnish, ..]) >= 2,
+$ There must be at least 2 entry points to the MySQL cluster
 sum(AssignmentMatrix[MySQL, ..]) >= 2,
 
 $ UPPER BOUNDS
+$ No more than 1 DNSLoadBalancer can be deployed 
 sum(AssignmentMatrix[DNS_LoadBalancer, ..]) <= 1,
 
 $ EXCLUSIVE DEPLOYMENT
-$ choose one or the other 
+$ Only one type of balancer must be deployed
 sum(AssignmentMatrix[DNS_LoadBalancer, ..]) > 0 -> sum(AssignmentMatrix[HTTP_LoadBalancer, ..]) = 0,
 sum(AssignmentMatrix[HTTP_LoadBalancer, ..]) > 0 -> sum(AssignmentMatrix[DNS_LoadBalancer, ..]) = 0,
 
 
 $ REQUIRE PROVIDE
+$ DNSLoadBalancer requires at least 1 instance of Wordpress and can serve at most 7 such instances (Require-Provide constraint)
 sum(AssignmentMatrix[DNS_LoadBalancer, ..]) > 0 -> 
     sum(AssignmentMatrix[Wordpress, ..]) <= sum(AssignmentMatrix[DNS_LoadBalancer, ..]) * 7,
+$ HTTPLoadBalancer requires at least 1 instance of Wordpress and can serve at most 3 such instances (Require-Provide constraint)
 sum(AssignmentMatrix[HTTP_LoadBalancer, ..]) > 0 -> 
     sum(AssignmentMatrix[Wordpress, ..]) <= sum(AssignmentMatrix[HTTP_LoadBalancer, ..]) * 3,
+$ Wordpress requires at least 3 instances of MySQL and MySQL can server at most 2 Wordpress instances (Require-Provide constraint
 sum(AssignmentMatrix[Wordpress, ..]) * 2 <= sum(AssignmentMatrix[MySQL, ..]) * 3,
 
 $ CONFLICT
+$ Varnish exhibits load balancing features, it should not be deployed on the same virtual machine as any other balancer
+$ Varnish and MySQL should not be deployed on the same virtual machine
 $ Varnish cannot be used with DNS, HTTP, or MySQL
 forAll k : int(1..VM) .
     forAll i : int(DNS_LoadBalancer, HTTP_LoadBalancer, MySQL) .
         AssignmentMatrix[Varnish, k] + AssignmentMatrix[i, k] <= 1,
 
 $ DNS cannot be used with Wordpress, MySQL or Varnish
-forAll k : int(1..VM) .
-    forAll i : int(Wordpress, MySQL, Varnish) .
-        AssignmentMatrix[DNS_LoadBalancer, k] + AssignmentMatrix[i, k] <= 1,
-
 $ HTTP cannot be used with Wordpress, MySQL or Varnish
+$ Balancer components must be deployed on a single virtual machine
 forAll k : int(1..VM) .
     forAll i : int(Wordpress, MySQL, Varnish) .
-        AssignmentMatrix[HTTP_LoadBalancer, k] + AssignmentMatrix[i, k] <= 1
+        (AssignmentMatrix[DNS_LoadBalancer, k] + AssignmentMatrix[i, k] <= 1)
+        /\
+        (AssignmentMatrix[HTTP_LoadBalancer, k] + AssignmentMatrix[i, k] <= 1)
+
+
+$ forAll k : int(1..VM) .
+$     forAll i : int(Wordpress, MySQL, Varnish) .
+       
 
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 $$$$$$$$$$  SYMMETRY $$$$$$$$$$$$$
