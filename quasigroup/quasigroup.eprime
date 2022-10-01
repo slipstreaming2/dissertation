@@ -1,7 +1,7 @@
 language ESSENCE' 1.0
 
 given N : int(1..)
-given initBoard : matrix indexed by [int(1..N), int(1..N)] of int(0..N)
+given start : matrix indexed by [int(1..N), int(1..N)] of int(0..N)
 
 find puzzle : matrix indexed by [int(1..N), int(1..N)] of int(1..N)
 
@@ -9,7 +9,7 @@ such that
 
 forAll i : int(1..N) .
     forAll j : int(1..N) . 
-        initBoard[i,j] != 0 -> puzzle[i,j] = initBoard[i,j],
+     start[i,j] != 0 -> puzzle[i,j] = start[i,j],
 
 forAll i : int(1..N) .
     allDiff(puzzle[i, ..]),

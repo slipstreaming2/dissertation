@@ -1,0 +1,22 @@
+MiniZinc commands
+./minizinc --solver chuffed Wordpress/Wordpress.mzn Wordpress/Wordpress_Offers20.dzn -s --compiler-statistics --output-mode json --json-stream
+
+Everything as JSON 
+./minizinc --solver gecode wordpress.param.mzn -s --compiler-statistics --output-mode json --json-stream
+
+Just the solution 
+./minizinc --solver gecode wordpress.param.mzn --output-mode json -o test.txt --soln-sep "" --search-complete-msg ""
+
+Compiler stats 
+./minizinc --solver gecode Wordpress/Wordpress.mzn Wordpress/Wordpress_Offers20.dzn -c --compiler-statistics --json-stream > compiler.txt
+
+Quasigroup
+./minizinc --solver chuffed Quasigroup/QuasigroupCompletion.mzn Quasigroup/instances/qwh-o30-h374-01.dzn -s --compiler-statistics --output-mode json --json-stream
+
+
+Diss commands
+./savilerow dissertation/wordpress/wordpress.eprime dissertation/wordpress/wordpress.param -run-solver
+./savilerow dissertation/wordpress/wordpress.eprime dissertation/wordpress/wordpress.param -gecode -run-solver
+
+
+Minizinc uses HTTP instead of DNS, both equivalent since HTTP supports <= 3 instances of Wordpress

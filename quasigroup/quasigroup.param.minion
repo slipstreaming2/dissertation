@@ -16,6 +16,5 @@ initBoard 4 4
 ALIAS initBoard[4,4]=[[1, 0, 0, 4], [0, 0, 2, 0], [3, 0, 1, 0], [0, 3, 0, 0]]
 **SEARCH**
 PRINT[]
-VARORDER STATIC []
 **CONSTRAINTS**
 true()**EOF**

@@ -4,7 +4,6 @@ $$ undefined in site param files, $$
 $$$$ using specification example $$$$
 letting WPInstances be 3 
 letting VM be 8
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ 
 
 letting NoComponents = 5
 letting HardwareREQ = 3
