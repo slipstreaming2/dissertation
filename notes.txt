@@ -1,8 +1,8 @@
 MiniZinc commands
-./minizinc --solver chuffed Wordpress/Wordpress.mzn Wordpress/Wordpress_Offers20.dzn -s --compiler-statistics --output-mode json --json-stream
+../../MiniZincIDE-2.6.4-bundle-linux-x86_64/bin/minizinc --solver chuffed ../instances_and_solutions/wordpress/dzn/Wordpress_Offers20.dzn ../miniZinc_files/Wordpress/Wordpress.mzn -s --output-mode json --json-stream
 
-Everything as JSON 
-./minizinc --solver gecode wordpress.param.mzn -s --compiler-statistics --output-mode json --json-stream
+./minizinc --solver chuffed Wordpress/Wordpress.mzn Wordpress/Wordpress_Offers20.dzn -s --compiler-statistics --output-mode json --json-stream
+--output-time??? compared to other times 
 
 Just the solution 
 ./minizinc --solver gecode wordpress.param.mzn --output-mode json -o test.txt --soln-sep "" --search-complete-msg ""
@@ -16,7 +16,38 @@ Quasigroup
 
 Diss commands
 ./savilerow dissertation/wordpress/wordpress.eprime dissertation/wordpress/wordpress.param -run-solver
+./savilerow dissertation/wordpress/wordpress.eprime dissertation/wordpress/wordpress.param -run-solver -sat -test-solutions
 ./savilerow dissertation/wordpress/wordpress.eprime dissertation/wordpress/wordpress.param -gecode -run-solver
 
 
 Minizinc uses HTTP instead of DNS, both equivalent since HTTP supports <= 3 instances of Wordpress
+xor does not work with gecode, works with everything else 
+
+Translate to JSON 
+./savilerow dissertation/wordpress/wordpress.eprime -in-param dissertation/wordpress/wordpress.param.solution -param-to-json
+
+
+./savilerow dissertation/wordpress/wordpress.eprime 
+
+Bash
+./translateAll.sh ../instances_and_solutions/wordpress/dzn ../instances_and_solutions/wordpress/param
+./translateAll.sh ../instances_and_solutions/quasigroup/dzn ../instances_and_solutions/quasigroup/param
+./runAllEprime.sh ../instances_and_solutions/wordpress/param ../eprime_models/wordpress/wordpress.eprime
+./runAllEprime.sh ../instances_and_solutions/quasigroup/param ../eprime_models/quasigroup/quasigroup.eprime
+./checkEprimeSolutions.sh ../instances_and_solutions/wordpress/param
+./translateData.sh ../instances_and_solutions/wordpress/param/ wordpress eprime
+./translateData.sh ../instances_and_solutions/wordpress/dzn/solutions wordpress minizinc
+./runAllMiniZinc ../instances_and_solutions/wordpress/dzn/ ../miniZinc_files/Wordpress/Wordpress.mzn
+
+SolverTotalTime - solving only
+SavileRowTotalTime - translation only
+
+SolverNodes
+
+nodes
+
+time - total time?
+initTime
+solveTime
+flatTime
+optTime
