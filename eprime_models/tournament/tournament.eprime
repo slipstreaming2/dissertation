@@ -1,0 +1,67 @@
+language ESSENCE' 1.0
+
+given nbTeams : int(1..)
+
+letting nbRounds = nbTeams-1
+letting nbStates = 7
+
+letting Teams be domain int(1..nbTeams)
+letting Rounds be domain int(1..nbRounds)
+letting Travels be domain int(1..nbRounds+1)
+letting States be domain int(1..nbStates)
+letting delta be [[2,5], [3,5], [4,5], [0,5], [2,6], [2,7], [2,0]]
+
+$ predefined venue: pv[i][j] = 1 iff i is playing at home against j
+given pv : matrix indexed by [Teams, Teams] of int(1..2)
+
+find distance : matrix indexed by [Teams, Teams] of 
+
+
+find opponent : matrix indexed by [Teams, Rounds] of Teams
+find venue : matrix indexed by [Teams, Rounds] of int(1..2)
+find travel : matrix indexed by [Teams, Travels] of int(0..nbTeams/2)
+
+minimising sum(flatten(travel))
+
+such that
+
+$ predetermined venues match venue allocation
+forAll i : Teams .
+    forAll k : Rounds .
+        venue[i,k] = pv[i,opponent[i,k]],
+
+$ cannot play against oneself
+forAll i : Teams .
+    forAll k : Rounds .
+        opponent[i,k] != i,
+
+$ if I play you, you play me
+forAll i : Teams .
+    forAll k : Rounds .
+        opponent[opponent[i,k],k] = i,
+
+forAll i : Teams . 
+    allDiff(opponent[i, ..]),
+
+forAll k : Rounds.
+    allDiff(opponent[..,k]),
+
+forAll i : Teams .
+    ???
+
+opponent[1,1] < opponent[1,nbRounds],
+
+forAll i : Teams .
+    (venue[i,1]=1 -> travel[i,1] = 0) /\
+    (venue[i,1]=2 -> travel[i,1] = distance[i,opponent[i,1]]),
+
+forAll i : Teams .
+    forAll k : int(1..nbRounds-1) .
+        ((venue[i,k]=1 /\ venue[i,k+1]=1) -> travel[i,k+1] = 0) /\
+        ((venue[i,k]=2 /\ venue[i,k+1]=1) -> travel[i,k+1] = distance[opponent[i,k],i]) /\
+        ((venue[i,k]=1 /\ venue[i,k+1]=2) -> travel[i,k+1] = distance[i,opponent[i,k+1]]) /\
+        ((venue[i,k]=2 /\ venue[i,k+1]=2) -> travel[i,k+1] = distance[opponent[i,k],opponent[i,k+1]]),
+
+forAll i : Teams . 
+    (venue[i,nbRounds]=1 -> travel[i,nbRounds+1] = 0) /\
+    (venue[i,nbRounds]=2 -> travel[i,nbRounds+1] = distance[opponent[i,nbRounds],i]),
