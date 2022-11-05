@@ -1,4 +1,8 @@
 language ESSENCE' 1.0
+letting WPInstances  =  3
+
+letting VM  =  8
+
 letting NoComponents  =  5
 
 letting HardwareREQ  =  3

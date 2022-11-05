@@ -1,5 +1,9 @@
 MiniZinc commands
 ../../MiniZincIDE-2.6.4-bundle-linux-x86_64/bin/minizinc --solver chuffed ../instances_and_solutions/wordpress/dzn/Wordpress_Offers20.dzn ../miniZinc_files/Wordpress/Wordpress.mzn -s --output-mode json --json-stream
+../../MiniZincIDE-2.6.4-bundle-linux-x86_64/bin/minizinc --solver chuffed ../instances_and_solutions/tournament/dzn/circ8abal.dzn ../miniZinc_files/tournament/TTPPV.mzn
+../../MiniZincIDE-2.6.4-bundle-linux-x86_64/bin/minizinc --solver chuffed ../instances_and_solutions/roster/dzn/Rostering-8-M-2-4.dzn ../miniZinc_files/roster/RosteringProblem.mzn
+../../MiniZincIDE-2.6.4-bundle-linux-x86_64/bin/minizinc --solver chuffed ../instances_and_solutions/cvrptw/json/toy_D_2v_4l_w_reload.json ../miniZinc_files/cvrptw/cvrptw.mzn
+../../MiniZincIDE-2.6.4-bundle-linux-x86_64/bin/minizinc --solver chuffed ../instances_and_solutions/mspsp/dzn/easy_01.dzn ../miniZinc_files/mspsp/mspsp.mzn
 
 ./minizinc --solver chuffed Wordpress/Wordpress.mzn Wordpress/Wordpress_Offers20.dzn -s --compiler-statistics --output-mode json --json-stream
 --output-time??? compared to other times 
@@ -11,8 +15,9 @@ Compiler stats
 ./minizinc --solver gecode Wordpress/Wordpress.mzn Wordpress/Wordpress_Offers20.dzn -c --compiler-statistics --json-stream > compiler.txt
 
 Quasigroup
-./minizinc --solver chuffed Quasigroup/QuasigroupCompletion.mzn Quasigroup/instances/qwh-o30-h374-01.dzn -s --compiler-statistics --output-mode json --json-stream
-
+../../MiniZincIDE-2.6.4-bundle-linux-x86_64/bin/minizinc --solver chuffed ../miniZinc_files/Quasigroup/QuasigroupCompletion.mzn ../instances_and_solutions/quasigroup/dzn/qwh-o30-h374-01.dzn -s --compiler-statistics --output-mode json --json-stream
+../../MiniZincIDE-2.6.4-bundle-linux-x86_64/bin/minizinc ../miniZinc_files/Quasigroup/QuasigroupCompletion.mzn ../instances_and_solutions/quasigroup/dzn/qwh-o30-h374-01.dzn -c
+../../MiniZincIDE-2.6.4-bundle-linux-x86_64/bin/minizinc ../miniZinc_files/Quasigroup/QuasigroupCompletion.mzn ../instances_and_solutions/quasigroup/dzn/test.dzn -c
 
 Diss commands
 ./savilerow dissertation/wordpress/wordpress.eprime dissertation/wordpress/wordpress.param -run-solver
@@ -29,15 +34,63 @@ Translate to JSON
 
 ./savilerow dissertation/wordpress/wordpress.eprime 
 
+Quasigroup Essence
+../../savilerow-1.9.1-linux/savilerow ../instances_and_solutions/quasigroup/param/qwh-o30-h374-01.dzn.param ../eprime_models/quasigroup/quasigroup.eprime -flatzinc
+
+../../savilerow-1.9.1-linux/savilerow ../instances_and_solutions/quasigroup/param/qwh-o30-h374-01.dzn.param ../eprime_models/quasigroup/quasigroup.eprime -chuffed -run-solver
+../../savilerow-1.9.1-linux/savilerow ../instances_and_solutions/tournament/param/circ8abal.dzn.param ../eprime_models/tournament/tournament.eprime -chuffed -run-solver
+../../savilerow-1.9.1-linux/savilerow ../instances_and_solutions/roster/param/Rostering-8-M-2-4.dzn.param ../eprime_models/roster/roster.eprime -chuffed -run-solver
+../../savilerow-1.9.1-linux/savilerow ../instances_and_solutions/mspsp/param/easy_01.dzn.param ../eprime_models/mspsp/mspsp.eprime -chuffed -run-solver
+
+../../savilerow-1.9.1-linux/savilerow ../eprime_models/roster/rosterGenerate.eprime -params "letting numberOfWeeks=8 letting s_min=2 letting s_max=4" -chuffed -run-solver
+
+../../savilerow-1.9.1-linux/savilerow ../instances_and_solutions/instances_and_solutions/cvrptw/param/toy_D_2v_4l_w_reload.json.param ../eprime_models/cvrptw/cvrptw.eprime -chuffed -run-solver -solver-options "-f on"
+
+../../savilerow-1.9.1-linux/savilerow ../instances_and_solutions/instances_and_solutions/mspsp/ ../eprime_models/cvrptw/cvrptw.eprime -chuffed -run-solver -solver-options "-f on"
+
+../../savilerow-1.9.1-linux/savilerow ../eprime_models/quasigroup/quasigroup.param ../eprime_models/quasigroup/quasigroup.eprime -flatzinc
+
+Python
+python checkSolutions.py "../instances_and_solutions/tournament/param/circ8abal.dzn.param"
+python checkSolutions.py "../instances_and_solutions/roster/param/Rostering-8-M-2-4.dzn.param"
+python checkSolutions.py "../instances_and_solutions/quasigroup/param/qwh-o30-h374-02.dzn.param"
+python checkSolutions.py "../instances_and_solutions/mspsp/param/non-occurrence/easy_01.dzn.param"
+python checkSolutions.py "../instances_and_solutions/mspsp/param/non-occurrence/easy_01.dzn.param"
+
+python translator.py ./easy_01.dzn . "{\"has_skills\": \"n_skills\", \"suc\": \"n_tasks\"}"
+
+python jsonTranslator.py ../instances_and_solutions/cvrptw/json/toy_D_2v_4l_w_reload.json ../instances_and_solutions/cvrptw/param
+
+
 Bash
-./translateAll.sh ../instances_and_solutions/wordpress/dzn ../instances_and_solutions/wordpress/param
-./translateAll.sh ../instances_and_solutions/quasigroup/dzn ../instances_and_solutions/quasigroup/param
+./translateAll.sh ../instances_and_solutions/wordpress/dzn
+./translateAll.sh ../instances_and_solutions/quasigroup/dzn
+./translateAll.sh ../instances_and_solutions/tournament/dzn 
+./translateAll.sh ../instances_and_solutions/roster/dzn 
+./translateAll.sh ../instances_and_solutions/cvrptw/json
+./translateAll.sh ../instances_and_solutions/mspsp/dzn  "{\"has_skills\": \"n_skills\", \"suc\": \"n_tasks\"}"
+
 ./runAllEprime.sh ../instances_and_solutions/wordpress/param ../eprime_models/wordpress/wordpress.eprime
 ./runAllEprime.sh ../instances_and_solutions/quasigroup/param ../eprime_models/quasigroup/quasigroup.eprime
+./runAllEprime.sh ../instances_and_solutions/tournament/param ../eprime_models/tournament/tournament.eprime
+./runAllEprime.sh ../instances_and_solutions/mspsp/param ../eprime_models/mspsp/mspsp.eprime
+
 ./checkEprimeSolutions.sh ../instances_and_solutions/wordpress/param
-./translateData.sh ../instances_and_solutions/wordpress/param/ wordpress eprime
+./checkEprimeSolutions.sh ../instances_and_solutions/mspsp/param
+./checkMiniZincSolutions.sh ../instances_and_solutions/mspsp/param/non-occurrence ../instances_and_solutions/mspsp/dzn/solutions/json
+
+./translateData.sh ../instances_and_solutions/wordpress/param/solutions wordpress eprime
 ./translateData.sh ../instances_and_solutions/wordpress/dzn/solutions wordpress minizinc
-./runAllMiniZinc ../instances_and_solutions/wordpress/dzn/ ../miniZinc_files/Wordpress/Wordpress.mzn
+./translateData.sh ../instances_and_solutions/quasigroup/param/solutions quasigroup eprime
+./translateData.sh ../instances_and_solutions/quasigroup/dzn/solutions quasigroup minizinc
+./translateData.sh ../instances_and_solutions/quasigroup/param/solutions quasigroup eprime cse
+./translateData.sh ../instances_and_solutions/mspsp/dzn/solutions mspsp minizinc
+
+./runAllMiniZinc.sh ../instances_and_solutions/wordpress/dzn/ ../miniZinc_files/Wordpress/Wordpress.mzn
+./runAllMiniZinc.sh ../instances_and_solutions/tournament/dzn/ ../miniZinc_files/tournament/TTPPV.mzn
+./runAllMiniZinc.sh ../instances_and_solutions/mspsp/dzn/ ../miniZinc_files/mspsp/mspsp.mzn
+
+translateData needs 
 
 SolverTotalTime - solving only
 SavileRowTotalTime - translation only
@@ -51,3 +104,56 @@ initTime
 solveTime
 flatTime
 optTime
+
+
+
+quasigroup runs orders of magnitude faster than quasigroupOcc, but quasigroup produces smaller Flatzinc file than quasigroupOcc
+using -flatzinc and -chuffed -run-solver produces different flatzinc files 
+flatzinc all_different is different from minizinc (fzn_all_different_int) to essence (all_different_int) 
+
+
+opponent = 
+[| 2, 7, 8, 4, 3, 6, 5
+ | 1, 5, 6, 7, 4, 3, 8
+ | 5, 6, 7, 8, 1, 2, 4
+ | 6, 8, 5, 1, 2, 7, 3
+ | 3, 2, 4, 6, 7, 8, 1
+ | 4, 3, 2, 5, 8, 1, 7
+ | 8, 1, 3, 2, 5, 4, 6
+ | 7, 4, 1, 3, 6, 5, 2
+ |];
+venue = 
+[| 2, 1, 1, 2, 2, 1, 1
+ | 1, 2, 2, 2, 1, 1, 2
+ | 1, 2, 2, 1, 1, 2, 2
+ | 2, 2, 2, 1, 2, 1, 1
+ | 2, 1, 1, 1, 2, 2, 2
+ | 1, 1, 1, 2, 1, 2, 2
+ | 2, 2, 1, 1, 1, 2, 1
+ | 1, 1, 2, 2, 2, 1, 1
+ |];
+travel = 
+[| 1, 1, 0, 3, 1, 2, 0, 0
+ | 0, 3, 1, 1, 3, 0, 2, 2
+ | 0, 3, 1, 4, 0, 1, 2, 1
+ | 2, 2, 3, 1, 2, 2, 0, 0
+ | 2, 2, 0, 0, 2, 1, 1, 4
+ | 0, 0, 0, 1, 1, 3, 2, 1
+ | 1, 1, 2, 0, 0, 3, 3, 0
+ | 0, 0, 1, 2, 3, 2, 0, 0
+ |];
+totalTravel = 82;
+
+
+../../MiniZincIDE-2.6.4-bundle-linux-x86_64/bin/minizinc --solver chuffed ../instances_and_solutions/cvrptw/json/A_1v-7l_w_reload.json ../miniZinc_files/cvrptw/cvrptw.mzn
+successor = [2, 3, 4, 5, 6, 7, 16, 9, 10, 11, 12, 13, 14, 1, 8, 15];
+predecessor = [14, 1, 2, 3, 4, 5, 6, 15, 8, 9, 10, 11, 12, 13, 16, 7];
+vehicle = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
+load = [665, 608, 486, 341, 278, 132, 31, 0, 57, 179, 324, 387, 533, 634, 0, 0];
+arrivalTime = [172, 172, 172, 172, 214, 295, 353, 146, 146, 146, 146, 146, 146, 146, 146, 403];
+departureTime = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+slack = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+objective = 257;
+start_load = 0;
+----------
+==========

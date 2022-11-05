@@ -1,6 +1,7 @@
 import sys 
 import json
 from ast import literal_eval
+from pathlib import Path 
 
 def readMinionStats(pathToFile):
     stats = open(pathToFile, "r")
@@ -23,26 +24,27 @@ def readMinizinc(pathToFile, statDict, solutionDict):
         lineType = lineJson["type"]
         if lineType == "statistics":
             statDict.update(lineJson["statistics"])
-        if lineType == "solution":
+        elif lineType == "solution":
             solutionDict.update(lineJson["output"]["json"])
     
 statFile = sys.argv[1]
 dataSaveLocation = sys.argv[2]
 statInfo = {}
-if sys.argv[3] == "eprime":
+if "eprime" in sys.argv[3]:
     # .info files
     statInfo = readMinionStats(statFile)
 else:
     miniSolution = {}
     readMinizinc(statFile, statInfo, miniSolution)
-
+    slashes = [i for i in range(len(statFile)) if statFile[i] == '/']
+    Path(statFile[:slashes[-1]+1] + "json").mkdir(parents=True, exist_ok=True)
+    with open(statFile[:slashes[-1]+1] + "json/" +  statFile[slashes[-1]+1:] + ".json", "w") as f:
+        json.dump(miniSolution, f)
 
 with open(dataSaveLocation + ".json", "w") as f:
     json.dump(statInfo, f)
 
-
-
-
+print('extracted data from ' + statFile)
 # print(miniStats)
 # print(miniSolution)
 

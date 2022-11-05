@@ -1,5 +1,7 @@
 import sys
+import ast
 from pathlib import Path
+import json
 
 def translateArray(arrayLine):
     splitArray = arrayLine.split('|')
@@ -25,6 +27,10 @@ def readInArray(lines, index):
             break
     return (translateArray(firstLine), stoppedIndex)
 
+
+def stripEverything(toStrip):
+    return toStrip.replace(" ","").replace("\n", "").replace("\t","").replace(";","")
+
 def translateFile(file_to_convert, newFileName):
     mini_file = open(file_to_convert, "r")
     print(newFileName)
@@ -46,14 +52,43 @@ def translateFile(file_to_convert, newFileName):
             (value_of_letting, stoppedIndex) = readInArray(lines, i)
             i = stoppedIndex
         i += 1
-        value_of_letting = value_of_letting.replace(";","")
-        param_file.write("letting " + line[ident_location] + " = " + value_of_letting + "\n")
+
+        ident = stripEverything(line[ident_location])
+        value_of_letting = stripEverything(value_of_letting)
+        jsonOfFile[ident] = value_of_letting # used for sets
+        if ident in setLens:
+            setLens[ident] = ast.literal_eval(jsonOfFile[setLens[ident]])
+        if '{' in value_of_letting:
+            value_of_letting = convertSetToOccurrence(ident, ast.literal_eval(value_of_letting))
+
+        param_file.write("letting " + ident + " = " + str(value_of_letting) + "\n")
     param_file.close()
+
+
+
+def convertSetToOccurrence(identName, val):
+    if type(val) is list:
+        for i in range(len(val)):
+            val[i] = convertSetToOccurrence(identName, val[i])
+        return val
+    # is a set
+    else:
+        setAsOcc = [0 for _ in range(setLens[identName])]
+        for i in val:
+            setAsOcc[i-1] = 1
+        return setAsOcc
+
+
 
 input_output_file = sys.argv[1]
 directory = sys.argv[2]
 output_file = input_output_file.split("/")
 output_file = output_file[-1]
+
+jsonOfFile = {}
+setLens = {}
+if len(sys.argv) > 3:
+    setLens = json.loads(sys.argv[3])
 
 Path(directory).mkdir(parents=True, exist_ok=True)
 translateFile(input_output_file, directory + "/" + output_file)

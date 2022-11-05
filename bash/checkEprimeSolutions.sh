@@ -1,3 +1,4 @@
 for f in ${1}/*.param; do 
-    python ../python/checkSolutions.py "$f"
+    base_name=$(basename ${f})
+    python ../python/checkSolutions.py "$f" "${1}/../solutions/${base_name}.solution"
 done

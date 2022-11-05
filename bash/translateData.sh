@@ -5,5 +5,10 @@ then
 fi
 for f in ${1}/*${save_type}; do
     base_name=$(basename ${f})
-    python ../python/jsonGenerator.py ${f} ../data/${2}/${3}/${base_name} ${3}
+    if [[ "${4}" == "cse" ]] 
+    then
+        python ../python/jsonGenerator.py ${f} ../data/${2}/${3}/cse/${base_name} ${3}
+    else
+         python ../python/jsonGenerator.py ${f} ../data/${2}/${3}/${base_name} ${3}
+    fi
 done 

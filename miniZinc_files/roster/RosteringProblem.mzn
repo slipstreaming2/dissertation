@@ -2,7 +2,7 @@ include "all_equal.mzn";
 include "global_cardinality.mzn";
 
 % load parameters
-include "parameters.dzn";
+% include "parameters.dzn";
 
 int: daysPerWeek = 7;
 
@@ -104,4 +104,4 @@ solve :: int_search(plan1d, input_order, indomain_min, complete)
       satisfy;           
       
 % print the problem      
-output [ show(row(plan2d,j)) ++ "\n" | j in 1..numberOfWeeks ] ++ ["\n"];      
+% output [ show(row(plan2d,j)) ++ "\n" | j in 1..numberOfWeeks ] ++ ["\n"];      

@@ -11,8 +11,8 @@ given VMSpecs : matrix indexed by [int(1..VMOffers), int(1..HardwareREQ)] of int
 given VMPrice : matrix indexed by [int(1..VMOffers)] of int(1..)
 
 
-letting WPInstances = 3
-letting VM = 8
+given WPInstances : int
+given VM : int
 
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 $$$$$$$$$  CONSTANTS $$$$$$$$$$$$$
@@ -40,6 +40,9 @@ find CPU : matrix indexed by [int(1..VM)] of int(1..64)
 find Memory : matrix indexed by [int(1..VM)] of int(1700..976000)
 find Storage : matrix indexed by [int(1..VM)] of int(1000..24000)
 find Price : matrix indexed by [int(1..VM)] of int(0..16000)
+
+
+branching on [AssignmentMatrix, VMType, Price]
 
 minimising sum(Price)
 
@@ -130,6 +133,12 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 $$$$$$$$$$  SYMMETRY $$$$$$$$$$$$$
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
-$ VM machines can be swapped around for same result, break symmetry
+$ VM machines can be swapped around for same result, break lexigraphical symmetry
+$ forAll k : int(1..VM-1) .
+$     AssignmentMatrix[..,k] >=lex AssignmentMatrix[..,k+1]
+
 forAll k : int(1..VM-1) .
-    AssignmentMatrix[..,k] >=lex AssignmentMatrix[..,k+1]
+    (Price[k] <= Price[k+1])
+    $ /\
+    $ (Price[k] = Price[k+1]) ->
+    $     (AssignmentMatrix[..,k] >=lex AssignmentMatrix[..,k+1])

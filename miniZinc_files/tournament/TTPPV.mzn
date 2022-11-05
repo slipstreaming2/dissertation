@@ -4,8 +4,6 @@
 % Compact single round robin schedule minimizing total travel distance
 % The venue of each game has already been decided
 % Specialized for CIRC instances (circular distances)
-%
-% Author: Gilles Pesant
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 include "globals.mzn";
@@ -84,14 +82,28 @@ constraint forall (i in Teams) (
 	(venue[i,nbRounds]=2 -> travel[i,nbRounds+1] = distance[opponent[i,nbRounds],i]) );
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-var int: totalTravel;
-constraint totalTravel = sum (i in Teams, k in Travels) (travel[i,k]);
-solve minimize totalTravel;
+int: maxObj = sum(i in Teams, k in Travels)(ub(travel[i, k]));
+var 0..maxObj: objective; 
+constraint objective = sum (i in Teams, k in Travels) (travel[i,k]);
+
+solve 
+    :: seq_search([
+        int_search([opponent[i, j] | i in Teams, j in Rounds], input_order, indomain_min, complete),
+        int_search([venue[i, j] | i in Teams, j in Rounds], input_order, indomain_min, complete),
+        int_search([travel[i, j] | i in Teams, j in Travels], first_fail, indomain_min, complete),
+    ])
+    minimize objective;
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-output ["SCHEDULE\n"] ++ 
-       [ if fix(venue[i,k]) == 1 then " " else "@" endif ++
-	 show_int(digs,opponent[i,k]) ++ " " ++ 
-         if k == nbRounds /\ i != nbTeams then "\n" else "" endif
-         | i in Teams, k in Rounds ] ++ ["\n"] ++
-       ["total travel = "] ++ [show(totalTravel)] ++ ["\n"];
+output [
+    "%% SCHEDULE\n%% "
+] ++ [ 
+    if fix(venue[i,k]) == 1 then " " else "@" endif ++
+	show_int(digs,opponent[i,k]) ++ " " ++ 
+    if k == nbRounds /\ i != nbTeams then "\n%% " else "" endif
+| i in Teams, k in Rounds ] ++ ["\n"] ++ [
+    "opponent = array2d(", show(Teams), ", ", show(Rounds), ", ", show(opponent), ");\n",
+    "venue = array2d(", show(Teams), ", ", show(Rounds), ", ", show(venue), ");\n",
+    "travel = array2d(", show(Teams), ", ", show(Travels), ", ", show(travel), ");\n",
+    "objective = ", show(objective), ";\n"
+];
