@@ -1,0 +1,578 @@
+MINION 3
+# AC-CSE-Times_number = 0
+# AC-CSE-Times_eliminated_expressions = 0
+# AC-CSE-Times_total_size = 0
+# AC-CSE-Xor_number = 0
+# AC-CSE-Xor_eliminated_expressions = 0
+# AC-CSE-Xor_total_size = 0
+# CSETopLevel_number = 0
+# CSETopLevel_eliminated_expressions = 0
+# CSETopLevel_total_size = 0
+# AC-CSE-Or_number = 0
+# AC-CSE-Or_eliminated_expressions = 0
+# AC-CSE-Or_total_size = 0
+# AC-CSE-And_number = 0
+# AC-CSE-And_eliminated_expressions = 0
+# AC-CSE-And_total_size = 0
+# AC-CSE-Sum_number = 27
+# AC-CSE-Sum_eliminated_expressions = 76
+# AC-CSE-Sum_total_size = 155
+# CSE_active_number = 26
+# CSE_active_eliminated_expressions = 52
+# CSE_active_total_size = 582
+**VARIABLES**
+DISCRETE AssignmentMatrix_00001_00001 #
+{0..1}
+DISCRETE AssignmentMatrix_00001_00002 #
+{0..1}
+DISCRETE AssignmentMatrix_00001_00003 #
+{0..1}
+DISCRETE AssignmentMatrix_00001_00004 #
+{0..1}
+DISCRETE AssignmentMatrix_00001_00005 #
+{0..1}
+DISCRETE AssignmentMatrix_00001_00006 #
+{0..1}
+DISCRETE AssignmentMatrix_00001_00007 #
+{0..1}
+DISCRETE AssignmentMatrix_00001_00008 #
+{0..1}
+DISCRETE AssignmentMatrix_00002_00001 #
+{0..1}
+DISCRETE AssignmentMatrix_00002_00002 #
+{0..1}
+DISCRETE AssignmentMatrix_00002_00003 #
+{0..1}
+DISCRETE AssignmentMatrix_00002_00004 #
+{0..1}
+DISCRETE AssignmentMatrix_00002_00005 #
+{0..1}
+DISCRETE AssignmentMatrix_00002_00006 #
+{0..1}
+DISCRETE AssignmentMatrix_00002_00007 #
+{0..1}
+DISCRETE AssignmentMatrix_00002_00008 #
+{0..1}
+DISCRETE AssignmentMatrix_00003_00001 #
+{0..1}
+DISCRETE AssignmentMatrix_00003_00002 #
+{0..1}
+DISCRETE AssignmentMatrix_00003_00003 #
+{0..1}
+DISCRETE AssignmentMatrix_00003_00004 #
+{0..1}
+DISCRETE AssignmentMatrix_00003_00005 #
+{0..1}
+DISCRETE AssignmentMatrix_00003_00006 #
+{0..1}
+DISCRETE AssignmentMatrix_00003_00007 #
+{0..1}
+DISCRETE AssignmentMatrix_00003_00008 #
+{0..1}
+DISCRETE AssignmentMatrix_00004_00001 #
+{0..1}
+DISCRETE AssignmentMatrix_00004_00002 #
+{0..1}
+DISCRETE AssignmentMatrix_00004_00003 #
+{0..1}
+DISCRETE AssignmentMatrix_00004_00004 #
+{0..1}
+DISCRETE AssignmentMatrix_00004_00005 #
+{0..1}
+DISCRETE AssignmentMatrix_00004_00006 #
+{0..1}
+DISCRETE AssignmentMatrix_00004_00007 #
+{0..1}
+DISCRETE AssignmentMatrix_00004_00008 #
+{0..1}
+DISCRETE AssignmentMatrix_00005_00001 #
+{0..1}
+DISCRETE AssignmentMatrix_00005_00002 #
+{0..1}
+DISCRETE AssignmentMatrix_00005_00003 #
+{0..1}
+DISCRETE AssignmentMatrix_00005_00004 #
+{0..1}
+DISCRETE AssignmentMatrix_00005_00005 #
+{0..1}
+DISCRETE AssignmentMatrix_00005_00006 #
+{0..1}
+DISCRETE AssignmentMatrix_00005_00007 #
+{0..1}
+DISCRETE AssignmentMatrix_00005_00008 #
+{0..1}
+DISCRETE VMType_00001 #
+{1..20}
+DISCRETE VMType_00002 #
+{1..20}
+DISCRETE VMType_00003 #
+{1..20}
+DISCRETE VMType_00004 #
+{1..20}
+DISCRETE VMType_00005 #
+{1..20}
+DISCRETE VMType_00006 #
+{1..20}
+DISCRETE VMType_00007 #
+{1..20}
+DISCRETE VMType_00008 #
+{1..20}
+DISCRETE CPU_00001 #
+{1..64}
+DISCRETE CPU_00002 #
+{1..64}
+DISCRETE CPU_00003 #
+{1..64}
+DISCRETE CPU_00004 #
+{1..64}
+DISCRETE CPU_00005 #
+{1..64}
+DISCRETE CPU_00006 #
+{1..64}
+DISCRETE CPU_00007 #
+{1..64}
+DISCRETE CPU_00008 #
+{1..64}
+BOUND Memory_00001 #
+{1700..976000}
+BOUND Memory_00002 #
+{1700..976000}
+BOUND Memory_00003 #
+{1700..976000}
+BOUND Memory_00004 #
+{1700..976000}
+BOUND Memory_00005 #
+{1700..976000}
+BOUND Memory_00006 #
+{1700..976000}
+BOUND Memory_00007 #
+{1700..976000}
+BOUND Memory_00008 #
+{1700..976000}
+BOUND Storage_00001 #
+{1000..24000}
+BOUND Storage_00002 #
+{1000..24000}
+BOUND Storage_00003 #
+{1000..24000}
+BOUND Storage_00004 #
+{1000..24000}
+BOUND Storage_00005 #
+{1000..24000}
+BOUND Storage_00006 #
+{1000..24000}
+BOUND Storage_00007 #
+{1000..24000}
+BOUND Storage_00008 #
+{1000..24000}
+BOUND Price_00001 #
+{0..16000}
+BOUND Price_00002 #
+{0..16000}
+BOUND Price_00003 #
+{0..16000}
+BOUND Price_00004 #
+{0..16000}
+BOUND Price_00005 #
+{0..16000}
+BOUND Price_00006 #
+{0..16000}
+BOUND Price_00007 #
+{0..16000}
+BOUND Price_00008 #
+{0..16000}
+BOUND aux0 #(Price_00001 + Price_00002 + Price_00003 + Price_00004 + Price_00005 + Price_00006 + Price_00007 + Price_00008)
+{0..128000}
+DISCRETE aux1 #AC-CSE-Generic-+: 5 occurrences of: (AssignmentMatrix_00003_00001 + AssignmentMatrix_00003_00002 + AssignmentMatrix_00003_00003 + AssignmentMatrix_00003_00004 + AssignmentMatrix_00003_00005 + AssignmentMatrix_00003_00006 + AssignmentMatrix_00003_00007 + AssignmentMatrix_00003_00008)
+{0..1}
+DISCRETE aux2 #AC-CSE-Generic-+: 4 occurrences of: (AssignmentMatrix_00004_00001 + AssignmentMatrix_00004_00002 + AssignmentMatrix_00004_00003 + AssignmentMatrix_00004_00004 + AssignmentMatrix_00004_00005 + AssignmentMatrix_00004_00006 + AssignmentMatrix_00004_00007 + AssignmentMatrix_00004_00008)
+{0..8}
+DISCRETE aux3 #AC-CSE-Generic-+: 3 occurrences of: (AssignmentMatrix_00003_00001 + AssignmentMatrix_00005_00001)
+{0..1}
+DISCRETE aux4 #AC-CSE-Generic-+: 3 occurrences of: (AssignmentMatrix_00004_00001 + AssignmentMatrix_00001_00001)
+{0..1}
+DISCRETE aux5 #AC-CSE-Generic-+: 3 occurrences of: (AssignmentMatrix_00003_00002 + AssignmentMatrix_00005_00002)
+{0..1}
+DISCRETE aux6 #AC-CSE-Generic-+: 3 occurrences of: (AssignmentMatrix_00004_00002 + AssignmentMatrix_00001_00002)
+{0..1}
+DISCRETE aux7 #AC-CSE-Generic-+: 3 occurrences of: (AssignmentMatrix_00003_00003 + AssignmentMatrix_00005_00003)
+{0..1}
+DISCRETE aux8 #AC-CSE-Generic-+: 3 occurrences of: (AssignmentMatrix_00004_00003 + AssignmentMatrix_00001_00003)
+{0..1}
+DISCRETE aux9 #AC-CSE-Generic-+: 3 occurrences of: (AssignmentMatrix_00003_00004 + AssignmentMatrix_00005_00004)
+{0..1}
+DISCRETE aux10 #AC-CSE-Generic-+: 3 occurrences of: (AssignmentMatrix_00004_00004 + AssignmentMatrix_00001_00004)
+{0..1}
+DISCRETE aux11 #AC-CSE-Generic-+: 3 occurrences of: (AssignmentMatrix_00003_00005 + AssignmentMatrix_00005_00005)
+{0..1}
+DISCRETE aux12 #AC-CSE-Generic-+: 3 occurrences of: (AssignmentMatrix_00004_00005 + AssignmentMatrix_00001_00005)
+{0..1}
+DISCRETE aux13 #AC-CSE-Generic-+: 3 occurrences of: (AssignmentMatrix_00003_00006 + AssignmentMatrix_00005_00006)
+{0..1}
+DISCRETE aux14 #AC-CSE-Generic-+: 3 occurrences of: (AssignmentMatrix_00004_00006 + AssignmentMatrix_00001_00006)
+{0..1}
+DISCRETE aux15 #AC-CSE-Generic-+: 3 occurrences of: (AssignmentMatrix_00003_00007 + AssignmentMatrix_00005_00007)
+{0..1}
+DISCRETE aux16 #AC-CSE-Generic-+: 3 occurrences of: (AssignmentMatrix_00004_00007 + AssignmentMatrix_00001_00007)
+{0..1}
+DISCRETE aux17 #AC-CSE-Generic-+: 3 occurrences of: (AssignmentMatrix_00003_00008 + AssignmentMatrix_00005_00008)
+{0..1}
+DISCRETE aux18 #AC-CSE-Generic-+: 3 occurrences of: (AssignmentMatrix_00004_00008 + AssignmentMatrix_00001_00008)
+{0..1}
+DISCRETE aux19 #AC-CSE-Generic-+: 3 occurrences of: (AssignmentMatrix_00001_00008 + AssignmentMatrix_00001_00007 + AssignmentMatrix_00001_00006 + AssignmentMatrix_00001_00005 + AssignmentMatrix_00001_00004 + AssignmentMatrix_00001_00003 + AssignmentMatrix_00001_00002 + AssignmentMatrix_00001_00001)
+{3..8}
+DISCRETE aux20 #AC-CSE-Generic-+: 2 occurrences of: (AssignmentMatrix_00002_00001 + aux3 + aux4)
+{0..3}
+DISCRETE aux21 #AC-CSE-Generic-+: 2 occurrences of: (AssignmentMatrix_00002_00002 + aux5 + aux6)
+{0..3}
+DISCRETE aux22 #AC-CSE-Generic-+: 2 occurrences of: (AssignmentMatrix_00002_00003 + aux7 + aux8)
+{0..3}
+DISCRETE aux23 #AC-CSE-Generic-+: 2 occurrences of: (AssignmentMatrix_00002_00004 + aux9 + aux10)
+{0..3}
+DISCRETE aux24 #AC-CSE-Generic-+: 2 occurrences of: (AssignmentMatrix_00002_00005 + aux11 + aux12)
+{0..3}
+DISCRETE aux25 #AC-CSE-Generic-+: 2 occurrences of: (AssignmentMatrix_00002_00006 + aux13 + aux14)
+{0..3}
+DISCRETE aux26 #AC-CSE-Generic-+: 2 occurrences of: (AssignmentMatrix_00002_00007 + aux15 + aux16)
+{0..3}
+DISCRETE aux27 #AC-CSE-Generic-+: 2 occurrences of: (AssignmentMatrix_00002_00008 + aux17 + aux18)
+{0..3}
+BOUND aux28 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([1000, 8000, 1000, 2000, 4000, 2000, 2000, 24000, 1000, 6000, 2000, 2000, 2000, 3000, 1000, 1000, 2000, 1000, 1000, 1000], VMType_00001)
+{1000..24000}
+**CONSTRAINTS**
+w-inintervalset(aux28, [1000,1000,2000,2000,3000,3000,4000,4000,6000,6000,8000,8000,24000,24000])
+**VARIABLES**
+BOUND aux29 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([1000, 8000, 1000, 2000, 4000, 2000, 2000, 24000, 1000, 6000, 2000, 2000, 2000, 3000, 1000, 1000, 2000, 1000, 1000, 1000], VMType_00003)
+{1000..24000}
+**CONSTRAINTS**
+w-inintervalset(aux29, [1000,1000,2000,2000,3000,3000,4000,4000,6000,6000,8000,8000,24000,24000])
+**VARIABLES**
+BOUND aux30 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([1000, 8000, 1000, 2000, 4000, 2000, 2000, 24000, 1000, 6000, 2000, 2000, 2000, 3000, 1000, 1000, 2000, 1000, 1000, 1000], VMType_00002)
+{1000..24000}
+**CONSTRAINTS**
+w-inintervalset(aux30, [1000,1000,2000,2000,3000,3000,4000,4000,6000,6000,8000,8000,24000,24000])
+**VARIABLES**
+BOUND aux31 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([1000, 8000, 1000, 2000, 4000, 2000, 2000, 24000, 1000, 6000, 2000, 2000, 2000, 3000, 1000, 1000, 2000, 1000, 1000, 1000], VMType_00005)
+{1000..24000}
+**CONSTRAINTS**
+w-inintervalset(aux31, [1000,1000,2000,2000,3000,3000,4000,4000,6000,6000,8000,8000,24000,24000])
+**VARIABLES**
+BOUND aux32 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([1000, 8000, 1000, 2000, 4000, 2000, 2000, 24000, 1000, 6000, 2000, 2000, 2000, 3000, 1000, 1000, 2000, 1000, 1000, 1000], VMType_00004)
+{1000..24000}
+**CONSTRAINTS**
+w-inintervalset(aux32, [1000,1000,2000,2000,3000,3000,4000,4000,6000,6000,8000,8000,24000,24000])
+**VARIABLES**
+BOUND aux33 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([1000, 8000, 1000, 2000, 4000, 2000, 2000, 24000, 1000, 6000, 2000, 2000, 2000, 3000, 1000, 1000, 2000, 1000, 1000, 1000], VMType_00007)
+{1000..24000}
+**CONSTRAINTS**
+w-inintervalset(aux33, [1000,1000,2000,2000,3000,3000,4000,4000,6000,6000,8000,8000,24000,24000])
+**VARIABLES**
+BOUND aux34 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([1000, 8000, 1000, 2000, 4000, 2000, 2000, 24000, 1000, 6000, 2000, 2000, 2000, 3000, 1000, 1000, 2000, 1000, 1000, 1000], VMType_00006)
+{1000..24000}
+**CONSTRAINTS**
+w-inintervalset(aux34, [1000,1000,2000,2000,3000,3000,4000,4000,6000,6000,8000,8000,24000,24000])
+**VARIABLES**
+BOUND aux35 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([1000, 8000, 1000, 2000, 4000, 2000, 2000, 24000, 1000, 6000, 2000, 2000, 2000, 3000, 1000, 1000, 2000, 1000, 1000, 1000], VMType_00008)
+{1000..24000}
+**CONSTRAINTS**
+w-inintervalset(aux35, [1000,1000,2000,2000,3000,3000,4000,4000,6000,6000,8000,8000,24000,24000])
+**VARIABLES**
+DISCRETE aux36 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([64, 64, 64, 32, 32, 16, 16, 17, 16, 8, 8, 8, 4, 4, 4, 2, 2, 1, 1, 1], VMType_00008)
+{1..64}
+**CONSTRAINTS**
+w-inintervalset(aux36, [1,2,4,4,8,8,16,17,32,32,64,64])
+**VARIABLES**
+DISCRETE aux37 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([64, 64, 64, 32, 32, 16, 16, 17, 16, 8, 8, 8, 4, 4, 4, 2, 2, 1, 1, 1], VMType_00007)
+{1..64}
+**CONSTRAINTS**
+w-inintervalset(aux37, [1,2,4,4,8,8,16,17,32,32,64,64])
+**VARIABLES**
+DISCRETE aux38 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([64, 64, 64, 32, 32, 16, 16, 17, 16, 8, 8, 8, 4, 4, 4, 2, 2, 1, 1, 1], VMType_00006)
+{1..64}
+**CONSTRAINTS**
+w-inintervalset(aux38, [1,2,4,4,8,8,16,17,32,32,64,64])
+**VARIABLES**
+DISCRETE aux39 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([64, 64, 64, 32, 32, 16, 16, 17, 16, 8, 8, 8, 4, 4, 4, 2, 2, 1, 1, 1], VMType_00005)
+{1..64}
+**CONSTRAINTS**
+w-inintervalset(aux39, [1,2,4,4,8,8,16,17,32,32,64,64])
+**VARIABLES**
+DISCRETE aux40 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([64, 64, 64, 32, 32, 16, 16, 17, 16, 8, 8, 8, 4, 4, 4, 2, 2, 1, 1, 1], VMType_00004)
+{1..64}
+**CONSTRAINTS**
+w-inintervalset(aux40, [1,2,4,4,8,8,16,17,32,32,64,64])
+**VARIABLES**
+DISCRETE aux41 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([64, 64, 64, 32, 32, 16, 16, 17, 16, 8, 8, 8, 4, 4, 4, 2, 2, 1, 1, 1], VMType_00003)
+{1..64}
+**CONSTRAINTS**
+w-inintervalset(aux41, [1,2,4,4,8,8,16,17,32,32,64,64])
+**VARIABLES**
+DISCRETE aux42 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([64, 64, 64, 32, 32, 16, 16, 17, 16, 8, 8, 8, 4, 4, 4, 2, 2, 1, 1, 1], VMType_00002)
+{1..64}
+**CONSTRAINTS**
+w-inintervalset(aux42, [1,2,4,4,8,8,16,17,32,32,64,64])
+**VARIABLES**
+DISCRETE aux43 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([64, 64, 64, 32, 32, 16, 16, 17, 16, 8, 8, 8, 4, 4, 4, 2, 2, 1, 1, 1], VMType_00001)
+{1..64}
+**CONSTRAINTS**
+w-inintervalset(aux43, [1,2,4,4,8,8,16,17,32,32,64,64])
+**VARIABLES**
+BOUND aux44 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([976000, 488000, 1952, 244000, 244000, 122000, 30000, 117000, 122000, 61000, 68400, 68400, 15000, 30500, 30500, 7500, 3750, 1700, 3750, 3750], VMType_00008)
+{1700..976000}
+**CONSTRAINTS**
+w-inintervalset(aux44, [1700,1700,1952,1952,3750,3750,7500,7500,15000,15000,30000,30000,30500,30500,61000,61000,68400,68400,117000,117000,122000,122000,244000,244000,488000,488000,976000,976000])
+**VARIABLES**
+BOUND aux45 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([976000, 488000, 1952, 244000, 244000, 122000, 30000, 117000, 122000, 61000, 68400, 68400, 15000, 30500, 30500, 7500, 3750, 1700, 3750, 3750], VMType_00007)
+{1700..976000}
+**CONSTRAINTS**
+w-inintervalset(aux45, [1700,1700,1952,1952,3750,3750,7500,7500,15000,15000,30000,30000,30500,30500,61000,61000,68400,68400,117000,117000,122000,122000,244000,244000,488000,488000,976000,976000])
+**VARIABLES**
+BOUND aux46 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([976000, 488000, 1952, 244000, 244000, 122000, 30000, 117000, 122000, 61000, 68400, 68400, 15000, 30500, 30500, 7500, 3750, 1700, 3750, 3750], VMType_00006)
+{1700..976000}
+**CONSTRAINTS**
+w-inintervalset(aux46, [1700,1700,1952,1952,3750,3750,7500,7500,15000,15000,30000,30000,30500,30500,61000,61000,68400,68400,117000,117000,122000,122000,244000,244000,488000,488000,976000,976000])
+**VARIABLES**
+BOUND aux47 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([976000, 488000, 1952, 244000, 244000, 122000, 30000, 117000, 122000, 61000, 68400, 68400, 15000, 30500, 30500, 7500, 3750, 1700, 3750, 3750], VMType_00005)
+{1700..976000}
+**CONSTRAINTS**
+w-inintervalset(aux47, [1700,1700,1952,1952,3750,3750,7500,7500,15000,15000,30000,30000,30500,30500,61000,61000,68400,68400,117000,117000,122000,122000,244000,244000,488000,488000,976000,976000])
+**VARIABLES**
+BOUND aux48 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([976000, 488000, 1952, 244000, 244000, 122000, 30000, 117000, 122000, 61000, 68400, 68400, 15000, 30500, 30500, 7500, 3750, 1700, 3750, 3750], VMType_00004)
+{1700..976000}
+**CONSTRAINTS**
+w-inintervalset(aux48, [1700,1700,1952,1952,3750,3750,7500,7500,15000,15000,30000,30000,30500,30500,61000,61000,68400,68400,117000,117000,122000,122000,244000,244000,488000,488000,976000,976000])
+**VARIABLES**
+BOUND aux49 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([976000, 488000, 1952, 244000, 244000, 122000, 30000, 117000, 122000, 61000, 68400, 68400, 15000, 30500, 30500, 7500, 3750, 1700, 3750, 3750], VMType_00003)
+{1700..976000}
+**CONSTRAINTS**
+w-inintervalset(aux49, [1700,1700,1952,1952,3750,3750,7500,7500,15000,15000,30000,30000,30500,30500,61000,61000,68400,68400,117000,117000,122000,122000,244000,244000,488000,488000,976000,976000])
+**VARIABLES**
+BOUND aux50 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([976000, 488000, 1952, 244000, 244000, 122000, 30000, 117000, 122000, 61000, 68400, 68400, 15000, 30500, 30500, 7500, 3750, 1700, 3750, 3750], VMType_00002)
+{1700..976000}
+**CONSTRAINTS**
+w-inintervalset(aux50, [1700,1700,1952,1952,3750,3750,7500,7500,15000,15000,30000,30000,30500,30500,61000,61000,68400,68400,117000,117000,122000,122000,244000,244000,488000,488000,976000,976000])
+**VARIABLES**
+BOUND aux51 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([976000, 488000, 1952, 244000, 244000, 122000, 30000, 117000, 122000, 61000, 68400, 68400, 15000, 30500, 30500, 7500, 3750, 1700, 3750, 3750], VMType_00001)
+{1700..976000}
+**CONSTRAINTS**
+w-inintervalset(aux51, [1700,1700,1952,1952,3750,3750,7500,7500,15000,15000,30000,30000,30500,30500,61000,61000,68400,68400,117000,117000,122000,122000,244000,244000,488000,488000,976000,976000])
+**VARIABLES**
+BOOL aux52 #Active-CSE: 2 occurrences of this expression or equivalent: (aux1<=0)
+BOOL aux53 #Active-CSE: 2 occurrences of this expression or equivalent: (aux2<=0)
+**TUPLELIST**
+CompREQ 5 3
+2 512 1000 
+2 512 2000 
+4 2048 500 
+4 2048 500 
+4 4000 500 
+**VARIABLES**
+ALIAS CompREQ[5,3]=[[2, 512, 1000], [2, 512, 2000], [4, 2048, 500], [4, 2048, 500], [4, 4000, 500]]
+**TUPLELIST**
+VMSpecs 20 3
+64 976000 1000 
+64 488000 8000 
+64 1952 1000 
+32 244000 2000 
+32 244000 4000 
+16 122000 2000 
+16 30000 2000 
+17 117000 24000 
+16 122000 1000 
+8 61000 6000 
+8 68400 2000 
+8 68400 2000 
+4 15000 2000 
+4 30500 3000 
+4 30500 1000 
+2 7500 1000 
+2 3750 2000 
+1 1700 1000 
+1 3750 1000 
+1 3750 1000 
+**VARIABLES**
+ALIAS VMSpecs[20,3]=[[64, 976000, 1000], [64, 488000, 8000], [64, 1952, 1000], [32, 244000, 2000], [32, 244000, 4000], [16, 122000, 2000], [16, 30000, 2000], [17, 117000, 24000], [16, 122000, 1000], [8, 61000, 6000], [8, 68400, 2000], [8, 68400, 2000], [4, 15000, 2000], [4, 30500, 3000], [4, 30500, 1000], [2, 7500, 1000], [2, 3750, 2000], [1, 1700, 1000], [1, 3750, 1000], [1, 3750, 1000]]
+**VARIABLES**
+ALIAS VMPrice[20]=[8403, 9152, 16000, 4105, 4576, 1373, 1430, 5400, 3079, 1470, 1301, 1288, 402, 827, 379, 146, 128, 58, 93, 98]
+**SEARCH**
+PRINT[[AssignmentMatrix_00001_00001],[AssignmentMatrix_00001_00002],[AssignmentMatrix_00001_00003],[AssignmentMatrix_00001_00004],[AssignmentMatrix_00001_00005],[AssignmentMatrix_00001_00006],[AssignmentMatrix_00001_00007],[AssignmentMatrix_00001_00008],[AssignmentMatrix_00002_00001],[AssignmentMatrix_00002_00002],[AssignmentMatrix_00002_00003],[AssignmentMatrix_00002_00004],[AssignmentMatrix_00002_00005],[AssignmentMatrix_00002_00006],[AssignmentMatrix_00002_00007],[AssignmentMatrix_00002_00008],[AssignmentMatrix_00003_00001],[AssignmentMatrix_00003_00002],[AssignmentMatrix_00003_00003],[AssignmentMatrix_00003_00004],[AssignmentMatrix_00003_00005],[AssignmentMatrix_00003_00006],[AssignmentMatrix_00003_00007],[AssignmentMatrix_00003_00008],[AssignmentMatrix_00004_00001],[AssignmentMatrix_00004_00002],[AssignmentMatrix_00004_00003],[AssignmentMatrix_00004_00004],[AssignmentMatrix_00004_00005],[AssignmentMatrix_00004_00006],[AssignmentMatrix_00004_00007],[AssignmentMatrix_00004_00008],[AssignmentMatrix_00005_00001],[AssignmentMatrix_00005_00002],[AssignmentMatrix_00005_00003],[AssignmentMatrix_00005_00004],[AssignmentMatrix_00005_00005],[AssignmentMatrix_00005_00006],[AssignmentMatrix_00005_00007],[AssignmentMatrix_00005_00008],[VMType_00001],[VMType_00002],[VMType_00003],[VMType_00004],[VMType_00005],[VMType_00006],[VMType_00007],[VMType_00008],[CPU_00001],[CPU_00002],[CPU_00003],[CPU_00004],[CPU_00005],[CPU_00006],[CPU_00007],[CPU_00008],[Memory_00001],[Memory_00002],[Memory_00003],[Memory_00004],[Memory_00005],[Memory_00006],[Memory_00007],[Memory_00008],[Storage_00001],[Storage_00002],[Storage_00003],[Storage_00004],[Storage_00005],[Storage_00006],[Storage_00007],[Storage_00008],[Price_00001],[Price_00002],[Price_00003],[Price_00004],[Price_00005],[Price_00006],[Price_00007],[Price_00008],[aux0]]
+MINIMISING aux0
+**CONSTRAINTS**
+element_one([1000, 8000, 1000, 2000, 4000, 2000, 2000, 24000, 1000, 6000, 2000, 2000, 2000, 3000, 1000, 1000, 2000, 1000, 1000, 1000], VMType_00001, aux28)
+element_one([1000, 8000, 1000, 2000, 4000, 2000, 2000, 24000, 1000, 6000, 2000, 2000, 2000, 3000, 1000, 1000, 2000, 1000, 1000, 1000], VMType_00003, aux29)
+element_one([1000, 8000, 1000, 2000, 4000, 2000, 2000, 24000, 1000, 6000, 2000, 2000, 2000, 3000, 1000, 1000, 2000, 1000, 1000, 1000], VMType_00002, aux30)
+element_one([1000, 8000, 1000, 2000, 4000, 2000, 2000, 24000, 1000, 6000, 2000, 2000, 2000, 3000, 1000, 1000, 2000, 1000, 1000, 1000], VMType_00005, aux31)
+element_one([1000, 8000, 1000, 2000, 4000, 2000, 2000, 24000, 1000, 6000, 2000, 2000, 2000, 3000, 1000, 1000, 2000, 1000, 1000, 1000], VMType_00004, aux32)
+element_one([1000, 8000, 1000, 2000, 4000, 2000, 2000, 24000, 1000, 6000, 2000, 2000, 2000, 3000, 1000, 1000, 2000, 1000, 1000, 1000], VMType_00007, aux33)
+element_one([1000, 8000, 1000, 2000, 4000, 2000, 2000, 24000, 1000, 6000, 2000, 2000, 2000, 3000, 1000, 1000, 2000, 1000, 1000, 1000], VMType_00006, aux34)
+element_one([1000, 8000, 1000, 2000, 4000, 2000, 2000, 24000, 1000, 6000, 2000, 2000, 2000, 3000, 1000, 1000, 2000, 1000, 1000, 1000], VMType_00008, aux35)
+watchelement_one([64, 64, 64, 32, 32, 16, 16, 17, 16, 8, 8, 8, 4, 4, 4, 2, 2, 1, 1, 1], VMType_00008, aux36)
+watchelement_one([64, 64, 64, 32, 32, 16, 16, 17, 16, 8, 8, 8, 4, 4, 4, 2, 2, 1, 1, 1], VMType_00007, aux37)
+watchelement_one([64, 64, 64, 32, 32, 16, 16, 17, 16, 8, 8, 8, 4, 4, 4, 2, 2, 1, 1, 1], VMType_00006, aux38)
+watchelement_one([64, 64, 64, 32, 32, 16, 16, 17, 16, 8, 8, 8, 4, 4, 4, 2, 2, 1, 1, 1], VMType_00005, aux39)
+watchelement_one([64, 64, 64, 32, 32, 16, 16, 17, 16, 8, 8, 8, 4, 4, 4, 2, 2, 1, 1, 1], VMType_00004, aux40)
+watchelement_one([64, 64, 64, 32, 32, 16, 16, 17, 16, 8, 8, 8, 4, 4, 4, 2, 2, 1, 1, 1], VMType_00003, aux41)
+watchelement_one([64, 64, 64, 32, 32, 16, 16, 17, 16, 8, 8, 8, 4, 4, 4, 2, 2, 1, 1, 1], VMType_00002, aux42)
+watchelement_one([64, 64, 64, 32, 32, 16, 16, 17, 16, 8, 8, 8, 4, 4, 4, 2, 2, 1, 1, 1], VMType_00001, aux43)
+element_one([976000, 488000, 1952, 244000, 244000, 122000, 30000, 117000, 122000, 61000, 68400, 68400, 15000, 30500, 30500, 7500, 3750, 1700, 3750, 3750], VMType_00008, aux44)
+element_one([976000, 488000, 1952, 244000, 244000, 122000, 30000, 117000, 122000, 61000, 68400, 68400, 15000, 30500, 30500, 7500, 3750, 1700, 3750, 3750], VMType_00007, aux45)
+element_one([976000, 488000, 1952, 244000, 244000, 122000, 30000, 117000, 122000, 61000, 68400, 68400, 15000, 30500, 30500, 7500, 3750, 1700, 3750, 3750], VMType_00006, aux46)
+element_one([976000, 488000, 1952, 244000, 244000, 122000, 30000, 117000, 122000, 61000, 68400, 68400, 15000, 30500, 30500, 7500, 3750, 1700, 3750, 3750], VMType_00005, aux47)
+element_one([976000, 488000, 1952, 244000, 244000, 122000, 30000, 117000, 122000, 61000, 68400, 68400, 15000, 30500, 30500, 7500, 3750, 1700, 3750, 3750], VMType_00004, aux48)
+element_one([976000, 488000, 1952, 244000, 244000, 122000, 30000, 117000, 122000, 61000, 68400, 68400, 15000, 30500, 30500, 7500, 3750, 1700, 3750, 3750], VMType_00003, aux49)
+element_one([976000, 488000, 1952, 244000, 244000, 122000, 30000, 117000, 122000, 61000, 68400, 68400, 15000, 30500, 30500, 7500, 3750, 1700, 3750, 3750], VMType_00002, aux50)
+element_one([976000, 488000, 1952, 244000, 244000, 122000, 30000, 117000, 122000, 61000, 68400, 68400, 15000, 30500, 30500, 7500, 3750, 1700, 3750, 3750], VMType_00001, aux51)
+reify(ineq(aux1, 0, 0), aux52)
+reify(ineq(aux2, 0, 0), aux53)
+sumgeq([AssignmentMatrix_00005_00001,AssignmentMatrix_00005_00002,AssignmentMatrix_00005_00003,AssignmentMatrix_00005_00004,AssignmentMatrix_00005_00005,AssignmentMatrix_00005_00006,AssignmentMatrix_00005_00007,AssignmentMatrix_00005_00008],2)
+watched-or({w-literal(VMType_00001,1),diseq(0,aux20)})
+watched-or({w-literal(VMType_00002,1),diseq(0,aux21)})
+watched-or({w-literal(VMType_00003,1),diseq(0,aux22)})
+watched-or({w-literal(VMType_00004,1),diseq(0,aux23)})
+watched-or({w-literal(VMType_00005,1),diseq(0,aux24)})
+watched-or({w-literal(VMType_00006,1),diseq(0,aux25)})
+watched-or({w-literal(VMType_00007,1),diseq(0,aux26)})
+watched-or({w-literal(VMType_00008,1),diseq(0,aux27)})
+weightedsumleq([2048,2048,4000,512,512],[AssignmentMatrix_00003_00001,AssignmentMatrix_00004_00001,AssignmentMatrix_00005_00001,AssignmentMatrix_00001_00001,AssignmentMatrix_00002_00001],aux51)
+weightedsumleq([2048,2048,4000,512,512],[AssignmentMatrix_00003_00002,AssignmentMatrix_00004_00002,AssignmentMatrix_00005_00002,AssignmentMatrix_00001_00002,AssignmentMatrix_00002_00002],aux50)
+sumleq([AssignmentMatrix_00004_00001,AssignmentMatrix_00002_00001],1)
+sumleq([AssignmentMatrix_00004_00002,AssignmentMatrix_00002_00002],1)
+sumleq([AssignmentMatrix_00004_00003,AssignmentMatrix_00002_00003],1)
+sumleq([AssignmentMatrix_00004_00004,AssignmentMatrix_00002_00004],1)
+sumleq([AssignmentMatrix_00004_00005,AssignmentMatrix_00002_00005],1)
+sumleq([AssignmentMatrix_00004_00006,AssignmentMatrix_00002_00006],1)
+sumleq([AssignmentMatrix_00004_00007,AssignmentMatrix_00002_00007],1)
+sumleq([AssignmentMatrix_00004_00008,AssignmentMatrix_00002_00008],1)
+weightedsumleq([2048,2048,4000,512,512],[AssignmentMatrix_00003_00003,AssignmentMatrix_00004_00003,AssignmentMatrix_00005_00003,AssignmentMatrix_00001_00003,AssignmentMatrix_00002_00003],aux49)
+weightedsumleq([2048,2048,4000,512,512],[AssignmentMatrix_00003_00004,AssignmentMatrix_00004_00004,AssignmentMatrix_00005_00004,AssignmentMatrix_00001_00004,AssignmentMatrix_00002_00004],aux48)
+sumleq([AssignmentMatrix_00003_00001,AssignmentMatrix_00001_00001],1)
+sumleq([AssignmentMatrix_00003_00002,AssignmentMatrix_00001_00002],1)
+sumleq([AssignmentMatrix_00003_00003,AssignmentMatrix_00001_00003],1)
+sumleq([AssignmentMatrix_00003_00004,AssignmentMatrix_00001_00004],1)
+sumleq([AssignmentMatrix_00003_00005,AssignmentMatrix_00001_00005],1)
+sumleq([AssignmentMatrix_00003_00006,AssignmentMatrix_00001_00006],1)
+sumleq([AssignmentMatrix_00003_00007,AssignmentMatrix_00001_00007],1)
+sumleq([AssignmentMatrix_00003_00008,AssignmentMatrix_00001_00008],1)
+weightedsumleq([2048,2048,4000,512,512],[AssignmentMatrix_00003_00005,AssignmentMatrix_00004_00005,AssignmentMatrix_00005_00005,AssignmentMatrix_00001_00005,AssignmentMatrix_00002_00005],aux47)
+weightedsumleq([2048,2048,4000,512,512],[AssignmentMatrix_00003_00006,AssignmentMatrix_00004_00006,AssignmentMatrix_00005_00006,AssignmentMatrix_00001_00006,AssignmentMatrix_00002_00006],aux46)
+weightedsumleq([2048,2048,4000,512,512],[AssignmentMatrix_00003_00007,AssignmentMatrix_00004_00007,AssignmentMatrix_00005_00007,AssignmentMatrix_00001_00007,AssignmentMatrix_00002_00007],aux45)
+weightedsumleq([2048,2048,4000,512,512],[AssignmentMatrix_00003_00008,AssignmentMatrix_00004_00008,AssignmentMatrix_00005_00008,AssignmentMatrix_00001_00008,AssignmentMatrix_00002_00008],aux44)
+sumgeq([AssignmentMatrix_00002_00001,AssignmentMatrix_00002_00002,AssignmentMatrix_00002_00003,AssignmentMatrix_00002_00004,AssignmentMatrix_00002_00005,AssignmentMatrix_00002_00006,AssignmentMatrix_00002_00007,AssignmentMatrix_00002_00008],2)
+watched-or({w-literal(aux2,0),w-literal(aux52,1)})
+watched-or({w-literal(aux1,0),w-literal(aux53,1)})
+sumleq([AssignmentMatrix_00004_00001,AssignmentMatrix_00005_00001],1)
+sumleq([AssignmentMatrix_00004_00002,AssignmentMatrix_00005_00002],1)
+sumleq([AssignmentMatrix_00004_00003,AssignmentMatrix_00005_00003],1)
+sumleq([AssignmentMatrix_00004_00004,AssignmentMatrix_00005_00004],1)
+sumleq([AssignmentMatrix_00004_00005,AssignmentMatrix_00005_00005],1)
+sumleq([AssignmentMatrix_00004_00006,AssignmentMatrix_00005_00006],1)
+sumleq([AssignmentMatrix_00004_00007,AssignmentMatrix_00005_00007],1)
+sumleq([AssignmentMatrix_00004_00008,AssignmentMatrix_00005_00008],1)
+weightedsumleq([2,2,2,2,2,2,2,2,-3,-3,-3,-3,-3,-3,-3,-3],[AssignmentMatrix_00001_00001,AssignmentMatrix_00001_00002,AssignmentMatrix_00001_00003,AssignmentMatrix_00001_00004,AssignmentMatrix_00001_00005,AssignmentMatrix_00001_00006,AssignmentMatrix_00001_00007,AssignmentMatrix_00001_00008,AssignmentMatrix_00002_00001,AssignmentMatrix_00002_00002,AssignmentMatrix_00002_00003,AssignmentMatrix_00002_00004,AssignmentMatrix_00002_00005,AssignmentMatrix_00002_00006,AssignmentMatrix_00002_00007,AssignmentMatrix_00002_00008],0)
+watched-or({ineq(aux20, 0, 0),watched-and({gaceq(aux43,CPU_00001),element_one([8403, 9152, 16000, 4105, 4576, 1373, 1430, 5400, 3079, 1470, 1301, 1288, 402, 827, 379, 146, 128, 58, 93, 98], VMType_00001, Price_00001),eq(aux51,Memory_00001),eq(Storage_00001,aux28)})})
+watched-or({ineq(aux21, 0, 0),watched-and({gaceq(aux42,CPU_00002),element_one([8403, 9152, 16000, 4105, 4576, 1373, 1430, 5400, 3079, 1470, 1301, 1288, 402, 827, 379, 146, 128, 58, 93, 98], VMType_00002, Price_00002),eq(aux50,Memory_00002),eq(Storage_00002,aux30)})})
+watched-or({ineq(aux22, 0, 0),watched-and({gaceq(aux41,CPU_00003),element_one([8403, 9152, 16000, 4105, 4576, 1373, 1430, 5400, 3079, 1470, 1301, 1288, 402, 827, 379, 146, 128, 58, 93, 98], VMType_00003, Price_00003),eq(aux49,Memory_00003),eq(Storage_00003,aux29)})})
+watched-or({ineq(aux23, 0, 0),watched-and({gaceq(aux40,CPU_00004),element_one([8403, 9152, 16000, 4105, 4576, 1373, 1430, 5400, 3079, 1470, 1301, 1288, 402, 827, 379, 146, 128, 58, 93, 98], VMType_00004, Price_00004),eq(aux48,Memory_00004),eq(Storage_00004,aux32)})})
+watched-or({ineq(aux24, 0, 0),watched-and({gaceq(aux39,CPU_00005),element_one([8403, 9152, 16000, 4105, 4576, 1373, 1430, 5400, 3079, 1470, 1301, 1288, 402, 827, 379, 146, 128, 58, 93, 98], VMType_00005, Price_00005),eq(aux47,Memory_00005),eq(Storage_00005,aux31)})})
+watched-or({ineq(aux25, 0, 0),watched-and({gaceq(aux38,CPU_00006),element_one([8403, 9152, 16000, 4105, 4576, 1373, 1430, 5400, 3079, 1470, 1301, 1288, 402, 827, 379, 146, 128, 58, 93, 98], VMType_00006, Price_00006),eq(aux46,Memory_00006),eq(Storage_00006,aux34)})})
+watched-or({ineq(aux26, 0, 0),watched-and({gaceq(aux37,CPU_00007),element_one([8403, 9152, 16000, 4105, 4576, 1373, 1430, 5400, 3079, 1470, 1301, 1288, 402, 827, 379, 146, 128, 58, 93, 98], VMType_00007, Price_00007),eq(aux45,Memory_00007),eq(Storage_00007,aux33)})})
+watched-or({ineq(aux27, 0, 0),watched-and({gaceq(aux36,CPU_00008),element_one([8403, 9152, 16000, 4105, 4576, 1373, 1430, 5400, 3079, 1470, 1301, 1288, 402, 827, 379, 146, 128, 58, 93, 98], VMType_00008, Price_00008),eq(aux44,Memory_00008),eq(Storage_00008,aux35)})})
+sumleq([AssignmentMatrix_00003_00001,AssignmentMatrix_00002_00001],1)
+sumleq([AssignmentMatrix_00003_00002,AssignmentMatrix_00002_00002],1)
+sumleq([AssignmentMatrix_00003_00003,AssignmentMatrix_00002_00003],1)
+sumleq([AssignmentMatrix_00003_00004,AssignmentMatrix_00002_00004],1)
+sumleq([AssignmentMatrix_00003_00005,AssignmentMatrix_00002_00005],1)
+sumleq([AssignmentMatrix_00003_00006,AssignmentMatrix_00002_00006],1)
+sumleq([AssignmentMatrix_00003_00007,AssignmentMatrix_00002_00007],1)
+sumleq([AssignmentMatrix_00003_00008,AssignmentMatrix_00002_00008],1)
+watched-or({weightedsumleq([-3,-3,-3,-3,-3,-3,-3,-3,1],[AssignmentMatrix_00004_00001,AssignmentMatrix_00004_00002,AssignmentMatrix_00004_00003,AssignmentMatrix_00004_00004,AssignmentMatrix_00004_00005,AssignmentMatrix_00004_00006,AssignmentMatrix_00004_00007,AssignmentMatrix_00004_00008,aux19],0),w-literal(aux53,1)})
+weightedsumleq([500,500,500,1000,2000],[AssignmentMatrix_00003_00001,AssignmentMatrix_00004_00001,AssignmentMatrix_00005_00001,AssignmentMatrix_00001_00001,AssignmentMatrix_00002_00001],aux28)
+weightedsumleq([500,500,500,1000,2000],[AssignmentMatrix_00003_00002,AssignmentMatrix_00004_00002,AssignmentMatrix_00005_00002,AssignmentMatrix_00001_00002,AssignmentMatrix_00002_00002],aux30)
+weightedsumleq([500,500,500,1000,2000],[AssignmentMatrix_00003_00003,AssignmentMatrix_00004_00003,AssignmentMatrix_00005_00003,AssignmentMatrix_00001_00003,AssignmentMatrix_00002_00003],aux29)
+weightedsumleq([500,500,500,1000,2000],[AssignmentMatrix_00003_00004,AssignmentMatrix_00004_00004,AssignmentMatrix_00005_00004,AssignmentMatrix_00001_00004,AssignmentMatrix_00002_00004],aux32)
+weightedsumleq([500,500,500,1000,2000],[AssignmentMatrix_00003_00005,AssignmentMatrix_00004_00005,AssignmentMatrix_00005_00005,AssignmentMatrix_00001_00005,AssignmentMatrix_00002_00005],aux31)
+weightedsumleq([500,500,500,1000,2000],[AssignmentMatrix_00003_00006,AssignmentMatrix_00004_00006,AssignmentMatrix_00005_00006,AssignmentMatrix_00001_00006,AssignmentMatrix_00002_00006],aux34)
+weightedsumleq([500,500,500,1000,2000],[AssignmentMatrix_00003_00007,AssignmentMatrix_00004_00007,AssignmentMatrix_00005_00007,AssignmentMatrix_00001_00007,AssignmentMatrix_00002_00007],aux33)
+weightedsumleq([500,500,500,1000,2000],[AssignmentMatrix_00003_00008,AssignmentMatrix_00004_00008,AssignmentMatrix_00005_00008,AssignmentMatrix_00001_00008,AssignmentMatrix_00002_00008],aux35)
+weightedsumleq([4,4,4,2,2],[AssignmentMatrix_00003_00001,AssignmentMatrix_00004_00001,AssignmentMatrix_00005_00001,AssignmentMatrix_00001_00001,AssignmentMatrix_00002_00001],aux43)
+weightedsumleq([4,4,4,2,2],[AssignmentMatrix_00003_00002,AssignmentMatrix_00004_00002,AssignmentMatrix_00005_00002,AssignmentMatrix_00001_00002,AssignmentMatrix_00002_00002],aux42)
+weightedsumleq([4,4,4,2,2],[AssignmentMatrix_00003_00003,AssignmentMatrix_00004_00003,AssignmentMatrix_00005_00003,AssignmentMatrix_00001_00003,AssignmentMatrix_00002_00003],aux41)
+weightedsumleq([4,4,4,2,2],[AssignmentMatrix_00003_00004,AssignmentMatrix_00004_00004,AssignmentMatrix_00005_00004,AssignmentMatrix_00001_00004,AssignmentMatrix_00002_00004],aux40)
+weightedsumleq([4,4,4,2,2],[AssignmentMatrix_00003_00005,AssignmentMatrix_00004_00005,AssignmentMatrix_00005_00005,AssignmentMatrix_00001_00005,AssignmentMatrix_00002_00005],aux39)
+weightedsumleq([4,4,4,2,2],[AssignmentMatrix_00003_00006,AssignmentMatrix_00004_00006,AssignmentMatrix_00005_00006,AssignmentMatrix_00001_00006,AssignmentMatrix_00002_00006],aux38)
+weightedsumleq([4,4,4,2,2],[AssignmentMatrix_00003_00007,AssignmentMatrix_00004_00007,AssignmentMatrix_00005_00007,AssignmentMatrix_00001_00007,AssignmentMatrix_00002_00007],aux37)
+weightedsumleq([4,4,4,2,2],[AssignmentMatrix_00003_00008,AssignmentMatrix_00004_00008,AssignmentMatrix_00005_00008,AssignmentMatrix_00001_00008,AssignmentMatrix_00002_00008],aux36)
+sumleq([AssignmentMatrix_00005_00001,AssignmentMatrix_00002_00001],1)
+sumleq([AssignmentMatrix_00005_00002,AssignmentMatrix_00002_00002],1)
+sumleq([AssignmentMatrix_00005_00003,AssignmentMatrix_00002_00003],1)
+sumleq([AssignmentMatrix_00005_00004,AssignmentMatrix_00002_00004],1)
+sumleq([AssignmentMatrix_00005_00005,AssignmentMatrix_00002_00005],1)
+sumleq([AssignmentMatrix_00005_00006,AssignmentMatrix_00002_00006],1)
+sumleq([AssignmentMatrix_00005_00007,AssignmentMatrix_00002_00007],1)
+sumleq([AssignmentMatrix_00005_00008,AssignmentMatrix_00002_00008],1)
+ineq(Price_00001, Price_00002, 0)
+ineq(Price_00002, Price_00003, 0)
+ineq(Price_00003, Price_00004, 0)
+ineq(Price_00004, Price_00005, 0)
+ineq(Price_00005, Price_00006, 0)
+ineq(Price_00006, Price_00007, 0)
+ineq(Price_00007, Price_00008, 0)
+watched-or({weightedsumleq([-7,-7,-7,-7,-7,-7,-7,-7,1],[AssignmentMatrix_00003_00001,AssignmentMatrix_00003_00002,AssignmentMatrix_00003_00003,AssignmentMatrix_00003_00004,AssignmentMatrix_00003_00005,AssignmentMatrix_00003_00006,AssignmentMatrix_00003_00007,AssignmentMatrix_00003_00008,aux19],0),w-literal(aux52,1)})
+watched-or({ineq(1, aux1, 0),ineq(1, aux2, 0)})
+sumleq([AssignmentMatrix_00003_00001,AssignmentMatrix_00003_00002,AssignmentMatrix_00003_00003,AssignmentMatrix_00003_00004,AssignmentMatrix_00003_00005,AssignmentMatrix_00003_00006,AssignmentMatrix_00003_00007,AssignmentMatrix_00003_00008],aux1)
+sumgeq([AssignmentMatrix_00003_00001,AssignmentMatrix_00003_00002,AssignmentMatrix_00003_00003,AssignmentMatrix_00003_00004,AssignmentMatrix_00003_00005,AssignmentMatrix_00003_00006,AssignmentMatrix_00003_00007,AssignmentMatrix_00003_00008],aux1)
+sumleq([AssignmentMatrix_00004_00001,AssignmentMatrix_00004_00002,AssignmentMatrix_00004_00003,AssignmentMatrix_00004_00004,AssignmentMatrix_00004_00005,AssignmentMatrix_00004_00006,AssignmentMatrix_00004_00007,AssignmentMatrix_00004_00008],aux2)
+sumgeq([AssignmentMatrix_00004_00001,AssignmentMatrix_00004_00002,AssignmentMatrix_00004_00003,AssignmentMatrix_00004_00004,AssignmentMatrix_00004_00005,AssignmentMatrix_00004_00006,AssignmentMatrix_00004_00007,AssignmentMatrix_00004_00008],aux2)
+sumleq([AssignmentMatrix_00003_00001,AssignmentMatrix_00005_00001],aux3)
+sumgeq([AssignmentMatrix_00003_00001,AssignmentMatrix_00005_00001],aux3)
+sumleq([AssignmentMatrix_00004_00001,AssignmentMatrix_00001_00001],aux4)
+sumgeq([AssignmentMatrix_00004_00001,AssignmentMatrix_00001_00001],aux4)
+sumleq([AssignmentMatrix_00003_00002,AssignmentMatrix_00005_00002],aux5)
+sumgeq([AssignmentMatrix_00003_00002,AssignmentMatrix_00005_00002],aux5)
+sumleq([AssignmentMatrix_00004_00002,AssignmentMatrix_00001_00002],aux6)
+sumgeq([AssignmentMatrix_00004_00002,AssignmentMatrix_00001_00002],aux6)
+sumleq([AssignmentMatrix_00003_00003,AssignmentMatrix_00005_00003],aux7)
+sumgeq([AssignmentMatrix_00003_00003,AssignmentMatrix_00005_00003],aux7)
+sumleq([AssignmentMatrix_00004_00003,AssignmentMatrix_00001_00003],aux8)
+sumgeq([AssignmentMatrix_00004_00003,AssignmentMatrix_00001_00003],aux8)
+sumleq([AssignmentMatrix_00003_00004,AssignmentMatrix_00005_00004],aux9)
+sumgeq([AssignmentMatrix_00003_00004,AssignmentMatrix_00005_00004],aux9)
+sumleq([AssignmentMatrix_00004_00004,AssignmentMatrix_00001_00004],aux10)
+sumgeq([AssignmentMatrix_00004_00004,AssignmentMatrix_00001_00004],aux10)
+sumleq([AssignmentMatrix_00003_00005,AssignmentMatrix_00005_00005],aux11)
+sumgeq([AssignmentMatrix_00003_00005,AssignmentMatrix_00005_00005],aux11)
+sumleq([AssignmentMatrix_00004_00005,AssignmentMatrix_00001_00005],aux12)
+sumgeq([AssignmentMatrix_00004_00005,AssignmentMatrix_00001_00005],aux12)
+sumleq([AssignmentMatrix_00003_00006,AssignmentMatrix_00005_00006],aux13)
+sumgeq([AssignmentMatrix_00003_00006,AssignmentMatrix_00005_00006],aux13)
+sumleq([AssignmentMatrix_00004_00006,AssignmentMatrix_00001_00006],aux14)
+sumgeq([AssignmentMatrix_00004_00006,AssignmentMatrix_00001_00006],aux14)
+sumleq([AssignmentMatrix_00003_00007,AssignmentMatrix_00005_00007],aux15)
+sumgeq([AssignmentMatrix_00003_00007,AssignmentMatrix_00005_00007],aux15)
+sumleq([AssignmentMatrix_00004_00007,AssignmentMatrix_00001_00007],aux16)
+sumgeq([AssignmentMatrix_00004_00007,AssignmentMatrix_00001_00007],aux16)
+sumleq([AssignmentMatrix_00003_00008,AssignmentMatrix_00005_00008],aux17)
+sumgeq([AssignmentMatrix_00003_00008,AssignmentMatrix_00005_00008],aux17)
+sumleq([AssignmentMatrix_00004_00008,AssignmentMatrix_00001_00008],aux18)
+sumgeq([AssignmentMatrix_00004_00008,AssignmentMatrix_00001_00008],aux18)
+sumleq([AssignmentMatrix_00001_00001,AssignmentMatrix_00001_00002,AssignmentMatrix_00001_00003,AssignmentMatrix_00001_00004,AssignmentMatrix_00001_00005,AssignmentMatrix_00001_00006,AssignmentMatrix_00001_00007,AssignmentMatrix_00001_00008],aux19)
+sumgeq([AssignmentMatrix_00001_00001,AssignmentMatrix_00001_00002,AssignmentMatrix_00001_00003,AssignmentMatrix_00001_00004,AssignmentMatrix_00001_00005,AssignmentMatrix_00001_00006,AssignmentMatrix_00001_00007,AssignmentMatrix_00001_00008],aux19)
+sumleq([aux3,aux4,AssignmentMatrix_00002_00001],aux20)
+sumgeq([aux3,aux4,AssignmentMatrix_00002_00001],aux20)
+sumleq([aux5,aux6,AssignmentMatrix_00002_00002],aux21)
+sumgeq([aux5,aux6,AssignmentMatrix_00002_00002],aux21)
+sumleq([aux7,aux8,AssignmentMatrix_00002_00003],aux22)
+sumgeq([aux7,aux8,AssignmentMatrix_00002_00003],aux22)
+sumleq([aux9,aux10,AssignmentMatrix_00002_00004],aux23)
+sumgeq([aux9,aux10,AssignmentMatrix_00002_00004],aux23)
+sumleq([aux11,aux12,AssignmentMatrix_00002_00005],aux24)
+sumgeq([aux11,aux12,AssignmentMatrix_00002_00005],aux24)
+sumleq([aux13,aux14,AssignmentMatrix_00002_00006],aux25)
+sumgeq([aux13,aux14,AssignmentMatrix_00002_00006],aux25)
+sumleq([aux15,aux16,AssignmentMatrix_00002_00007],aux26)
+sumgeq([aux15,aux16,AssignmentMatrix_00002_00007],aux26)
+sumleq([aux17,aux18,AssignmentMatrix_00002_00008],aux27)
+sumgeq([aux17,aux18,AssignmentMatrix_00002_00008],aux27)
+sumleq([Price_00001,Price_00002,Price_00003,Price_00004,Price_00005,Price_00006,Price_00007,Price_00008],aux0)
+sumgeq([Price_00001,Price_00002,Price_00003,Price_00004,Price_00005,Price_00006,Price_00007,Price_00008],aux0)
+**EOF**

@@ -1,0 +1,18 @@
+language ESSENCE' 1.0
+letting shiftRequirements = [[13, 13, 13, 13], [13, 13, 13, 13], [13, 13, 13, 13], [13, 13, 13, 13], [13, 13, 13, 13], [13, 13, 13, 13], [13, 13, 13, 13]]
+letting numberOfWeeks = 52
+letting s_min = 2
+letting s_max = 4
+
+$ language ESSENCE' 1.0
+$ letting shiftRequirements = [[ 25, 22, 3, 2
+$  ],[ 25, 22, 2, 3
+$  ],[ 25, 22, 2, 3
+$  ],[ 25, 21, 2, 4
+$  ],[ 24, 24, 2, 2
+$  ],[ 26, 24, 1, 1
+$  ],[ 26, 24, 1, 1
+$  ]]
+$ letting numberOfWeeks = 52
+$ letting s_min = 2
+$ letting s_max = 4

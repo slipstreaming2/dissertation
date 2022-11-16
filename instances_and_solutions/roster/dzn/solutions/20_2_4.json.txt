@@ -1,0 +1,25 @@
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 1296, "flatIntVars": 120, "flatBoolConstraints": 662, "flatIntConstraints": 1156, "evaluatedReifiedConstraints": 1416, "method": "satisfy", "flatTime": 0.214016}}
+{"type": "comment", "comment": "% Pruned 49984 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49983 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49981 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49972 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49976 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49976 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49975 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49976 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49971 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49974 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49976 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49974 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49973 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49970 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49971 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49972 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49973 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49967 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49974 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49968 learnt clauses"}
+{"type": "comment", "comment": "% Time limit exceeded!"}
+{"type": "status", "status": "UNKNOWN"}
+{"type": "statistics", "statistics": {"nSolutions": 0}}
+{"type": "statistics", "statistics": {"nodes": 1527558, "failures": 1054883, "restarts": 0, "variables": 2749, "intVars": 128, "boolVariables": 2619, "propagators": 2097, "propagations": 499188581, "peakDepth": 44, "nogoods": 1054883, "backjumps": 472650, "peakMem": 0.0, "time": 60.01, "initTime": 0.01, "solveTime": 60.0, "baseMem": 0.0, "trailMem": 0.05, "randomSeed": 1668106837}}

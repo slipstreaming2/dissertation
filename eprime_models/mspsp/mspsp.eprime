@@ -1,0 +1,126 @@
+language ESSENCE' 1.0
+
+$ -----------------------------------------------------------------------------%
+$ vim: ts=4 sw=4 et wm=0 tw=0
+$ -----------------------------------------------------------------------------%
+$ Model example for Multi-Skilled Project Scheduling Problems (MSPSP)
+
+$ MSPSP is a variation of the basic resource-constrained project scheduling
+$ problem. Here, a set of activities must be executed so that the project
+$ duration is minimised while satisfying all constraints involved. These
+$ constraints are
+$ 1) precedence relations between some activities expressing that an activity
+$ can only be run after its preceding activity's execution is finished,
+$ 2) skills requirements of activities on workers who have the capability to
+$ perform the activity, and
+$ 3) workers availibility, i.e., a worker can perform only one activity in
+$ each time period.
+
+$ -----------------------------------------------------------------------------%
+
+given n_skills : int 
+letting Skills be domain int(1..n_skills)
+given n_workers : int 
+letting Workers be domain int(1..n_workers)
+given has_skills : matrix indexed by [Workers, Skills] of int(0..1)
+
+letting rc be [sum([has_skills[j, i] | j : Workers]) | i : Skills]
+
+given n_tasks : int 
+letting Tasks be domain int(1..n_tasks)
+given d : matrix indexed by [Tasks] of int 
+given rr : matrix indexed by [Skills, Tasks] of int 
+given suc : matrix indexed by [Tasks, Tasks] of int(0..1) 
+
+letting tmax = sum(d)
+letting Times be domain int(0..tmax)
+
+find s : matrix indexed by [Tasks] of Times 
+find w : matrix indexed by [Workers, Tasks] of bool
+find objective : Times
+
+find TWorkers : matrix indexed by [Workers, Tasks] of int(0..1)
+$ find WTasks : matrix indexed by [Workers, Tasks] of int(0..1)
+
+branching on [s, [w[j,i] | j : Workers, i : Tasks], [objective]]
+
+minimising objective 
+
+such that 
+
+$ Precedence constraints
+forAll i : Tasks .
+    forAll j : Tasks .
+        suc[i,j] = 1 -> s[i] + d[i] <= s[j],
+
+
+$ Skills constraints
+forAll i : Tasks .
+    forAll j : Workers .
+        TWorkers[j, i] = 1 <-> 
+            exists k : Skills .
+                has_skills[j, k] = 1 /\ rr[k,i] > 0,
+
+
+
+forAll i : Tasks .
+    forAll k : Skills .
+        rr[k, i] > 0 -> 
+            sum([w[j,i] /\ TWorkers[j,i] = 1 /\ has_skills[j,k] = 1 | j : Workers]) >= rr[k, i],
+
+forAll i : Tasks .
+    forAll j : Workers . 
+        TWorkers[j, i] = 0 -> w[j,i] = false,
+
+
+$ forAll j : Workers .
+$     forAll i : Tasks .
+$         WTasks[j,i] = 1 <-> 
+$             exists k : Skills .
+$                 has_skills[j,k] = 1 /\ rr,
+
+forAll work : Workers .
+    sum(TWorkers[work,..]) > 1 -> 
+        (forAll j : Tasks .
+            1 >= sum([(TWorkers[work, j] = 1) /\ (TWorkers[work, i] = 1) /\ (s[i] <= s[j]) /\ (s[j] < (s[i] + d[i])) /\ w[work,i] | i : Tasks])),
+
+$ predicate fzn_cumulative_task(array[int] of var int: s,
+$                      array[int] of var int: d,
+$                      array[int] of var int: r, var int: b) =
+$     let { 
+$         set of int: Tasks = 
+$             { i | i in index_set(s) where ub(r[i]) > 0 /\ ub(d[i]) > 0 }
+$     } in (
+$         forall(j in Tasks) (
+$             % Note: i can equal j. If j has a duration of 0, then it is not considered.
+$             b >= sum(i in Tasks) (
+$                 (s[i] <= s[j] /\ s[j] < s[i] + d[i] ) * r[i]
+$             )
+$         )
+$     );
+
+forAll i : Tasks .
+    forAll j : Tasks . 
+        (i < j /\ suc[i,j] = 0 /\ suc[j,i] = 0) -> 
+            ((exists k : Skills .
+                rr[k,i] + rr[k,j] > rc[k]) ->
+                    $ xor basically
+                    ((s[i] + d[i] <= s[j])
+                    \/
+                    (s[j] + d[j] <= s[i]))),
+
+$ ((before = 1 -> s[i] + d[i] <= s[j])
+$                     /\
+$                     (before = 0 -> s[j] + d[j] <= s[i])),
+
+forAll k : Skills .
+    (sum([rr[k,i] > 0 | i : Tasks]) > 1 /\ sum([rr[k,i] | i : Tasks, rr[k,i] > 0]) > rc[k]) ->
+        forAll j : Tasks .
+            rr[k,j] > 0 ->
+                rc[k] >= sum([(s[i] <= s[j] /\ s[j] < s[i] + d[i])*rr[k,i] | i : Tasks, rr[k,i] > 0]),
+
+$ rr[k,j] > 0 -> rc[k] >= sum([(s[i] <= s[j] /\ s[j] < s[i] + d[i])*rr[k,i] | i : Tasks, rr[k,i] > 0]),
+
+forAll i : Tasks .
+    sum(suc[i,..]) = 0 -> s[i] + d[i] <= objective
+        

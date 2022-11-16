@@ -1,0 +1,13 @@
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 58, "flatIntVars": 314, "flatBoolConstraints": 31, "flatIntConstraints": 509, "evaluatedReifiedConstraints": 57, "evaluatedHalfReifiedConstraints": 1, "method": "minimize", "flatTime": 0.215379}}
+{"type": "comment", "comment": "% Pruned 49996 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49999 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49996 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49998 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49995 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49997 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49996 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49995 learnt clauses"}
+{"type": "statistics", "statistics": {"nodes": 897803, "failures": 462332, "restarts": 3856, "variables": 251458, "intVars": 418, "boolVariables": 251038, "propagators": 409, "propagations": 57356554, "peakDepth": 104, "nogoods": 462332, "backjumps": 45548, "peakMem": 0.0, "time": 600.2089999999999, "initTime": 0.209, "solveTime": 600.0, "objective": 4524, "optTime": 12.827, "baseMem": 0.0, "trailMem": 410.57, "randomSeed": 1667819810}}
+{"type": "solution", "output": {"json": {  "AssignmentMatrix" : [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]],  "OccupancyVector" : [0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],  "VMType" : [1, 1, 1, 1, 1, 1, 1, 1, 341, 341, 341, 341, 341, 341, 433, 433, 433, 433, 316, 316, 316, 316, 316, 316, 316, 316],  "Price" : [0, 0, 0, 0, 0, 0, 0, 0, 210, 210, 210, 210, 210, 210, 116, 116, 116, 116, 350, 350, 350, 350, 350, 350, 350, 350]}}, "sections": ["json"]}
+{"type": "comment", "comment": "% Time limit exceeded!"}
+{"type": "statistics", "statistics": {"nSolutions": 1}}

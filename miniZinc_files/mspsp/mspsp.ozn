@@ -1,0 +1,6 @@
+output ["s = ",show(s),";\n","w = \n",let {array [int] of string: idx1 = [], array [int] of string: idx2 = [], array [int,int] of string: x = [(i, j) : show(w[i,j]) | i in 1..9, j in 1..20]} in (show2d_indexed(idx1,idx2,x)),";\n","objective = ",show(objective),";\n"];
+int: objective;
+set of int: Tasks = 1..20;
+set of int: Workers = 1..9;
+array [Workers,Tasks] of bool: w;
+array [Tasks] of int: s;

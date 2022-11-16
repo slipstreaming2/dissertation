@@ -1,0 +1,1792 @@
+MINION 3
+# AC-CSE-Times_number = 0
+# AC-CSE-Times_eliminated_expressions = 0
+# AC-CSE-Times_total_size = 0
+# AC-CSE-Xor_number = 0
+# AC-CSE-Xor_eliminated_expressions = 0
+# AC-CSE-Xor_total_size = 0
+# CSETopLevel_number = 0
+# CSETopLevel_eliminated_expressions = 0
+# CSETopLevel_total_size = 0
+# AC-CSE-Or_number = 48
+# AC-CSE-Or_eliminated_expressions = 144
+# AC-CSE-Or_total_size = 720
+# AC-CSE-And_number = 0
+# AC-CSE-And_eliminated_expressions = 0
+# AC-CSE-And_total_size = 0
+# AC-CSE-Sum_number = 7
+# AC-CSE-Sum_eliminated_expressions = 28
+# AC-CSE-Sum_total_size = 21
+# CSE_active_number = 168
+# CSE_active_eliminated_expressions = 592
+# CSE_active_total_size = 1216
+**VARIABLES**
+DISCRETE opponent_00001_00001 #
+{2..7}
+DISCRETE opponent_00001_00002 #
+{2..8}
+DISCRETE opponent_00001_00003 #
+{2..8}
+DISCRETE opponent_00001_00004 #
+{2..8}
+DISCRETE opponent_00001_00005 #
+{2..8}
+DISCRETE opponent_00001_00006 #
+{2..8}
+DISCRETE opponent_00001_00007 #
+{3..8}
+DISCRETE opponent_00002_00001 #
+{1..8}
+**CONSTRAINTS**
+w-inintervalset(opponent_00002_00001, [1,1,3,8])
+**VARIABLES**
+DISCRETE opponent_00002_00002 #
+{1..8}
+**CONSTRAINTS**
+w-inintervalset(opponent_00002_00002, [1,1,3,8])
+**VARIABLES**
+DISCRETE opponent_00002_00003 #
+{1..8}
+**CONSTRAINTS**
+w-inintervalset(opponent_00002_00003, [1,1,3,8])
+**VARIABLES**
+DISCRETE opponent_00002_00004 #
+{1..8}
+**CONSTRAINTS**
+w-inintervalset(opponent_00002_00004, [1,1,3,8])
+**VARIABLES**
+DISCRETE opponent_00002_00005 #
+{1..8}
+**CONSTRAINTS**
+w-inintervalset(opponent_00002_00005, [1,1,3,8])
+**VARIABLES**
+DISCRETE opponent_00002_00006 #
+{1..8}
+**CONSTRAINTS**
+w-inintervalset(opponent_00002_00006, [1,1,3,8])
+**VARIABLES**
+DISCRETE opponent_00002_00007 #
+{1..8}
+**CONSTRAINTS**
+w-inintervalset(opponent_00002_00007, [1,1,3,8])
+**VARIABLES**
+DISCRETE opponent_00003_00001 #
+{1..8}
+**CONSTRAINTS**
+w-inintervalset(opponent_00003_00001, [1,2,4,8])
+**VARIABLES**
+DISCRETE opponent_00003_00002 #
+{1..8}
+**CONSTRAINTS**
+w-inintervalset(opponent_00003_00002, [1,2,4,8])
+**VARIABLES**
+DISCRETE opponent_00003_00003 #
+{1..8}
+**CONSTRAINTS**
+w-inintervalset(opponent_00003_00003, [1,2,4,8])
+**VARIABLES**
+DISCRETE opponent_00003_00004 #
+{1..8}
+**CONSTRAINTS**
+w-inintervalset(opponent_00003_00004, [1,2,4,8])
+**VARIABLES**
+DISCRETE opponent_00003_00005 #
+{1..8}
+**CONSTRAINTS**
+w-inintervalset(opponent_00003_00005, [1,2,4,8])
+**VARIABLES**
+DISCRETE opponent_00003_00006 #
+{1..8}
+**CONSTRAINTS**
+w-inintervalset(opponent_00003_00006, [1,2,4,8])
+**VARIABLES**
+DISCRETE opponent_00003_00007 #
+{1..8}
+**CONSTRAINTS**
+w-inintervalset(opponent_00003_00007, [1,2,4,8])
+**VARIABLES**
+DISCRETE opponent_00004_00001 #
+{1..8}
+**CONSTRAINTS**
+w-inintervalset(opponent_00004_00001, [1,3,5,8])
+**VARIABLES**
+DISCRETE opponent_00004_00002 #
+{1..8}
+**CONSTRAINTS**
+w-inintervalset(opponent_00004_00002, [1,3,5,8])
+**VARIABLES**
+DISCRETE opponent_00004_00003 #
+{1..8}
+**CONSTRAINTS**
+w-inintervalset(opponent_00004_00003, [1,3,5,8])
+**VARIABLES**
+DISCRETE opponent_00004_00004 #
+{1..8}
+**CONSTRAINTS**
+w-inintervalset(opponent_00004_00004, [1,3,5,8])
+**VARIABLES**
+DISCRETE opponent_00004_00005 #
+{1..8}
+**CONSTRAINTS**
+w-inintervalset(opponent_00004_00005, [1,3,5,8])
+**VARIABLES**
+DISCRETE opponent_00004_00006 #
+{1..8}
+**CONSTRAINTS**
+w-inintervalset(opponent_00004_00006, [1,3,5,8])
+**VARIABLES**
+DISCRETE opponent_00004_00007 #
+{1..8}
+**CONSTRAINTS**
+w-inintervalset(opponent_00004_00007, [1,3,5,8])
+**VARIABLES**
+DISCRETE opponent_00005_00001 #
+{1..8}
+**CONSTRAINTS**
+w-inintervalset(opponent_00005_00001, [1,4,6,8])
+**VARIABLES**
+DISCRETE opponent_00005_00002 #
+{1..8}
+**CONSTRAINTS**
+w-inintervalset(opponent_00005_00002, [1,4,6,8])
+**VARIABLES**
+DISCRETE opponent_00005_00003 #
+{1..8}
+**CONSTRAINTS**
+w-inintervalset(opponent_00005_00003, [1,4,6,8])
+**VARIABLES**
+DISCRETE opponent_00005_00004 #
+{1..8}
+**CONSTRAINTS**
+w-inintervalset(opponent_00005_00004, [1,4,6,8])
+**VARIABLES**
+DISCRETE opponent_00005_00005 #
+{1..8}
+**CONSTRAINTS**
+w-inintervalset(opponent_00005_00005, [1,4,6,8])
+**VARIABLES**
+DISCRETE opponent_00005_00006 #
+{1..8}
+**CONSTRAINTS**
+w-inintervalset(opponent_00005_00006, [1,4,6,8])
+**VARIABLES**
+DISCRETE opponent_00005_00007 #
+{1..8}
+**CONSTRAINTS**
+w-inintervalset(opponent_00005_00007, [1,4,6,8])
+**VARIABLES**
+DISCRETE opponent_00006_00001 #
+{1..8}
+**CONSTRAINTS**
+w-inintervalset(opponent_00006_00001, [1,5,7,8])
+**VARIABLES**
+DISCRETE opponent_00006_00002 #
+{1..8}
+**CONSTRAINTS**
+w-inintervalset(opponent_00006_00002, [1,5,7,8])
+**VARIABLES**
+DISCRETE opponent_00006_00003 #
+{1..8}
+**CONSTRAINTS**
+w-inintervalset(opponent_00006_00003, [1,5,7,8])
+**VARIABLES**
+DISCRETE opponent_00006_00004 #
+{1..8}
+**CONSTRAINTS**
+w-inintervalset(opponent_00006_00004, [1,5,7,8])
+**VARIABLES**
+DISCRETE opponent_00006_00005 #
+{1..8}
+**CONSTRAINTS**
+w-inintervalset(opponent_00006_00005, [1,5,7,8])
+**VARIABLES**
+DISCRETE opponent_00006_00006 #
+{1..8}
+**CONSTRAINTS**
+w-inintervalset(opponent_00006_00006, [1,5,7,8])
+**VARIABLES**
+DISCRETE opponent_00006_00007 #
+{1..8}
+**CONSTRAINTS**
+w-inintervalset(opponent_00006_00007, [1,5,7,8])
+**VARIABLES**
+DISCRETE opponent_00007_00001 #
+{1..8}
+**CONSTRAINTS**
+w-inintervalset(opponent_00007_00001, [1,6,8,8])
+**VARIABLES**
+DISCRETE opponent_00007_00002 #
+{1..8}
+**CONSTRAINTS**
+w-inintervalset(opponent_00007_00002, [1,6,8,8])
+**VARIABLES**
+DISCRETE opponent_00007_00003 #
+{1..8}
+**CONSTRAINTS**
+w-inintervalset(opponent_00007_00003, [1,6,8,8])
+**VARIABLES**
+DISCRETE opponent_00007_00004 #
+{1..8}
+**CONSTRAINTS**
+w-inintervalset(opponent_00007_00004, [1,6,8,8])
+**VARIABLES**
+DISCRETE opponent_00007_00005 #
+{1..8}
+**CONSTRAINTS**
+w-inintervalset(opponent_00007_00005, [1,6,8,8])
+**VARIABLES**
+DISCRETE opponent_00007_00006 #
+{1..8}
+**CONSTRAINTS**
+w-inintervalset(opponent_00007_00006, [1,6,8,8])
+**VARIABLES**
+DISCRETE opponent_00007_00007 #
+{1..8}
+**CONSTRAINTS**
+w-inintervalset(opponent_00007_00007, [1,6,8,8])
+**VARIABLES**
+DISCRETE opponent_00008_00001 #
+{1..7}
+DISCRETE opponent_00008_00002 #
+{1..7}
+DISCRETE opponent_00008_00003 #
+{1..7}
+DISCRETE opponent_00008_00004 #
+{1..7}
+DISCRETE opponent_00008_00005 #
+{1..7}
+DISCRETE opponent_00008_00006 #
+{1..7}
+DISCRETE opponent_00008_00007 #
+{1..7}
+DISCRETE venue_00001_00001 #
+{1..2}
+DISCRETE venue_00001_00002 #
+{1..2}
+DISCRETE venue_00001_00003 #
+{1..2}
+DISCRETE venue_00001_00004 #
+{1..2}
+DISCRETE venue_00001_00005 #
+{1..2}
+DISCRETE venue_00001_00006 #
+{1..2}
+DISCRETE venue_00001_00007 #
+{1..2}
+DISCRETE venue_00002_00001 #
+{1..2}
+DISCRETE venue_00002_00002 #
+{1..2}
+DISCRETE venue_00002_00003 #
+{1..2}
+DISCRETE venue_00002_00004 #
+{1..2}
+DISCRETE venue_00002_00005 #
+{1..2}
+DISCRETE venue_00002_00006 #
+{1..2}
+DISCRETE venue_00002_00007 #
+{1..2}
+DISCRETE venue_00003_00001 #
+{1..2}
+DISCRETE venue_00003_00002 #
+{1..2}
+DISCRETE venue_00003_00003 #
+{1..2}
+DISCRETE venue_00003_00004 #
+{1..2}
+DISCRETE venue_00003_00005 #
+{1..2}
+DISCRETE venue_00003_00006 #
+{1..2}
+DISCRETE venue_00003_00007 #
+{1..2}
+DISCRETE venue_00004_00001 #
+{1..2}
+DISCRETE venue_00004_00002 #
+{1..2}
+DISCRETE venue_00004_00003 #
+{1..2}
+DISCRETE venue_00004_00004 #
+{1..2}
+DISCRETE venue_00004_00005 #
+{1..2}
+DISCRETE venue_00004_00006 #
+{1..2}
+DISCRETE venue_00004_00007 #
+{1..2}
+DISCRETE venue_00005_00001 #
+{1..2}
+DISCRETE venue_00005_00002 #
+{1..2}
+DISCRETE venue_00005_00003 #
+{1..2}
+DISCRETE venue_00005_00004 #
+{1..2}
+DISCRETE venue_00005_00005 #
+{1..2}
+DISCRETE venue_00005_00006 #
+{1..2}
+DISCRETE venue_00005_00007 #
+{1..2}
+DISCRETE venue_00006_00001 #
+{1..2}
+DISCRETE venue_00006_00002 #
+{1..2}
+DISCRETE venue_00006_00003 #
+{1..2}
+DISCRETE venue_00006_00004 #
+{1..2}
+DISCRETE venue_00006_00005 #
+{1..2}
+DISCRETE venue_00006_00006 #
+{1..2}
+DISCRETE venue_00006_00007 #
+{1..2}
+DISCRETE venue_00007_00001 #
+{1..2}
+DISCRETE venue_00007_00002 #
+{1..2}
+DISCRETE venue_00007_00003 #
+{1..2}
+DISCRETE venue_00007_00004 #
+{1..2}
+DISCRETE venue_00007_00005 #
+{1..2}
+DISCRETE venue_00007_00006 #
+{1..2}
+DISCRETE venue_00007_00007 #
+{1..2}
+DISCRETE venue_00008_00001 #
+{1..2}
+DISCRETE venue_00008_00002 #
+{1..2}
+DISCRETE venue_00008_00003 #
+{1..2}
+DISCRETE venue_00008_00004 #
+{1..2}
+DISCRETE venue_00008_00005 #
+{1..2}
+DISCRETE venue_00008_00006 #
+{1..2}
+DISCRETE venue_00008_00007 #
+{1..2}
+DISCRETE travel_00001_00001 #
+{0..4}
+DISCRETE travel_00001_00002 #
+{0..4}
+DISCRETE travel_00001_00003 #
+{0..4}
+DISCRETE travel_00001_00004 #
+{0..4}
+DISCRETE travel_00001_00005 #
+{0..4}
+DISCRETE travel_00001_00006 #
+{0..4}
+DISCRETE travel_00001_00007 #
+{0..4}
+DISCRETE travel_00001_00008 #
+{0..4}
+DISCRETE travel_00002_00001 #
+{0..4}
+DISCRETE travel_00002_00002 #
+{0..4}
+DISCRETE travel_00002_00003 #
+{0..4}
+DISCRETE travel_00002_00004 #
+{0..4}
+DISCRETE travel_00002_00005 #
+{0..4}
+DISCRETE travel_00002_00006 #
+{0..4}
+DISCRETE travel_00002_00007 #
+{0..4}
+DISCRETE travel_00002_00008 #
+{0..4}
+DISCRETE travel_00003_00001 #
+{0..4}
+DISCRETE travel_00003_00002 #
+{0..4}
+DISCRETE travel_00003_00003 #
+{0..4}
+DISCRETE travel_00003_00004 #
+{0..4}
+DISCRETE travel_00003_00005 #
+{0..4}
+DISCRETE travel_00003_00006 #
+{0..4}
+DISCRETE travel_00003_00007 #
+{0..4}
+DISCRETE travel_00003_00008 #
+{0..4}
+DISCRETE travel_00004_00001 #
+{0..4}
+DISCRETE travel_00004_00002 #
+{0..4}
+DISCRETE travel_00004_00003 #
+{0..4}
+DISCRETE travel_00004_00004 #
+{0..4}
+DISCRETE travel_00004_00005 #
+{0..4}
+DISCRETE travel_00004_00006 #
+{0..4}
+DISCRETE travel_00004_00007 #
+{0..4}
+DISCRETE travel_00004_00008 #
+{0..4}
+DISCRETE travel_00005_00001 #
+{0..4}
+DISCRETE travel_00005_00002 #
+{0..4}
+DISCRETE travel_00005_00003 #
+{0..4}
+DISCRETE travel_00005_00004 #
+{0..4}
+DISCRETE travel_00005_00005 #
+{0..4}
+DISCRETE travel_00005_00006 #
+{0..4}
+DISCRETE travel_00005_00007 #
+{0..4}
+DISCRETE travel_00005_00008 #
+{0..4}
+DISCRETE travel_00006_00001 #
+{0..4}
+DISCRETE travel_00006_00002 #
+{0..4}
+DISCRETE travel_00006_00003 #
+{0..4}
+DISCRETE travel_00006_00004 #
+{0..4}
+DISCRETE travel_00006_00005 #
+{0..4}
+DISCRETE travel_00006_00006 #
+{0..4}
+DISCRETE travel_00006_00007 #
+{0..4}
+DISCRETE travel_00006_00008 #
+{0..4}
+DISCRETE travel_00007_00001 #
+{0..4}
+DISCRETE travel_00007_00002 #
+{0..4}
+DISCRETE travel_00007_00003 #
+{0..4}
+DISCRETE travel_00007_00004 #
+{0..4}
+DISCRETE travel_00007_00005 #
+{0..4}
+DISCRETE travel_00007_00006 #
+{0..4}
+DISCRETE travel_00007_00007 #
+{0..4}
+DISCRETE travel_00007_00008 #
+{0..4}
+DISCRETE travel_00008_00001 #
+{0..4}
+DISCRETE travel_00008_00002 #
+{0..4}
+DISCRETE travel_00008_00003 #
+{0..4}
+DISCRETE travel_00008_00004 #
+{0..4}
+DISCRETE travel_00008_00005 #
+{0..4}
+DISCRETE travel_00008_00006 #
+{0..4}
+DISCRETE travel_00008_00007 #
+{0..4}
+DISCRETE travel_00008_00008 #
+{0..4}
+DISCRETE objective #
+{0..256}
+BOOL aux1 #AC-CSE-Generic-\/: 4 occurrences of: ((venue_00001_00004 != 1) \/ (venue_00001_00003 != 1))
+BOOL aux2 #AC-CSE-Generic-\/: 4 occurrences of: ((venue_00001_00004 != 2) \/ (venue_00001_00003 != 2))
+BOOL aux3 #AC-CSE-Generic-\/: 4 occurrences of: ((venue_00002_00004 != 1) \/ (venue_00002_00003 != 1))
+BOOL aux4 #AC-CSE-Generic-\/: 4 occurrences of: ((venue_00002_00004 != 2) \/ (venue_00002_00003 != 2))
+BOOL aux5 #AC-CSE-Generic-\/: 4 occurrences of: ((1 != venue_00003_00004) \/ (1 != venue_00003_00003))
+BOOL aux6 #AC-CSE-Generic-\/: 4 occurrences of: ((2 != venue_00003_00004) \/ (2 != venue_00003_00003))
+BOOL aux7 #AC-CSE-Generic-\/: 4 occurrences of: ((1 != venue_00004_00004) \/ (1 != venue_00004_00003))
+BOOL aux8 #AC-CSE-Generic-\/: 4 occurrences of: ((2 != venue_00004_00004) \/ (2 != venue_00004_00003))
+BOOL aux9 #AC-CSE-Generic-\/: 4 occurrences of: ((venue_00005_00004 != 1) \/ (venue_00005_00003 != 1))
+BOOL aux10 #AC-CSE-Generic-\/: 4 occurrences of: ((venue_00005_00004 != 2) \/ (venue_00005_00003 != 2))
+BOOL aux11 #AC-CSE-Generic-\/: 4 occurrences of: ((venue_00006_00004 != 1) \/ (venue_00006_00003 != 1))
+BOOL aux12 #AC-CSE-Generic-\/: 4 occurrences of: ((venue_00006_00004 != 2) \/ (venue_00006_00003 != 2))
+BOOL aux13 #AC-CSE-Generic-\/: 4 occurrences of: ((venue_00007_00004 != 1) \/ (venue_00007_00003 != 1))
+BOOL aux14 #AC-CSE-Generic-\/: 4 occurrences of: ((venue_00007_00004 != 2) \/ (venue_00007_00003 != 2))
+BOOL aux15 #AC-CSE-Generic-\/: 4 occurrences of: ((1 != venue_00008_00004) \/ (1 != venue_00008_00003))
+BOOL aux16 #AC-CSE-Generic-\/: 4 occurrences of: ((2 != venue_00008_00004) \/ (2 != venue_00008_00003))
+BOOL aux17 #AC-CSE-Generic-\/: 3 occurrences of: ((venue_00001_00005 != 1) \/ (venue_00001_00006 != 1))
+BOOL aux18 #AC-CSE-Generic-\/: 3 occurrences of: ((venue_00001_00005 != 2) \/ (venue_00001_00006 != 2))
+BOOL aux19 #AC-CSE-Generic-\/: 3 occurrences of: ((venue_00002_00005 != 1) \/ (venue_00002_00006 != 1))
+BOOL aux20 #AC-CSE-Generic-\/: 3 occurrences of: ((venue_00002_00005 != 2) \/ (venue_00002_00006 != 2))
+BOOL aux21 #AC-CSE-Generic-\/: 3 occurrences of: ((1 != venue_00003_00005) \/ (1 != venue_00003_00006))
+BOOL aux22 #AC-CSE-Generic-\/: 3 occurrences of: ((2 != venue_00003_00005) \/ (2 != venue_00003_00006))
+BOOL aux23 #AC-CSE-Generic-\/: 3 occurrences of: ((1 != venue_00004_00005) \/ (1 != venue_00004_00006))
+BOOL aux24 #AC-CSE-Generic-\/: 3 occurrences of: ((2 != venue_00004_00005) \/ (2 != venue_00004_00006))
+BOOL aux25 #AC-CSE-Generic-\/: 3 occurrences of: ((venue_00005_00005 != 1) \/ (venue_00005_00006 != 1))
+BOOL aux26 #AC-CSE-Generic-\/: 3 occurrences of: ((venue_00005_00005 != 2) \/ (venue_00005_00006 != 2))
+BOOL aux27 #AC-CSE-Generic-\/: 3 occurrences of: ((venue_00006_00005 != 1) \/ (venue_00006_00006 != 1))
+BOOL aux28 #AC-CSE-Generic-\/: 3 occurrences of: ((venue_00006_00005 != 2) \/ (venue_00006_00006 != 2))
+BOOL aux29 #AC-CSE-Generic-\/: 3 occurrences of: ((venue_00007_00005 != 1) \/ (venue_00007_00006 != 1))
+BOOL aux30 #AC-CSE-Generic-\/: 3 occurrences of: ((venue_00007_00005 != 2) \/ (venue_00007_00006 != 2))
+BOOL aux31 #AC-CSE-Generic-\/: 3 occurrences of: ((1 != venue_00008_00005) \/ (1 != venue_00008_00006))
+BOOL aux32 #AC-CSE-Generic-\/: 3 occurrences of: ((2 != venue_00008_00005) \/ (2 != venue_00008_00006))
+BOOL aux33 #AC-CSE-Generic-\/: 2 occurrences of: ((venue_00001_00001 != 1) \/ (venue_00001_00002 != 1))
+BOOL aux34 #AC-CSE-Generic-\/: 2 occurrences of: ((venue_00001_00001 != 2) \/ (venue_00001_00002 != 2))
+BOOL aux35 #AC-CSE-Generic-\/: 2 occurrences of: ((venue_00002_00001 != 1) \/ (venue_00002_00002 != 1))
+BOOL aux36 #AC-CSE-Generic-\/: 2 occurrences of: ((venue_00002_00001 != 2) \/ (venue_00002_00002 != 2))
+BOOL aux37 #AC-CSE-Generic-\/: 2 occurrences of: ((1 != venue_00003_00001) \/ (1 != venue_00003_00002))
+BOOL aux38 #AC-CSE-Generic-\/: 2 occurrences of: ((2 != venue_00003_00001) \/ (2 != venue_00003_00002))
+BOOL aux39 #AC-CSE-Generic-\/: 2 occurrences of: ((1 != venue_00004_00001) \/ (1 != venue_00004_00002))
+BOOL aux40 #AC-CSE-Generic-\/: 2 occurrences of: ((2 != venue_00004_00001) \/ (2 != venue_00004_00002))
+BOOL aux41 #AC-CSE-Generic-\/: 2 occurrences of: ((venue_00005_00001 != 1) \/ (venue_00005_00002 != 1))
+BOOL aux42 #AC-CSE-Generic-\/: 2 occurrences of: ((venue_00005_00001 != 2) \/ (venue_00005_00002 != 2))
+BOOL aux43 #AC-CSE-Generic-\/: 2 occurrences of: ((venue_00006_00001 != 1) \/ (venue_00006_00002 != 1))
+BOOL aux44 #AC-CSE-Generic-\/: 2 occurrences of: ((venue_00006_00001 != 2) \/ (venue_00006_00002 != 2))
+BOOL aux45 #AC-CSE-Generic-\/: 2 occurrences of: ((venue_00007_00001 != 1) \/ (venue_00007_00002 != 1))
+BOOL aux46 #AC-CSE-Generic-\/: 2 occurrences of: ((venue_00007_00001 != 2) \/ (venue_00007_00002 != 2))
+BOOL aux47 #AC-CSE-Generic-\/: 2 occurrences of: ((1 != venue_00008_00001) \/ (1 != venue_00008_00002))
+BOOL aux48 #AC-CSE-Generic-\/: 2 occurrences of: ((2 != venue_00008_00001) \/ (2 != venue_00008_00002))
+DISCRETE aux49 #AC-CSE-Generic-+: 4 occurrences of: (opponent_00001_00001 + -1)
+{1..6}
+DISCRETE aux50 #AC-CSE-Generic-+: 4 occurrences of: (opponent_00001_00002 + -1)
+{1..7}
+DISCRETE aux51 #AC-CSE-Generic-+: 4 occurrences of: (opponent_00001_00003 + -1)
+{1..7}
+DISCRETE aux52 #AC-CSE-Generic-+: 4 occurrences of: (opponent_00001_00004 + -1)
+{1..7}
+DISCRETE aux53 #AC-CSE-Generic-+: 4 occurrences of: (opponent_00001_00005 + -1)
+{1..7}
+DISCRETE aux54 #AC-CSE-Generic-+: 4 occurrences of: (opponent_00001_00006 + -1)
+{1..7}
+DISCRETE aux55 #AC-CSE-Generic-+: 4 occurrences of: (opponent_00001_00007 + -2)
+{1..6}
+DISCRETE aux56 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([2, 3, 4, 3, 2, 1, 0, 1], opponent_00007_00003)
+{0..4}
+DISCRETE aux57 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([2, 3, 4, 3, 2, 1, 0, 1], opponent_00007_00002)
+{0..4}
+DISCRETE aux58 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([2, 3, 4, 3, 2, 1, 0, 1], opponent_00007_00005)
+{0..4}
+DISCRETE aux59 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([2, 3, 4, 3, 2, 1, 0, 1], opponent_00007_00004)
+{0..4}
+DISCRETE aux60 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([2, 3, 4, 3, 2, 1, 0, 1], opponent_00007_00007)
+{0..4}
+DISCRETE aux61 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([2, 3, 4, 3, 2, 1, 0, 1], opponent_00007_00006)
+{0..4}
+DISCRETE aux62 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([2, 3, 4, 3, 2, 1, 0, 1], opponent_00007_00001)
+{0..4}
+DISCRETE aux63 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([2, 1, 0, 1, 2, 3, 4, 3], opponent_00003_00007)
+{0..4}
+DISCRETE aux64 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([2, 1, 0, 1, 2, 3, 4, 3], opponent_00003_00006)
+{0..4}
+DISCRETE aux65 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([2, 1, 0, 1, 2, 3, 4, 3], opponent_00003_00001)
+{0..4}
+DISCRETE aux66 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([2, 1, 0, 1, 2, 3, 4, 3], opponent_00003_00002)
+{0..4}
+DISCRETE aux67 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([2, 1, 0, 1, 2, 3, 4, 3], opponent_00003_00003)
+{0..4}
+DISCRETE aux68 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([2, 1, 0, 1, 2, 3, 4, 3], opponent_00003_00005)
+{0..4}
+DISCRETE aux69 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([2, 1, 0, 1, 2, 3, 4, 3], opponent_00003_00004)
+{0..4}
+DISCRETE aux70 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([4, 3, 2, 1, 0, 1, 2, 3], opponent_00005_00001)
+{0..4}
+DISCRETE aux71 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([4, 3, 2, 1, 0, 1, 2, 3], opponent_00005_00003)
+{0..4}
+DISCRETE aux72 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([4, 3, 2, 1, 0, 1, 2, 3], opponent_00005_00002)
+{0..4}
+DISCRETE aux73 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([4, 3, 2, 1, 0, 1, 2, 3], opponent_00005_00005)
+{0..4}
+DISCRETE aux74 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([4, 3, 2, 1, 0, 1, 2, 3], opponent_00005_00004)
+{0..4}
+DISCRETE aux75 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([4, 3, 2, 1, 0, 1, 2, 3], opponent_00005_00007)
+{0..4}
+DISCRETE aux76 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([4, 3, 2, 1, 0, 1, 2, 3], opponent_00005_00006)
+{0..4}
+DISCRETE aux77 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([3, 4, 3, 2, 1, 0, 1, 2], opponent_00006_00007)
+{0..4}
+DISCRETE aux78 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([3, 4, 3, 2, 1, 0, 1, 2], opponent_00006_00006)
+{0..4}
+DISCRETE aux79 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([3, 4, 3, 2, 1, 0, 1, 2], opponent_00006_00005)
+{0..4}
+DISCRETE aux80 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([3, 4, 3, 2, 1, 0, 1, 2], opponent_00006_00004)
+{0..4}
+DISCRETE aux81 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([3, 4, 3, 2, 1, 0, 1, 2], opponent_00006_00003)
+{0..4}
+DISCRETE aux82 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([3, 4, 3, 2, 1, 0, 1, 2], opponent_00006_00002)
+{0..4}
+DISCRETE aux83 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([3, 4, 3, 2, 1, 0, 1, 2], opponent_00006_00001)
+{0..4}
+DISCRETE aux84 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([3, 2, 1, 0, 1, 2, 3, 4], opponent_00004_00004)
+{0..4}
+DISCRETE aux85 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([3, 2, 1, 0, 1, 2, 3, 4], opponent_00004_00003)
+{0..4}
+DISCRETE aux86 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([3, 2, 1, 0, 1, 2, 3, 4], opponent_00004_00001)
+{0..4}
+DISCRETE aux87 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([3, 2, 1, 0, 1, 2, 3, 4], opponent_00004_00002)
+{0..4}
+DISCRETE aux88 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([3, 2, 1, 0, 1, 2, 3, 4], opponent_00004_00007)
+{0..4}
+DISCRETE aux89 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([3, 2, 1, 0, 1, 2, 3, 4], opponent_00004_00006)
+{0..4}
+DISCRETE aux90 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([3, 2, 1, 0, 1, 2, 3, 4], opponent_00004_00005)
+{0..4}
+DISCRETE aux91 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([1, 0, 1, 2, 3, 4, 3, 2], opponent_00002_00006)
+{0..4}
+DISCRETE aux92 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([1, 0, 1, 2, 3, 4, 3, 2], opponent_00002_00005)
+{0..4}
+DISCRETE aux93 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([1, 0, 1, 2, 3, 4, 3, 2], opponent_00002_00003)
+{0..4}
+DISCRETE aux94 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([1, 0, 1, 2, 3, 4, 3, 2], opponent_00002_00004)
+{0..4}
+DISCRETE aux95 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([1, 0, 1, 2, 3, 4, 3, 2], opponent_00002_00001)
+{0..4}
+DISCRETE aux96 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([1, 0, 1, 2, 3, 4, 3, 2], opponent_00002_00002)
+{0..4}
+DISCRETE aux97 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([1, 0, 1, 2, 3, 4, 3, 2], opponent_00002_00007)
+{0..4}
+DISCRETE aux98 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([1, 2, 3, 4, 3, 2, 1], opponent_00008_00005)
+{1..4}
+DISCRETE aux99 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([1, 2, 3, 4, 3, 2, 1], opponent_00008_00004)
+{1..4}
+DISCRETE aux100 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([1, 2, 3, 4, 3, 2, 1], opponent_00008_00003)
+{1..4}
+DISCRETE aux101 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([1, 2, 3, 4, 3, 2, 1], opponent_00008_00002)
+{1..4}
+DISCRETE aux102 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([1, 2, 3, 4, 3, 2, 1], opponent_00008_00007)
+{1..4}
+DISCRETE aux103 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([1, 2, 3, 4, 3, 2, 1], opponent_00008_00006)
+{1..4}
+DISCRETE aux104 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([1, 2, 3, 4, 3, 2, 1], opponent_00008_00001)
+{1..4}
+DISCRETE aux105 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([1, 2, 3, 4, 3, 2, 1], aux51)
+{1..4}
+DISCRETE aux106 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([1, 2, 3, 4, 3, 2, 1], aux50)
+{1..4}
+DISCRETE aux107 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([1, 2, 3, 4, 3, 2, 1], aux53)
+{1..4}
+DISCRETE aux108 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([1, 2, 3, 4, 3, 2, 1], aux52)
+{1..4}
+DISCRETE aux109 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([1, 2, 3, 4, 3, 2, 1], aux54)
+{1..4}
+DISCRETE aux110 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([2, 3, 4, 3, 2, 1], aux55)
+{1..4}
+DISCRETE aux111 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([1, 2, 3, 4, 3, 2], aux49)
+{1..4}
+BOOL aux112 #Active-CSE: 3 occurrences of this expression or equivalent: (venue_00006_00001 != 2)
+BOOL aux113 #Active-CSE: 3 occurrences of this expression or equivalent: (venue_00006_00001 != 1)
+BOOL aux114 #Active-CSE: 3 occurrences of this expression or equivalent: (venue_00001_00001 != 2)
+BOOL aux115 #Active-CSE: 3 occurrences of this expression or equivalent: (venue_00001_00001 != 1)
+BOOL aux116 #Active-CSE: 4 occurrences of this expression or equivalent: (venue_00001_00007 != 1)
+BOOL aux117 #Active-CSE: 4 occurrences of this expression or equivalent: (venue_00001_00007 != 2)
+BOOL aux118 #Active-CSE: 4 occurrences of this expression or equivalent: (venue_00007_00003 != 2)
+BOOL aux119 #Active-CSE: 4 occurrences of this expression or equivalent: (venue_00007_00003 != 1)
+BOOL aux120 #Active-CSE: 4 occurrences of this expression or equivalent: (venue_00007_00006 != 1)
+BOOL aux121 #Active-CSE: 4 occurrences of this expression or equivalent: (venue_00007_00006 != 2)
+BOOL aux122 #Active-CSE: 4 occurrences of this expression or equivalent: (venue_00001_00003 != 2)
+BOOL aux123 #Active-CSE: 4 occurrences of this expression or equivalent: (venue_00001_00003 != 1)
+BOOL aux124 #Active-CSE: 4 occurrences of this expression or equivalent: (venue_00001_00006 != 1)
+BOOL aux125 #Active-CSE: 4 occurrences of this expression or equivalent: (venue_00001_00006 != 2)
+BOOL aux126 #Active-CSE: 4 occurrences of this expression or equivalent: (1 != venue_00008_00007)
+BOOL aux127 #Active-CSE: 4 occurrences of this expression or equivalent: (2 != venue_00008_00007)
+BOOL aux128 #Active-CSE: 4 occurrences of this expression or equivalent: (venue_00002_00006 != 1)
+BOOL aux129 #Active-CSE: 4 occurrences of this expression or equivalent: (venue_00002_00006 != 2)
+BOOL aux130 #Active-CSE: 4 occurrences of this expression or equivalent: (venue_00002_00003 != 2)
+BOOL aux131 #Active-CSE: 4 occurrences of this expression or equivalent: (venue_00002_00003 != 1)
+BOOL aux132 #Active-CSE: 5 occurrences of this expression or equivalent: (2 != venue_00004_00005)
+BOOL aux133 #Active-CSE: 5 occurrences of this expression or equivalent: (2 != venue_00004_00004)
+BOOL aux134 #Active-CSE: 5 occurrences of this expression or equivalent: (2 != venue_00004_00002)
+BOOL aux135 #Active-CSE: 5 occurrences of this expression or equivalent: (1 != venue_00004_00005)
+BOOL aux136 #Active-CSE: 5 occurrences of this expression or equivalent: (1 != venue_00004_00004)
+BOOL aux137 #Active-CSE: 5 occurrences of this expression or equivalent: (1 != venue_00004_00002)
+BOOL aux138 #Active-CSE: 4 occurrences of this expression or equivalent: (venue_00007_00007 != 1)
+BOOL aux139 #Active-CSE: 4 occurrences of this expression or equivalent: (venue_00007_00007 != 2)
+BOOL aux140 #Active-CSE: 5 occurrences of this expression or equivalent: (2 != venue_00003_00002)
+BOOL aux141 #Active-CSE: 5 occurrences of this expression or equivalent: (2 != venue_00003_00004)
+BOOL aux142 #Active-CSE: 5 occurrences of this expression or equivalent: (2 != venue_00003_00005)
+BOOL aux143 #Active-CSE: 3 occurrences of this expression or equivalent: (1 != venue_00008_00001)
+BOOL aux144 #Active-CSE: 3 occurrences of this expression or equivalent: (2 != venue_00008_00001)
+BOOL aux145 #Active-CSE: 4 occurrences of this expression or equivalent: (venue_00006_00007 != 2)
+BOOL aux146 #Active-CSE: 4 occurrences of this expression or equivalent: (venue_00006_00007 != 1)
+BOOL aux147 #Active-CSE: 5 occurrences of this expression or equivalent: (1 != venue_00003_00002)
+BOOL aux148 #Active-CSE: 5 occurrences of this expression or equivalent: (1 != venue_00003_00004)
+BOOL aux149 #Active-CSE: 5 occurrences of this expression or equivalent: (1 != venue_00003_00005)
+BOOL aux150 #Active-CSE: 4 occurrences of this expression or equivalent: (venue_00006_00003 != 2)
+BOOL aux151 #Active-CSE: 4 occurrences of this expression or equivalent: (venue_00006_00003 != 1)
+BOOL aux152 #Active-CSE: 4 occurrences of this expression or equivalent: (venue_00006_00006 != 2)
+BOOL aux153 #Active-CSE: 4 occurrences of this expression or equivalent: (venue_00006_00006 != 1)
+BOOL aux154 #Active-CSE: 4 occurrences of this expression or equivalent: (venue_00005_00003 != 2)
+BOOL aux155 #Active-CSE: 4 occurrences of this expression or equivalent: (venue_00005_00003 != 1)
+BOOL aux156 #Active-CSE: 4 occurrences of this expression or equivalent: (venue_00005_00006 != 1)
+BOOL aux157 #Active-CSE: 4 occurrences of this expression or equivalent: (venue_00005_00006 != 2)
+BOOL aux158 #Active-CSE: 4 occurrences of this expression or equivalent: (1 != venue_00004_00006)
+BOOL aux159 #Active-CSE: 4 occurrences of this expression or equivalent: (2 != venue_00004_00006)
+BOOL aux160 #Active-CSE: 4 occurrences of this expression or equivalent: (2 != venue_00004_00003)
+BOOL aux161 #Active-CSE: 4 occurrences of this expression or equivalent: (1 != venue_00004_00003)
+BOOL aux162 #Active-CSE: 4 occurrences of this expression or equivalent: (1 != venue_00003_00007)
+BOOL aux163 #Active-CSE: 4 occurrences of this expression or equivalent: (2 != venue_00003_00007)
+BOOL aux164 #Active-CSE: 3 occurrences of this expression or equivalent: (1 != venue_00003_00001)
+BOOL aux165 #Active-CSE: 3 occurrences of this expression or equivalent: (2 != venue_00003_00001)
+BOOL aux166 #Active-CSE: 5 occurrences of this expression or equivalent: (venue_00007_00005 != 2)
+BOOL aux167 #Active-CSE: 5 occurrences of this expression or equivalent: (venue_00007_00004 != 1)
+BOOL aux168 #Active-CSE: 5 occurrences of this expression or equivalent: (venue_00007_00004 != 2)
+BOOL aux169 #Active-CSE: 5 occurrences of this expression or equivalent: (venue_00007_00005 != 1)
+BOOL aux170 #Active-CSE: 5 occurrences of this expression or equivalent: (venue_00001_00002 != 2)
+BOOL aux171 #Active-CSE: 5 occurrences of this expression or equivalent: (venue_00001_00002 != 1)
+BOOL aux172 #Active-CSE: 5 occurrences of this expression or equivalent: (venue_00007_00002 != 2)
+BOOL aux173 #Active-CSE: 5 occurrences of this expression or equivalent: (venue_00007_00002 != 1)
+BOOL aux174 #Active-CSE: 4 occurrences of this expression or equivalent: (1 != venue_00008_00006)
+BOOL aux175 #Active-CSE: 4 occurrences of this expression or equivalent: (1 != venue_00008_00003)
+BOOL aux176 #Active-CSE: 4 occurrences of this expression or equivalent: (2 != venue_00008_00003)
+BOOL aux177 #Active-CSE: 4 occurrences of this expression or equivalent: (2 != venue_00008_00006)
+BOOL aux178 #Active-CSE: 3 occurrences of this expression or equivalent: (venue_00005_00001 != 2)
+BOOL aux179 #Active-CSE: 3 occurrences of this expression or equivalent: (venue_00005_00001 != 1)
+BOOL aux180 #Active-CSE: 5 occurrences of this expression or equivalent: (venue_00001_00004 != 1)
+BOOL aux181 #Active-CSE: 5 occurrences of this expression or equivalent: (venue_00001_00004 != 2)
+BOOL aux182 #Active-CSE: 5 occurrences of this expression or equivalent: (venue_00001_00005 != 1)
+BOOL aux183 #Active-CSE: 5 occurrences of this expression or equivalent: (venue_00001_00005 != 2)
+BOOL aux184 #Active-CSE: 3 occurrences of this expression or equivalent: (1 != venue_00004_00001)
+BOOL aux185 #Active-CSE: 3 occurrences of this expression or equivalent: (2 != venue_00004_00001)
+BOOL aux186 #Active-CSE: 5 occurrences of this expression or equivalent: (venue_00002_00005 != 2)
+BOOL aux187 #Active-CSE: 5 occurrences of this expression or equivalent: (venue_00002_00005 != 1)
+BOOL aux188 #Active-CSE: 5 occurrences of this expression or equivalent: (venue_00006_00002 != 2)
+BOOL aux189 #Active-CSE: 5 occurrences of this expression or equivalent: (venue_00006_00002 != 1)
+BOOL aux190 #Active-CSE: 5 occurrences of this expression or equivalent: (2 != venue_00008_00002)
+BOOL aux191 #Active-CSE: 5 occurrences of this expression or equivalent: (2 != venue_00008_00004)
+BOOL aux192 #Active-CSE: 5 occurrences of this expression or equivalent: (2 != venue_00008_00005)
+BOOL aux193 #Active-CSE: 4 occurrences of this expression or equivalent: (2 != venue_00004_00007)
+BOOL aux194 #Active-CSE: 4 occurrences of this expression or equivalent: (1 != venue_00004_00007)
+BOOL aux195 #Active-CSE: 5 occurrences of this expression or equivalent: (1 != venue_00008_00002)
+BOOL aux196 #Active-CSE: 5 occurrences of this expression or equivalent: (1 != venue_00008_00004)
+BOOL aux197 #Active-CSE: 5 occurrences of this expression or equivalent: (1 != venue_00008_00005)
+BOOL aux198 #Active-CSE: 5 occurrences of this expression or equivalent: (venue_00002_00004 != 2)
+BOOL aux199 #Active-CSE: 5 occurrences of this expression or equivalent: (venue_00002_00004 != 1)
+BOOL aux200 #Active-CSE: 5 occurrences of this expression or equivalent: (venue_00002_00002 != 2)
+BOOL aux201 #Active-CSE: 5 occurrences of this expression or equivalent: (venue_00002_00002 != 1)
+BOOL aux202 #Active-CSE: 3 occurrences of this expression or equivalent: (venue_00002_00001 != 2)
+BOOL aux203 #Active-CSE: 3 occurrences of this expression or equivalent: (venue_00002_00001 != 1)
+BOOL aux204 #Active-CSE: 4 occurrences of this expression or equivalent: (1 != venue_00003_00003)
+BOOL aux205 #Active-CSE: 4 occurrences of this expression or equivalent: (1 != venue_00003_00006)
+BOOL aux206 #Active-CSE: 4 occurrences of this expression or equivalent: (2 != venue_00003_00006)
+BOOL aux207 #Active-CSE: 4 occurrences of this expression or equivalent: (2 != venue_00003_00003)
+BOOL aux208 #Active-CSE: 4 occurrences of this expression or equivalent: (venue_00002_00007 != 1)
+BOOL aux209 #Active-CSE: 4 occurrences of this expression or equivalent: (venue_00002_00007 != 2)
+BOOL aux210 #Active-CSE: 5 occurrences of this expression or equivalent: (venue_00006_00005 != 1)
+BOOL aux211 #Active-CSE: 5 occurrences of this expression or equivalent: (venue_00006_00005 != 2)
+BOOL aux212 #Active-CSE: 5 occurrences of this expression or equivalent: (venue_00006_00004 != 2)
+BOOL aux213 #Active-CSE: 5 occurrences of this expression or equivalent: (venue_00006_00004 != 1)
+BOOL aux214 #Active-CSE: 5 occurrences of this expression or equivalent: (venue_00005_00004 != 2)
+BOOL aux215 #Active-CSE: 5 occurrences of this expression or equivalent: (venue_00005_00004 != 1)
+BOOL aux216 #Active-CSE: 5 occurrences of this expression or equivalent: (venue_00005_00005 != 2)
+BOOL aux217 #Active-CSE: 5 occurrences of this expression or equivalent: (venue_00005_00005 != 1)
+BOOL aux218 #Active-CSE: 4 occurrences of this expression or equivalent: (venue_00005_00007 != 1)
+BOOL aux219 #Active-CSE: 4 occurrences of this expression or equivalent: (venue_00005_00007 != 2)
+BOOL aux220 #Active-CSE: 5 occurrences of this expression or equivalent: (venue_00005_00002 != 2)
+BOOL aux221 #Active-CSE: 5 occurrences of this expression or equivalent: (venue_00005_00002 != 1)
+BOOL aux222 #Active-CSE: 3 occurrences of this expression or equivalent: (venue_00007_00001 != 2)
+BOOL aux223 #Active-CSE: 3 occurrences of this expression or equivalent: (venue_00007_00001 != 1)
+DISCRETE aux224 #(8*opponent_00003_00003 + opponent_00003_00004 + -8)
+{1..64}
+**CONSTRAINTS**
+w-inintervalset(aux224, [1,2,4,10,12,16,25,26,28,34,36,42,44,50,52,58,60,64])
+**VARIABLES**
+DISCRETE aux225 #(8*opponent_00003_00001 + opponent_00003_00002 + -8)
+{1..64}
+**CONSTRAINTS**
+w-inintervalset(aux225, [1,2,4,10,12,16,25,26,28,34,36,42,44,50,52,58,60,64])
+**VARIABLES**
+DISCRETE aux226 #(8*opponent_00003_00005 + opponent_00003_00006 + -8)
+{1..64}
+**CONSTRAINTS**
+w-inintervalset(aux226, [1,2,4,10,12,16,25,26,28,34,36,42,44,50,52,58,60,64])
+**VARIABLES**
+DISCRETE aux227 #(8*opponent_00007_00001 + opponent_00007_00002 + -8)
+{1..64}
+**CONSTRAINTS**
+w-inintervalset(aux227, [1,6,8,14,16,22,24,30,32,38,40,46,48,48,57,62,64,64])
+**VARIABLES**
+DISCRETE aux228 #(8*opponent_00007_00003 + opponent_00007_00004 + -8)
+{1..64}
+**CONSTRAINTS**
+w-inintervalset(aux228, [1,6,8,14,16,22,24,30,32,38,40,46,48,48,57,62,64,64])
+**VARIABLES**
+DISCRETE aux229 #(8*opponent_00007_00005 + opponent_00007_00006 + -8)
+{1..64}
+**CONSTRAINTS**
+w-inintervalset(aux229, [1,6,8,14,16,22,24,30,32,38,40,46,48,48,57,62,64,64])
+**VARIABLES**
+DISCRETE aux230 #(8*opponent_00001_00003 + opponent_00001_00004 + -17)
+{1..55}
+**CONSTRAINTS**
+w-inintervalset(aux230, [1,7,9,15,17,23,25,31,33,39,41,47,49,55])
+**VARIABLES**
+DISCRETE aux231 #(8*opponent_00007_00002 + opponent_00007_00003 + -8)
+{1..64}
+**CONSTRAINTS**
+w-inintervalset(aux231, [1,6,8,14,16,22,24,30,32,38,40,46,48,48,57,62,64,64])
+**VARIABLES**
+DISCRETE aux232 #(8*opponent_00007_00004 + opponent_00007_00005 + -8)
+{1..64}
+**CONSTRAINTS**
+w-inintervalset(aux232, [1,6,8,14,16,22,24,30,32,38,40,46,48,48,57,62,64,64])
+**VARIABLES**
+DISCRETE aux233 #(8*opponent_00007_00006 + opponent_00007_00007 + -8)
+{1..64}
+**CONSTRAINTS**
+w-inintervalset(aux233, [1,6,8,14,16,22,24,30,32,38,40,46,48,48,57,62,64,64])
+**VARIABLES**
+DISCRETE aux234 #(8*opponent_00001_00005 + opponent_00001_00006 + -17)
+{1..55}
+**CONSTRAINTS**
+w-inintervalset(aux234, [1,7,9,15,17,23,25,31,33,39,41,47,49,55])
+**VARIABLES**
+DISCRETE aux235 #(8*opponent_00008_00001 + opponent_00008_00002 + -8)
+{1..55}
+**CONSTRAINTS**
+w-inintervalset(aux235, [1,7,9,15,17,23,25,31,33,39,41,47,49,55])
+**VARIABLES**
+DISCRETE aux236 #(8*opponent_00008_00003 + opponent_00008_00004 + -8)
+{1..55}
+**CONSTRAINTS**
+w-inintervalset(aux236, [1,7,9,15,17,23,25,31,33,39,41,47,49,55])
+**VARIABLES**
+DISCRETE aux237 #(8*opponent_00008_00005 + opponent_00008_00006 + -8)
+{1..55}
+**CONSTRAINTS**
+w-inintervalset(aux237, [1,7,9,15,17,23,25,31,33,39,41,47,49,55])
+**VARIABLES**
+DISCRETE aux238 #(-8 + 8*opponent_00004_00005 + opponent_00004_00006)
+{1..64}
+**CONSTRAINTS**
+w-inintervalset(aux238, [1,3,5,11,13,19,21,24,33,35,37,43,45,51,53,59,61,64])
+**VARIABLES**
+DISCRETE aux239 #(-8 + 8*opponent_00004_00001 + opponent_00004_00002)
+{1..64}
+**CONSTRAINTS**
+w-inintervalset(aux239, [1,3,5,11,13,19,21,24,33,35,37,43,45,51,53,59,61,64])
+**VARIABLES**
+DISCRETE aux240 #(8*opponent_00008_00002 + opponent_00008_00003 + -8)
+{1..55}
+**CONSTRAINTS**
+w-inintervalset(aux240, [1,7,9,15,17,23,25,31,33,39,41,47,49,55])
+**VARIABLES**
+DISCRETE aux241 #(8*opponent_00008_00004 + opponent_00008_00005 + -8)
+{1..55}
+**CONSTRAINTS**
+w-inintervalset(aux241, [1,7,9,15,17,23,25,31,33,39,41,47,49,55])
+**VARIABLES**
+DISCRETE aux242 #(8*opponent_00008_00006 + opponent_00008_00007 + -8)
+{1..55}
+**CONSTRAINTS**
+w-inintervalset(aux242, [1,7,9,15,17,23,25,31,33,39,41,47,49,55])
+**VARIABLES**
+DISCRETE aux243 #(-8 + 8*opponent_00005_00002 + opponent_00005_00003)
+{1..64}
+**CONSTRAINTS**
+w-inintervalset(aux243, [1,4,6,12,14,20,22,28,30,32,41,44,46,52,54,60,62,64])
+**VARIABLES**
+DISCRETE aux244 #(-8 + 8*opponent_00005_00004 + opponent_00005_00005)
+{1..64}
+**CONSTRAINTS**
+w-inintervalset(aux244, [1,4,6,12,14,20,22,28,30,32,41,44,46,52,54,60,62,64])
+**VARIABLES**
+DISCRETE aux245 #(-8 + 8*opponent_00005_00006 + opponent_00005_00007)
+{1..64}
+**CONSTRAINTS**
+w-inintervalset(aux245, [1,4,6,12,14,20,22,28,30,32,41,44,46,52,54,60,62,64])
+**VARIABLES**
+DISCRETE aux246 #(-8 + 8*opponent_00005_00003 + opponent_00005_00004)
+{1..64}
+**CONSTRAINTS**
+w-inintervalset(aux246, [1,4,6,12,14,20,22,28,30,32,41,44,46,52,54,60,62,64])
+**VARIABLES**
+DISCRETE aux247 #(-8 + 8*opponent_00005_00001 + opponent_00005_00002)
+{1..64}
+**CONSTRAINTS**
+w-inintervalset(aux247, [1,4,6,12,14,20,22,28,30,32,41,44,46,52,54,60,62,64])
+**VARIABLES**
+DISCRETE aux248 #(-8 + 8*opponent_00005_00005 + opponent_00005_00006)
+{1..64}
+**CONSTRAINTS**
+w-inintervalset(aux248, [1,4,6,12,14,20,22,28,30,32,41,44,46,52,54,60,62,64])
+**VARIABLES**
+DISCRETE aux249 #(8*opponent_00006_00001 + opponent_00006_00002 + -8)
+{1..64}
+**CONSTRAINTS**
+w-inintervalset(aux249, [1,5,7,13,15,21,23,29,31,37,39,40,49,53,55,61,63,64])
+**VARIABLES**
+DISCRETE aux250 #(8*opponent_00006_00003 + opponent_00006_00004 + -8)
+{1..64}
+**CONSTRAINTS**
+w-inintervalset(aux250, [1,5,7,13,15,21,23,29,31,37,39,40,49,53,55,61,63,64])
+**VARIABLES**
+DISCRETE aux251 #(8*opponent_00006_00005 + opponent_00006_00006 + -8)
+{1..64}
+**CONSTRAINTS**
+w-inintervalset(aux251, [1,5,7,13,15,21,23,29,31,37,39,40,49,53,55,61,63,64])
+**VARIABLES**
+DISCRETE aux252 #(8*opponent_00001_00001 + opponent_00001_00002 + -17)
+{1..47}
+**CONSTRAINTS**
+w-inintervalset(aux252, [1,7,9,15,17,23,25,31,33,39,41,47])
+**VARIABLES**
+DISCRETE aux253 #(-8 + 8*opponent_00004_00002 + opponent_00004_00003)
+{1..64}
+**CONSTRAINTS**
+w-inintervalset(aux253, [1,3,5,11,13,19,21,24,33,35,37,43,45,51,53,59,61,64])
+**VARIABLES**
+DISCRETE aux254 #(-8 + 8*opponent_00004_00004 + opponent_00004_00005)
+{1..64}
+**CONSTRAINTS**
+w-inintervalset(aux254, [1,3,5,11,13,19,21,24,33,35,37,43,45,51,53,59,61,64])
+**VARIABLES**
+DISCRETE aux255 #(-8 + 8*opponent_00004_00006 + opponent_00004_00007)
+{1..64}
+**CONSTRAINTS**
+w-inintervalset(aux255, [1,3,5,11,13,19,21,24,33,35,37,43,45,51,53,59,61,64])
+**VARIABLES**
+DISCRETE aux256 #(8*opponent_00001_00006 + opponent_00001_00007 + -18)
+{1..54}
+**CONSTRAINTS**
+w-inintervalset(aux256, [1,6,9,14,17,22,25,30,33,38,41,46,49,54])
+**VARIABLES**
+DISCRETE aux257 #(8*opponent_00002_00001 + opponent_00002_00002 + -8)
+{1..64}
+**CONSTRAINTS**
+w-inintervalset(aux257, [1,1,3,8,17,17,19,25,27,33,35,41,43,49,51,57,59,64])
+**VARIABLES**
+DISCRETE aux258 #(8*opponent_00002_00005 + opponent_00002_00006 + -8)
+{1..64}
+**CONSTRAINTS**
+w-inintervalset(aux258, [1,1,3,8,17,17,19,25,27,33,35,41,43,49,51,57,59,64])
+**VARIABLES**
+DISCRETE aux259 #(8*opponent_00006_00002 + opponent_00006_00003 + -8)
+{1..64}
+**CONSTRAINTS**
+w-inintervalset(aux259, [1,5,7,13,15,21,23,29,31,37,39,40,49,53,55,61,63,64])
+**VARIABLES**
+DISCRETE aux260 #(8*opponent_00006_00004 + opponent_00006_00005 + -8)
+{1..64}
+**CONSTRAINTS**
+w-inintervalset(aux260, [1,5,7,13,15,21,23,29,31,37,39,40,49,53,55,61,63,64])
+**VARIABLES**
+DISCRETE aux261 #(8*opponent_00006_00006 + opponent_00006_00007 + -8)
+{1..64}
+**CONSTRAINTS**
+w-inintervalset(aux261, [1,5,7,13,15,21,23,29,31,37,39,40,49,53,55,61,63,64])
+**VARIABLES**
+DISCRETE aux262 #(-8 + 8*opponent_00004_00003 + opponent_00004_00004)
+{1..64}
+**CONSTRAINTS**
+w-inintervalset(aux262, [1,3,5,11,13,19,21,24,33,35,37,43,45,51,53,59,61,64])
+**VARIABLES**
+DISCRETE aux263 #(8*opponent_00002_00003 + opponent_00002_00004 + -8)
+{1..64}
+**CONSTRAINTS**
+w-inintervalset(aux263, [1,1,3,8,17,17,19,25,27,33,35,41,43,49,51,57,59,64])
+**VARIABLES**
+DISCRETE aux264 #(8*opponent_00002_00002 + opponent_00002_00003 + -8)
+{1..64}
+**CONSTRAINTS**
+w-inintervalset(aux264, [1,1,3,8,17,17,19,25,27,33,35,41,43,49,51,57,59,64])
+**VARIABLES**
+DISCRETE aux265 #(8*opponent_00002_00004 + opponent_00002_00005 + -8)
+{1..64}
+**CONSTRAINTS**
+w-inintervalset(aux265, [1,1,3,8,17,17,19,25,27,33,35,41,43,49,51,57,59,64])
+**VARIABLES**
+DISCRETE aux266 #(8*opponent_00002_00006 + opponent_00002_00007 + -8)
+{1..64}
+**CONSTRAINTS**
+w-inintervalset(aux266, [1,1,3,8,17,17,19,25,27,33,35,41,43,49,51,57,59,64])
+**VARIABLES**
+DISCRETE aux267 #(8*opponent_00001_00002 + opponent_00001_00003 + -17)
+{1..55}
+**CONSTRAINTS**
+w-inintervalset(aux267, [1,7,9,15,17,23,25,31,33,39,41,47,49,55])
+**VARIABLES**
+DISCRETE aux268 #(8*opponent_00001_00004 + opponent_00001_00005 + -17)
+{1..55}
+**CONSTRAINTS**
+w-inintervalset(aux268, [1,7,9,15,17,23,25,31,33,39,41,47,49,55])
+**VARIABLES**
+DISCRETE aux269 #(8*opponent_00003_00002 + opponent_00003_00003 + -8)
+{1..64}
+**CONSTRAINTS**
+w-inintervalset(aux269, [1,2,4,10,12,16,25,26,28,34,36,42,44,50,52,58,60,64])
+**VARIABLES**
+DISCRETE aux270 #(8*opponent_00003_00004 + opponent_00003_00005 + -8)
+{1..64}
+**CONSTRAINTS**
+w-inintervalset(aux270, [1,2,4,10,12,16,25,26,28,34,36,42,44,50,52,58,60,64])
+**VARIABLES**
+DISCRETE aux271 #(8*opponent_00003_00006 + opponent_00003_00007 + -8)
+{1..64}
+**CONSTRAINTS**
+w-inintervalset(aux271, [1,2,4,10,12,16,25,26,28,34,36,42,44,50,52,58,60,64])
+**VARIABLES**
+**VARIABLES**
+ALIAS aux0[64]=[4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4]
+**TUPLELIST**
+pv 8 8
+2 2 2 2 1 1 1 1 
+1 2 1 1 2 2 2 2 
+1 2 2 2 1 2 2 1 
+1 2 1 2 2 2 1 2 
+2 1 2 1 2 1 2 2 
+2 1 1 1 2 2 2 1 
+2 1 1 2 1 1 2 2 
+2 1 2 1 1 2 1 2 
+**VARIABLES**
+ALIAS pv[8,8]=[[2, 2, 2, 2, 1, 1, 1, 1], [1, 2, 1, 1, 2, 2, 2, 2], [1, 2, 2, 2, 1, 2, 2, 1], [1, 2, 1, 2, 2, 2, 1, 2], [2, 1, 2, 1, 2, 1, 2, 2], [2, 1, 1, 1, 2, 2, 2, 1], [2, 1, 1, 2, 1, 1, 2, 2], [2, 1, 2, 1, 1, 2, 1, 2]]
+**SEARCH**
+PRINT[[opponent_00001_00001],[opponent_00001_00002],[opponent_00001_00003],[opponent_00001_00004],[opponent_00001_00005],[opponent_00001_00006],[opponent_00001_00007],[opponent_00002_00001],[opponent_00002_00002],[opponent_00002_00003],[opponent_00002_00004],[opponent_00002_00005],[opponent_00002_00006],[opponent_00002_00007],[opponent_00003_00001],[opponent_00003_00002],[opponent_00003_00003],[opponent_00003_00004],[opponent_00003_00005],[opponent_00003_00006],[opponent_00003_00007],[opponent_00004_00001],[opponent_00004_00002],[opponent_00004_00003],[opponent_00004_00004],[opponent_00004_00005],[opponent_00004_00006],[opponent_00004_00007],[opponent_00005_00001],[opponent_00005_00002],[opponent_00005_00003],[opponent_00005_00004],[opponent_00005_00005],[opponent_00005_00006],[opponent_00005_00007],[opponent_00006_00001],[opponent_00006_00002],[opponent_00006_00003],[opponent_00006_00004],[opponent_00006_00005],[opponent_00006_00006],[opponent_00006_00007],[opponent_00007_00001],[opponent_00007_00002],[opponent_00007_00003],[opponent_00007_00004],[opponent_00007_00005],[opponent_00007_00006],[opponent_00007_00007],[opponent_00008_00001],[opponent_00008_00002],[opponent_00008_00003],[opponent_00008_00004],[opponent_00008_00005],[opponent_00008_00006],[opponent_00008_00007],[venue_00001_00001],[venue_00001_00002],[venue_00001_00003],[venue_00001_00004],[venue_00001_00005],[venue_00001_00006],[venue_00001_00007],[venue_00002_00001],[venue_00002_00002],[venue_00002_00003],[venue_00002_00004],[venue_00002_00005],[venue_00002_00006],[venue_00002_00007],[venue_00003_00001],[venue_00003_00002],[venue_00003_00003],[venue_00003_00004],[venue_00003_00005],[venue_00003_00006],[venue_00003_00007],[venue_00004_00001],[venue_00004_00002],[venue_00004_00003],[venue_00004_00004],[venue_00004_00005],[venue_00004_00006],[venue_00004_00007],[venue_00005_00001],[venue_00005_00002],[venue_00005_00003],[venue_00005_00004],[venue_00005_00005],[venue_00005_00006],[venue_00005_00007],[venue_00006_00001],[venue_00006_00002],[venue_00006_00003],[venue_00006_00004],[venue_00006_00005],[venue_00006_00006],[venue_00006_00007],[venue_00007_00001],[venue_00007_00002],[venue_00007_00003],[venue_00007_00004],[venue_00007_00005],[venue_00007_00006],[venue_00007_00007],[venue_00008_00001],[venue_00008_00002],[venue_00008_00003],[venue_00008_00004],[venue_00008_00005],[venue_00008_00006],[venue_00008_00007],[travel_00001_00001],[travel_00001_00002],[travel_00001_00003],[travel_00001_00004],[travel_00001_00005],[travel_00001_00006],[travel_00001_00007],[travel_00001_00008],[travel_00002_00001],[travel_00002_00002],[travel_00002_00003],[travel_00002_00004],[travel_00002_00005],[travel_00002_00006],[travel_00002_00007],[travel_00002_00008],[travel_00003_00001],[travel_00003_00002],[travel_00003_00003],[travel_00003_00004],[travel_00003_00005],[travel_00003_00006],[travel_00003_00007],[travel_00003_00008],[travel_00004_00001],[travel_00004_00002],[travel_00004_00003],[travel_00004_00004],[travel_00004_00005],[travel_00004_00006],[travel_00004_00007],[travel_00004_00008],[travel_00005_00001],[travel_00005_00002],[travel_00005_00003],[travel_00005_00004],[travel_00005_00005],[travel_00005_00006],[travel_00005_00007],[travel_00005_00008],[travel_00006_00001],[travel_00006_00002],[travel_00006_00003],[travel_00006_00004],[travel_00006_00005],[travel_00006_00006],[travel_00006_00007],[travel_00006_00008],[travel_00007_00001],[travel_00007_00002],[travel_00007_00003],[travel_00007_00004],[travel_00007_00005],[travel_00007_00006],[travel_00007_00007],[travel_00007_00008],[travel_00008_00001],[travel_00008_00002],[travel_00008_00003],[travel_00008_00004],[travel_00008_00005],[travel_00008_00006],[travel_00008_00007],[travel_00008_00008],[objective],[objective]]
+MINIMISING objective
+**CONSTRAINTS**
+watchelement_one([2, 3, 4, 3, 2, 1, 0, 1], opponent_00007_00003, aux56)
+watchelement_one([2, 3, 4, 3, 2, 1, 0, 1], opponent_00007_00002, aux57)
+watchelement_one([2, 3, 4, 3, 2, 1, 0, 1], opponent_00007_00005, aux58)
+watchelement_one([2, 3, 4, 3, 2, 1, 0, 1], opponent_00007_00004, aux59)
+watchelement_one([2, 3, 4, 3, 2, 1, 0, 1], opponent_00007_00007, aux60)
+watchelement_one([2, 3, 4, 3, 2, 1, 0, 1], opponent_00007_00006, aux61)
+watchelement_one([2, 3, 4, 3, 2, 1, 0, 1], opponent_00007_00001, aux62)
+watchelement_one([2, 1, 0, 1, 2, 3, 4, 3], opponent_00003_00007, aux63)
+watchelement_one([2, 1, 0, 1, 2, 3, 4, 3], opponent_00003_00006, aux64)
+watchelement_one([2, 1, 0, 1, 2, 3, 4, 3], opponent_00003_00001, aux65)
+watchelement_one([2, 1, 0, 1, 2, 3, 4, 3], opponent_00003_00002, aux66)
+watchelement_one([2, 1, 0, 1, 2, 3, 4, 3], opponent_00003_00003, aux67)
+watchelement_one([2, 1, 0, 1, 2, 3, 4, 3], opponent_00003_00005, aux68)
+watchelement_one([2, 1, 0, 1, 2, 3, 4, 3], opponent_00003_00004, aux69)
+watchelement_one([4, 3, 2, 1, 0, 1, 2, 3], opponent_00005_00001, aux70)
+watchelement_one([4, 3, 2, 1, 0, 1, 2, 3], opponent_00005_00003, aux71)
+watchelement_one([4, 3, 2, 1, 0, 1, 2, 3], opponent_00005_00002, aux72)
+watchelement_one([4, 3, 2, 1, 0, 1, 2, 3], opponent_00005_00005, aux73)
+watchelement_one([4, 3, 2, 1, 0, 1, 2, 3], opponent_00005_00004, aux74)
+watchelement_one([4, 3, 2, 1, 0, 1, 2, 3], opponent_00005_00007, aux75)
+watchelement_one([4, 3, 2, 1, 0, 1, 2, 3], opponent_00005_00006, aux76)
+watchelement_one([3, 4, 3, 2, 1, 0, 1, 2], opponent_00006_00007, aux77)
+watchelement_one([3, 4, 3, 2, 1, 0, 1, 2], opponent_00006_00006, aux78)
+watchelement_one([3, 4, 3, 2, 1, 0, 1, 2], opponent_00006_00005, aux79)
+watchelement_one([3, 4, 3, 2, 1, 0, 1, 2], opponent_00006_00004, aux80)
+watchelement_one([3, 4, 3, 2, 1, 0, 1, 2], opponent_00006_00003, aux81)
+watchelement_one([3, 4, 3, 2, 1, 0, 1, 2], opponent_00006_00002, aux82)
+watchelement_one([3, 4, 3, 2, 1, 0, 1, 2], opponent_00006_00001, aux83)
+watchelement_one([3, 2, 1, 0, 1, 2, 3, 4], opponent_00004_00004, aux84)
+watchelement_one([3, 2, 1, 0, 1, 2, 3, 4], opponent_00004_00003, aux85)
+watchelement_one([3, 2, 1, 0, 1, 2, 3, 4], opponent_00004_00001, aux86)
+watchelement_one([3, 2, 1, 0, 1, 2, 3, 4], opponent_00004_00002, aux87)
+watchelement_one([3, 2, 1, 0, 1, 2, 3, 4], opponent_00004_00007, aux88)
+watchelement_one([3, 2, 1, 0, 1, 2, 3, 4], opponent_00004_00006, aux89)
+watchelement_one([3, 2, 1, 0, 1, 2, 3, 4], opponent_00004_00005, aux90)
+watchelement_one([1, 0, 1, 2, 3, 4, 3, 2], opponent_00002_00006, aux91)
+watchelement_one([1, 0, 1, 2, 3, 4, 3, 2], opponent_00002_00005, aux92)
+watchelement_one([1, 0, 1, 2, 3, 4, 3, 2], opponent_00002_00003, aux93)
+watchelement_one([1, 0, 1, 2, 3, 4, 3, 2], opponent_00002_00004, aux94)
+watchelement_one([1, 0, 1, 2, 3, 4, 3, 2], opponent_00002_00001, aux95)
+watchelement_one([1, 0, 1, 2, 3, 4, 3, 2], opponent_00002_00002, aux96)
+watchelement_one([1, 0, 1, 2, 3, 4, 3, 2], opponent_00002_00007, aux97)
+watchelement_one([1, 2, 3, 4, 3, 2, 1], opponent_00008_00005, aux98)
+watchelement_one([1, 2, 3, 4, 3, 2, 1], opponent_00008_00004, aux99)
+watchelement_one([1, 2, 3, 4, 3, 2, 1], opponent_00008_00003, aux100)
+watchelement_one([1, 2, 3, 4, 3, 2, 1], opponent_00008_00002, aux101)
+watchelement_one([1, 2, 3, 4, 3, 2, 1], opponent_00008_00007, aux102)
+watchelement_one([1, 2, 3, 4, 3, 2, 1], opponent_00008_00006, aux103)
+watchelement_one([1, 2, 3, 4, 3, 2, 1], opponent_00008_00001, aux104)
+watchelement_one([1, 2, 3, 4, 3, 2, 1], aux51, aux105)
+watchelement_one([1, 2, 3, 4, 3, 2, 1], aux50, aux106)
+watchelement_one([1, 2, 3, 4, 3, 2, 1], aux53, aux107)
+watchelement_one([1, 2, 3, 4, 3, 2, 1], aux52, aux108)
+watchelement_one([1, 2, 3, 4, 3, 2, 1], aux54, aux109)
+watchelement_one([2, 3, 4, 3, 2, 1], aux55, aux110)
+watchelement_one([1, 2, 3, 4, 3, 2], aux49, aux111)
+reify(diseq(venue_00006_00001,2), aux112)
+reify(diseq(venue_00006_00001,1), aux113)
+reify(diseq(venue_00001_00001,2), aux114)
+reify(diseq(venue_00001_00001,1), aux115)
+reify(diseq(venue_00001_00007,1), aux116)
+reify(diseq(venue_00001_00007,2), aux117)
+reify(diseq(venue_00007_00003,2), aux118)
+reify(diseq(venue_00007_00003,1), aux119)
+reify(diseq(venue_00007_00006,1), aux120)
+reify(diseq(venue_00007_00006,2), aux121)
+reify(diseq(venue_00001_00003,2), aux122)
+reify(diseq(venue_00001_00003,1), aux123)
+reify(diseq(venue_00001_00006,1), aux124)
+reify(diseq(venue_00001_00006,2), aux125)
+reify(diseq(1,venue_00008_00007), aux126)
+reify(diseq(2,venue_00008_00007), aux127)
+reify(diseq(venue_00002_00006,1), aux128)
+reify(diseq(venue_00002_00006,2), aux129)
+reify(diseq(venue_00002_00003,2), aux130)
+reify(diseq(venue_00002_00003,1), aux131)
+reify(diseq(2,venue_00004_00005), aux132)
+reify(diseq(2,venue_00004_00004), aux133)
+reify(diseq(2,venue_00004_00002), aux134)
+reify(diseq(1,venue_00004_00005), aux135)
+reify(diseq(1,venue_00004_00004), aux136)
+reify(diseq(1,venue_00004_00002), aux137)
+reify(diseq(venue_00007_00007,1), aux138)
+reify(diseq(venue_00007_00007,2), aux139)
+reify(diseq(2,venue_00003_00002), aux140)
+reify(diseq(2,venue_00003_00004), aux141)
+reify(diseq(2,venue_00003_00005), aux142)
+reify(diseq(1,venue_00008_00001), aux143)
+reify(diseq(2,venue_00008_00001), aux144)
+reify(diseq(venue_00006_00007,2), aux145)
+reify(diseq(venue_00006_00007,1), aux146)
+reify(diseq(1,venue_00003_00002), aux147)
+reify(diseq(1,venue_00003_00004), aux148)
+reify(diseq(1,venue_00003_00005), aux149)
+reify(diseq(venue_00006_00003,2), aux150)
+reify(diseq(venue_00006_00003,1), aux151)
+reify(diseq(venue_00006_00006,2), aux152)
+reify(diseq(venue_00006_00006,1), aux153)
+reify(diseq(venue_00005_00003,2), aux154)
+reify(diseq(venue_00005_00003,1), aux155)
+reify(diseq(venue_00005_00006,1), aux156)
+reify(diseq(venue_00005_00006,2), aux157)
+reify(diseq(1,venue_00004_00006), aux158)
+reify(diseq(2,venue_00004_00006), aux159)
+reify(diseq(2,venue_00004_00003), aux160)
+reify(diseq(1,venue_00004_00003), aux161)
+reify(diseq(1,venue_00003_00007), aux162)
+reify(diseq(2,venue_00003_00007), aux163)
+reify(diseq(1,venue_00003_00001), aux164)
+reify(diseq(2,venue_00003_00001), aux165)
+reify(diseq(venue_00007_00005,2), aux166)
+reify(diseq(venue_00007_00004,1), aux167)
+reify(diseq(venue_00007_00004,2), aux168)
+reify(diseq(venue_00007_00005,1), aux169)
+reify(diseq(venue_00001_00002,2), aux170)
+reify(diseq(venue_00001_00002,1), aux171)
+reify(diseq(venue_00007_00002,2), aux172)
+reify(diseq(venue_00007_00002,1), aux173)
+reify(diseq(1,venue_00008_00006), aux174)
+reify(diseq(1,venue_00008_00003), aux175)
+reify(diseq(2,venue_00008_00003), aux176)
+reify(diseq(2,venue_00008_00006), aux177)
+reify(diseq(venue_00005_00001,2), aux178)
+reify(diseq(venue_00005_00001,1), aux179)
+reify(diseq(venue_00001_00004,1), aux180)
+reify(diseq(venue_00001_00004,2), aux181)
+reify(diseq(venue_00001_00005,1), aux182)
+reify(diseq(venue_00001_00005,2), aux183)
+reify(diseq(1,venue_00004_00001), aux184)
+reify(diseq(2,venue_00004_00001), aux185)
+reify(diseq(venue_00002_00005,2), aux186)
+reify(diseq(venue_00002_00005,1), aux187)
+reify(diseq(venue_00006_00002,2), aux188)
+reify(diseq(venue_00006_00002,1), aux189)
+reify(diseq(2,venue_00008_00002), aux190)
+reify(diseq(2,venue_00008_00004), aux191)
+reify(diseq(2,venue_00008_00005), aux192)
+reify(diseq(2,venue_00004_00007), aux193)
+reify(diseq(1,venue_00004_00007), aux194)
+reify(diseq(1,venue_00008_00002), aux195)
+reify(diseq(1,venue_00008_00004), aux196)
+reify(diseq(1,venue_00008_00005), aux197)
+reify(diseq(venue_00002_00004,2), aux198)
+reify(diseq(venue_00002_00004,1), aux199)
+reify(diseq(venue_00002_00002,2), aux200)
+reify(diseq(venue_00002_00002,1), aux201)
+reify(diseq(venue_00002_00001,2), aux202)
+reify(diseq(venue_00002_00001,1), aux203)
+reify(diseq(1,venue_00003_00003), aux204)
+reify(diseq(1,venue_00003_00006), aux205)
+reify(diseq(2,venue_00003_00006), aux206)
+reify(diseq(2,venue_00003_00003), aux207)
+reify(diseq(venue_00002_00007,1), aux208)
+reify(diseq(venue_00002_00007,2), aux209)
+reify(diseq(venue_00006_00005,1), aux210)
+reify(diseq(venue_00006_00005,2), aux211)
+reify(diseq(venue_00006_00004,2), aux212)
+reify(diseq(venue_00006_00004,1), aux213)
+reify(diseq(venue_00005_00004,2), aux214)
+reify(diseq(venue_00005_00004,1), aux215)
+reify(diseq(venue_00005_00005,2), aux216)
+reify(diseq(venue_00005_00005,1), aux217)
+reify(diseq(venue_00005_00007,1), aux218)
+reify(diseq(venue_00005_00007,2), aux219)
+reify(diseq(venue_00005_00002,2), aux220)
+reify(diseq(venue_00005_00002,1), aux221)
+reify(diseq(venue_00007_00001,2), aux222)
+reify(diseq(venue_00007_00001,1), aux223)
+watched-or({w-literal(aux164,1),w-literal(aux140,1),gaceq(travel_00003_00002,aux66)})
+watched-or({w-literal(aux147,1),w-literal(aux165,1),gaceq(travel_00003_00002,aux65)})
+watched-or({w-literal(aux147,1),w-literal(aux207,1),gaceq(travel_00003_00003,aux67)})
+watched-or({w-literal(aux204,1),w-literal(aux140,1),gaceq(travel_00003_00003,aux66)})
+watched-or({w-literal(aux204,1),w-literal(aux141,1),gaceq(travel_00003_00004,aux69)})
+watched-or({w-literal(aux148,1),w-literal(aux207,1),gaceq(travel_00003_00004,aux67)})
+watched-or({w-literal(aux148,1),w-literal(aux142,1),gaceq(travel_00003_00005,aux68)})
+watched-or({w-literal(aux149,1),w-literal(aux141,1),gaceq(travel_00003_00005,aux69)})
+watched-or({w-literal(aux149,1),w-literal(aux206,1),gaceq(travel_00003_00006,aux64)})
+watched-or({w-literal(aux205,1),w-literal(aux142,1),gaceq(travel_00003_00006,aux68)})
+watched-or({w-literal(aux205,1),w-literal(aux163,1),gaceq(travel_00003_00007,aux63)})
+watched-or({w-literal(aux162,1),w-literal(aux206,1),gaceq(travel_00003_00007,aux64)})
+watchelement_one([opponent_00001_00003, opponent_00002_00003, opponent_00003_00003, opponent_00004_00003, opponent_00005_00003, opponent_00006_00003, opponent_00007_00003, opponent_00008_00003], opponent_00002_00003, 2)
+watchelement_one([opponent_00001_00007, opponent_00002_00007, opponent_00003_00007, opponent_00004_00007, opponent_00005_00007, opponent_00006_00007, opponent_00007_00007, opponent_00008_00007], opponent_00003_00007, 3)
+reify(watched-or({w-literal(aux179,1),w-literal(aux221,1)}), aux41)
+reify(watched-or({w-literal(aux178,1),w-literal(aux220,1)}), aux42)
+reify(watched-or({w-literal(aux154,1),w-literal(aux214,1)}), aux10)
+reify(watched-or({w-literal(aux217,1),w-literal(aux156,1)}), aux25)
+reify(watched-or({w-literal(aux216,1),w-literal(aux157,1)}), aux26)
+watchelement_one([opponent_00001_00002, opponent_00002_00002, opponent_00003_00002, opponent_00004_00002, opponent_00005_00002, opponent_00006_00002, opponent_00007_00002, opponent_00008_00002], opponent_00003_00002, 3)
+watchelement_one([opponent_00001_00006, opponent_00002_00006, opponent_00003_00006, opponent_00004_00006, opponent_00005_00006, opponent_00006_00006, opponent_00007_00006, opponent_00008_00006], opponent_00004_00006, 4)
+watchelement_one([opponent_00001_00001, opponent_00002_00001, opponent_00003_00001, opponent_00004_00001, opponent_00005_00001, opponent_00006_00001, opponent_00007_00001, opponent_00008_00001], opponent_00004_00001, 4)
+watchelement_one([opponent_00001_00005, opponent_00002_00005, opponent_00003_00005, opponent_00004_00005, opponent_00005_00005, opponent_00006_00005, opponent_00007_00005, opponent_00008_00005], opponent_00005_00005, 5)
+watchelement_one([opponent_00001_00007, opponent_00002_00007, opponent_00003_00007, opponent_00004_00007, opponent_00005_00007, opponent_00006_00007, opponent_00007_00007], opponent_00008_00007, 8)
+watchelement_one([opponent_00001_00004, opponent_00002_00004, opponent_00003_00004, opponent_00004_00004, opponent_00005_00004, opponent_00006_00004, opponent_00007_00004, opponent_00008_00004], opponent_00006_00004, 6)
+watched-or({watchelement_one([0, 1, 2, 3, 4, 3, 2, 1, 1, 0, 1, 2, 3, 4, 3, 2, 2, 1, 0, 1, 2, 3, 4, 3, 3, 2, 1, 0, 1, 2, 3, 4, 4, 3, 2, 1, 0, 1, 2, 3, 3, 4, 3, 2, 1, 0, 1, 2, 2, 3, 4, 3, 2, 1, 0, 1, 1, 2, 3, 4, 3, 2, 1, 0], aux224, travel_00003_00004),w-literal(aux6,1)})
+watchelement_one([opponent_00001_00003, opponent_00002_00003, opponent_00003_00003, opponent_00004_00003, opponent_00005_00003, opponent_00006_00003, opponent_00007_00003, opponent_00008_00003], opponent_00007_00003, 7)
+ineq(opponent_00001_00001, opponent_00001_00007, -1)
+reifyimply(w-literal(travel_00006_00001,0), !aux113)
+reifyimply(w-literal(travel_00006_00008,0), !aux146)
+reifyimply(gaceq(aux83,travel_00006_00001), !aux112)
+reifyimply(gaceq(aux77,travel_00006_00008), !aux145)
+watched-or({w-literal(travel_00008_00002,0),w-literal(aux47,1)})
+watched-or({w-literal(travel_00008_00004,0),w-literal(aux15,1)})
+watched-or({w-literal(travel_00008_00006,0),w-literal(aux31,1)})
+gacalldiff([opponent_00001_00004, opponent_00006_00004, opponent_00002_00004, opponent_00007_00004, opponent_00003_00004, opponent_00008_00004, opponent_00004_00004, opponent_00005_00004])
+reifyimply(w-literal(travel_00004_00001,0), !aux184)
+reifyimply(w-literal(travel_00004_00008,0), !aux194)
+watched-or({watchelement_one([0, 1, 2, 3, 4, 3, 2, 1, 1, 0, 1, 2, 3, 4, 3, 2, 2, 1, 0, 1, 2, 3, 4, 3, 3, 2, 1, 0, 1, 2, 3, 4, 4, 3, 2, 1, 0, 1, 2, 3, 3, 4, 3, 2, 1, 0, 1, 2, 2, 3, 4, 3, 2, 1, 0, 1, 1, 2, 3, 4, 3, 2, 1, 0], aux225, travel_00003_00002),w-literal(aux38,1)})
+watched-or({watchelement_one([0, 1, 2, 3, 4, 3, 2, 1, 1, 0, 1, 2, 3, 4, 3, 2, 2, 1, 0, 1, 2, 3, 4, 3, 3, 2, 1, 0, 1, 2, 3, 4, 4, 3, 2, 1, 0, 1, 2, 3, 3, 4, 3, 2, 1, 0, 1, 2, 2, 3, 4, 3, 2, 1, 0, 1, 1, 2, 3, 4, 3, 2, 1, 0], aux226, travel_00003_00006),w-literal(aux22,1)})
+watched-or({watchelement_one([0, 1, 2, 3, 4, 3, 2, 1, 1, 0, 1, 2, 3, 4, 3, 2, 2, 1, 0, 1, 2, 3, 4, 3, 3, 2, 1, 0, 1, 2, 3, 4, 4, 3, 2, 1, 0, 1, 2, 3, 3, 4, 3, 2, 1, 0, 1, 2, 2, 3, 4, 3, 2, 1, 0, 1, 1, 2, 3, 4, 3, 2, 1, 0], aux227, travel_00007_00002),w-literal(aux46,1)})
+watched-or({watchelement_one([0, 1, 2, 3, 4, 3, 2, 1, 1, 0, 1, 2, 3, 4, 3, 2, 2, 1, 0, 1, 2, 3, 4, 3, 3, 2, 1, 0, 1, 2, 3, 4, 4, 3, 2, 1, 0, 1, 2, 3, 3, 4, 3, 2, 1, 0, 1, 2, 2, 3, 4, 3, 2, 1, 0, 1, 1, 2, 3, 4, 3, 2, 1, 0], aux228, travel_00007_00004),w-literal(aux14,1)})
+watched-or({watchelement_one([0, 1, 2, 3, 4, 3, 2, 1, 1, 0, 1, 2, 3, 4, 3, 2, 2, 1, 0, 1, 2, 3, 4, 3, 3, 2, 1, 0, 1, 2, 3, 4, 4, 3, 2, 1, 0, 1, 2, 3, 3, 4, 3, 2, 1, 0, 1, 2, 2, 3, 4, 3, 2, 1, 0, 1, 1, 2, 3, 4, 3, 2, 1, 0], aux229, travel_00007_00006),w-literal(aux30,1)})
+reify(watched-or({w-literal(aux223,1),w-literal(aux173,1)}), aux45)
+reify(watched-or({w-literal(aux222,1),w-literal(aux172,1)}), aux46)
+reify(watched-or({w-literal(aux119,1),w-literal(aux167,1)}), aux13)
+reify(watched-or({w-literal(aux118,1),w-literal(aux168,1)}), aux14)
+reify(watched-or({w-literal(aux169,1),w-literal(aux120,1)}), aux29)
+reify(watched-or({w-literal(aux166,1),w-literal(aux121,1)}), aux30)
+watched-or({w-literal(aux11,1),w-literal(aux189,1),w-literal(aux210,1)})
+watched-or({w-literal(aux12,1),w-literal(aux188,1),w-literal(aux211,1)})
+watched-or({w-literal(aux27,1),w-literal(aux213,1),w-literal(aux146,1)})
+watched-or({w-literal(aux28,1),w-literal(aux212,1),w-literal(aux145,1)})
+watchelement_one([2, 2, 1, 1, 1, 1], aux55, venue_00001_00007)
+watchelement_one([2, 2, 2, 1, 1, 1], aux49, venue_00001_00001)
+watched-or({w-literal(aux221,1),w-literal(aux217,1),w-literal(aux9,1)})
+reify(watched-or({w-literal(aux143,1),w-literal(aux195,1)}), aux47)
+reify(watched-or({w-literal(aux175,1),w-literal(aux196,1)}), aux15)
+reify(watched-or({w-literal(aux197,1),w-literal(aux174,1)}), aux31)
+reify(watched-or({w-literal(aux144,1),w-literal(aux190,1)}), aux48)
+reify(watched-or({w-literal(aux176,1),w-literal(aux191,1)}), aux16)
+reify(watched-or({w-literal(aux192,1),w-literal(aux177,1)}), aux32)
+watchelement_one([opponent_00001_00002, opponent_00002_00002, opponent_00003_00002, opponent_00004_00002, opponent_00005_00002, opponent_00006_00002, opponent_00007_00002, opponent_00008_00002], opponent_00002_00002, 2)
+reifyimply(w-literal(travel_00001_00001,0), !aux115)
+reifyimply(w-literal(travel_00001_00008,0), !aux116)
+watchelement_one([opponent_00001_00006, opponent_00002_00006, opponent_00003_00006, opponent_00004_00006, opponent_00005_00006, opponent_00006_00006, opponent_00007_00006, opponent_00008_00006], opponent_00003_00006, 3)
+watched-or({w-literal(aux220,1),w-literal(aux216,1),w-literal(aux10,1)})
+watched-or({w-literal(aux215,1),w-literal(aux218,1),w-literal(aux25,1)})
+watched-or({w-literal(aux214,1),w-literal(aux219,1),w-literal(aux26,1)})
+gacalldiff([opponent_00003_00001, opponent_00003_00002, opponent_00003_00003, opponent_00003_00004, opponent_00003_00005, opponent_00003_00006, opponent_00003_00007])
+watched-or({w-literal(travel_00003_00004,0),w-literal(aux5,1)})
+watchelement_one([opponent_00001_00002, opponent_00002_00002, opponent_00003_00002, opponent_00004_00002, opponent_00005_00002, opponent_00006_00002, opponent_00007_00002, opponent_00008_00002], opponent_00007_00002, 7)
+reify(watched-or({w-literal(aux161,1),w-literal(aux136,1)}), aux7)
+reify(watched-or({w-literal(aux160,1),w-literal(aux133,1)}), aux8)
+watched-or({w-literal(aux10,1),w-literal(aux26,1)})
+watched-or({w-literal(aux11,1),w-literal(aux27,1)})
+watched-or({w-literal(aux10,1),w-literal(aux42,1)})
+watched-or({w-literal(aux12,1),w-literal(aux28,1)})
+watched-or({w-literal(aux11,1),w-literal(aux43,1)})
+watched-or({w-literal(aux13,1),w-literal(aux29,1)})
+watched-or({w-literal(aux12,1),w-literal(aux44,1)})
+watched-or({w-literal(aux14,1),w-literal(aux30,1)})
+watched-or({w-literal(aux13,1),w-literal(aux45,1)})
+watched-or({w-literal(aux15,1),w-literal(aux31,1)})
+watched-or({w-literal(aux14,1),w-literal(aux46,1)})
+watched-or({w-literal(aux16,1),w-literal(aux32,1)})
+watched-or({w-literal(aux15,1),w-literal(aux47,1)})
+watched-or({w-literal(aux16,1),w-literal(aux48,1)})
+watched-or({w-literal(aux173,1),w-literal(aux119,1),w-literal(travel_00007_00003,0)})
+watched-or({w-literal(aux167,1),w-literal(aux169,1),w-literal(travel_00007_00005,0)})
+watched-or({w-literal(aux120,1),w-literal(aux138,1),w-literal(travel_00007_00007,0)})
+watched-or({w-literal(travel_00003_00002,0),w-literal(aux37,1)})
+watched-or({w-literal(travel_00003_00006,0),w-literal(aux21,1)})
+watched-or({w-literal(aux17,1),w-literal(aux180,1),w-literal(aux116,1)})
+watched-or({w-literal(aux18,1),w-literal(aux181,1),w-literal(aux117,1)})
+reify(watched-or({w-literal(aux204,1),w-literal(aux148,1)}), aux5)
+reify(watched-or({w-literal(aux207,1),w-literal(aux141,1)}), aux6)
+watched-or({w-literal(aux23,1),w-literal(travel_00004_00006,0)})
+watched-or({w-literal(aux39,1),w-literal(travel_00004_00002,0)})
+reify(watched-or({w-literal(aux184,1),w-literal(aux137,1)}), aux39)
+reify(watched-or({w-literal(aux135,1),w-literal(aux158,1)}), aux23)
+reify(watched-or({w-literal(aux185,1),w-literal(aux134,1)}), aux40)
+reify(watched-or({w-literal(aux132,1),w-literal(aux159,1)}), aux24)
+watchelement_one([opponent_00001_00004, opponent_00002_00004, opponent_00003_00004, opponent_00004_00004, opponent_00005_00004, opponent_00006_00004, opponent_00007_00004], opponent_00008_00004, 8)
+watched-or({gaceq(aux83,travel_00006_00002),w-literal(aux112,1),w-literal(aux189,1)})
+watched-or({gaceq(aux82,travel_00006_00002),w-literal(aux113,1),w-literal(aux188,1)})
+watched-or({gaceq(aux82,travel_00006_00003),w-literal(aux188,1),w-literal(aux151,1)})
+watched-or({gaceq(aux81,travel_00006_00003),w-literal(aux189,1),w-literal(aux150,1)})
+watched-or({gaceq(aux81,travel_00006_00004),w-literal(aux150,1),w-literal(aux213,1)})
+watched-or({gaceq(aux80,travel_00006_00004),w-literal(aux151,1),w-literal(aux212,1)})
+watched-or({gaceq(aux80,travel_00006_00005),w-literal(aux212,1),w-literal(aux210,1)})
+watched-or({gaceq(aux79,travel_00006_00005),w-literal(aux213,1),w-literal(aux211,1)})
+watched-or({gaceq(aux79,travel_00006_00006),w-literal(aux211,1),w-literal(aux153,1)})
+watched-or({gaceq(aux78,travel_00006_00006),w-literal(aux210,1),w-literal(aux152,1)})
+watched-or({gaceq(aux78,travel_00006_00007),w-literal(aux152,1),w-literal(aux146,1)})
+watched-or({gaceq(aux77,travel_00006_00007),w-literal(aux153,1),w-literal(aux145,1)})
+watchelement_one([opponent_00001_00003, opponent_00002_00003, opponent_00003_00003, opponent_00004_00003, opponent_00005_00003, opponent_00006_00003, opponent_00007_00003], opponent_00008_00003, 8)
+watched-or({watchelement_one([0, 1, 2, 3, 4, 3, 2, 2, 1, 0, 1, 2, 3, 4, 3, 3, 2, 1, 0, 1, 2, 3, 4, 4, 3, 2, 1, 0, 1, 2, 3, 3, 4, 3, 2, 1, 0, 1, 2, 2, 3, 4, 3, 2, 1, 0, 1, 1, 2, 3, 4, 3, 2, 1, 0], aux230, travel_00001_00004),w-literal(aux2,1)})
+reify(watched-or({w-literal(aux164,1),w-literal(aux147,1)}), aux37)
+reify(watched-or({w-literal(aux149,1),w-literal(aux205,1)}), aux21)
+reify(watched-or({w-literal(aux165,1),w-literal(aux140,1)}), aux38)
+reify(watched-or({w-literal(aux142,1),w-literal(aux206,1)}), aux22)
+watched-or({w-literal(aux172,1),w-literal(aux118,1),watchelement_one([0, 1, 2, 3, 4, 3, 2, 1, 1, 0, 1, 2, 3, 4, 3, 2, 2, 1, 0, 1, 2, 3, 4, 3, 3, 2, 1, 0, 1, 2, 3, 4, 4, 3, 2, 1, 0, 1, 2, 3, 3, 4, 3, 2, 1, 0, 1, 2, 2, 3, 4, 3, 2, 1, 0, 1, 1, 2, 3, 4, 3, 2, 1, 0], aux231, travel_00007_00003)})
+watched-or({w-literal(aux168,1),w-literal(aux166,1),watchelement_one([0, 1, 2, 3, 4, 3, 2, 1, 1, 0, 1, 2, 3, 4, 3, 2, 2, 1, 0, 1, 2, 3, 4, 3, 3, 2, 1, 0, 1, 2, 3, 4, 4, 3, 2, 1, 0, 1, 2, 3, 3, 4, 3, 2, 1, 0, 1, 2, 2, 3, 4, 3, 2, 1, 0, 1, 1, 2, 3, 4, 3, 2, 1, 0], aux232, travel_00007_00005)})
+watched-or({w-literal(aux121,1),w-literal(aux139,1),watchelement_one([0, 1, 2, 3, 4, 3, 2, 1, 1, 0, 1, 2, 3, 4, 3, 2, 2, 1, 0, 1, 2, 3, 4, 3, 3, 2, 1, 0, 1, 2, 3, 4, 4, 3, 2, 1, 0, 1, 2, 3, 3, 4, 3, 2, 1, 0, 1, 2, 2, 3, 4, 3, 2, 1, 0, 1, 1, 2, 3, 4, 3, 2, 1, 0], aux233, travel_00007_00007)})
+gacalldiff([opponent_00001_00001, opponent_00006_00001, opponent_00002_00001, opponent_00007_00001, opponent_00003_00001, opponent_00008_00001, opponent_00004_00001, opponent_00005_00001])
+watched-or({w-literal(aux173,1),w-literal(aux169,1),w-literal(aux13,1)})
+watched-or({w-literal(aux172,1),w-literal(aux166,1),w-literal(aux14,1)})
+watched-or({w-literal(aux167,1),w-literal(aux138,1),w-literal(aux29,1)})
+watched-or({w-literal(aux168,1),w-literal(aux139,1),w-literal(aux30,1)})
+gacalldiff([opponent_00006_00001, opponent_00006_00002, opponent_00006_00003, opponent_00006_00004, opponent_00006_00005, opponent_00006_00006, opponent_00006_00007])
+watched-or({watchelement_one([0, 1, 2, 3, 4, 3, 2, 2, 1, 0, 1, 2, 3, 4, 3, 3, 2, 1, 0, 1, 2, 3, 4, 4, 3, 2, 1, 0, 1, 2, 3, 3, 4, 3, 2, 1, 0, 1, 2, 2, 3, 4, 3, 2, 1, 0, 1, 1, 2, 3, 4, 3, 2, 1, 0], aux234, travel_00001_00006),w-literal(aux18,1)})
+watchelement_one([opponent_00001_00004, opponent_00002_00004, opponent_00003_00004, opponent_00004_00004, opponent_00005_00004, opponent_00006_00004, opponent_00007_00004, opponent_00008_00004], opponent_00002_00004, 2)
+watchelement_one([opponent_00001_00003, opponent_00002_00003, opponent_00003_00003, opponent_00004_00003, opponent_00005_00003, opponent_00006_00003, opponent_00007_00003, opponent_00008_00003], opponent_00003_00003, 3)
+watchelement_one([opponent_00001_00007, opponent_00002_00007, opponent_00003_00007, opponent_00004_00007, opponent_00005_00007, opponent_00006_00007, opponent_00007_00007, opponent_00008_00007], opponent_00004_00007, 4)
+watchelement_one([opponent_00002_00005, opponent_00003_00005, opponent_00004_00005, opponent_00005_00005, opponent_00006_00005, opponent_00007_00005, opponent_00008_00005], aux53, 1)
+watchelement_one([opponent_00001_00002, opponent_00002_00002, opponent_00003_00002, opponent_00004_00002, opponent_00005_00002, opponent_00006_00002, opponent_00007_00002, opponent_00008_00002], opponent_00004_00002, 4)
+watchelement_one([opponent_00001_00006, opponent_00002_00006, opponent_00003_00006, opponent_00004_00006, opponent_00005_00006, opponent_00006_00006, opponent_00007_00006, opponent_00008_00006], opponent_00005_00006, 5)
+watched-or({w-literal(aux195,1),w-literal(aux197,1),w-literal(aux15,1)})
+watched-or({w-literal(aux196,1),w-literal(aux126,1),w-literal(aux31,1)})
+watched-or({w-literal(aux190,1),w-literal(aux192,1),w-literal(aux16,1)})
+watched-or({w-literal(aux191,1),w-literal(aux127,1),w-literal(aux32,1)})
+watchelement_one([opponent_00001_00004, opponent_00002_00004, opponent_00003_00004, opponent_00004_00004, opponent_00005_00004, opponent_00006_00004, opponent_00007_00004, opponent_00008_00004], opponent_00004_00004, 4)
+watchelement_one([opponent_00001_00001, opponent_00002_00001, opponent_00003_00001, opponent_00004_00001, opponent_00005_00001, opponent_00006_00001, opponent_00007_00001, opponent_00008_00001], opponent_00005_00001, 5)
+watchelement_one([opponent_00001_00005, opponent_00002_00005, opponent_00003_00005, opponent_00004_00005, opponent_00005_00005, opponent_00006_00005, opponent_00007_00005, opponent_00008_00005], opponent_00006_00005, 6)
+watched-or({watchelement_one([0, 1, 2, 3, 4, 3, 2, 1, 1, 0, 1, 2, 3, 4, 3, 2, 2, 1, 0, 1, 2, 3, 4, 3, 3, 2, 1, 0, 1, 2, 3, 4, 4, 3, 2, 1, 0, 1, 2, 3, 3, 4, 3, 2, 1, 0, 1, 2, 2, 3, 4, 3, 2, 1, 0], aux235, travel_00008_00002),w-literal(aux48,1)})
+watched-or({watchelement_one([0, 1, 2, 3, 4, 3, 2, 1, 1, 0, 1, 2, 3, 4, 3, 2, 2, 1, 0, 1, 2, 3, 4, 3, 3, 2, 1, 0, 1, 2, 3, 4, 4, 3, 2, 1, 0, 1, 2, 3, 3, 4, 3, 2, 1, 0, 1, 2, 2, 3, 4, 3, 2, 1, 0], aux236, travel_00008_00004),w-literal(aux16,1)})
+watched-or({watchelement_one([0, 1, 2, 3, 4, 3, 2, 1, 1, 0, 1, 2, 3, 4, 3, 2, 2, 1, 0, 1, 2, 3, 4, 3, 3, 2, 1, 0, 1, 2, 3, 4, 4, 3, 2, 1, 0, 1, 2, 3, 3, 4, 3, 2, 1, 0, 1, 2, 2, 3, 4, 3, 2, 1, 0], aux237, travel_00008_00006),w-literal(aux32,1)})
+watchelement_one([opponent_00001_00004, opponent_00002_00004, opponent_00003_00004, opponent_00004_00004, opponent_00005_00004, opponent_00006_00004, opponent_00007_00004, opponent_00008_00004], opponent_00007_00004, 7)
+reifyimply(w-literal(travel_00003_00001,0), !aux164)
+reifyimply(w-literal(travel_00003_00008,0), !aux162)
+watchelement_one([1, 2, 1, 1, 2, 2, 2, 2], opponent_00002_00001, venue_00002_00001)
+watchelement_one([1, 2, 1, 1, 2, 2, 2, 2], opponent_00002_00002, venue_00002_00002)
+watchelement_one([1, 2, 1, 1, 2, 2, 2, 2], opponent_00002_00003, venue_00002_00003)
+watchelement_one([1, 2, 1, 1, 2, 2, 2, 2], opponent_00002_00004, venue_00002_00004)
+watchelement_one([1, 2, 1, 1, 2, 2, 2, 2], opponent_00002_00005, venue_00002_00005)
+watchelement_one([1, 2, 1, 1, 2, 2, 2, 2], opponent_00002_00006, venue_00002_00006)
+watchelement_one([1, 2, 1, 1, 2, 2, 2, 2], opponent_00002_00007, venue_00002_00007)
+reifyimply(gaceq(aux95,travel_00002_00001), !aux202)
+reifyimply(gaceq(aux97,travel_00002_00008), !aux209)
+reifyimply(w-literal(travel_00005_00001,0), !aux179)
+reifyimply(w-literal(travel_00005_00008,0), !aux218)
+watched-or({w-literal(aux137,1),w-literal(aux135,1),w-literal(aux7,1)})
+watched-or({w-literal(aux134,1),w-literal(aux132,1),w-literal(aux8,1)})
+reifyimply(gaceq(travel_00008_00001,aux104), !aux144)
+reifyimply(gaceq(travel_00008_00008,aux102), !aux127)
+watched-or({w-literal(aux147,1),w-literal(aux149,1),w-literal(aux5,1)})
+watched-or({w-literal(aux140,1),w-literal(aux142,1),w-literal(aux6,1)})
+watched-or({gaceq(aux106,travel_00001_00002),w-literal(aux115,1),w-literal(aux170,1)})
+watched-or({gaceq(aux106,travel_00001_00003),w-literal(aux170,1),w-literal(aux123,1)})
+watched-or({gaceq(aux105,travel_00001_00003),w-literal(aux171,1),w-literal(aux122,1)})
+watched-or({gaceq(aux105,travel_00001_00004),w-literal(aux122,1),w-literal(aux180,1)})
+watched-or({gaceq(aux108,travel_00001_00004),w-literal(aux123,1),w-literal(aux181,1)})
+watched-or({gaceq(aux108,travel_00001_00005),w-literal(aux181,1),w-literal(aux182,1)})
+watched-or({gaceq(aux107,travel_00001_00005),w-literal(aux180,1),w-literal(aux183,1)})
+watched-or({gaceq(aux107,travel_00001_00006),w-literal(aux183,1),w-literal(aux124,1)})
+watched-or({gaceq(aux109,travel_00001_00006),w-literal(aux182,1),w-literal(aux125,1)})
+watched-or({gaceq(aux109,travel_00001_00007),w-literal(aux125,1),w-literal(aux116,1)})
+watched-or({w-literal(aux24,1),watchelement_one([0, 1, 2, 3, 4, 3, 2, 1, 1, 0, 1, 2, 3, 4, 3, 2, 2, 1, 0, 1, 2, 3, 4, 3, 3, 2, 1, 0, 1, 2, 3, 4, 4, 3, 2, 1, 0, 1, 2, 3, 3, 4, 3, 2, 1, 0, 1, 2, 2, 3, 4, 3, 2, 1, 0, 1, 1, 2, 3, 4, 3, 2, 1, 0], aux238, travel_00004_00006)})
+watched-or({w-literal(aux40,1),watchelement_one([0, 1, 2, 3, 4, 3, 2, 1, 1, 0, 1, 2, 3, 4, 3, 2, 2, 1, 0, 1, 2, 3, 4, 3, 3, 2, 1, 0, 1, 2, 3, 4, 4, 3, 2, 1, 0, 1, 2, 3, 3, 4, 3, 2, 1, 0, 1, 2, 2, 3, 4, 3, 2, 1, 0, 1, 1, 2, 3, 4, 3, 2, 1, 0], aux239, travel_00004_00002)})
+watched-or({w-literal(aux136,1),w-literal(aux194,1),w-literal(aux23,1)})
+watched-or({w-literal(aux133,1),w-literal(aux193,1),w-literal(aux24,1)})
+watchelement_one([2, 2, 2, 1, 1, 1, 1], aux50, venue_00001_00002)
+watchelement_one([2, 2, 2, 1, 1, 1, 1], aux51, venue_00001_00003)
+watchelement_one([2, 2, 2, 1, 1, 1, 1], aux52, venue_00001_00004)
+watchelement_one([2, 2, 2, 1, 1, 1, 1], aux53, venue_00001_00005)
+watchelement_one([2, 2, 2, 1, 1, 1, 1], aux54, venue_00001_00006)
+gacalldiff([opponent_00001_00006, opponent_00006_00006, opponent_00002_00006, opponent_00007_00006, opponent_00003_00006, opponent_00008_00006, opponent_00004_00006, opponent_00005_00006])
+reifyimply(w-literal(travel_00008_00001,0), !aux143)
+reifyimply(w-literal(travel_00008_00008,0), !aux126)
+watched-or({w-literal(aux148,1),w-literal(aux162,1),w-literal(aux21,1)})
+watched-or({w-literal(aux141,1),w-literal(aux163,1),w-literal(aux22,1)})
+watched-or({w-literal(aux137,1),w-literal(aux161,1),w-literal(travel_00004_00003,0)})
+watched-or({w-literal(aux136,1),w-literal(aux135,1),w-literal(travel_00004_00005,0)})
+watched-or({w-literal(aux158,1),w-literal(aux194,1),w-literal(travel_00004_00007,0)})
+watched-or({w-literal(travel_00001_00004,0),w-literal(aux1,1)})
+watchelement_one([opponent_00001_00001, opponent_00002_00001, opponent_00003_00001, opponent_00004_00001, opponent_00005_00001, opponent_00006_00001, opponent_00007_00001], opponent_00008_00001, 8)
+reifyimply(gaceq(aux62,travel_00007_00001), !aux222)
+reifyimply(gaceq(aux60,travel_00007_00008), !aux139)
+watched-or({watchelement_one([0, 1, 2, 3, 4, 3, 2, 1, 1, 0, 1, 2, 3, 4, 3, 2, 2, 1, 0, 1, 2, 3, 4, 3, 3, 2, 1, 0, 1, 2, 3, 4, 4, 3, 2, 1, 0, 1, 2, 3, 3, 4, 3, 2, 1, 0, 1, 2, 2, 3, 4, 3, 2, 1, 0], aux240, travel_00008_00003),w-literal(aux190,1),w-literal(aux176,1)})
+watched-or({watchelement_one([0, 1, 2, 3, 4, 3, 2, 1, 1, 0, 1, 2, 3, 4, 3, 2, 2, 1, 0, 1, 2, 3, 4, 3, 3, 2, 1, 0, 1, 2, 3, 4, 4, 3, 2, 1, 0, 1, 2, 3, 3, 4, 3, 2, 1, 0, 1, 2, 2, 3, 4, 3, 2, 1, 0], aux241, travel_00008_00005),w-literal(aux191,1),w-literal(aux192,1)})
+watched-or({watchelement_one([0, 1, 2, 3, 4, 3, 2, 1, 1, 0, 1, 2, 3, 4, 3, 2, 2, 1, 0, 1, 2, 3, 4, 3, 3, 2, 1, 0, 1, 2, 3, 4, 4, 3, 2, 1, 0, 1, 2, 3, 3, 4, 3, 2, 1, 0, 1, 2, 2, 3, 4, 3, 2, 1, 0], aux242, travel_00008_00007),w-literal(aux177,1),w-literal(aux127,1)})
+watched-or({w-literal(travel_00001_00002,0),w-literal(aux33,1)})
+watched-or({w-literal(travel_00001_00006,0),w-literal(aux17,1)})
+reifyimply(gaceq(travel_00003_00001,aux65), !aux165)
+reifyimply(gaceq(travel_00003_00008,aux63), !aux163)
+watched-or({w-literal(aux220,1),w-literal(aux154,1),watchelement_one([0, 1, 2, 3, 4, 3, 2, 1, 1, 0, 1, 2, 3, 4, 3, 2, 2, 1, 0, 1, 2, 3, 4, 3, 3, 2, 1, 0, 1, 2, 3, 4, 4, 3, 2, 1, 0, 1, 2, 3, 3, 4, 3, 2, 1, 0, 1, 2, 2, 3, 4, 3, 2, 1, 0, 1, 1, 2, 3, 4, 3, 2, 1, 0], aux243, travel_00005_00003)})
+watched-or({w-literal(aux214,1),w-literal(aux216,1),watchelement_one([0, 1, 2, 3, 4, 3, 2, 1, 1, 0, 1, 2, 3, 4, 3, 2, 2, 1, 0, 1, 2, 3, 4, 3, 3, 2, 1, 0, 1, 2, 3, 4, 4, 3, 2, 1, 0, 1, 2, 3, 3, 4, 3, 2, 1, 0, 1, 2, 2, 3, 4, 3, 2, 1, 0, 1, 1, 2, 3, 4, 3, 2, 1, 0], aux244, travel_00005_00005)})
+watched-or({w-literal(aux157,1),w-literal(aux219,1),watchelement_one([0, 1, 2, 3, 4, 3, 2, 1, 1, 0, 1, 2, 3, 4, 3, 2, 2, 1, 0, 1, 2, 3, 4, 3, 3, 2, 1, 0, 1, 2, 3, 4, 4, 3, 2, 1, 0, 1, 2, 3, 3, 4, 3, 2, 1, 0, 1, 2, 2, 3, 4, 3, 2, 1, 0, 1, 1, 2, 3, 4, 3, 2, 1, 0], aux245, travel_00005_00007)})
+watched-or({w-literal(travel_00006_00004,0),w-literal(aux11,1)})
+watched-or({w-literal(travel_00006_00002,0),w-literal(aux43,1)})
+watched-or({w-literal(travel_00006_00006,0),w-literal(aux27,1)})
+watchelement_one([opponent_00002_00002, opponent_00003_00002, opponent_00004_00002, opponent_00005_00002, opponent_00006_00002, opponent_00007_00002, opponent_00008_00002], aux50, 1)
+watchelement_one([opponent_00001_00001, opponent_00002_00001, opponent_00003_00001, opponent_00004_00001, opponent_00005_00001, opponent_00006_00001, opponent_00007_00001, opponent_00008_00001], opponent_00003_00001, 3)
+watched-or({w-literal(aux10,1),watchelement_one([0, 1, 2, 3, 4, 3, 2, 1, 1, 0, 1, 2, 3, 4, 3, 2, 2, 1, 0, 1, 2, 3, 4, 3, 3, 2, 1, 0, 1, 2, 3, 4, 4, 3, 2, 1, 0, 1, 2, 3, 3, 4, 3, 2, 1, 0, 1, 2, 2, 3, 4, 3, 2, 1, 0, 1, 1, 2, 3, 4, 3, 2, 1, 0], aux246, travel_00005_00004)})
+watched-or({w-literal(aux42,1),watchelement_one([0, 1, 2, 3, 4, 3, 2, 1, 1, 0, 1, 2, 3, 4, 3, 2, 2, 1, 0, 1, 2, 3, 4, 3, 3, 2, 1, 0, 1, 2, 3, 4, 4, 3, 2, 1, 0, 1, 2, 3, 3, 4, 3, 2, 1, 0, 1, 2, 2, 3, 4, 3, 2, 1, 0, 1, 1, 2, 3, 4, 3, 2, 1, 0], aux247, travel_00005_00002)})
+watched-or({w-literal(aux26,1),watchelement_one([0, 1, 2, 3, 4, 3, 2, 1, 1, 0, 1, 2, 3, 4, 3, 2, 2, 1, 0, 1, 2, 3, 4, 3, 3, 2, 1, 0, 1, 2, 3, 4, 4, 3, 2, 1, 0, 1, 2, 3, 3, 4, 3, 2, 1, 0, 1, 2, 2, 3, 4, 3, 2, 1, 0, 1, 1, 2, 3, 4, 3, 2, 1, 0], aux248, travel_00005_00006)})
+watchelement_one([opponent_00001_00005, opponent_00002_00005, opponent_00003_00005, opponent_00004_00005, opponent_00005_00005, opponent_00006_00005, opponent_00007_00005, opponent_00008_00005], opponent_00004_00005, 4)
+watchelement_one([opponent_00002_00003, opponent_00003_00003, opponent_00004_00003, opponent_00005_00003, opponent_00006_00003, opponent_00007_00003, opponent_00008_00003], aux51, 1)
+watched-or({gaceq(aux70,travel_00005_00002),w-literal(aux178,1),w-literal(aux221,1)})
+watched-or({gaceq(aux72,travel_00005_00002),w-literal(aux179,1),w-literal(aux220,1)})
+watched-or({gaceq(aux72,travel_00005_00003),w-literal(aux220,1),w-literal(aux155,1)})
+watched-or({gaceq(aux71,travel_00005_00003),w-literal(aux221,1),w-literal(aux154,1)})
+watched-or({gaceq(aux71,travel_00005_00004),w-literal(aux154,1),w-literal(aux215,1)})
+watched-or({gaceq(aux74,travel_00005_00004),w-literal(aux155,1),w-literal(aux214,1)})
+watched-or({gaceq(aux74,travel_00005_00005),w-literal(aux214,1),w-literal(aux217,1)})
+watched-or({gaceq(aux73,travel_00005_00005),w-literal(aux215,1),w-literal(aux216,1)})
+watched-or({gaceq(aux73,travel_00005_00006),w-literal(aux216,1),w-literal(aux156,1)})
+watched-or({gaceq(aux76,travel_00005_00006),w-literal(aux217,1),w-literal(aux157,1)})
+watched-or({gaceq(aux76,travel_00005_00007),w-literal(aux157,1),w-literal(aux218,1)})
+watched-or({gaceq(aux75,travel_00005_00007),w-literal(aux156,1),w-literal(aux219,1)})
+watched-or({gaceq(travel_00004_00002,aux86),w-literal(aux137,1),w-literal(aux185,1)})
+watched-or({gaceq(travel_00004_00002,aux87),w-literal(aux184,1),w-literal(aux134,1)})
+watched-or({gaceq(travel_00004_00003,aux87),w-literal(aux161,1),w-literal(aux134,1)})
+watched-or({gaceq(travel_00004_00003,aux85),w-literal(aux137,1),w-literal(aux160,1)})
+watched-or({gaceq(travel_00004_00004,aux85),w-literal(aux136,1),w-literal(aux160,1)})
+watched-or({gaceq(travel_00004_00004,aux84),w-literal(aux161,1),w-literal(aux133,1)})
+watched-or({gaceq(travel_00004_00005,aux84),w-literal(aux135,1),w-literal(aux133,1)})
+watched-or({gaceq(travel_00004_00005,aux90),w-literal(aux136,1),w-literal(aux132,1)})
+watched-or({gaceq(travel_00004_00006,aux90),w-literal(aux158,1),w-literal(aux132,1)})
+watched-or({gaceq(travel_00004_00006,aux89),w-literal(aux135,1),w-literal(aux159,1)})
+watched-or({gaceq(travel_00004_00007,aux89),w-literal(aux194,1),w-literal(aux159,1)})
+watched-or({gaceq(travel_00004_00007,aux88),w-literal(aux158,1),w-literal(aux193,1)})
+watchelement_one([2, 1, 2, 1, 2, 1, 2, 2], opponent_00005_00001, venue_00005_00001)
+watchelement_one([2, 1, 2, 1, 2, 1, 2, 2], opponent_00005_00002, venue_00005_00002)
+watchelement_one([2, 1, 2, 1, 2, 1, 2, 2], opponent_00005_00003, venue_00005_00003)
+watchelement_one([2, 1, 2, 1, 2, 1, 2, 2], opponent_00005_00004, venue_00005_00004)
+watchelement_one([2, 1, 2, 1, 2, 1, 2, 2], opponent_00005_00005, venue_00005_00005)
+watchelement_one([2, 1, 2, 1, 2, 1, 2, 2], opponent_00005_00006, venue_00005_00006)
+watchelement_one([2, 1, 2, 1, 2, 1, 2, 2], opponent_00005_00007, venue_00005_00007)
+reify(watched-or({w-literal(aux131,1),w-literal(aux199,1)}), aux3)
+reify(watched-or({w-literal(aux130,1),w-literal(aux198,1)}), aux4)
+watchelement_one([opponent_00001_00005, opponent_00002_00005, opponent_00003_00005, opponent_00004_00005, opponent_00005_00005, opponent_00006_00005, opponent_00007_00005, opponent_00008_00005], opponent_00002_00005, 2)
+watched-or({w-literal(aux44,1),watchelement_one([0, 1, 2, 3, 4, 3, 2, 1, 1, 0, 1, 2, 3, 4, 3, 2, 2, 1, 0, 1, 2, 3, 4, 3, 3, 2, 1, 0, 1, 2, 3, 4, 4, 3, 2, 1, 0, 1, 2, 3, 3, 4, 3, 2, 1, 0, 1, 2, 2, 3, 4, 3, 2, 1, 0, 1, 1, 2, 3, 4, 3, 2, 1, 0], aux249, travel_00006_00002)})
+watched-or({w-literal(aux12,1),watchelement_one([0, 1, 2, 3, 4, 3, 2, 1, 1, 0, 1, 2, 3, 4, 3, 2, 2, 1, 0, 1, 2, 3, 4, 3, 3, 2, 1, 0, 1, 2, 3, 4, 4, 3, 2, 1, 0, 1, 2, 3, 3, 4, 3, 2, 1, 0, 1, 2, 2, 3, 4, 3, 2, 1, 0, 1, 1, 2, 3, 4, 3, 2, 1, 0], aux250, travel_00006_00004)})
+watched-or({w-literal(aux28,1),watchelement_one([0, 1, 2, 3, 4, 3, 2, 1, 1, 0, 1, 2, 3, 4, 3, 2, 2, 1, 0, 1, 2, 3, 4, 3, 3, 2, 1, 0, 1, 2, 3, 4, 4, 3, 2, 1, 0, 1, 2, 3, 3, 4, 3, 2, 1, 0, 1, 2, 2, 3, 4, 3, 2, 1, 0, 1, 1, 2, 3, 4, 3, 2, 1, 0], aux251, travel_00006_00006)})
+reify(watched-or({w-literal(aux203,1),w-literal(aux201,1)}), aux35)
+reify(watched-or({w-literal(aux202,1),w-literal(aux200,1)}), aux36)
+reify(watched-or({w-literal(aux187,1),w-literal(aux128,1)}), aux19)
+reify(watched-or({w-literal(aux186,1),w-literal(aux129,1)}), aux20)
+watchelement_one([opponent_00001_00006, opponent_00002_00006, opponent_00003_00006, opponent_00004_00006, opponent_00005_00006, opponent_00006_00006, opponent_00007_00006], opponent_00008_00006, 8)
+watchelement_one([2, 1, 1, 2, 1, 1, 2, 2], opponent_00007_00001, venue_00007_00001)
+watchelement_one([2, 1, 1, 2, 1, 1, 2, 2], opponent_00007_00002, venue_00007_00002)
+watchelement_one([2, 1, 1, 2, 1, 1, 2, 2], opponent_00007_00003, venue_00007_00003)
+watchelement_one([2, 1, 1, 2, 1, 1, 2, 2], opponent_00007_00004, venue_00007_00004)
+watchelement_one([2, 1, 1, 2, 1, 1, 2, 2], opponent_00007_00005, venue_00007_00005)
+watchelement_one([2, 1, 1, 2, 1, 1, 2, 2], opponent_00007_00006, venue_00007_00006)
+watchelement_one([2, 1, 1, 2, 1, 1, 2, 2], opponent_00007_00007, venue_00007_00007)
+watchelement_one([opponent_00001_00004, opponent_00002_00004, opponent_00003_00004, opponent_00004_00004, opponent_00005_00004, opponent_00006_00004, opponent_00007_00004, opponent_00008_00004], opponent_00003_00004, 3)
+watchelement_one([opponent_00001_00003, opponent_00002_00003, opponent_00003_00003, opponent_00004_00003, opponent_00005_00003, opponent_00006_00003, opponent_00007_00003, opponent_00008_00003], opponent_00004_00003, 4)
+watchelement_one([opponent_00001_00007, opponent_00002_00007, opponent_00003_00007, opponent_00004_00007, opponent_00005_00007, opponent_00006_00007, opponent_00007_00007, opponent_00008_00007], opponent_00005_00007, 5)
+watched-or({w-literal(aux34,1),watchelement_one([0, 1, 2, 3, 4, 3, 2, 2, 1, 0, 1, 2, 3, 4, 3, 3, 2, 1, 0, 1, 2, 3, 4, 4, 3, 2, 1, 0, 1, 2, 3, 3, 4, 3, 2, 1, 0, 1, 2, 2, 3, 4, 3, 2, 1, 0, 1], aux252, travel_00001_00002)})
+watched-or({w-literal(aux134,1),w-literal(aux160,1),watchelement_one([0, 1, 2, 3, 4, 3, 2, 1, 1, 0, 1, 2, 3, 4, 3, 2, 2, 1, 0, 1, 2, 3, 4, 3, 3, 2, 1, 0, 1, 2, 3, 4, 4, 3, 2, 1, 0, 1, 2, 3, 3, 4, 3, 2, 1, 0, 1, 2, 2, 3, 4, 3, 2, 1, 0, 1, 1, 2, 3, 4, 3, 2, 1, 0], aux253, travel_00004_00003)})
+watched-or({w-literal(aux133,1),w-literal(aux132,1),watchelement_one([0, 1, 2, 3, 4, 3, 2, 1, 1, 0, 1, 2, 3, 4, 3, 2, 2, 1, 0, 1, 2, 3, 4, 3, 3, 2, 1, 0, 1, 2, 3, 4, 4, 3, 2, 1, 0, 1, 2, 3, 3, 4, 3, 2, 1, 0, 1, 2, 2, 3, 4, 3, 2, 1, 0, 1, 1, 2, 3, 4, 3, 2, 1, 0], aux254, travel_00004_00005)})
+watched-or({w-literal(aux159,1),w-literal(aux193,1),watchelement_one([0, 1, 2, 3, 4, 3, 2, 1, 1, 0, 1, 2, 3, 4, 3, 2, 2, 1, 0, 1, 2, 3, 4, 3, 3, 2, 1, 0, 1, 2, 3, 4, 4, 3, 2, 1, 0, 1, 2, 3, 3, 4, 3, 2, 1, 0, 1, 2, 2, 3, 4, 3, 2, 1, 0, 1, 1, 2, 3, 4, 3, 2, 1, 0], aux255, travel_00004_00007)})
+watchelement_one([2, 1, 2, 1, 1, 2, 1], opponent_00008_00001, venue_00008_00001)
+watchelement_one([2, 1, 2, 1, 1, 2, 1], opponent_00008_00002, venue_00008_00002)
+watchelement_one([2, 1, 2, 1, 1, 2, 1], opponent_00008_00003, venue_00008_00003)
+watchelement_one([2, 1, 2, 1, 1, 2, 1], opponent_00008_00004, venue_00008_00004)
+watchelement_one([2, 1, 2, 1, 1, 2, 1], opponent_00008_00005, venue_00008_00005)
+watchelement_one([2, 1, 2, 1, 1, 2, 1], opponent_00008_00006, venue_00008_00006)
+watchelement_one([2, 1, 2, 1, 1, 2, 1], opponent_00008_00007, venue_00008_00007)
+watchelement_one([opponent_00001_00002, opponent_00002_00002, opponent_00003_00002, opponent_00004_00002, opponent_00005_00002, opponent_00006_00002, opponent_00007_00002, opponent_00008_00002], opponent_00005_00002, 5)
+watchelement_one([opponent_00001_00006, opponent_00002_00006, opponent_00003_00006, opponent_00004_00006, opponent_00005_00006, opponent_00006_00006, opponent_00007_00006, opponent_00008_00006], opponent_00006_00006, 6)
+gacalldiff([opponent_00001_00003, opponent_00006_00003, opponent_00002_00003, opponent_00007_00003, opponent_00003_00003, opponent_00008_00003, opponent_00004_00003, opponent_00005_00003])
+watchelement_one([opponent_00003_00007, opponent_00004_00007, opponent_00005_00007, opponent_00006_00007, opponent_00007_00007, opponent_00008_00007], aux55, 1)
+watchelement_one([opponent_00001_00001, opponent_00002_00001, opponent_00003_00001, opponent_00004_00001, opponent_00005_00001, opponent_00006_00001, opponent_00007_00001, opponent_00008_00001], opponent_00006_00001, 6)
+watchelement_one([opponent_00001_00005, opponent_00002_00005, opponent_00003_00005, opponent_00004_00005, opponent_00005_00005, opponent_00006_00005, opponent_00007_00005, opponent_00008_00005], opponent_00007_00005, 7)
+watched-or({w-literal(aux125,1),w-literal(aux117,1),watchelement_one([1, 2, 3, 4, 3, 2, 2, 1, 0, 1, 2, 3, 4, 3, 3, 2, 1, 0, 1, 2, 3, 4, 4, 3, 2, 1, 0, 1, 2, 3, 3, 4, 3, 2, 1, 0, 1, 2, 2, 3, 4, 3, 2, 1, 0, 1, 1, 2, 3, 4, 3, 2, 1, 0], aux256, travel_00001_00007)})
+gacalldiff([opponent_00002_00001, opponent_00002_00002, opponent_00002_00003, opponent_00002_00004, opponent_00002_00005, opponent_00002_00006, opponent_00002_00007])
+reifyimply(gaceq(travel_00001_00008,aux110), !aux117)
+watched-or({w-literal(aux36,1),watchelement_one([0, 1, 2, 3, 4, 3, 2, 1, 1, 0, 1, 2, 3, 4, 3, 2, 2, 1, 0, 1, 2, 3, 4, 3, 3, 2, 1, 0, 1, 2, 3, 4, 4, 3, 2, 1, 0, 1, 2, 3, 3, 4, 3, 2, 1, 0, 1, 2, 2, 3, 4, 3, 2, 1, 0, 1, 1, 2, 3, 4, 3, 2, 1, 0], aux257, travel_00002_00002)})
+watched-or({w-literal(aux20,1),watchelement_one([0, 1, 2, 3, 4, 3, 2, 1, 1, 0, 1, 2, 3, 4, 3, 2, 2, 1, 0, 1, 2, 3, 4, 3, 3, 2, 1, 0, 1, 2, 3, 4, 4, 3, 2, 1, 0, 1, 2, 3, 3, 4, 3, 2, 1, 0, 1, 2, 2, 3, 4, 3, 2, 1, 0, 1, 1, 2, 3, 4, 3, 2, 1, 0], aux258, travel_00002_00006)})
+watched-or({w-literal(aux201,1),w-literal(aux131,1),w-literal(travel_00002_00003,0)})
+watched-or({w-literal(aux199,1),w-literal(aux187,1),w-literal(travel_00002_00005,0)})
+watched-or({w-literal(aux128,1),w-literal(aux208,1),w-literal(travel_00002_00007,0)})
+watchelement_one([opponent_00001_00003, opponent_00002_00003, opponent_00003_00003, opponent_00004_00003, opponent_00005_00003, opponent_00006_00003, opponent_00007_00003, opponent_00008_00003], opponent_00005_00003, 5)
+watched-or({watchelement_one([0, 1, 2, 3, 4, 3, 2, 1, 1, 0, 1, 2, 3, 4, 3, 2, 2, 1, 0, 1, 2, 3, 4, 3, 3, 2, 1, 0, 1, 2, 3, 4, 4, 3, 2, 1, 0, 1, 2, 3, 3, 4, 3, 2, 1, 0, 1, 2, 2, 3, 4, 3, 2, 1, 0, 1, 1, 2, 3, 4, 3, 2, 1, 0], aux259, travel_00006_00003),w-literal(aux188,1),w-literal(aux150,1)})
+watched-or({w-literal(aux1,1),w-literal(aux17,1)})
+watched-or({w-literal(aux2,1),w-literal(aux18,1)})
+watched-or({w-literal(aux1,1),w-literal(aux33,1)})
+watched-or({w-literal(aux3,1),w-literal(aux19,1)})
+watched-or({w-literal(aux2,1),w-literal(aux34,1)})
+watched-or({w-literal(aux4,1),w-literal(aux20,1)})
+watched-or({w-literal(aux3,1),w-literal(aux35,1)})
+watched-or({w-literal(aux5,1),w-literal(aux21,1)})
+watched-or({w-literal(aux4,1),w-literal(aux36,1)})
+watched-or({w-literal(aux6,1),w-literal(aux22,1)})
+watched-or({w-literal(aux5,1),w-literal(aux37,1)})
+watched-or({w-literal(aux7,1),w-literal(aux23,1)})
+watched-or({w-literal(aux6,1),w-literal(aux38,1)})
+watched-or({w-literal(aux8,1),w-literal(aux24,1)})
+watched-or({w-literal(aux7,1),w-literal(aux39,1)})
+watched-or({w-literal(aux9,1),w-literal(aux25,1)})
+watched-or({w-literal(aux8,1),w-literal(aux40,1)})
+watched-or({w-literal(aux9,1),w-literal(aux41,1)})
+watchelement_one([opponent_00001_00007, opponent_00002_00007, opponent_00003_00007, opponent_00004_00007, opponent_00005_00007, opponent_00006_00007, opponent_00007_00007, opponent_00008_00007], opponent_00006_00007, 6)
+watched-or({watchelement_one([0, 1, 2, 3, 4, 3, 2, 1, 1, 0, 1, 2, 3, 4, 3, 2, 2, 1, 0, 1, 2, 3, 4, 3, 3, 2, 1, 0, 1, 2, 3, 4, 4, 3, 2, 1, 0, 1, 2, 3, 3, 4, 3, 2, 1, 0, 1, 2, 2, 3, 4, 3, 2, 1, 0, 1, 1, 2, 3, 4, 3, 2, 1, 0], aux260, travel_00006_00005),w-literal(aux212,1),w-literal(aux211,1)})
+watched-or({w-literal(aux201,1),w-literal(aux187,1),w-literal(aux3,1)})
+watched-or({w-literal(aux200,1),w-literal(aux186,1),w-literal(aux4,1)})
+gacalldiff([opponent_00005_00001, opponent_00005_00002, opponent_00005_00003, opponent_00005_00004, opponent_00005_00005, opponent_00005_00006, opponent_00005_00007])
+watched-or({watchelement_one([0, 1, 2, 3, 4, 3, 2, 1, 1, 0, 1, 2, 3, 4, 3, 2, 2, 1, 0, 1, 2, 3, 4, 3, 3, 2, 1, 0, 1, 2, 3, 4, 4, 3, 2, 1, 0, 1, 2, 3, 3, 4, 3, 2, 1, 0, 1, 2, 2, 3, 4, 3, 2, 1, 0, 1, 1, 2, 3, 4, 3, 2, 1, 0], aux261, travel_00006_00007),w-literal(aux152,1),w-literal(aux145,1)})
+watched-or({w-literal(aux7,1),w-literal(travel_00004_00004,0)})
+watched-or({w-literal(aux199,1),w-literal(aux208,1),w-literal(aux19,1)})
+watched-or({w-literal(aux198,1),w-literal(aux209,1),w-literal(aux20,1)})
+reifyimply(gaceq(travel_00004_00001,aux86), !aux185)
+reifyimply(gaceq(travel_00004_00008,aux88), !aux193)
+watched-or({w-literal(travel_00006_00003,0),w-literal(aux189,1),w-literal(aux151,1)})
+watched-or({w-literal(travel_00006_00005,0),w-literal(aux213,1),w-literal(aux210,1)})
+watched-or({w-literal(travel_00006_00007,0),w-literal(aux153,1),w-literal(aux146,1)})
+reify(watched-or({w-literal(aux113,1),w-literal(aux189,1)}), aux43)
+reify(watched-or({w-literal(aux112,1),w-literal(aux188,1)}), aux44)
+reify(watched-or({w-literal(aux151,1),w-literal(aux213,1)}), aux11)
+reify(watched-or({w-literal(aux150,1),w-literal(aux212,1)}), aux12)
+reify(watched-or({w-literal(aux210,1),w-literal(aux153,1)}), aux27)
+reify(watched-or({w-literal(aux211,1),w-literal(aux152,1)}), aux28)
+watched-or({gaceq(travel_00001_00007,aux110),w-literal(aux124,1),w-literal(aux117,1)})
+watchelement_one([opponent_00001_00005, opponent_00002_00005, opponent_00003_00005, opponent_00004_00005, opponent_00005_00005, opponent_00006_00005, opponent_00007_00005], opponent_00008_00005, 8)
+gacalldiff([opponent_00008_00001, opponent_00008_00002, opponent_00008_00003, opponent_00008_00004, opponent_00008_00005, opponent_00008_00006, opponent_00008_00007])
+watchelement_one([opponent_00002_00004, opponent_00003_00004, opponent_00004_00004, opponent_00005_00004, opponent_00006_00004, opponent_00007_00004, opponent_00008_00004], aux52, 1)
+reifyimply(gaceq(aux70,travel_00005_00001), !aux178)
+reifyimply(gaceq(aux75,travel_00005_00008), !aux219)
+watchelement_one([opponent_00001_00004, opponent_00002_00004, opponent_00003_00004, opponent_00004_00004, opponent_00005_00004, opponent_00006_00004, opponent_00007_00004, opponent_00008_00004], opponent_00005_00004, 5)
+watched-or({w-literal(aux8,1),watchelement_one([0, 1, 2, 3, 4, 3, 2, 1, 1, 0, 1, 2, 3, 4, 3, 2, 2, 1, 0, 1, 2, 3, 4, 3, 3, 2, 1, 0, 1, 2, 3, 4, 4, 3, 2, 1, 0, 1, 2, 3, 3, 4, 3, 2, 1, 0, 1, 2, 2, 3, 4, 3, 2, 1, 0, 1, 1, 2, 3, 4, 3, 2, 1, 0], aux262, travel_00004_00004)})
+watched-or({w-literal(aux223,1),w-literal(aux172,1),gaceq(aux57,travel_00007_00002)})
+watched-or({w-literal(aux222,1),w-literal(aux173,1),gaceq(aux62,travel_00007_00002)})
+watched-or({w-literal(aux173,1),w-literal(aux118,1),gaceq(aux56,travel_00007_00003)})
+watched-or({w-literal(aux172,1),w-literal(aux119,1),gaceq(aux57,travel_00007_00003)})
+watched-or({w-literal(aux119,1),w-literal(aux168,1),gaceq(aux59,travel_00007_00004)})
+watched-or({w-literal(aux118,1),w-literal(aux167,1),gaceq(aux56,travel_00007_00004)})
+watched-or({w-literal(aux167,1),w-literal(aux166,1),gaceq(aux58,travel_00007_00005)})
+watched-or({w-literal(aux168,1),w-literal(aux169,1),gaceq(aux59,travel_00007_00005)})
+watched-or({w-literal(aux169,1),w-literal(aux121,1),gaceq(aux61,travel_00007_00006)})
+watched-or({w-literal(aux166,1),w-literal(aux120,1),gaceq(aux58,travel_00007_00006)})
+watched-or({w-literal(aux120,1),w-literal(aux139,1),gaceq(aux60,travel_00007_00007)})
+watched-or({w-literal(aux121,1),w-literal(aux138,1),gaceq(aux61,travel_00007_00007)})
+gacalldiff([opponent_00001_00005, opponent_00006_00005, opponent_00002_00005, opponent_00007_00005, opponent_00003_00005, opponent_00008_00005, opponent_00004_00005, opponent_00005_00005])
+watchelement_one([1, 2, 1, 2, 2, 2, 1, 2], opponent_00004_00001, venue_00004_00001)
+watchelement_one([1, 2, 1, 2, 2, 2, 1, 2], opponent_00004_00002, venue_00004_00002)
+watchelement_one([1, 2, 1, 2, 2, 2, 1, 2], opponent_00004_00003, venue_00004_00003)
+watchelement_one([1, 2, 1, 2, 2, 2, 1, 2], opponent_00004_00004, venue_00004_00004)
+watchelement_one([1, 2, 1, 2, 2, 2, 1, 2], opponent_00004_00005, venue_00004_00005)
+watchelement_one([1, 2, 1, 2, 2, 2, 1, 2], opponent_00004_00006, venue_00004_00006)
+watchelement_one([1, 2, 1, 2, 2, 2, 1, 2], opponent_00004_00007, venue_00004_00007)
+watched-or({w-literal(travel_00001_00003,0),w-literal(aux171,1),w-literal(aux123,1)})
+watched-or({w-literal(travel_00001_00005,0),w-literal(aux180,1),w-literal(aux182,1)})
+watched-or({w-literal(travel_00001_00007,0),w-literal(aux124,1),w-literal(aux116,1)})
+watched-or({w-literal(travel_00002_00004,0),w-literal(aux3,1)})
+watchelement_one([opponent_00001_00006, opponent_00002_00006, opponent_00003_00006, opponent_00004_00006, opponent_00005_00006, opponent_00006_00006, opponent_00007_00006, opponent_00008_00006], opponent_00002_00006, 2)
+watched-or({w-literal(travel_00002_00002,0),w-literal(aux35,1)})
+watched-or({w-literal(travel_00002_00006,0),w-literal(aux19,1)})
+watchelement_one([opponent_00001_00002, opponent_00002_00002, opponent_00003_00002, opponent_00004_00002, opponent_00005_00002, opponent_00006_00002, opponent_00007_00002, opponent_00008_00002], opponent_00006_00002, 6)
+watchelement_one([opponent_00001_00006, opponent_00002_00006, opponent_00003_00006, opponent_00004_00006, opponent_00005_00006, opponent_00006_00006, opponent_00007_00006, opponent_00008_00006], opponent_00007_00006, 7)
+gacalldiff([opponent_00001_00001, opponent_00001_00002, opponent_00001_00003, opponent_00001_00004, opponent_00001_00005, opponent_00001_00006, opponent_00001_00007])
+watchelement_one([opponent_00002_00001, opponent_00003_00001, opponent_00004_00001, opponent_00005_00001, opponent_00006_00001, opponent_00007_00001], aux49, 1)
+watched-or({w-literal(travel_00007_00004,0),w-literal(aux13,1)})
+watched-or({w-literal(travel_00007_00002,0),w-literal(aux45,1)})
+watched-or({w-literal(travel_00007_00006,0),w-literal(aux29,1)})
+watchelement_one([2, 1, 1, 1, 2, 2, 2, 1], opponent_00006_00001, venue_00006_00001)
+watchelement_one([2, 1, 1, 1, 2, 2, 2, 1], opponent_00006_00002, venue_00006_00002)
+watchelement_one([2, 1, 1, 1, 2, 2, 2, 1], opponent_00006_00003, venue_00006_00003)
+watchelement_one([2, 1, 1, 1, 2, 2, 2, 1], opponent_00006_00004, venue_00006_00004)
+watchelement_one([2, 1, 1, 1, 2, 2, 2, 1], opponent_00006_00005, venue_00006_00005)
+watchelement_one([2, 1, 1, 1, 2, 2, 2, 1], opponent_00006_00006, venue_00006_00006)
+watchelement_one([2, 1, 1, 1, 2, 2, 2, 1], opponent_00006_00007, venue_00006_00007)
+watched-or({w-literal(aux4,1),watchelement_one([0, 1, 2, 3, 4, 3, 2, 1, 1, 0, 1, 2, 3, 4, 3, 2, 2, 1, 0, 1, 2, 3, 4, 3, 3, 2, 1, 0, 1, 2, 3, 4, 4, 3, 2, 1, 0, 1, 2, 3, 3, 4, 3, 2, 1, 0, 1, 2, 2, 3, 4, 3, 2, 1, 0, 1, 1, 2, 3, 4, 3, 2, 1, 0], aux263, travel_00002_00004)})
+watched-or({w-literal(aux203,1),w-literal(aux200,1),gaceq(aux96,travel_00002_00002)})
+watched-or({w-literal(aux202,1),w-literal(aux201,1),gaceq(aux95,travel_00002_00002)})
+watched-or({w-literal(aux201,1),w-literal(aux130,1),gaceq(aux93,travel_00002_00003)})
+watched-or({w-literal(aux200,1),w-literal(aux131,1),gaceq(aux96,travel_00002_00003)})
+watched-or({w-literal(aux131,1),w-literal(aux198,1),gaceq(aux94,travel_00002_00004)})
+watched-or({w-literal(aux130,1),w-literal(aux199,1),gaceq(aux93,travel_00002_00004)})
+watched-or({w-literal(aux199,1),w-literal(aux186,1),gaceq(aux92,travel_00002_00005)})
+watched-or({w-literal(aux198,1),w-literal(aux187,1),gaceq(aux94,travel_00002_00005)})
+watched-or({w-literal(aux187,1),w-literal(aux129,1),gaceq(aux91,travel_00002_00006)})
+watched-or({w-literal(aux186,1),w-literal(aux128,1),gaceq(aux92,travel_00002_00006)})
+watched-or({w-literal(aux128,1),w-literal(aux209,1),gaceq(aux97,travel_00002_00007)})
+watched-or({w-literal(aux129,1),w-literal(aux208,1),gaceq(aux91,travel_00002_00007)})
+gacalldiff([opponent_00001_00002, opponent_00006_00002, opponent_00002_00002, opponent_00007_00002, opponent_00003_00002, opponent_00008_00002, opponent_00004_00002, opponent_00005_00002])
+gacalldiff([opponent_00004_00001, opponent_00004_00002, opponent_00004_00003, opponent_00004_00004, opponent_00004_00005, opponent_00004_00006, opponent_00004_00007])
+watched-or({w-literal(aux200,1),w-literal(aux130,1),watchelement_one([0, 1, 2, 3, 4, 3, 2, 1, 1, 0, 1, 2, 3, 4, 3, 2, 2, 1, 0, 1, 2, 3, 4, 3, 3, 2, 1, 0, 1, 2, 3, 4, 4, 3, 2, 1, 0, 1, 2, 3, 3, 4, 3, 2, 1, 0, 1, 2, 2, 3, 4, 3, 2, 1, 0, 1, 1, 2, 3, 4, 3, 2, 1, 0], aux264, travel_00002_00003)})
+watched-or({w-literal(aux198,1),w-literal(aux186,1),watchelement_one([0, 1, 2, 3, 4, 3, 2, 1, 1, 0, 1, 2, 3, 4, 3, 2, 2, 1, 0, 1, 2, 3, 4, 3, 3, 2, 1, 0, 1, 2, 3, 4, 4, 3, 2, 1, 0, 1, 2, 3, 3, 4, 3, 2, 1, 0, 1, 2, 2, 3, 4, 3, 2, 1, 0, 1, 1, 2, 3, 4, 3, 2, 1, 0], aux265, travel_00002_00005)})
+watched-or({w-literal(aux129,1),w-literal(aux209,1),watchelement_one([0, 1, 2, 3, 4, 3, 2, 1, 1, 0, 1, 2, 3, 4, 3, 2, 2, 1, 0, 1, 2, 3, 4, 3, 3, 2, 1, 0, 1, 2, 3, 4, 4, 3, 2, 1, 0, 1, 2, 3, 3, 4, 3, 2, 1, 0, 1, 2, 2, 3, 4, 3, 2, 1, 0, 1, 1, 2, 3, 4, 3, 2, 1, 0], aux266, travel_00002_00007)})
+reifyimply(w-literal(travel_00007_00001,0), !aux223)
+reifyimply(w-literal(travel_00007_00008,0), !aux138)
+watched-or({w-literal(aux143,1),w-literal(aux190,1),gaceq(travel_00008_00002,aux101)})
+watched-or({w-literal(aux195,1),w-literal(aux144,1),gaceq(travel_00008_00002,aux104)})
+watched-or({w-literal(aux195,1),w-literal(aux176,1),gaceq(travel_00008_00003,aux100)})
+watched-or({w-literal(aux175,1),w-literal(aux190,1),gaceq(travel_00008_00003,aux101)})
+watched-or({w-literal(aux175,1),w-literal(aux191,1),gaceq(travel_00008_00004,aux99)})
+watched-or({w-literal(aux196,1),w-literal(aux176,1),gaceq(travel_00008_00004,aux100)})
+watched-or({w-literal(aux196,1),w-literal(aux192,1),gaceq(travel_00008_00005,aux98)})
+watched-or({w-literal(aux197,1),w-literal(aux191,1),gaceq(travel_00008_00005,aux99)})
+watched-or({w-literal(aux197,1),w-literal(aux177,1),gaceq(travel_00008_00006,aux103)})
+watched-or({w-literal(aux174,1),w-literal(aux192,1),gaceq(travel_00008_00006,aux98)})
+watched-or({w-literal(aux174,1),w-literal(aux127,1),gaceq(travel_00008_00007,aux102)})
+watched-or({w-literal(aux126,1),w-literal(aux177,1),gaceq(travel_00008_00007,aux103)})
+reify(watched-or({w-literal(aux123,1),w-literal(aux180,1)}), aux1)
+reify(watched-or({w-literal(aux122,1),w-literal(aux181,1)}), aux2)
+watched-or({w-literal(aux195,1),w-literal(aux175,1),w-literal(travel_00008_00003,0)})
+watched-or({w-literal(aux196,1),w-literal(aux197,1),w-literal(travel_00008_00005,0)})
+watched-or({w-literal(aux174,1),w-literal(aux126,1),w-literal(travel_00008_00007,0)})
+watchelement_one([opponent_00001_00007, opponent_00002_00007, opponent_00003_00007, opponent_00004_00007, opponent_00005_00007, opponent_00006_00007, opponent_00007_00007, opponent_00008_00007], opponent_00002_00007, 2)
+reify(watched-or({w-literal(aux115,1),w-literal(aux171,1)}), aux33)
+reify(watched-or({w-literal(aux114,1),w-literal(aux170,1)}), aux34)
+reify(watched-or({w-literal(aux182,1),w-literal(aux124,1)}), aux17)
+reify(watched-or({w-literal(aux183,1),w-literal(aux125,1)}), aux18)
+watched-or({gaceq(aux111,travel_00001_00002),w-literal(aux114,1),w-literal(aux171,1)})
+watchelement_one([opponent_00001_00003, opponent_00002_00003, opponent_00003_00003, opponent_00004_00003, opponent_00005_00003, opponent_00006_00003, opponent_00007_00003, opponent_00008_00003], opponent_00006_00003, 6)
+gacalldiff([opponent_00007_00001, opponent_00007_00002, opponent_00007_00003, opponent_00007_00004, opponent_00007_00005, opponent_00007_00006, opponent_00007_00007])
+watched-or({watchelement_one([0, 1, 2, 3, 4, 3, 2, 2, 1, 0, 1, 2, 3, 4, 3, 3, 2, 1, 0, 1, 2, 3, 4, 4, 3, 2, 1, 0, 1, 2, 3, 3, 4, 3, 2, 1, 0, 1, 2, 2, 3, 4, 3, 2, 1, 0, 1, 1, 2, 3, 4, 3, 2, 1, 0], aux267, travel_00001_00003),w-literal(aux170,1),w-literal(aux122,1)})
+reifyimply(w-literal(travel_00002_00001,0), !aux203)
+reifyimply(w-literal(travel_00002_00008,0), !aux208)
+watched-or({watchelement_one([0, 1, 2, 3, 4, 3, 2, 2, 1, 0, 1, 2, 3, 4, 3, 3, 2, 1, 0, 1, 2, 3, 4, 4, 3, 2, 1, 0, 1, 2, 3, 3, 4, 3, 2, 1, 0, 1, 2, 2, 3, 4, 3, 2, 1, 0, 1, 1, 2, 3, 4, 3, 2, 1, 0], aux268, travel_00001_00005),w-literal(aux181,1),w-literal(aux183,1)})
+watchelement_one([opponent_00001_00007, opponent_00002_00007, opponent_00003_00007, opponent_00004_00007, opponent_00005_00007, opponent_00006_00007, opponent_00007_00007, opponent_00008_00007], opponent_00007_00007, 7)
+gacalldiff([opponent_00001_00007, opponent_00006_00007, opponent_00002_00007, opponent_00007_00007, opponent_00003_00007, opponent_00008_00007, opponent_00004_00007, opponent_00005_00007])
+watched-or({w-literal(aux147,1),w-literal(aux204,1),w-literal(travel_00003_00003,0)})
+watched-or({w-literal(aux148,1),w-literal(aux149,1),w-literal(travel_00003_00005,0)})
+watched-or({w-literal(aux205,1),w-literal(aux162,1),w-literal(travel_00003_00007,0)})
+watched-or({w-literal(travel_00005_00004,0),w-literal(aux9,1)})
+watched-or({w-literal(travel_00005_00002,0),w-literal(aux41,1)})
+watched-or({w-literal(travel_00005_00006,0),w-literal(aux25,1)})
+reifyimply(gaceq(aux111,travel_00001_00001), !aux114)
+watchelement_one([opponent_00001_00001, opponent_00002_00001, opponent_00003_00001, opponent_00004_00001, opponent_00005_00001, opponent_00006_00001, opponent_00007_00001, opponent_00008_00001], opponent_00002_00001, 2)
+watched-or({w-literal(travel_00005_00003,0),w-literal(aux221,1),w-literal(aux155,1)})
+watched-or({w-literal(travel_00005_00005,0),w-literal(aux215,1),w-literal(aux217,1)})
+watched-or({w-literal(travel_00005_00007,0),w-literal(aux156,1),w-literal(aux218,1)})
+watchelement_one([opponent_00001_00005, opponent_00002_00005, opponent_00003_00005, opponent_00004_00005, opponent_00005_00005, opponent_00006_00005, opponent_00007_00005, opponent_00008_00005], opponent_00003_00005, 3)
+watchelement_one([opponent_00002_00006, opponent_00003_00006, opponent_00004_00006, opponent_00005_00006, opponent_00006_00006, opponent_00007_00006, opponent_00008_00006], aux54, 1)
+watchelement_one([opponent_00001_00002, opponent_00002_00002, opponent_00003_00002, opponent_00004_00002, opponent_00005_00002, opponent_00006_00002, opponent_00007_00002], opponent_00008_00002, 8)
+watched-or({w-literal(aux1,1),w-literal(aux171,1),w-literal(aux182,1)})
+watched-or({w-literal(aux2,1),w-literal(aux170,1),w-literal(aux183,1)})
+watched-or({watchelement_one([0, 1, 2, 3, 4, 3, 2, 1, 1, 0, 1, 2, 3, 4, 3, 2, 2, 1, 0, 1, 2, 3, 4, 3, 3, 2, 1, 0, 1, 2, 3, 4, 4, 3, 2, 1, 0, 1, 2, 3, 3, 4, 3, 2, 1, 0, 1, 2, 2, 3, 4, 3, 2, 1, 0, 1, 1, 2, 3, 4, 3, 2, 1, 0], aux269, travel_00003_00003),w-literal(aux140,1),w-literal(aux207,1)})
+watched-or({watchelement_one([0, 1, 2, 3, 4, 3, 2, 1, 1, 0, 1, 2, 3, 4, 3, 2, 2, 1, 0, 1, 2, 3, 4, 3, 3, 2, 1, 0, 1, 2, 3, 4, 4, 3, 2, 1, 0, 1, 2, 3, 3, 4, 3, 2, 1, 0, 1, 2, 2, 3, 4, 3, 2, 1, 0, 1, 1, 2, 3, 4, 3, 2, 1, 0], aux270, travel_00003_00005),w-literal(aux141,1),w-literal(aux142,1)})
+watched-or({watchelement_one([0, 1, 2, 3, 4, 3, 2, 1, 1, 0, 1, 2, 3, 4, 3, 2, 2, 1, 0, 1, 2, 3, 4, 3, 3, 2, 1, 0, 1, 2, 3, 4, 4, 3, 2, 1, 0, 1, 2, 3, 3, 4, 3, 2, 1, 0, 1, 2, 2, 3, 4, 3, 2, 1, 0, 1, 1, 2, 3, 4, 3, 2, 1, 0], aux271, travel_00003_00007),w-literal(aux206,1),w-literal(aux163,1)})
+watchelement_one([opponent_00001_00001, opponent_00002_00001, opponent_00003_00001, opponent_00004_00001, opponent_00005_00001, opponent_00006_00001, opponent_00007_00001, opponent_00008_00001], opponent_00007_00001, 7)
+reify(watched-or({w-literal(aux155,1),w-literal(aux215,1)}), aux9)
+watchelement_one([1, 2, 2, 2, 1, 2, 2, 1], opponent_00003_00001, venue_00003_00001)
+watchelement_one([1, 2, 2, 2, 1, 2, 2, 1], opponent_00003_00002, venue_00003_00002)
+watchelement_one([1, 2, 2, 2, 1, 2, 2, 1], opponent_00003_00003, venue_00003_00003)
+watchelement_one([1, 2, 2, 2, 1, 2, 2, 1], opponent_00003_00004, venue_00003_00004)
+watchelement_one([1, 2, 2, 2, 1, 2, 2, 1], opponent_00003_00005, venue_00003_00005)
+watchelement_one([1, 2, 2, 2, 1, 2, 2, 1], opponent_00003_00006, venue_00003_00006)
+watchelement_one([1, 2, 2, 2, 1, 2, 2, 1], opponent_00003_00007, venue_00003_00007)
+weightedsumleq([8,1,1],[opponent_00003_00003,opponent_00003_00004,-8],aux224)
+weightedsumgeq([8,1,1],[opponent_00003_00003,opponent_00003_00004,-8],aux224)
+weightedsumleq([8,1,1],[opponent_00003_00001,opponent_00003_00002,-8],aux225)
+weightedsumgeq([8,1,1],[opponent_00003_00001,opponent_00003_00002,-8],aux225)
+weightedsumleq([8,1,1],[opponent_00003_00005,opponent_00003_00006,-8],aux226)
+weightedsumgeq([8,1,1],[opponent_00003_00005,opponent_00003_00006,-8],aux226)
+weightedsumleq([8,1,1],[opponent_00007_00001,opponent_00007_00002,-8],aux227)
+weightedsumgeq([8,1,1],[opponent_00007_00001,opponent_00007_00002,-8],aux227)
+weightedsumleq([8,1,1],[opponent_00007_00003,opponent_00007_00004,-8],aux228)
+weightedsumgeq([8,1,1],[opponent_00007_00003,opponent_00007_00004,-8],aux228)
+weightedsumleq([8,1,1],[opponent_00007_00005,opponent_00007_00006,-8],aux229)
+weightedsumgeq([8,1,1],[opponent_00007_00005,opponent_00007_00006,-8],aux229)
+weightedsumleq([8,1,1],[opponent_00001_00003,opponent_00001_00004,-17],aux230)
+weightedsumgeq([8,1,1],[opponent_00001_00003,opponent_00001_00004,-17],aux230)
+weightedsumleq([8,1,1],[opponent_00007_00002,opponent_00007_00003,-8],aux231)
+weightedsumgeq([8,1,1],[opponent_00007_00002,opponent_00007_00003,-8],aux231)
+weightedsumleq([8,1,1],[opponent_00007_00004,opponent_00007_00005,-8],aux232)
+weightedsumgeq([8,1,1],[opponent_00007_00004,opponent_00007_00005,-8],aux232)
+weightedsumleq([8,1,1],[opponent_00007_00006,opponent_00007_00007,-8],aux233)
+weightedsumgeq([8,1,1],[opponent_00007_00006,opponent_00007_00007,-8],aux233)
+weightedsumleq([8,1,1],[opponent_00001_00005,opponent_00001_00006,-17],aux234)
+weightedsumgeq([8,1,1],[opponent_00001_00005,opponent_00001_00006,-17],aux234)
+weightedsumleq([8,1,1],[opponent_00008_00001,opponent_00008_00002,-8],aux235)
+weightedsumgeq([8,1,1],[opponent_00008_00001,opponent_00008_00002,-8],aux235)
+weightedsumleq([8,1,1],[opponent_00008_00003,opponent_00008_00004,-8],aux236)
+weightedsumgeq([8,1,1],[opponent_00008_00003,opponent_00008_00004,-8],aux236)
+weightedsumleq([8,1,1],[opponent_00008_00005,opponent_00008_00006,-8],aux237)
+weightedsumgeq([8,1,1],[opponent_00008_00005,opponent_00008_00006,-8],aux237)
+weightedsumleq([1,8,1],[-8,opponent_00004_00005,opponent_00004_00006],aux238)
+weightedsumgeq([1,8,1],[-8,opponent_00004_00005,opponent_00004_00006],aux238)
+weightedsumleq([1,8,1],[-8,opponent_00004_00001,opponent_00004_00002],aux239)
+weightedsumgeq([1,8,1],[-8,opponent_00004_00001,opponent_00004_00002],aux239)
+weightedsumleq([8,1,1],[opponent_00008_00002,opponent_00008_00003,-8],aux240)
+weightedsumgeq([8,1,1],[opponent_00008_00002,opponent_00008_00003,-8],aux240)
+weightedsumleq([8,1,1],[opponent_00008_00004,opponent_00008_00005,-8],aux241)
+weightedsumgeq([8,1,1],[opponent_00008_00004,opponent_00008_00005,-8],aux241)
+weightedsumleq([8,1,1],[opponent_00008_00006,opponent_00008_00007,-8],aux242)
+weightedsumgeq([8,1,1],[opponent_00008_00006,opponent_00008_00007,-8],aux242)
+weightedsumleq([1,8,1],[-8,opponent_00005_00002,opponent_00005_00003],aux243)
+weightedsumgeq([1,8,1],[-8,opponent_00005_00002,opponent_00005_00003],aux243)
+weightedsumleq([1,8,1],[-8,opponent_00005_00004,opponent_00005_00005],aux244)
+weightedsumgeq([1,8,1],[-8,opponent_00005_00004,opponent_00005_00005],aux244)
+weightedsumleq([1,8,1],[-8,opponent_00005_00006,opponent_00005_00007],aux245)
+weightedsumgeq([1,8,1],[-8,opponent_00005_00006,opponent_00005_00007],aux245)
+weightedsumleq([1,8,1],[-8,opponent_00005_00003,opponent_00005_00004],aux246)
+weightedsumgeq([1,8,1],[-8,opponent_00005_00003,opponent_00005_00004],aux246)
+weightedsumleq([1,8,1],[-8,opponent_00005_00001,opponent_00005_00002],aux247)
+weightedsumgeq([1,8,1],[-8,opponent_00005_00001,opponent_00005_00002],aux247)
+weightedsumleq([1,8,1],[-8,opponent_00005_00005,opponent_00005_00006],aux248)
+weightedsumgeq([1,8,1],[-8,opponent_00005_00005,opponent_00005_00006],aux248)
+weightedsumleq([8,1,1],[opponent_00006_00001,opponent_00006_00002,-8],aux249)
+weightedsumgeq([8,1,1],[opponent_00006_00001,opponent_00006_00002,-8],aux249)
+weightedsumleq([8,1,1],[opponent_00006_00003,opponent_00006_00004,-8],aux250)
+weightedsumgeq([8,1,1],[opponent_00006_00003,opponent_00006_00004,-8],aux250)
+weightedsumleq([8,1,1],[opponent_00006_00005,opponent_00006_00006,-8],aux251)
+weightedsumgeq([8,1,1],[opponent_00006_00005,opponent_00006_00006,-8],aux251)
+weightedsumleq([8,1,1],[opponent_00001_00001,opponent_00001_00002,-17],aux252)
+weightedsumgeq([8,1,1],[opponent_00001_00001,opponent_00001_00002,-17],aux252)
+weightedsumleq([1,8,1],[-8,opponent_00004_00002,opponent_00004_00003],aux253)
+weightedsumgeq([1,8,1],[-8,opponent_00004_00002,opponent_00004_00003],aux253)
+weightedsumleq([1,8,1],[-8,opponent_00004_00004,opponent_00004_00005],aux254)
+weightedsumgeq([1,8,1],[-8,opponent_00004_00004,opponent_00004_00005],aux254)
+weightedsumleq([1,8,1],[-8,opponent_00004_00006,opponent_00004_00007],aux255)
+weightedsumgeq([1,8,1],[-8,opponent_00004_00006,opponent_00004_00007],aux255)
+weightedsumleq([8,1,1],[opponent_00001_00006,opponent_00001_00007,-18],aux256)
+weightedsumgeq([8,1,1],[opponent_00001_00006,opponent_00001_00007,-18],aux256)
+weightedsumleq([8,1,1],[opponent_00002_00001,opponent_00002_00002,-8],aux257)
+weightedsumgeq([8,1,1],[opponent_00002_00001,opponent_00002_00002,-8],aux257)
+weightedsumleq([8,1,1],[opponent_00002_00005,opponent_00002_00006,-8],aux258)
+weightedsumgeq([8,1,1],[opponent_00002_00005,opponent_00002_00006,-8],aux258)
+weightedsumleq([8,1,1],[opponent_00006_00002,opponent_00006_00003,-8],aux259)
+weightedsumgeq([8,1,1],[opponent_00006_00002,opponent_00006_00003,-8],aux259)
+weightedsumleq([8,1,1],[opponent_00006_00004,opponent_00006_00005,-8],aux260)
+weightedsumgeq([8,1,1],[opponent_00006_00004,opponent_00006_00005,-8],aux260)
+weightedsumleq([8,1,1],[opponent_00006_00006,opponent_00006_00007,-8],aux261)
+weightedsumgeq([8,1,1],[opponent_00006_00006,opponent_00006_00007,-8],aux261)
+weightedsumleq([1,8,1],[-8,opponent_00004_00003,opponent_00004_00004],aux262)
+weightedsumgeq([1,8,1],[-8,opponent_00004_00003,opponent_00004_00004],aux262)
+weightedsumleq([8,1,1],[opponent_00002_00003,opponent_00002_00004,-8],aux263)
+weightedsumgeq([8,1,1],[opponent_00002_00003,opponent_00002_00004,-8],aux263)
+weightedsumleq([8,1,1],[opponent_00002_00002,opponent_00002_00003,-8],aux264)
+weightedsumgeq([8,1,1],[opponent_00002_00002,opponent_00002_00003,-8],aux264)
+weightedsumleq([8,1,1],[opponent_00002_00004,opponent_00002_00005,-8],aux265)
+weightedsumgeq([8,1,1],[opponent_00002_00004,opponent_00002_00005,-8],aux265)
+weightedsumleq([8,1,1],[opponent_00002_00006,opponent_00002_00007,-8],aux266)
+weightedsumgeq([8,1,1],[opponent_00002_00006,opponent_00002_00007,-8],aux266)
+weightedsumleq([8,1,1],[opponent_00001_00002,opponent_00001_00003,-17],aux267)
+weightedsumgeq([8,1,1],[opponent_00001_00002,opponent_00001_00003,-17],aux267)
+weightedsumleq([8,1,1],[opponent_00001_00004,opponent_00001_00005,-17],aux268)
+weightedsumgeq([8,1,1],[opponent_00001_00004,opponent_00001_00005,-17],aux268)
+weightedsumleq([8,1,1],[opponent_00003_00002,opponent_00003_00003,-8],aux269)
+weightedsumgeq([8,1,1],[opponent_00003_00002,opponent_00003_00003,-8],aux269)
+weightedsumleq([8,1,1],[opponent_00003_00004,opponent_00003_00005,-8],aux270)
+weightedsumgeq([8,1,1],[opponent_00003_00004,opponent_00003_00005,-8],aux270)
+weightedsumleq([8,1,1],[opponent_00003_00006,opponent_00003_00007,-8],aux271)
+weightedsumgeq([8,1,1],[opponent_00003_00006,opponent_00003_00007,-8],aux271)
+sumleq([opponent_00001_00001,-1],aux49)
+sumgeq([opponent_00001_00001,-1],aux49)
+sumleq([opponent_00001_00002,-1],aux50)
+sumgeq([opponent_00001_00002,-1],aux50)
+sumleq([opponent_00001_00003,-1],aux51)
+sumgeq([opponent_00001_00003,-1],aux51)
+sumleq([opponent_00001_00004,-1],aux52)
+sumgeq([opponent_00001_00004,-1],aux52)
+sumleq([opponent_00001_00005,-1],aux53)
+sumgeq([opponent_00001_00005,-1],aux53)
+sumleq([opponent_00001_00006,-1],aux54)
+sumgeq([opponent_00001_00006,-1],aux54)
+sumleq([opponent_00001_00007,-2],aux55)
+sumgeq([opponent_00001_00007,-2],aux55)
+sumleq([travel_00003_00001,travel_00003_00002,travel_00003_00003,travel_00003_00004,travel_00003_00005,travel_00003_00006,travel_00003_00007,travel_00003_00008,travel_00008_00001,travel_00008_00002,travel_00008_00003,travel_00008_00004,travel_00008_00005,travel_00008_00006,travel_00008_00007,travel_00008_00008,travel_00004_00001,travel_00004_00002,travel_00004_00003,travel_00004_00004,travel_00004_00005,travel_00004_00006,travel_00004_00007,travel_00004_00008,travel_00005_00001,travel_00005_00002,travel_00005_00003,travel_00005_00004,travel_00005_00005,travel_00005_00006,travel_00005_00007,travel_00005_00008,travel_00001_00001,travel_00001_00002,travel_00001_00003,travel_00001_00004,travel_00001_00005,travel_00001_00006,travel_00001_00007,travel_00001_00008,travel_00006_00001,travel_00006_00002,travel_00006_00003,travel_00006_00004,travel_00006_00005,travel_00006_00006,travel_00006_00007,travel_00006_00008,travel_00002_00001,travel_00002_00002,travel_00002_00003,travel_00002_00004,travel_00002_00005,travel_00002_00006,travel_00002_00007,travel_00002_00008,travel_00007_00001,travel_00007_00002,travel_00007_00003,travel_00007_00004,travel_00007_00005,travel_00007_00006,travel_00007_00007,travel_00007_00008],objective)
+sumgeq([travel_00003_00001,travel_00003_00002,travel_00003_00003,travel_00003_00004,travel_00003_00005,travel_00003_00006,travel_00003_00007,travel_00003_00008,travel_00008_00001,travel_00008_00002,travel_00008_00003,travel_00008_00004,travel_00008_00005,travel_00008_00006,travel_00008_00007,travel_00008_00008,travel_00004_00001,travel_00004_00002,travel_00004_00003,travel_00004_00004,travel_00004_00005,travel_00004_00006,travel_00004_00007,travel_00004_00008,travel_00005_00001,travel_00005_00002,travel_00005_00003,travel_00005_00004,travel_00005_00005,travel_00005_00006,travel_00005_00007,travel_00005_00008,travel_00001_00001,travel_00001_00002,travel_00001_00003,travel_00001_00004,travel_00001_00005,travel_00001_00006,travel_00001_00007,travel_00001_00008,travel_00006_00001,travel_00006_00002,travel_00006_00003,travel_00006_00004,travel_00006_00005,travel_00006_00006,travel_00006_00007,travel_00006_00008,travel_00002_00001,travel_00002_00002,travel_00002_00003,travel_00002_00004,travel_00002_00005,travel_00002_00006,travel_00002_00007,travel_00002_00008,travel_00007_00001,travel_00007_00002,travel_00007_00003,travel_00007_00004,travel_00007_00005,travel_00007_00006,travel_00007_00007,travel_00007_00008],objective)
+**EOF**

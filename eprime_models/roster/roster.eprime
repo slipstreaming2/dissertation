@@ -22,6 +22,8 @@ find plan2dT : matrix indexed by [int(1..daysPerWeek), int(1..numberOfWeeks)] of
 find s_min_arrays : matrix indexed by [int(1..s_min), int(1..s_min)] of int(0..numberOfShifts)
 find s_max_arrays : matrix indexed by [int(1..s_max), int(1..s_max)] of int(0..numberOfShifts)
 
+branching on [plan1d]
+
 such that 
 
 $ plan1d = flatten(plan2d),
@@ -83,6 +85,7 @@ forAll day : int(2..numberOfWeeks*daysPerWeek-1) .
     (plan1d[day] <= plan1d[day+1]) 
     \/ (plan1d[day+1] = 0),
 
+$ forward rotating
 (plan1d[1] >= plan1d[numberOfDays]) \/ plan1d[1] = 0,
 
 $ forAll day : int(1..daysPerWeek) .

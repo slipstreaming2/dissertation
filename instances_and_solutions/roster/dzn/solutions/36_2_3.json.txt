@@ -1,0 +1,28 @@
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 2155, "flatIntVars": 216, "flatBoolConstraints": 1172, "flatIntConstraints": 1905, "evaluatedReifiedConstraints": 2373, "method": "satisfy", "flatTime": 0.240073}}
+{"type": "comment", "comment": "% Pruned 49988 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49990 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49984 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49975 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49988 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49984 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49985 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49977 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49983 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49978 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49980 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49974 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49975 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49970 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49966 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49959 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49951 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49935 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49962 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49971 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49982 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49990 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49994 learnt clauses"}
+{"type": "comment", "comment": "% Time limit exceeded!"}
+{"type": "status", "status": "UNKNOWN"}
+{"type": "statistics", "statistics": {"nSolutions": 0}}
+{"type": "statistics", "statistics": {"nodes": 1256212, "failures": 1222790, "restarts": 0, "variables": 4744, "intVars": 224, "boolVariables": 4518, "propagators": 3208, "propagations": 839822952, "peakDepth": 66, "nogoods": 1222790, "backjumps": 33393, "peakMem": 0.0, "time": 60.017, "initTime": 0.017, "solveTime": 60.0, "baseMem": 0.0, "trailMem": 0.08, "randomSeed": 1668107139}}

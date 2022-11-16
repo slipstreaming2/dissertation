@@ -19,6 +19,7 @@ def readMinionStats(pathToFile):
 def readMinizinc(pathToFile, statDict, solutionDict):
     miniStats = open(pathToFile, "r")
     lines = miniStats.readlines()
+    statDict["timeout"] = False
     for line in lines:
         lineJson = json.loads(line)
         lineType = lineJson["type"]
@@ -26,6 +27,10 @@ def readMinizinc(pathToFile, statDict, solutionDict):
             statDict.update(lineJson["statistics"])
         elif lineType == "solution":
             solutionDict.update(lineJson["output"]["json"])
+        elif lineType == "comment" and lineJson["comment"] == "% Time limit exceeded!":
+            statDict["timeout"] = True
+            
+
     
 statFile = sys.argv[1]
 dataSaveLocation = sys.argv[2]
@@ -37,7 +42,7 @@ else:
     miniSolution = {}
     readMinizinc(statFile, statInfo, miniSolution)
     slashes = [i for i in range(len(statFile)) if statFile[i] == '/']
-    Path(statFile[:slashes[-1]+1] + "json").mkdir(parents=True, exist_ok=True)
+    # Path(statFile[:slashes[-1]+1] + "json").mkdir(parents=True, exist_ok=True)
     with open(statFile[:slashes[-1]+1] + "json/" +  statFile[slashes[-1]+1:] + ".json", "w") as f:
         json.dump(miniSolution, f)
 

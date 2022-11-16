@@ -101,7 +101,9 @@ constraint forall(day in 1..daysPerWeek) (
            
 % solve the problem           
 solve :: int_search(plan1d, input_order, indomain_min, complete)
-      satisfy;           
+      satisfy;      
+
+% solve satisfy;           
       
 % print the problem      
 % output [ show(row(plan2d,j)) ++ "\n" | j in 1..numberOfWeeks ] ++ ["\n"];      

@@ -34,7 +34,7 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 $$$$$$  Decision Variables $$$$$$$
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 find AssignmentMatrix : matrix indexed by [int(1..NoComponents), int(1..VM)] of int(0..1)
-find VMType : matrix indexed by [int(1..VM)] of int(1..VMOffers) $ COME BACK HERE
+find VMType : matrix indexed by [int(1..VM)] of int(1..VMOffers) 
 
 find CPU : matrix indexed by [int(1..VM)] of int(1..64)
 find Memory : matrix indexed by [int(1..VM)] of int(1700..976000)

@@ -25,7 +25,7 @@ array[Teams,Teams] of int: distance =
                                 endif | i,j in Teams]);
 
 % output related
-int: digs = ceil(log(10.0,int2float(nbTeams)));
+% int: digs = ceil(log(10.0,int2float(nbTeams)));
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % decision variables: in round k, team i plays against team opponent[i,k]
@@ -95,15 +95,15 @@ solve
     minimize objective;
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-output [
-    "%% SCHEDULE\n%% "
-] ++ [ 
-    if fix(venue[i,k]) == 1 then " " else "@" endif ++
-	show_int(digs,opponent[i,k]) ++ " " ++ 
-    if k == nbRounds /\ i != nbTeams then "\n%% " else "" endif
-| i in Teams, k in Rounds ] ++ ["\n"] ++ [
-    "opponent = array2d(", show(Teams), ", ", show(Rounds), ", ", show(opponent), ");\n",
-    "venue = array2d(", show(Teams), ", ", show(Rounds), ", ", show(venue), ");\n",
-    "travel = array2d(", show(Teams), ", ", show(Travels), ", ", show(travel), ");\n",
-    "objective = ", show(objective), ";\n"
-];
+% output [
+%     "%% SCHEDULE\n%% "
+% ] ++ [ 
+%     if fix(venue[i,k]) == 1 then " " else "@" endif ++
+% 	show_int(digs,opponent[i,k]) ++ " " ++ 
+%     if k == nbRounds /\ i != nbTeams then "\n%% " else "" endif
+% | i in Teams, k in Rounds ] ++ ["\n"] ++ [
+%     "opponent = array2d(", show(Teams), ", ", show(Rounds), ", ", show(opponent), ");\n",
+%     "venue = array2d(", show(Teams), ", ", show(Rounds), ", ", show(venue), ");\n",
+%     "travel = array2d(", show(Teams), ", ", show(Travels), ", ", show(travel), ");\n",
+%     "objective = ", show(objective), ";\n"
+% ];

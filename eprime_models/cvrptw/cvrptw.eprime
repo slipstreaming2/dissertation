@@ -1,0 +1,163 @@
+language ESSENCE' 1.0
+
+given M : int $ number of nodes in the MIP model
+given K: int $ number of vehicles in the model
+
+letting N = 2*K + M 
+
+given Demand : matrix indexed by [int(1..M)] of int
+given TravelTime : matrix indexed by [int(1..N), int(1..N)] of int
+given TimeWindows : matrix indexed by [int(1..M), int(1..2)] of int
+given PDs : matrix indexed by [int(1..M), int(1..2)] of int
+given Capacity : matrix indexed by [int(1..K)] of int
+
+
+letting NumVehicles = K $ max num vehicles
+letting NumCustomers = M 
+letting timeBudget = max(TimeWindows[..,2]) + max([max(TravelTime[i,..]) | i : int(1..N)])
+letting maxCapacity = max(Capacity)
+letting maxNodes = NumCustomers+2*NumVehicles
+
+letting VEHICLE be domain int(1..NumVehicles)
+letting CUSTOMER be domain int(1..NumCustomers)
+letting TIME be domain int(0..timeBudget)
+letting LOAD be domain int(0..maxCapacity)
+
+letting NODES be domain int(1..maxNodes)
+$ letting DEPOT_NODES be domain int(NumCustomers+1..NumCustomers+2*NumVehicles)
+letting START_DEPOT_NODES be domain int(NumCustomers+1..NumCustomers+NumVehicles)
+letting END_DEPOT_NODES be domain int(NumCustomers+NumVehicles+1..NumCustomers+2*NumVehicles)
+
+find successor : matrix indexed by [NODES] of NODES
+find predecessor : matrix indexed by [NODES] of NODES 
+find vehicle : matrix indexed by [NODES] of VEHICLE
+find load : matrix indexed by [NODES] of LOAD 
+find arrivalTime : matrix indexed by [NODES] of TIME 
+find departureTime : matrix indexed by [NODES] of TIME 
+find slack : matrix indexed by [NODES] of TIME 
+find objective : int(0..timeBudget)
+find start_load : int(0..maxCapacity)
+
+find successorOrder : matrix indexed by [NODES] of NODES 
+find predecessorOrder : matrix indexed by [NODES] of NODES 
+
+branching on [successor, vehicle, arrivalTime]
+
+minimising objective
+
+such that 
+
+$ ------ initialization constraints ---- $
+$ predecessor of start nodes are end nodes. The vehicles are shifted, so that the predecessor of
+$ vehicle 1 is the end node of vehicle k. This is done so that the circuit constraint can be applied
+$ to all the 
+forAll n : int(NumCustomers+2..NumCustomers+NumVehicles) .
+    predecessor[n] = n + NumVehicles-1,
+
+predecessor[NumCustomers+1] = NumCustomers+2*NumVehicles,
+
+$ successors of end nodes are start nodes
+forAll n : int(NumCustomers+NumVehicles+1..NumCustomers+2*NumVehicles-1) .
+    successor[n] = n-NumVehicles+1,
+
+successor[NumCustomers+2*NumVehicles] = NumCustomers+1,
+
+$ associate each start/end nodes with a vehicle
+forAll n : START_DEPOT_NODES .
+    vehicle[n] = n-NumCustomers,
+
+forAll n : END_DEPOT_NODES .
+    vehicle[n] = n-NumCustomers-NumVehicles,
+
+$ ------- predecessor/successor constraints ---$
+forAll n : NODES .
+    successor[predecessor[n]] = n,
+
+forAll n : NODES .
+    predecessor[successor[n]] = n,
+
+
+allDiff(successor),
+forAll i : NODES . 
+    successor[i] != i,
+allDiff(successorOrder),
+successorOrder[1] = 1,
+forAll i : NODES .
+    (successorOrder[i] = maxNodes -> successorOrder[successor[i]] = 1) /\
+    (successorOrder[i] != maxNodes -> successorOrder[successor[i]] = successorOrder[i] + 1),
+
+allDiff(predecessor),
+forAll i : NODES . 
+    predecessor[i] != i,
+allDiff(predecessorOrder),
+predecessorOrder[1] = 1,
+forAll i : NODES .
+    (predecessorOrder[i] = maxNodes -> predecessorOrder[predecessor[i]] = 1) /\
+    (predecessorOrder[i] != maxNodes -> predecessorOrder[predecessor[i]] = predecessorOrder[i] + 1),
+
+
+$ % alldiff + subtour elimination constraints
+$ constraint 
+$    circuit(successor);
+$ constraint redundant_constraint(
+$    circuit(predecessor)
+$ );
+
+$ predicate fzn_circuit(array[int] of var int: x) = 
+$     let { set of int: S = index_set(x),
+$           int: l = min(S),
+$ 	  int: n = card(S),
+$ 	  array[S] of var 1..n: order
+$         } in
+$     all_different(x) /\	
+$     all_different(order) /\
+$     forall(i in S)(x[i] != i) /\ 
+$     order[l] = 1 /\
+$     %forall(i in S)(order[i] != n -> order[x[i]] = order[i] + 1) /\
+$     %forall(i in S)(order[i] == n -> x[i] = l );
+$     forall(i in S)(order[x[i]] = if order[i] = n then 1 else order[i] + 1 endif); 
+
+
+$ ---- vehicle constraints ------------- $
+$ vehicle of node i is the same as the vehicle for the predecessor
+forAll n : CUSTOMER .
+    vehicle[predecessor[n]] = vehicle[n],
+
+forAll n : CUSTOMER .
+     vehicle[successor[n]] = vehicle[n],
+
+
+$ ----- Pickup & Deliveries ------------ $
+forAll n : CUSTOMER .
+    vehicle[n] = vehicle[PDs[n, 2]],
+
+forAll n : CUSTOMER .
+    arrivalTime[n] >= arrivalTime[PDs[n, 2]],
+
+
+$ ----- time constraints ------------ $
+forAll n : CUSTOMER .
+    arrivalTime[n] + slack[n] + TravelTime[n,successor[n]] = arrivalTime[successor[n]],
+
+forAll n : START_DEPOT_NODES .
+    arrivalTime[n] + slack[n] + TravelTime[n,successor[n]] = arrivalTime[successor[n]],
+
+$ Time window constraints
+forAll i : CUSTOMER .
+    arrivalTime[i] >= TimeWindows[i, 1],
+
+forAll i : CUSTOMER .
+    arrivalTime[i] <= TimeWindows[i, 2],
+
+$ ----- load constraints ------------ $
+forAll n : CUSTOMER .
+    load[n] + Demand[n] = load[successor[n]],
+
+forAll n : START_DEPOT_NODES .
+    load[n] = load[successor[n]],
+
+forAll n : CUSTOMER .
+    load[n] <= Capacity[vehicle[n]],
+
+objective = sum([arrivalTime[depot] | depot : END_DEPOT_NODES]) - sum([arrivalTime[depot] | depot : START_DEPOT_NODES])
+

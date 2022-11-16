@@ -5,6 +5,8 @@ then
 fi
 
 eprimeSave="${1}/../param/param"
+[[ -d ${1}/../param ]] || mkdir ${1}/../param
+[[ -d ${1}/../param/param ]] || mkdir ${1}/../param/param
 
 for f in ${1}/*${save_type}; do
     if [ ${save_type} == ".json" ]

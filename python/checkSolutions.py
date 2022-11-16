@@ -524,15 +524,20 @@ try:
     else:
         solution_file = readFile(sys.argv[2])
 
-    # solution_file = readFile(in_param + ".solution")
     param_file = readFile(in_param)
     print("checking " + in_param)
-    # quasigroup(solution_file, param_file)
-    # wordpress(solution_file, param_file)
-    # checkTournament(solution_file, param_file)
-    # checkRoster(solution_file, param_file)
-    # checkMSP(solution_file, param_file)
-    checkCVR(solution_file, param_file)
+    if 'quasigroup' in in_param:
+        quasigroup(solution_file, param_file)
+    elif 'wordpress' in in_param:
+        wordpress(solution_file, param_file)
+    elif 'tournament' in in_param:
+        checkTournament(solution_file, param_file)
+    elif 'roster' in in_param:
+        checkRoster(solution_file, param_file)
+    elif 'mspsp' in in_param:
+        checkMSP(solution_file, param_file)
+    elif 'cvr' in in_param:
+        checkCVR(solution_file, param_file)
     print(in_param + " passed")
 except FileNotFoundError:
     print('no solution found for ' + in_param)

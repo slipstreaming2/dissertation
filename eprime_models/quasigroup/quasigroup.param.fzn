@@ -1,3 +1,0 @@
-constraint bool_eq(true,true);
-solve :: int_search([1, 2, 3, 4, 4, 1, 2, 3, 3, 4, 1, 2, 2, 3, 4, 1], input_order, indomain_min, complete)
- satisfy;

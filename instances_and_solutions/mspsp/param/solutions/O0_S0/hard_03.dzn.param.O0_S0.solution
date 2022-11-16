@@ -1,0 +1,15 @@
+language ESSENCE' 1.0
+letting TWorkers be [[1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1], 
+[0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1, 0, 1, 1], 
+[1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1], 
+[1, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1], 
+[0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0], 
+[1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1]]
+letting objective be 30
+letting s be [0, 0, 4, 4, 5, 8, 9, 2, 5, 11, 6, 19, 12, 18, 12, 6, 20, 14, 14, 20, 7, 17, 12, 26, 20, 17, 25, 28, 28, 22]
+letting w be [[true, false, true, false, false, false, false, false, true, true, false, false, false, true, false, false, true, true, false, false, false, true, true, false, false, false, false, true, false, false], 
+[false, false, true, false, true, false, true, false, false, false, false, false, true, true, false, false, false, false, true, false, false, false, false, true, true, false, false, false, true, true], 
+[true, false, false, true, false, false, true, false, false, false, true, false, true, true, false, false, true, false, true, false, false, false, false, false, false, false, true, false, false, false], 
+[true, false, false, false, false, true, false, false, false, true, false, true, false, false, false, true, false, true, false, false, true, false, true, false, true, true, false, false, false, true], 
+[false, true, false, true, false, false, false, true, false, true, true, true, false, false, true, false, true, true, false, false, false, true, false, true, false, false, false, false, false, false], 
+[false, true, true, false, true, true, false, true, false, false, false, true, true, false, false, false, false, false, false, true, false, false, false, false, false, true, false, true, false, false]]

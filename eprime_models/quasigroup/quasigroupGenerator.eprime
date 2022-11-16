@@ -1,0 +1,68 @@
+language ESSENCE' 1.0
+
+$ given N : int
+$ given numAssigned : int
+$ given maxPerRow : int
+$ given minPerRow : int
+
+$ letting N = 10
+$ letting numAssigned = 42
+$ letting maxPerRow = 6
+$ letting minPerRow = 4
+
+letting N = 50
+letting numAssigned = 1050
+letting maxPerRow = 30
+letting minPerRow = 28
+$ letting init = [[1, 2, 3, 4, 5, 6, 7, 8, 9, 10], [10, 1, 2, 3, 4, 5, 6, 7, 8, 9], [9, 10, 1, 2, 3, 4, 5, 6, 7, 8], [8, 9, 10, 1, 2, 3, 4, 5, 6, 7], [7, 8, 9, 10, 1, 2, 3, 4, 5, 6], [6, 7, 8, 9, 10, 1, 2, 3, 4, 5], [5, 6, 7, 8, 9, 10, 1, 2, 3, 4], [4, 5, 6, 7, 8, 9, 10, 1, 2, 3], [3, 4, 5, 6, 7, 8, 9, 10, 1, 2], [2, 3, 4, 5, 6, 7, 8, 9, 10, 1]]
+
+find instance : matrix indexed by [int(1..N), int(1..N)] of int(0..N)
+
+such that
+
+$ forAll i : int(1..N) .
+$     forAll j : int(1..N) .
+$         (instance[i,j] = init[i,j])
+$         \/
+$         (instance[i,j] = 0),
+
+$ forAll i : int(1..N) .
+$     forAll j : int(1..N-1) .
+$         (instance[i,j] = 0) >= (instance[i,j+1] = 0),
+
+forAll i : int(1..N) .
+    alldifferent_except(instance[i,..], 0)
+    /\
+    alldifferent_except(instance[.., i], 0),
+
+
+sum([instance[i, j] != 0 | j : int(1..N), i : int(1..N)]) = numAssigned,
+
+forAll i : int(1..N) .
+    sum([instance[i, j] = 0 | j : int(1..N)]) <= maxPerRow
+    /\
+    sum([instance[i, j] = 0 | j : int(1..N)]) >= minPerRow
+    $ /\
+    $ sum([instance[j, i] = 0 | j : int(1..N)]) <= maxPerRow
+    $ /\
+    $ sum([instance[j, i] = 0 | j : int(1..N)]) >= minPerRow
+
+
+$ language ESSENCE' 1.0
+
+$ letting init = [2, 5, 1, 10, 7, 9, 6, 8, 3, 4]
+$ letting colInit = [2, 6, 4, 1, 3, 5, 8, 10, 7, 9]
+$ letting N = 10
+
+$ find instance : matrix indexed by [int(1..N), int(1..N)] of int(1..N)
+
+$ such that 
+
+$ forAll i : int(1..N) .
+$     instance[1,i] = init[i] /\
+$     instance[i,1] = colInit[i],
+
+$ forAll i : int(1..N) .
+$     allDiff(instance[..,i])
+$     /\
+$     allDiff(instance[i,..])
