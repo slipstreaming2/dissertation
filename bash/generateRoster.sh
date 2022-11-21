@@ -10,7 +10,7 @@ do
             ${line} ${roster} -params "letting numberOfWeeks=${weeks} letting s_min=${s_min} letting s_max=${s_max}" -chuffed -run-solver -out-solution "${weeks}_${s_min}_${s_max}.solution"
             if [ -f "${weeks}_${s_min}_${s_max}.solution" ]; then 
                 ${line} ${roster} -in-param "${weeks}_${s_min}_${s_max}.solution" -param-to-json
-                python ../python/jsonTranslator.py "${weeks}_${s_min}_${s_max}.solution.json" ../instances_and_solutions/roster/dzn "${weeks}_${s_min}_${s_max}"
+                python ../python/jsonTranslator.py "${weeks}_${s_min}_${s_max}.solution.json" ../instances_and_solutions/roster/dzn/dzn "${weeks}_${s_min}_${s_max}"
                 mv *.solution ../instances_and_solutions/roster/generatedInstances 
                 mv *.json ../instances_and_solutions/roster/generatedInstances/json
             fi

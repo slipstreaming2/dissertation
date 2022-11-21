@@ -1,0 +1,723 @@
+MINION 3
+# AC-CSE-Times_number = 0
+# AC-CSE-Times_eliminated_expressions = 0
+# AC-CSE-Times_total_size = 0
+# AC-CSE-Xor_number = 0
+# AC-CSE-Xor_eliminated_expressions = 0
+# AC-CSE-Xor_total_size = 0
+# CSETopLevel_number = 0
+# CSETopLevel_eliminated_expressions = 0
+# CSETopLevel_total_size = 0
+# AC-CSE-Or_number = 0
+# AC-CSE-Or_eliminated_expressions = 0
+# AC-CSE-Or_total_size = 0
+# AC-CSE-And_number = 0
+# AC-CSE-And_eliminated_expressions = 0
+# AC-CSE-And_total_size = 0
+# AC-CSE-Sum_number = 2
+# AC-CSE-Sum_eliminated_expressions = 9
+# AC-CSE-Sum_total_size = 6
+# CSE_active_number = 40
+# CSE_active_eliminated_expressions = 80
+# CSE_active_total_size = 384
+**VARIABLES**
+DISCRETE successor_00001 #
+{2..12}
+**CONSTRAINTS**
+w-inintervalset(successor_00001, [2,8,11,12])
+**VARIABLES**
+DISCRETE successor_00002 #
+{1..12}
+**CONSTRAINTS**
+w-inintervalset(successor_00002, [1,1,3,8,11,12])
+**VARIABLES**
+DISCRETE successor_00003 #
+{1..12}
+**CONSTRAINTS**
+w-inintervalset(successor_00003, [1,2,4,8,11,12])
+**VARIABLES**
+DISCRETE successor_00004 #
+{1..12}
+**CONSTRAINTS**
+w-inintervalset(successor_00004, [1,3,5,8,11,12])
+**VARIABLES**
+DISCRETE successor_00005 #
+{1..12}
+**CONSTRAINTS**
+w-inintervalset(successor_00005, [1,4,6,8,11,12])
+**VARIABLES**
+DISCRETE successor_00006 #
+{1..12}
+**CONSTRAINTS**
+w-inintervalset(successor_00006, [1,5,7,8,11,12])
+**VARIABLES**
+DISCRETE successor_00007 #
+{1..12}
+**CONSTRAINTS**
+w-inintervalset(successor_00007, [1,6,8,8,11,12])
+**VARIABLES**
+DISCRETE successor_00008 #
+{1..12}
+**CONSTRAINTS**
+w-inintervalset(successor_00008, [1,7,11,12])
+**VARIABLES**
+DISCRETE successor_00009 #
+{1..12}
+**CONSTRAINTS**
+w-inintervalset(successor_00009, [1,8,11,12])
+**VARIABLES**
+DISCRETE successor_00010 #
+{1..12}
+**CONSTRAINTS**
+w-inintervalset(successor_00010, [1,8,11,12])
+**VARIABLES**
+DISCRETE predecessor_00001 #
+{2..10}
+DISCRETE predecessor_00002 #
+{1..10}
+**CONSTRAINTS**
+w-inintervalset(predecessor_00002, [1,1,3,10])
+**VARIABLES**
+DISCRETE predecessor_00003 #
+{1..10}
+**CONSTRAINTS**
+w-inintervalset(predecessor_00003, [1,2,4,10])
+**VARIABLES**
+DISCRETE predecessor_00004 #
+{1..10}
+**CONSTRAINTS**
+w-inintervalset(predecessor_00004, [1,3,5,10])
+**VARIABLES**
+DISCRETE predecessor_00005 #
+{1..10}
+**CONSTRAINTS**
+w-inintervalset(predecessor_00005, [1,4,6,10])
+**VARIABLES**
+DISCRETE predecessor_00006 #
+{1..10}
+**CONSTRAINTS**
+w-inintervalset(predecessor_00006, [1,5,7,10])
+**VARIABLES**
+DISCRETE predecessor_00007 #
+{1..10}
+**CONSTRAINTS**
+w-inintervalset(predecessor_00007, [1,6,8,10])
+**VARIABLES**
+DISCRETE predecessor_00008 #
+{1..10}
+**CONSTRAINTS**
+w-inintervalset(predecessor_00008, [1,7,9,10])
+**VARIABLES**
+DISCRETE predecessor_00011 #
+{1..10}
+DISCRETE predecessor_00012 #
+{1..10}
+DISCRETE vehicle_00001 #
+{1..2}
+DISCRETE vehicle_00002 #
+{1..2}
+DISCRETE vehicle_00003 #
+{1..2}
+DISCRETE vehicle_00004 #
+{1..2}
+DISCRETE load_00001 #
+{0..180}
+DISCRETE load_00002 #
+{0..180}
+DISCRETE load_00003 #
+{0..180}
+DISCRETE load_00004 #
+{0..180}
+DISCRETE load_00005 #
+{0..180}
+DISCRETE load_00006 #
+{0..180}
+DISCRETE load_00007 #
+{0..180}
+DISCRETE load_00008 #
+{0..180}
+DISCRETE load_00009 #
+{0..180}
+DISCRETE load_00010 #
+{0..180}
+DISCRETE load_00011 #
+{0..180}
+DISCRETE load_00012 #
+{0..180}
+DISCRETE arrivalTime_00001 #
+{54..594}
+DISCRETE arrivalTime_00002 #
+{54..594}
+DISCRETE arrivalTime_00003 #
+{54..594}
+DISCRETE arrivalTime_00004 #
+{54..594}
+DISCRETE arrivalTime_00005 #
+{0..594}
+DISCRETE arrivalTime_00006 #
+{0..594}
+DISCRETE arrivalTime_00007 #
+{0..594}
+DISCRETE arrivalTime_00008 #
+{0..594}
+BOUND arrivalTime_00009 #
+{0..460588}
+BOUND arrivalTime_00010 #
+{0..460588}
+BOUND arrivalTime_00011 #
+{0..460588}
+BOUND arrivalTime_00012 #
+{0..460588}
+BOUND departureTime_00001 #
+{0..460588}
+BOUND departureTime_00002 #
+{0..460588}
+BOUND departureTime_00003 #
+{0..460588}
+BOUND departureTime_00004 #
+{0..460588}
+BOUND departureTime_00005 #
+{0..460588}
+BOUND departureTime_00006 #
+{0..460588}
+BOUND departureTime_00007 #
+{0..460588}
+BOUND departureTime_00008 #
+{0..460588}
+BOUND departureTime_00009 #
+{0..460588}
+BOUND departureTime_00010 #
+{0..460588}
+BOUND departureTime_00011 #
+{0..460588}
+BOUND departureTime_00012 #
+{0..460588}
+BOUND slack_00001 #
+{0..460588}
+BOUND slack_00002 #
+{0..460588}
+BOUND slack_00003 #
+{0..460588}
+BOUND slack_00004 #
+{0..460588}
+BOUND slack_00005 #
+{0..460588}
+BOUND slack_00006 #
+{0..460588}
+BOUND slack_00007 #
+{0..460588}
+BOUND slack_00008 #
+{0..460588}
+BOUND slack_00009 #
+{0..460588}
+BOUND slack_00010 #
+{0..460588}
+BOUND slack_00011 #
+{0..460588}
+BOUND slack_00012 #
+{0..460588}
+BOUND objective #
+{0..460588}
+DISCRETE successorOrder_00002 #
+{2..12}
+DISCRETE successorOrder_00003 #
+{2..12}
+DISCRETE successorOrder_00004 #
+{2..12}
+DISCRETE successorOrder_00005 #
+{2..12}
+DISCRETE successorOrder_00006 #
+{2..12}
+DISCRETE successorOrder_00007 #
+{2..12}
+DISCRETE successorOrder_00008 #
+{2..12}
+DISCRETE successorOrder_00009 #
+{3..12}
+DISCRETE successorOrder_00010 #
+{3..12}
+DISCRETE successorOrder_00011 #
+{2..11}
+DISCRETE successorOrder_00012 #
+{2..11}
+DISCRETE predecessorOrder_00002 #
+{2..12}
+DISCRETE predecessorOrder_00003 #
+{2..12}
+DISCRETE predecessorOrder_00004 #
+{2..12}
+DISCRETE predecessorOrder_00005 #
+{2..12}
+DISCRETE predecessorOrder_00006 #
+{2..12}
+DISCRETE predecessorOrder_00007 #
+{2..12}
+DISCRETE predecessorOrder_00008 #
+{2..12}
+DISCRETE predecessorOrder_00009 #
+{2..11}
+DISCRETE predecessorOrder_00010 #
+{2..11}
+DISCRETE predecessorOrder_00011 #
+{3..12}
+DISCRETE predecessorOrder_00012 #
+{3..12}
+DISCRETE aux1 #AC-CSE-Generic-+: 6 occurrences of: (-1 + successor_00001)
+{1..11}
+**CONSTRAINTS**
+w-inintervalset(aux1, [1,7,10,11])
+**VARIABLES**
+DISCRETE aux2 #AC-CSE-Generic-+: 3 occurrences of: (predecessor_00001 + -1)
+{1..9}
+DISCRETE aux3 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([1, successorOrder_00002, successorOrder_00003, successorOrder_00004, successorOrder_00005, successorOrder_00006, successorOrder_00007, successorOrder_00008, successorOrder_00009, successorOrder_00010, successorOrder_00011, successorOrder_00012], successor_00006)
+{1..12}
+DISCRETE aux4 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([1, successorOrder_00002, successorOrder_00003, successorOrder_00004, successorOrder_00005, successorOrder_00006, successorOrder_00007, successorOrder_00008, successorOrder_00009, successorOrder_00010, successorOrder_00011, successorOrder_00012], successor_00005)
+{1..12}
+DISCRETE aux5 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([1, successorOrder_00002, successorOrder_00003, successorOrder_00004, successorOrder_00005, successorOrder_00006, successorOrder_00007, successorOrder_00008, successorOrder_00009, successorOrder_00010, successorOrder_00011, successorOrder_00012], successor_00008)
+{1..12}
+DISCRETE aux6 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([1, successorOrder_00002, successorOrder_00003, successorOrder_00004, successorOrder_00005, successorOrder_00006, successorOrder_00007, successorOrder_00008, successorOrder_00009, successorOrder_00010, successorOrder_00011, successorOrder_00012], successor_00007)
+{1..12}
+DISCRETE aux7 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([1, successorOrder_00002, successorOrder_00003, successorOrder_00004, successorOrder_00005, successorOrder_00006, successorOrder_00007, successorOrder_00008, successorOrder_00009, successorOrder_00010, successorOrder_00011, successorOrder_00012], successor_00002)
+{1..12}
+DISCRETE aux8 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([1, successorOrder_00002, successorOrder_00003, successorOrder_00004, successorOrder_00005, successorOrder_00006, successorOrder_00007, successorOrder_00008, successorOrder_00009, successorOrder_00010, successorOrder_00011, successorOrder_00012], successor_00004)
+{1..12}
+DISCRETE aux9 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([1, successorOrder_00002, successorOrder_00003, successorOrder_00004, successorOrder_00005, successorOrder_00006, successorOrder_00007, successorOrder_00008, successorOrder_00009, successorOrder_00010, successorOrder_00011, successorOrder_00012], successor_00003)
+{1..12}
+DISCRETE aux10 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([1, successorOrder_00002, successorOrder_00003, successorOrder_00004, successorOrder_00005, successorOrder_00006, successorOrder_00007, successorOrder_00008, successorOrder_00009, successorOrder_00010, successorOrder_00011, successorOrder_00012], successor_00009)
+{1..12}
+DISCRETE aux11 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([1, successorOrder_00002, successorOrder_00003, successorOrder_00004, successorOrder_00005, successorOrder_00006, successorOrder_00007, successorOrder_00008, successorOrder_00009, successorOrder_00010, successorOrder_00011, successorOrder_00012], successor_00010)
+{1..12}
+DISCRETE aux12 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([1, predecessorOrder_00002, predecessorOrder_00003, predecessorOrder_00004, predecessorOrder_00005, predecessorOrder_00006, predecessorOrder_00007, predecessorOrder_00008, predecessorOrder_00009, predecessorOrder_00010], predecessor_00003)
+{1..12}
+DISCRETE aux13 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([1, predecessorOrder_00002, predecessorOrder_00003, predecessorOrder_00004, predecessorOrder_00005, predecessorOrder_00006, predecessorOrder_00007, predecessorOrder_00008, predecessorOrder_00009, predecessorOrder_00010], predecessor_00002)
+{1..12}
+DISCRETE aux14 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([1, predecessorOrder_00002, predecessorOrder_00003, predecessorOrder_00004, predecessorOrder_00005, predecessorOrder_00006, predecessorOrder_00007, predecessorOrder_00008, predecessorOrder_00009, predecessorOrder_00010], predecessor_00007)
+{1..12}
+DISCRETE aux15 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([1, predecessorOrder_00002, predecessorOrder_00003, predecessorOrder_00004, predecessorOrder_00005, predecessorOrder_00006, predecessorOrder_00007, predecessorOrder_00008, predecessorOrder_00009, predecessorOrder_00010], predecessor_00006)
+{1..12}
+DISCRETE aux16 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([1, predecessorOrder_00002, predecessorOrder_00003, predecessorOrder_00004, predecessorOrder_00005, predecessorOrder_00006, predecessorOrder_00007, predecessorOrder_00008, predecessorOrder_00009, predecessorOrder_00010], predecessor_00005)
+{1..12}
+DISCRETE aux17 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([1, predecessorOrder_00002, predecessorOrder_00003, predecessorOrder_00004, predecessorOrder_00005, predecessorOrder_00006, predecessorOrder_00007, predecessorOrder_00008, predecessorOrder_00009, predecessorOrder_00010], predecessor_00004)
+{1..12}
+DISCRETE aux18 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([1, predecessorOrder_00002, predecessorOrder_00003, predecessorOrder_00004, predecessorOrder_00005, predecessorOrder_00006, predecessorOrder_00007, predecessorOrder_00008, predecessorOrder_00009, predecessorOrder_00010], predecessor_00008)
+{1..12}
+DISCRETE aux19 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([1, predecessorOrder_00002, predecessorOrder_00003, predecessorOrder_00004, predecessorOrder_00005, predecessorOrder_00006, predecessorOrder_00007, predecessorOrder_00008, predecessorOrder_00009, predecessorOrder_00010], predecessor_00011)
+{1..12}
+DISCRETE aux20 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([1, predecessorOrder_00002, predecessorOrder_00003, predecessorOrder_00004, predecessorOrder_00005, predecessorOrder_00006, predecessorOrder_00007, predecessorOrder_00008, predecessorOrder_00009, predecessorOrder_00010], predecessor_00012)
+{1..12}
+DISCRETE aux21 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([180, 150], vehicle_00004)
+{150..180}
+**CONSTRAINTS**
+w-inintervalset(aux21, [150,150,180,180])
+**VARIABLES**
+DISCRETE aux22 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([180, 150], vehicle_00003)
+{150..180}
+**CONSTRAINTS**
+w-inintervalset(aux22, [150,150,180,180])
+**VARIABLES**
+DISCRETE aux23 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([180, 150], vehicle_00002)
+{150..180}
+**CONSTRAINTS**
+w-inintervalset(aux23, [150,150,180,180])
+**VARIABLES**
+DISCRETE aux24 #Active-CSE: 2 occurrences of this expression or equivalent: ElementOne([180, 150], vehicle_00001)
+{150..180}
+**CONSTRAINTS**
+w-inintervalset(aux24, [150,150,180,180])
+**VARIABLES**
+BOOL aux25 #Active-CSE: 2 occurrences of this expression or equivalent: (successorOrder_00002 != 12)
+BOOL aux26 #Active-CSE: 2 occurrences of this expression or equivalent: (successorOrder_00008 != 12)
+BOOL aux27 #Active-CSE: 2 occurrences of this expression or equivalent: (successorOrder_00006 != 12)
+BOOL aux28 #Active-CSE: 2 occurrences of this expression or equivalent: (12 != predecessorOrder_00003)
+BOOL aux29 #Active-CSE: 2 occurrences of this expression or equivalent: (12 != predecessorOrder_00005)
+BOOL aux30 #Active-CSE: 2 occurrences of this expression or equivalent: (12 != predecessorOrder_00007)
+BOOL aux31 #Active-CSE: 2 occurrences of this expression or equivalent: (successorOrder_00004 != 12)
+BOOL aux32 #Active-CSE: 2 occurrences of this expression or equivalent: (successorOrder_00010 != 12)
+BOOL aux33 #Active-CSE: 2 occurrences of this expression or equivalent: (12 != predecessorOrder_00002)
+BOOL aux34 #Active-CSE: 2 occurrences of this expression or equivalent: (12 != predecessorOrder_00006)
+BOOL aux35 #Active-CSE: 2 occurrences of this expression or equivalent: (12 != predecessorOrder_00008)
+BOOL aux36 #Active-CSE: 2 occurrences of this expression or equivalent: (12 != predecessorOrder_00004)
+BOOL aux37 #Active-CSE: 2 occurrences of this expression or equivalent: (12 != predecessorOrder_00012)
+BOOL aux38 #Active-CSE: 2 occurrences of this expression or equivalent: (successorOrder_00009 != 12)
+BOOL aux39 #Active-CSE: 2 occurrences of this expression or equivalent: (12 != predecessorOrder_00011)
+BOOL aux40 #Active-CSE: 2 occurrences of this expression or equivalent: (successorOrder_00005 != 12)
+BOOL aux41 #Active-CSE: 2 occurrences of this expression or equivalent: (successorOrder_00007 != 12)
+BOOL aux42 #Active-CSE: 2 occurrences of this expression or equivalent: (successorOrder_00003 != 12)
+BOUND aux43 #(ElementOne([28, 29, 1, 0, 24, 24, 24, 24, 24, 24, 24, 24], successor_00004) + slack_00004 + arrivalTime_00004) --- ElementOne([arrivalTime_00001, arrivalTime_00002, arrivalTime_00003, arrivalTime_00004, arrivalTime_00005, arrivalTime_00006, arrivalTime_00007, arrivalTime_00008, arrivalTime_00009, arrivalTime_00010, arrivalTime_00011, arrivalTime_00012], successor_00004)
+{54..460588}
+DISCRETE aux44 #(-50 + load_00008) --- ElementOne([load_00001, load_00002, load_00003, load_00004, load_00005, load_00006, load_00007, load_00008, load_00009, load_00010, load_00011, load_00012], successor_00008)
+{0..130}
+DISCRETE aux45 #(-30 + load_00006) --- ElementOne([load_00001, load_00002, load_00003, load_00004, load_00005, load_00006, load_00007, load_00008, load_00009, load_00010, load_00011, load_00012], successor_00006)
+{0..150}
+DISCRETE aux46 #(-15 + load_00005) --- ElementOne([load_00001, load_00002, load_00003, load_00004, load_00005, load_00006, load_00007, load_00008, load_00009, load_00010, load_00011, load_00012], successor_00005)
+{0..165}
+DISCRETE aux47 #(-10 + load_00007) --- ElementOne([load_00001, load_00002, load_00003, load_00004, load_00005, load_00006, load_00007, load_00008, load_00009, load_00010, load_00011, load_00012], successor_00007)
+{0..170}
+DISCRETE aux48 #(10 + load_00003) --- ElementOne([load_00001, load_00002, load_00003, load_00004, load_00005, load_00006, load_00007, load_00008, load_00009, load_00010, load_00011, load_00012], successor_00003)
+{10..180}
+DISCRETE aux49 #(30 + load_00002) --- ElementOne([load_00001, load_00002, load_00003, load_00004, load_00005, load_00006, load_00007, load_00008, load_00009, load_00010, load_00011, load_00012], successor_00002)
+{30..180}
+DISCRETE aux50 #(50 + load_00004) --- ElementOne([load_00001, load_00002, load_00003, load_00004, load_00005, load_00006, load_00007, load_00008, load_00009, load_00010, load_00011, load_00012], successor_00004)
+{50..180}
+BOUND aux51 #(ElementOne([48, 48, 25, 25, 0, 0, 0, 0, 0, 0, 0, 0], successor_00005) + slack_00005 + arrivalTime_00005) --- ElementOne([arrivalTime_00001, arrivalTime_00002, arrivalTime_00003, arrivalTime_00004, arrivalTime_00005, arrivalTime_00006, arrivalTime_00007, arrivalTime_00008, arrivalTime_00009, arrivalTime_00010, arrivalTime_00011, arrivalTime_00012], successor_00005)
+{0..460588}
+BOUND aux52 #(ElementOne([48, 48, 25, 25, 0, 0, 0, 0, 0, 0, 0, 0], successor_00006) + slack_00006 + arrivalTime_00006) --- ElementOne([arrivalTime_00001, arrivalTime_00002, arrivalTime_00003, arrivalTime_00004, arrivalTime_00005, arrivalTime_00006, arrivalTime_00007, arrivalTime_00008, arrivalTime_00009, arrivalTime_00010, arrivalTime_00011, arrivalTime_00012], successor_00006)
+{0..460588}
+BOUND aux53 #(ElementOne([48, 48, 25, 25, 0, 0, 0, 0, 0, 0, 0, 0], successor_00007) + slack_00007 + arrivalTime_00007) --- ElementOne([arrivalTime_00001, arrivalTime_00002, arrivalTime_00003, arrivalTime_00004, arrivalTime_00005, arrivalTime_00006, arrivalTime_00007, arrivalTime_00008, arrivalTime_00009, arrivalTime_00010, arrivalTime_00011, arrivalTime_00012], successor_00007)
+{0..460588}
+BOUND aux54 #(ElementOne([48, 48, 25, 25, 0, 0, 0, 0, 0, 0, 0, 0], successor_00008) + slack_00008 + arrivalTime_00008) --- ElementOne([arrivalTime_00001, arrivalTime_00002, arrivalTime_00003, arrivalTime_00004, arrivalTime_00005, arrivalTime_00006, arrivalTime_00007, arrivalTime_00008, arrivalTime_00009, arrivalTime_00010, arrivalTime_00011, arrivalTime_00012], successor_00008)
+{0..460588}
+BOUND aux55 #(ElementOne([48, 48, 25, 25, 0, 0, 0, 0, 0, 0, 0, 0], successor_00009) + slack_00009 + arrivalTime_00009) --- ElementOne([arrivalTime_00001, arrivalTime_00002, arrivalTime_00003, arrivalTime_00004, arrivalTime_00005, arrivalTime_00006, arrivalTime_00007, arrivalTime_00008, arrivalTime_00009, arrivalTime_00010, arrivalTime_00011, arrivalTime_00012], successor_00009)
+{0..460588}
+BOUND aux56 #(ElementOne([48, 48, 25, 25, 0, 0, 0, 0, 0, 0, 0, 0], successor_00010) + slack_00010 + arrivalTime_00010) --- ElementOne([arrivalTime_00001, arrivalTime_00002, arrivalTime_00003, arrivalTime_00004, arrivalTime_00005, arrivalTime_00006, arrivalTime_00007, arrivalTime_00008, arrivalTime_00009, arrivalTime_00010, arrivalTime_00011, arrivalTime_00012], successor_00010)
+{0..460588}
+BOUND aux57 #(slack_00002 + arrivalTime_00002 + ElementOne([0, 0, 36, 35, 53, 53, 53, 53, 53, 53, 53, 53], successor_00002)) --- ElementOne([arrivalTime_00001, arrivalTime_00002, arrivalTime_00003, arrivalTime_00004, arrivalTime_00005, arrivalTime_00006, arrivalTime_00007, arrivalTime_00008, arrivalTime_00009, arrivalTime_00010, arrivalTime_00011, arrivalTime_00012], successor_00002)
+{54..460588}
+BOUND aux58 #ElementOne([arrivalTime_00002, arrivalTime_00003, arrivalTime_00004, arrivalTime_00005, arrivalTime_00006, arrivalTime_00007, arrivalTime_00008, arrivalTime_00009, arrivalTime_00010, arrivalTime_00011, arrivalTime_00012], aux1) --- (ElementOne([0, 36, 34, 53, 53, 53, 53, 53, 53, 53, 53], aux1) + slack_00001 + arrivalTime_00001)
+{54..460588}
+DISCRETE aux59 #(15 + load_00001) --- ElementOne([load_00002, load_00003, load_00004, load_00005, load_00006, load_00007, load_00008, load_00009, load_00010, load_00011, load_00012], aux1)
+{15..180}
+BOUND aux60 #(slack_00003 + arrivalTime_00003 + ElementOne([30, 31, 0, 1, 25, 25, 25, 25, 25, 25, 25, 25], successor_00003)) --- ElementOne([arrivalTime_00001, arrivalTime_00002, arrivalTime_00003, arrivalTime_00004, arrivalTime_00005, arrivalTime_00006, arrivalTime_00007, arrivalTime_00008, arrivalTime_00009, arrivalTime_00010, arrivalTime_00011, arrivalTime_00012], successor_00003)
+{54..460588}
+DISCRETE aux61 #ElementOne([28, 29, 1, 0, 24, 24, 24, 24, 24, 24, 24, 24], successor_00004)
+{0..29}
+**CONSTRAINTS**
+w-inintervalset(aux61, [0,1,24,24,28,29])
+**VARIABLES**
+DISCRETE aux62 #ElementOne([48, 48, 25, 25, 0, 0, 0, 0, 0, 0, 0, 0], successor_00005)
+{0..48}
+**CONSTRAINTS**
+w-inintervalset(aux62, [0,0,25,25,48,48])
+**VARIABLES**
+DISCRETE aux63 #ElementOne([48, 48, 25, 25, 0, 0, 0, 0, 0, 0, 0, 0], successor_00006)
+{0..48}
+**CONSTRAINTS**
+w-inintervalset(aux63, [0,0,25,25,48,48])
+**VARIABLES**
+DISCRETE aux64 #ElementOne([48, 48, 25, 25, 0, 0, 0, 0, 0, 0, 0, 0], successor_00007)
+{0..48}
+**CONSTRAINTS**
+w-inintervalset(aux64, [0,0,25,25,48,48])
+**VARIABLES**
+DISCRETE aux65 #ElementOne([48, 48, 25, 25, 0, 0, 0, 0, 0, 0, 0, 0], successor_00008)
+{0..48}
+**CONSTRAINTS**
+w-inintervalset(aux65, [0,0,25,25,48,48])
+**VARIABLES**
+DISCRETE aux66 #ElementOne([48, 48, 25, 25, 0, 0, 0, 0, 0, 0, 0, 0], successor_00009)
+{0..48}
+**CONSTRAINTS**
+w-inintervalset(aux66, [0,0,25,25,48,48])
+**VARIABLES**
+DISCRETE aux67 #ElementOne([48, 48, 25, 25, 0, 0, 0, 0, 0, 0, 0, 0], successor_00010)
+{0..48}
+**CONSTRAINTS**
+w-inintervalset(aux67, [0,0,25,25,48,48])
+**VARIABLES**
+DISCRETE aux68 #ElementOne([0, 0, 36, 35, 53, 53, 53, 53, 53, 53, 53, 53], successor_00002)
+{0..53}
+**CONSTRAINTS**
+w-inintervalset(aux68, [0,0,35,36,53,53])
+**VARIABLES**
+DISCRETE aux69 #ElementOne([0, 36, 34, 53, 53, 53, 53, 53, 53, 53, 53], aux1)
+{0..53}
+**CONSTRAINTS**
+w-inintervalset(aux69, [0,0,34,34,36,36,53,53])
+**VARIABLES**
+DISCRETE aux70 #ElementOne([30, 31, 0, 1, 25, 25, 25, 25, 25, 25, 25, 25], successor_00003)
+{0..31}
+**CONSTRAINTS**
+w-inintervalset(aux70, [0,1,25,25,30,31])
+**VARIABLES**
+**VARIABLES**
+ALIAS Demand[8]=[15, 30, 10, 50, -15, -30, -10, -50]
+**TUPLELIST**
+TravelTime 12 12
+0 0 36 34 53 53 53 53 53 53 53 53 
+0 0 36 35 53 53 53 53 53 53 53 53 
+30 31 0 1 25 25 25 25 25 25 25 25 
+28 29 1 0 24 24 24 24 24 24 24 24 
+48 48 25 25 0 0 0 0 0 0 0 0 
+48 48 25 25 0 0 0 0 0 0 0 0 
+48 48 25 25 0 0 0 0 0 0 0 0 
+48 48 25 25 0 0 0 0 0 0 0 0 
+48 48 25 25 0 0 0 0 0 0 0 0 
+48 48 25 25 0 0 0 0 0 0 0 0 
+48 48 25 25 0 0 0 0 0 0 0 0 
+48 48 25 25 0 0 0 0 0 0 0 0 
+**VARIABLES**
+ALIAS TravelTime[12,12]=[[0, 0, 36, 34, 53, 53, 53, 53, 53, 53, 53, 53], [0, 0, 36, 35, 53, 53, 53, 53, 53, 53, 53, 53], [30, 31, 0, 1, 25, 25, 25, 25, 25, 25, 25, 25], [28, 29, 1, 0, 24, 24, 24, 24, 24, 24, 24, 24], [48, 48, 25, 25, 0, 0, 0, 0, 0, 0, 0, 0], [48, 48, 25, 25, 0, 0, 0, 0, 0, 0, 0, 0], [48, 48, 25, 25, 0, 0, 0, 0, 0, 0, 0, 0], [48, 48, 25, 25, 0, 0, 0, 0, 0, 0, 0, 0], [48, 48, 25, 25, 0, 0, 0, 0, 0, 0, 0, 0], [48, 48, 25, 25, 0, 0, 0, 0, 0, 0, 0, 0], [48, 48, 25, 25, 0, 0, 0, 0, 0, 0, 0, 0], [48, 48, 25, 25, 0, 0, 0, 0, 0, 0, 0, 0]]
+**VARIABLES**
+ALIAS aux0[12]=[53, 53, 31, 29, 48, 48, 48, 48, 48, 48, 48, 48]
+**VARIABLES**
+ALIAS Capacity[2]=[180, 150]
+**TUPLELIST**
+TimeWindows 8 2
+54 594 
+54 594 
+54 594 
+54 594 
+0 460535 
+0 460535 
+0 460535 
+0 460535 
+**VARIABLES**
+ALIAS TimeWindows[8,2]=[[54, 594], [54, 594], [54, 594], [54, 594], [0, 460535], [0, 460535], [0, 460535], [0, 460535]]
+**TUPLELIST**
+PDs 8 2
+1 5 
+2 6 
+3 7 
+4 8 
+5 5 
+6 6 
+7 7 
+8 8 
+**VARIABLES**
+ALIAS PDs[8,2]=[[1, 5], [2, 6], [3, 7], [4, 8], [5, 5], [6, 6], [7, 7], [8, 8]]
+**SEARCH**
+PRINT[[successor_00001],[successor_00002],[successor_00003],[successor_00004],[successor_00005],[successor_00006],[successor_00007],[successor_00008],[successor_00009],[successor_00010],[predecessor_00001],[predecessor_00002],[predecessor_00003],[predecessor_00004],[predecessor_00005],[predecessor_00006],[predecessor_00007],[predecessor_00008],[predecessor_00011],[predecessor_00012],[vehicle_00001],[vehicle_00002],[vehicle_00003],[vehicle_00004],[load_00001],[load_00002],[load_00003],[load_00004],[load_00005],[load_00006],[load_00007],[load_00008],[load_00009],[load_00010],[load_00011],[load_00012],[arrivalTime_00001],[arrivalTime_00002],[arrivalTime_00003],[arrivalTime_00004],[arrivalTime_00005],[arrivalTime_00006],[arrivalTime_00007],[arrivalTime_00008],[arrivalTime_00009],[arrivalTime_00010],[arrivalTime_00011],[arrivalTime_00012],[departureTime_00001],[departureTime_00002],[departureTime_00003],[departureTime_00004],[departureTime_00005],[departureTime_00006],[departureTime_00007],[departureTime_00008],[departureTime_00009],[departureTime_00010],[departureTime_00011],[departureTime_00012],[slack_00001],[slack_00002],[slack_00003],[slack_00004],[slack_00005],[slack_00006],[slack_00007],[slack_00008],[slack_00009],[slack_00010],[slack_00011],[slack_00012],[objective],[successorOrder_00002],[successorOrder_00003],[successorOrder_00004],[successorOrder_00005],[successorOrder_00006],[successorOrder_00007],[successorOrder_00008],[successorOrder_00009],[successorOrder_00010],[successorOrder_00011],[successorOrder_00012],[predecessorOrder_00002],[predecessorOrder_00003],[predecessorOrder_00004],[predecessorOrder_00005],[predecessorOrder_00006],[predecessorOrder_00007],[predecessorOrder_00008],[predecessorOrder_00009],[predecessorOrder_00010],[predecessorOrder_00011],[predecessorOrder_00012],[objective]]
+MINIMISING objective
+**CONSTRAINTS**
+watchelement_one([28, 29, 1, 0, 24, 24, 24, 24, 24, 24, 24, 24], successor_00004, aux61)
+watchelement_one([48, 48, 25, 25, 0, 0, 0, 0, 0, 0, 0, 0], successor_00005, aux62)
+watchelement_one([48, 48, 25, 25, 0, 0, 0, 0, 0, 0, 0, 0], successor_00006, aux63)
+watchelement_one([48, 48, 25, 25, 0, 0, 0, 0, 0, 0, 0, 0], successor_00007, aux64)
+watchelement_one([48, 48, 25, 25, 0, 0, 0, 0, 0, 0, 0, 0], successor_00008, aux65)
+watchelement_one([48, 48, 25, 25, 0, 0, 0, 0, 0, 0, 0, 0], successor_00009, aux66)
+watchelement_one([48, 48, 25, 25, 0, 0, 0, 0, 0, 0, 0, 0], successor_00010, aux67)
+watchelement_one([0, 0, 36, 35, 53, 53, 53, 53, 53, 53, 53, 53], successor_00002, aux68)
+watchelement_one([0, 36, 34, 53, 53, 53, 53, 53, 53, 53, 53], aux1, aux69)
+watchelement_one([30, 31, 0, 1, 25, 25, 25, 25, 25, 25, 25, 25], successor_00003, aux70)
+watchelement_one([1, successorOrder_00002, successorOrder_00003, successorOrder_00004, successorOrder_00005, successorOrder_00006, successorOrder_00007, successorOrder_00008, successorOrder_00009, successorOrder_00010, successorOrder_00011, successorOrder_00012], successor_00006, aux3)
+watchelement_one([1, successorOrder_00002, successorOrder_00003, successorOrder_00004, successorOrder_00005, successorOrder_00006, successorOrder_00007, successorOrder_00008, successorOrder_00009, successorOrder_00010, successorOrder_00011, successorOrder_00012], successor_00005, aux4)
+watchelement_one([1, successorOrder_00002, successorOrder_00003, successorOrder_00004, successorOrder_00005, successorOrder_00006, successorOrder_00007, successorOrder_00008, successorOrder_00009, successorOrder_00010, successorOrder_00011, successorOrder_00012], successor_00008, aux5)
+watchelement_one([1, successorOrder_00002, successorOrder_00003, successorOrder_00004, successorOrder_00005, successorOrder_00006, successorOrder_00007, successorOrder_00008, successorOrder_00009, successorOrder_00010, successorOrder_00011, successorOrder_00012], successor_00007, aux6)
+watchelement_one([1, successorOrder_00002, successorOrder_00003, successorOrder_00004, successorOrder_00005, successorOrder_00006, successorOrder_00007, successorOrder_00008, successorOrder_00009, successorOrder_00010, successorOrder_00011, successorOrder_00012], successor_00002, aux7)
+watchelement_one([1, successorOrder_00002, successorOrder_00003, successorOrder_00004, successorOrder_00005, successorOrder_00006, successorOrder_00007, successorOrder_00008, successorOrder_00009, successorOrder_00010, successorOrder_00011, successorOrder_00012], successor_00004, aux8)
+watchelement_one([1, successorOrder_00002, successorOrder_00003, successorOrder_00004, successorOrder_00005, successorOrder_00006, successorOrder_00007, successorOrder_00008, successorOrder_00009, successorOrder_00010, successorOrder_00011, successorOrder_00012], successor_00003, aux9)
+watchelement_one([1, successorOrder_00002, successorOrder_00003, successorOrder_00004, successorOrder_00005, successorOrder_00006, successorOrder_00007, successorOrder_00008, successorOrder_00009, successorOrder_00010, successorOrder_00011, successorOrder_00012], successor_00009, aux10)
+watchelement_one([1, successorOrder_00002, successorOrder_00003, successorOrder_00004, successorOrder_00005, successorOrder_00006, successorOrder_00007, successorOrder_00008, successorOrder_00009, successorOrder_00010, successorOrder_00011, successorOrder_00012], successor_00010, aux11)
+watchelement_one([1, predecessorOrder_00002, predecessorOrder_00003, predecessorOrder_00004, predecessorOrder_00005, predecessorOrder_00006, predecessorOrder_00007, predecessorOrder_00008, predecessorOrder_00009, predecessorOrder_00010], predecessor_00003, aux12)
+watchelement_one([1, predecessorOrder_00002, predecessorOrder_00003, predecessorOrder_00004, predecessorOrder_00005, predecessorOrder_00006, predecessorOrder_00007, predecessorOrder_00008, predecessorOrder_00009, predecessorOrder_00010], predecessor_00002, aux13)
+watchelement_one([1, predecessorOrder_00002, predecessorOrder_00003, predecessorOrder_00004, predecessorOrder_00005, predecessorOrder_00006, predecessorOrder_00007, predecessorOrder_00008, predecessorOrder_00009, predecessorOrder_00010], predecessor_00007, aux14)
+watchelement_one([1, predecessorOrder_00002, predecessorOrder_00003, predecessorOrder_00004, predecessorOrder_00005, predecessorOrder_00006, predecessorOrder_00007, predecessorOrder_00008, predecessorOrder_00009, predecessorOrder_00010], predecessor_00006, aux15)
+watchelement_one([1, predecessorOrder_00002, predecessorOrder_00003, predecessorOrder_00004, predecessorOrder_00005, predecessorOrder_00006, predecessorOrder_00007, predecessorOrder_00008, predecessorOrder_00009, predecessorOrder_00010], predecessor_00005, aux16)
+watchelement_one([1, predecessorOrder_00002, predecessorOrder_00003, predecessorOrder_00004, predecessorOrder_00005, predecessorOrder_00006, predecessorOrder_00007, predecessorOrder_00008, predecessorOrder_00009, predecessorOrder_00010], predecessor_00004, aux17)
+watchelement_one([1, predecessorOrder_00002, predecessorOrder_00003, predecessorOrder_00004, predecessorOrder_00005, predecessorOrder_00006, predecessorOrder_00007, predecessorOrder_00008, predecessorOrder_00009, predecessorOrder_00010], predecessor_00008, aux18)
+watchelement_one([1, predecessorOrder_00002, predecessorOrder_00003, predecessorOrder_00004, predecessorOrder_00005, predecessorOrder_00006, predecessorOrder_00007, predecessorOrder_00008, predecessorOrder_00009, predecessorOrder_00010], predecessor_00011, aux19)
+watchelement_one([1, predecessorOrder_00002, predecessorOrder_00003, predecessorOrder_00004, predecessorOrder_00005, predecessorOrder_00006, predecessorOrder_00007, predecessorOrder_00008, predecessorOrder_00009, predecessorOrder_00010], predecessor_00012, aux20)
+watchelement_one([180, 150], vehicle_00004, aux21)
+watchelement_one([180, 150], vehicle_00003, aux22)
+watchelement_one([180, 150], vehicle_00002, aux23)
+watchelement_one([180, 150], vehicle_00001, aux24)
+reify(diseq(successorOrder_00002,12), aux25)
+reify(diseq(successorOrder_00008,12), aux26)
+reify(diseq(successorOrder_00006,12), aux27)
+reify(diseq(12,predecessorOrder_00003), aux28)
+reify(diseq(12,predecessorOrder_00005), aux29)
+reify(diseq(12,predecessorOrder_00007), aux30)
+reify(diseq(successorOrder_00004,12), aux31)
+reify(diseq(successorOrder_00010,12), aux32)
+reify(diseq(12,predecessorOrder_00002), aux33)
+reify(diseq(12,predecessorOrder_00006), aux34)
+reify(diseq(12,predecessorOrder_00008), aux35)
+reify(diseq(12,predecessorOrder_00004), aux36)
+reify(diseq(12,predecessorOrder_00012), aux37)
+reify(diseq(successorOrder_00009,12), aux38)
+reify(diseq(12,predecessorOrder_00011), aux39)
+reify(diseq(successorOrder_00005,12), aux40)
+reify(diseq(successorOrder_00007,12), aux41)
+reify(diseq(successorOrder_00003,12), aux42)
+gacalldiff([successorOrder_00002, successorOrder_00003, successorOrder_00004, successorOrder_00005, successorOrder_00006, successorOrder_00007, successorOrder_00008, successorOrder_00009, successorOrder_00010, successorOrder_00011, successorOrder_00012])
+lexleq([departureTime_00001, departureTime_00002, departureTime_00003, departureTime_00004, departureTime_00005, departureTime_00006, departureTime_00007, departureTime_00008, departureTime_00009, departureTime_00010, departureTime_00011, departureTime_00012, slack_00011],[departureTime_00002, departureTime_00003, departureTime_00004, departureTime_00005, departureTime_00006, departureTime_00007, departureTime_00008, departureTime_00009, departureTime_00010, departureTime_00011, departureTime_00012, slack_00011, slack_00012])
+lexleq([departureTime_00005, departureTime_00006, departureTime_00007, departureTime_00008, departureTime_00009, departureTime_00010, departureTime_00011, departureTime_00012, slack_00011],[departureTime_00006, departureTime_00007, departureTime_00008, departureTime_00009, departureTime_00010, departureTime_00011, departureTime_00012, slack_00011, slack_00012])
+lexleq([departureTime_00012, slack_00011],[slack_00011, slack_00012])
+watchelement_one([successor_00002, successor_00003, successor_00004, successor_00005, successor_00006, successor_00007, successor_00008, successor_00009, successor_00010], aux2, 1)
+watchelement_one([predecessorOrder_00002, predecessorOrder_00003, predecessorOrder_00004, predecessorOrder_00005, predecessorOrder_00006, predecessorOrder_00007, predecessorOrder_00008, predecessorOrder_00009, predecessorOrder_00010], aux2, 2)
+watchelement_one([predecessor_00002, predecessor_00003, predecessor_00004, predecessor_00005, predecessor_00006, predecessor_00007, predecessor_00008, 12, 11, predecessor_00011, predecessor_00012], aux1, 1)
+watchelement_one([vehicle_00002, vehicle_00003, vehicle_00004, vehicle_00001, vehicle_00002, vehicle_00003, vehicle_00004, 1, 2, 1, 2], aux1, vehicle_00001)
+watchelement_one([predecessor_00001, predecessor_00002, predecessor_00003, predecessor_00004, predecessor_00005, predecessor_00006, predecessor_00007, predecessor_00008, 12, 11, predecessor_00011, predecessor_00012], successor_00002, 2)
+watchelement_one([predecessor_00001, predecessor_00002, predecessor_00003, predecessor_00004, predecessor_00005, predecessor_00006, predecessor_00007, predecessor_00008, 12, 11, predecessor_00011, predecessor_00012], successor_00003, 3)
+watchelement_one([predecessor_00001, predecessor_00002, predecessor_00003, predecessor_00004, predecessor_00005, predecessor_00006, predecessor_00007, predecessor_00008, 12, 11, predecessor_00011, predecessor_00012], successor_00004, 4)
+watchelement_one([predecessor_00001, predecessor_00002, predecessor_00003, predecessor_00004, predecessor_00005, predecessor_00006, predecessor_00007, predecessor_00008, 12, 11, predecessor_00011, predecessor_00012], successor_00005, 5)
+watchelement_one([predecessor_00001, predecessor_00002, predecessor_00003, predecessor_00004, predecessor_00005, predecessor_00006, predecessor_00007, predecessor_00008, 12, 11, predecessor_00011, predecessor_00012], successor_00006, 6)
+watchelement_one([predecessor_00001, predecessor_00002, predecessor_00003, predecessor_00004, predecessor_00005, predecessor_00006, predecessor_00007, predecessor_00008, 12, 11, predecessor_00011, predecessor_00012], successor_00007, 7)
+watchelement_one([predecessor_00001, predecessor_00002, predecessor_00003, predecessor_00004, predecessor_00005, predecessor_00006, predecessor_00007, predecessor_00008, 12, 11, predecessor_00011, predecessor_00012], successor_00008, 8)
+watchelement_one([predecessor_00001, predecessor_00002, predecessor_00003, predecessor_00004, predecessor_00005, predecessor_00006, predecessor_00007, predecessor_00008, 12, 11, predecessor_00011, predecessor_00012], successor_00009, 9)
+watchelement_one([predecessor_00001, predecessor_00002, predecessor_00003, predecessor_00004, predecessor_00005, predecessor_00006, predecessor_00007, predecessor_00008, 12, 11, predecessor_00011, predecessor_00012], successor_00010, 10)
+gacalldiff([successor_00001, successor_00002, successor_00003, successor_00004, successor_00005, successor_00006, successor_00007, successor_00008, successor_00009, successor_00010])
+ineq(slack_00011, slack_00012, 0)
+watchelement_one([vehicle_00002, vehicle_00003, vehicle_00004, vehicle_00001, vehicle_00002, vehicle_00003, vehicle_00004, 1, 2], aux2, vehicle_00001)
+ineq(arrivalTime_00005, arrivalTime_00001, 0)
+ineq(arrivalTime_00006, arrivalTime_00002, 0)
+ineq(arrivalTime_00007, arrivalTime_00003, 0)
+ineq(arrivalTime_00008, arrivalTime_00004, 0)
+lexleq([departureTime_00007, departureTime_00008, departureTime_00009, departureTime_00010, departureTime_00011, departureTime_00012, slack_00011],[departureTime_00008, departureTime_00009, departureTime_00010, departureTime_00011, departureTime_00012, slack_00011, slack_00012])
+lexleq([departureTime_00011, departureTime_00012, slack_00011],[departureTime_00012, slack_00011, slack_00012])
+watchelement_one([successor_00001, successor_00002, successor_00003, successor_00004, successor_00005, successor_00006, successor_00007, successor_00008, successor_00009, successor_00010], predecessor_00002, 2)
+watchelement_one([successor_00001, successor_00002, successor_00003, successor_00004, successor_00005, successor_00006, successor_00007, successor_00008, successor_00009, successor_00010], predecessor_00003, 3)
+watchelement_one([successor_00001, successor_00002, successor_00003, successor_00004, successor_00005, successor_00006, successor_00007, successor_00008, successor_00009, successor_00010], predecessor_00004, 4)
+watchelement_one([successor_00001, successor_00002, successor_00003, successor_00004, successor_00005, successor_00006, successor_00007, successor_00008, successor_00009, successor_00010], predecessor_00005, 5)
+watchelement_one([successor_00001, successor_00002, successor_00003, successor_00004, successor_00005, successor_00006, successor_00007, successor_00008, successor_00009, successor_00010], predecessor_00006, 6)
+watchelement_one([successor_00001, successor_00002, successor_00003, successor_00004, successor_00005, successor_00006, successor_00007, successor_00008, successor_00009, successor_00010], predecessor_00007, 7)
+watchelement_one([successor_00001, successor_00002, successor_00003, successor_00004, successor_00005, successor_00006, successor_00007, successor_00008, successor_00009, successor_00010], predecessor_00008, 8)
+watchelement_one([successor_00001, successor_00002, successor_00003, successor_00004, successor_00005, successor_00006, successor_00007, successor_00008, successor_00009, successor_00010], predecessor_00011, 11)
+watchelement_one([successor_00001, successor_00002, successor_00003, successor_00004, successor_00005, successor_00006, successor_00007, successor_00008, successor_00009, successor_00010], predecessor_00012, 12)
+watchelement_one([load_00001, load_00002, load_00003, load_00004, load_00005, load_00006, load_00007, load_00008, load_00009, load_00010, load_00011, load_00012], successor_00009, load_00009)
+watchelement_one([load_00001, load_00002, load_00003, load_00004, load_00005, load_00006, load_00007, load_00008, load_00009, load_00010, load_00011, load_00012], successor_00010, load_00010)
+lexleq([departureTime_00004, departureTime_00005, departureTime_00006, departureTime_00007, departureTime_00008, departureTime_00009, departureTime_00010, departureTime_00011, departureTime_00012, slack_00011],[departureTime_00005, departureTime_00006, departureTime_00007, departureTime_00008, departureTime_00009, departureTime_00010, departureTime_00011, departureTime_00012, slack_00011, slack_00012])
+gacalldiff([predecessor_00001, predecessor_00002, predecessor_00003, predecessor_00004, predecessor_00005, predecessor_00006, predecessor_00007, predecessor_00008, predecessor_00011, predecessor_00012])
+ineq(load_00001, aux24, 0)
+ineq(load_00002, aux23, 0)
+ineq(load_00003, aux22, 0)
+ineq(load_00004, aux21, 0)
+ineq(load_00005, aux24, 0)
+ineq(load_00006, aux23, 0)
+ineq(load_00007, aux22, 0)
+ineq(load_00008, aux21, 0)
+lexleq([departureTime_00006, departureTime_00007, departureTime_00008, departureTime_00009, departureTime_00010, departureTime_00011, departureTime_00012, slack_00011],[departureTime_00007, departureTime_00008, departureTime_00009, departureTime_00010, departureTime_00011, departureTime_00012, slack_00011, slack_00012])
+watchelement_one([vehicle_00001, vehicle_00002, vehicle_00003, vehicle_00004, vehicle_00001, vehicle_00002, vehicle_00003, vehicle_00004, 1, 2, 1, 2], successor_00002, vehicle_00002)
+watchelement_one([vehicle_00001, vehicle_00002, vehicle_00003, vehicle_00004, vehicle_00001, vehicle_00002, vehicle_00003, vehicle_00004, 1, 2, 1, 2], successor_00003, vehicle_00003)
+watchelement_one([vehicle_00001, vehicle_00002, vehicle_00003, vehicle_00004, vehicle_00001, vehicle_00002, vehicle_00003, vehicle_00004, 1, 2, 1, 2], successor_00004, vehicle_00004)
+watchelement_one([vehicle_00001, vehicle_00002, vehicle_00003, vehicle_00004, vehicle_00001, vehicle_00002, vehicle_00003, vehicle_00004, 1, 2, 1, 2], successor_00005, vehicle_00001)
+watchelement_one([vehicle_00001, vehicle_00002, vehicle_00003, vehicle_00004, vehicle_00001, vehicle_00002, vehicle_00003, vehicle_00004, 1, 2, 1, 2], successor_00006, vehicle_00002)
+watchelement_one([vehicle_00001, vehicle_00002, vehicle_00003, vehicle_00004, vehicle_00001, vehicle_00002, vehicle_00003, vehicle_00004, 1, 2, 1, 2], successor_00007, vehicle_00003)
+watchelement_one([vehicle_00001, vehicle_00002, vehicle_00003, vehicle_00004, vehicle_00001, vehicle_00002, vehicle_00003, vehicle_00004, 1, 2, 1, 2], successor_00008, vehicle_00004)
+lexleq([departureTime_00003, departureTime_00004, departureTime_00005, departureTime_00006, departureTime_00007, departureTime_00008, departureTime_00009, departureTime_00010, departureTime_00011, departureTime_00012, slack_00011],[departureTime_00004, departureTime_00005, departureTime_00006, departureTime_00007, departureTime_00008, departureTime_00009, departureTime_00010, departureTime_00011, departureTime_00012, slack_00011, slack_00012])
+lexleq([departureTime_00009, departureTime_00010, departureTime_00011, departureTime_00012, slack_00011],[departureTime_00010, departureTime_00011, departureTime_00012, slack_00011, slack_00012])
+reifyimply(w-literal(aux7,1), !aux25)
+reifyimply(w-literal(aux9,1), !aux42)
+reifyimply(w-literal(aux8,1), !aux31)
+reifyimply(w-literal(aux4,1), !aux40)
+reifyimply(w-literal(aux3,1), !aux27)
+reifyimply(w-literal(aux6,1), !aux41)
+reifyimply(w-literal(aux5,1), !aux26)
+reifyimply(w-literal(aux10,1), !aux38)
+reifyimply(w-literal(aux11,1), !aux32)
+lexleq([departureTime_00010, departureTime_00011, departureTime_00012, slack_00011],[departureTime_00011, departureTime_00012, slack_00011, slack_00012])
+gacalldiff([predecessorOrder_00002, predecessorOrder_00003, predecessorOrder_00004, predecessorOrder_00005, predecessorOrder_00006, predecessorOrder_00007, predecessorOrder_00008, predecessorOrder_00009, predecessorOrder_00010, predecessorOrder_00011, predecessorOrder_00012])
+lexleq([departureTime_00002, departureTime_00003, departureTime_00004, departureTime_00005, departureTime_00006, departureTime_00007, departureTime_00008, departureTime_00009, departureTime_00010, departureTime_00011, departureTime_00012, slack_00011],[departureTime_00003, departureTime_00004, departureTime_00005, departureTime_00006, departureTime_00007, departureTime_00008, departureTime_00009, departureTime_00010, departureTime_00011, departureTime_00012, slack_00011, slack_00012])
+watchelement_one([vehicle_00001, vehicle_00002, vehicle_00003, vehicle_00004, vehicle_00001, vehicle_00002, vehicle_00003, vehicle_00004, 1, 2], predecessor_00005, vehicle_00001)
+watchelement_one([vehicle_00001, vehicle_00002, vehicle_00003, vehicle_00004, vehicle_00001, vehicle_00002, vehicle_00003, vehicle_00004, 1, 2], predecessor_00002, vehicle_00002)
+watchelement_one([vehicle_00001, vehicle_00002, vehicle_00003, vehicle_00004, vehicle_00001, vehicle_00002, vehicle_00003, vehicle_00004, 1, 2], predecessor_00006, vehicle_00002)
+watchelement_one([vehicle_00001, vehicle_00002, vehicle_00003, vehicle_00004, vehicle_00001, vehicle_00002, vehicle_00003, vehicle_00004, 1, 2], predecessor_00003, vehicle_00003)
+watchelement_one([vehicle_00001, vehicle_00002, vehicle_00003, vehicle_00004, vehicle_00001, vehicle_00002, vehicle_00003, vehicle_00004, 1, 2], predecessor_00007, vehicle_00003)
+watchelement_one([vehicle_00001, vehicle_00002, vehicle_00003, vehicle_00004, vehicle_00001, vehicle_00002, vehicle_00003, vehicle_00004, 1, 2], predecessor_00004, vehicle_00004)
+watchelement_one([vehicle_00001, vehicle_00002, vehicle_00003, vehicle_00004, vehicle_00001, vehicle_00002, vehicle_00003, vehicle_00004, 1, 2], predecessor_00008, vehicle_00004)
+lexleq([departureTime_00008, departureTime_00009, departureTime_00010, departureTime_00011, departureTime_00012, slack_00011],[departureTime_00009, departureTime_00010, departureTime_00011, departureTime_00012, slack_00011, slack_00012])
+reifyimply(w-literal(aux13,1), !aux33)
+reifyimply(w-literal(aux12,1), !aux28)
+reifyimply(w-literal(aux17,1), !aux36)
+reifyimply(w-literal(aux16,1), !aux29)
+reifyimply(w-literal(aux15,1), !aux34)
+reifyimply(w-literal(aux14,1), !aux30)
+reifyimply(w-literal(aux18,1), !aux35)
+reifyimply(w-literal(aux19,1), !aux39)
+reifyimply(w-literal(aux20,1), !aux37)
+watchelement_one([successorOrder_00002, successorOrder_00003, successorOrder_00004, successorOrder_00005, successorOrder_00006, successorOrder_00007, successorOrder_00008, successorOrder_00009, successorOrder_00010, successorOrder_00011, successorOrder_00012], aux1, 2)
+element_one([arrivalTime_00001, arrivalTime_00002, arrivalTime_00003, arrivalTime_00004, arrivalTime_00005, arrivalTime_00006, arrivalTime_00007, arrivalTime_00008, arrivalTime_00009, arrivalTime_00010, arrivalTime_00011, arrivalTime_00012], successor_00004, aux43)
+watchelement_one([load_00001, load_00002, load_00003, load_00004, load_00005, load_00006, load_00007, load_00008, load_00009, load_00010, load_00011, load_00012], successor_00008, aux44)
+watchelement_one([load_00001, load_00002, load_00003, load_00004, load_00005, load_00006, load_00007, load_00008, load_00009, load_00010, load_00011, load_00012], successor_00006, aux45)
+watchelement_one([load_00001, load_00002, load_00003, load_00004, load_00005, load_00006, load_00007, load_00008, load_00009, load_00010, load_00011, load_00012], successor_00005, aux46)
+watchelement_one([load_00001, load_00002, load_00003, load_00004, load_00005, load_00006, load_00007, load_00008, load_00009, load_00010, load_00011, load_00012], successor_00007, aux47)
+watchelement_one([load_00001, load_00002, load_00003, load_00004, load_00005, load_00006, load_00007, load_00008, load_00009, load_00010, load_00011, load_00012], successor_00003, aux48)
+watchelement_one([load_00001, load_00002, load_00003, load_00004, load_00005, load_00006, load_00007, load_00008, load_00009, load_00010, load_00011, load_00012], successor_00002, aux49)
+watchelement_one([load_00001, load_00002, load_00003, load_00004, load_00005, load_00006, load_00007, load_00008, load_00009, load_00010, load_00011, load_00012], successor_00004, aux50)
+element_one([arrivalTime_00001, arrivalTime_00002, arrivalTime_00003, arrivalTime_00004, arrivalTime_00005, arrivalTime_00006, arrivalTime_00007, arrivalTime_00008, arrivalTime_00009, arrivalTime_00010, arrivalTime_00011, arrivalTime_00012], successor_00005, aux51)
+element_one([arrivalTime_00001, arrivalTime_00002, arrivalTime_00003, arrivalTime_00004, arrivalTime_00005, arrivalTime_00006, arrivalTime_00007, arrivalTime_00008, arrivalTime_00009, arrivalTime_00010, arrivalTime_00011, arrivalTime_00012], successor_00006, aux52)
+element_one([arrivalTime_00001, arrivalTime_00002, arrivalTime_00003, arrivalTime_00004, arrivalTime_00005, arrivalTime_00006, arrivalTime_00007, arrivalTime_00008, arrivalTime_00009, arrivalTime_00010, arrivalTime_00011, arrivalTime_00012], successor_00007, aux53)
+element_one([arrivalTime_00001, arrivalTime_00002, arrivalTime_00003, arrivalTime_00004, arrivalTime_00005, arrivalTime_00006, arrivalTime_00007, arrivalTime_00008, arrivalTime_00009, arrivalTime_00010, arrivalTime_00011, arrivalTime_00012], successor_00008, aux54)
+element_one([arrivalTime_00001, arrivalTime_00002, arrivalTime_00003, arrivalTime_00004, arrivalTime_00005, arrivalTime_00006, arrivalTime_00007, arrivalTime_00008, arrivalTime_00009, arrivalTime_00010, arrivalTime_00011, arrivalTime_00012], successor_00009, aux55)
+element_one([arrivalTime_00001, arrivalTime_00002, arrivalTime_00003, arrivalTime_00004, arrivalTime_00005, arrivalTime_00006, arrivalTime_00007, arrivalTime_00008, arrivalTime_00009, arrivalTime_00010, arrivalTime_00011, arrivalTime_00012], successor_00010, aux56)
+element_one([arrivalTime_00001, arrivalTime_00002, arrivalTime_00003, arrivalTime_00004, arrivalTime_00005, arrivalTime_00006, arrivalTime_00007, arrivalTime_00008, arrivalTime_00009, arrivalTime_00010, arrivalTime_00011, arrivalTime_00012], successor_00002, aux57)
+element_one([arrivalTime_00002, arrivalTime_00003, arrivalTime_00004, arrivalTime_00005, arrivalTime_00006, arrivalTime_00007, arrivalTime_00008, arrivalTime_00009, arrivalTime_00010, arrivalTime_00011, arrivalTime_00012], aux1, aux58)
+watchelement_one([load_00002, load_00003, load_00004, load_00005, load_00006, load_00007, load_00008, load_00009, load_00010, load_00011, load_00012], aux1, aux59)
+element_one([arrivalTime_00001, arrivalTime_00002, arrivalTime_00003, arrivalTime_00004, arrivalTime_00005, arrivalTime_00006, arrivalTime_00007, arrivalTime_00008, arrivalTime_00009, arrivalTime_00010, arrivalTime_00011, arrivalTime_00012], successor_00003, aux60)
+sumleq([-1,successor_00001],aux1)
+sumgeq([-1,successor_00001],aux1)
+sumleq([predecessor_00001,-1],aux2)
+sumgeq([predecessor_00001,-1],aux2)
+sumleq([successorOrder_00011,1],successorOrder_00010)
+sumgeq([successorOrder_00011,1],successorOrder_00010)
+sumleq([successorOrder_00012,1],successorOrder_00009)
+sumgeq([successorOrder_00012,1],successorOrder_00009)
+weightedsumleq([-1,-1,1,1],[arrivalTime_00009,arrivalTime_00010,arrivalTime_00011,arrivalTime_00012],objective)
+weightedsumgeq([-1,-1,1,1],[arrivalTime_00009,arrivalTime_00010,arrivalTime_00011,arrivalTime_00012],objective)
+reifyimply(sumleq([successorOrder_00002,1],aux7), aux25)
+reifyimply(sumgeq([successorOrder_00002,1],aux7), aux25)
+reifyimply(sumleq([successorOrder_00003,1],aux9), aux42)
+reifyimply(sumgeq([successorOrder_00003,1],aux9), aux42)
+reifyimply(sumleq([successorOrder_00004,1],aux8), aux31)
+reifyimply(sumgeq([successorOrder_00004,1],aux8), aux31)
+reifyimply(sumleq([successorOrder_00005,1],aux4), aux40)
+reifyimply(sumgeq([successorOrder_00005,1],aux4), aux40)
+reifyimply(sumleq([successorOrder_00006,1],aux3), aux27)
+reifyimply(sumgeq([successorOrder_00006,1],aux3), aux27)
+reifyimply(sumleq([successorOrder_00007,1],aux6), aux41)
+reifyimply(sumgeq([successorOrder_00007,1],aux6), aux41)
+reifyimply(sumleq([successorOrder_00008,1],aux5), aux26)
+reifyimply(sumgeq([successorOrder_00008,1],aux5), aux26)
+reifyimply(sumleq([successorOrder_00009,1],aux10), aux38)
+reifyimply(sumgeq([successorOrder_00009,1],aux10), aux38)
+reifyimply(sumleq([successorOrder_00010,1],aux11), aux32)
+reifyimply(sumgeq([successorOrder_00010,1],aux11), aux32)
+reifyimply(sumleq([1,predecessorOrder_00002],aux13), aux33)
+reifyimply(sumgeq([1,predecessorOrder_00002],aux13), aux33)
+reifyimply(sumleq([1,predecessorOrder_00003],aux12), aux28)
+reifyimply(sumgeq([1,predecessorOrder_00003],aux12), aux28)
+reifyimply(sumleq([1,predecessorOrder_00004],aux17), aux36)
+reifyimply(sumgeq([1,predecessorOrder_00004],aux17), aux36)
+reifyimply(sumleq([1,predecessorOrder_00005],aux16), aux29)
+reifyimply(sumgeq([1,predecessorOrder_00005],aux16), aux29)
+reifyimply(sumleq([1,predecessorOrder_00006],aux15), aux34)
+reifyimply(sumgeq([1,predecessorOrder_00006],aux15), aux34)
+reifyimply(sumleq([1,predecessorOrder_00007],aux14), aux30)
+reifyimply(sumgeq([1,predecessorOrder_00007],aux14), aux30)
+reifyimply(sumleq([1,predecessorOrder_00008],aux18), aux35)
+reifyimply(sumgeq([1,predecessorOrder_00008],aux18), aux35)
+reifyimply(sumleq([1,predecessorOrder_00011],aux19), aux39)
+reifyimply(sumgeq([1,predecessorOrder_00011],aux19), aux39)
+reifyimply(sumleq([1,predecessorOrder_00012],aux20), aux37)
+reifyimply(sumgeq([1,predecessorOrder_00012],aux20), aux37)
+sumleq([1,predecessorOrder_00010],predecessorOrder_00011)
+sumgeq([1,predecessorOrder_00010],predecessorOrder_00011)
+sumleq([1,predecessorOrder_00009],predecessorOrder_00012)
+sumgeq([1,predecessorOrder_00009],predecessorOrder_00012)
+sumleq([aux61,slack_00004,arrivalTime_00004],aux43)
+sumgeq([aux61,slack_00004,arrivalTime_00004],aux43)
+sumleq([-50,load_00008],aux44)
+sumgeq([-50,load_00008],aux44)
+sumleq([-30,load_00006],aux45)
+sumgeq([-30,load_00006],aux45)
+sumleq([-15,load_00005],aux46)
+sumgeq([-15,load_00005],aux46)
+sumleq([-10,load_00007],aux47)
+sumgeq([-10,load_00007],aux47)
+sumleq([10,load_00003],aux48)
+sumgeq([10,load_00003],aux48)
+sumleq([30,load_00002],aux49)
+sumgeq([30,load_00002],aux49)
+sumleq([50,load_00004],aux50)
+sumgeq([50,load_00004],aux50)
+sumleq([aux62,slack_00005,arrivalTime_00005],aux51)
+sumgeq([aux62,slack_00005,arrivalTime_00005],aux51)
+sumleq([aux63,slack_00006,arrivalTime_00006],aux52)
+sumgeq([aux63,slack_00006,arrivalTime_00006],aux52)
+sumleq([aux64,slack_00007,arrivalTime_00007],aux53)
+sumgeq([aux64,slack_00007,arrivalTime_00007],aux53)
+sumleq([aux65,slack_00008,arrivalTime_00008],aux54)
+sumgeq([aux65,slack_00008,arrivalTime_00008],aux54)
+sumleq([aux66,slack_00009,arrivalTime_00009],aux55)
+sumgeq([aux66,slack_00009,arrivalTime_00009],aux55)
+sumleq([aux67,slack_00010,arrivalTime_00010],aux56)
+sumgeq([aux67,slack_00010,arrivalTime_00010],aux56)
+sumleq([aux68,slack_00002,arrivalTime_00002],aux57)
+sumgeq([aux68,slack_00002,arrivalTime_00002],aux57)
+sumleq([aux69,slack_00001,arrivalTime_00001],aux58)
+sumgeq([aux69,slack_00001,arrivalTime_00001],aux58)
+sumleq([15,load_00001],aux59)
+sumgeq([15,load_00001],aux59)
+sumleq([aux70,slack_00003,arrivalTime_00003],aux60)
+sumgeq([aux70,slack_00003,arrivalTime_00003],aux60)
+**EOF**

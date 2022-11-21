@@ -1,0 +1,9 @@
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 58, "flatIntVars": 314, "flatBoolConstraints": 31, "flatIntConstraints": 509, "evaluatedReifiedConstraints": 57, "evaluatedHalfReifiedConstraints": 1, "method": "minimize", "flatTime": 0.247559}}
+{"type": "comment", "comment": "% Pruned 49996 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49999 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49996 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49998 learnt clauses"}
+{"type": "statistics", "statistics": {"nodes": 685067, "failures": 268726, "restarts": 3856, "variables": 251458, "intVars": 418, "boolVariables": 251038, "propagators": 409, "propagations": 34974331, "peakDepth": 104, "nogoods": 268726, "backjumps": 26413, "peakMem": 0.0, "time": 300.198, "initTime": 0.198, "solveTime": 300.0, "objective": 4524, "optTime": 11.069, "baseMem": 0.0, "trailMem": 410.57, "randomSeed": 1668727516}}
+{"type": "solution", "output": {"json": {  "AssignmentMatrix" : [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]],  "OccupancyVector" : [0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],  "VMType" : [1, 1, 1, 1, 1, 1, 1, 1, 341, 341, 341, 341, 341, 341, 433, 433, 433, 433, 316, 316, 316, 316, 316, 316, 316, 316],  "Price" : [0, 0, 0, 0, 0, 0, 0, 0, 210, 210, 210, 210, 210, 210, 116, 116, 116, 116, 350, 350, 350, 350, 350, 350, 350, 350]}}, "sections": ["json"]}
+{"type": "comment", "comment": "% Time limit exceeded!"}
+{"type": "statistics", "statistics": {"nSolutions": 1}}

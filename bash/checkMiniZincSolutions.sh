@@ -1,13 +1,7 @@
 for f in ${1}/*.param; do 
-    for js in ${2}/*.json; do 
-        base_name=$(basename ${js})
-        f_base_name=$(basename ${f})
-        b=${f_base_name%.param*} 
-        a=${base_name%.txt.json*} 
-        if [ $b == $a ];
-        then
-            python ../python/checkSolutions.py "$f" "$js" minizinc
-            break
-        fi
+    f_base_name=$(basename ${f})
+    arrIN=(${f_base_name//./ }) # split on '.'
+    for js in ${2}/${arrIN[0]}.json/*.json; do 
+        python ../python/checkSolutions.py "$f" "$js" minizinc
     done
 done

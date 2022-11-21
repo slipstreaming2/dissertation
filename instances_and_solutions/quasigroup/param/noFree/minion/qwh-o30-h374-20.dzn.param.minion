@@ -1,0 +1,1987 @@
+MINION 3
+# AC-CSE-Times_number = 0
+# AC-CSE-Times_eliminated_expressions = 0
+# AC-CSE-Times_total_size = 0
+# AC-CSE-Xor_number = 0
+# AC-CSE-Xor_eliminated_expressions = 0
+# AC-CSE-Xor_total_size = 0
+# CSETopLevel_number = 0
+# CSETopLevel_eliminated_expressions = 0
+# CSETopLevel_total_size = 0
+# AC-CSE-Or_number = 0
+# AC-CSE-Or_eliminated_expressions = 0
+# AC-CSE-Or_total_size = 0
+# AC-CSE-And_number = 0
+# AC-CSE-And_eliminated_expressions = 0
+# AC-CSE-And_total_size = 0
+# AC-CSE-Sum_number = 0
+# AC-CSE-Sum_eliminated_expressions = 0
+# AC-CSE-Sum_total_size = 0
+# CSE_active_number = 0
+# CSE_active_eliminated_expressions = 0
+# CSE_active_total_size = 0
+**VARIABLES**
+DISCRETE puzzle_00001_00004 #
+{1..18}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00001_00004, [1,1,11,11,15,15,17,18])
+**VARIABLES**
+DISCRETE puzzle_00001_00005 #
+{1..15}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00001_00005, [1,2,12,12,15,15])
+**VARIABLES**
+DISCRETE puzzle_00001_00006 #
+{1..18}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00001_00006, [1,2,5,5,10,11,18,18])
+**VARIABLES**
+DISCRETE puzzle_00001_00012 #
+{1..26}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00001_00012, [1,2,11,11,16,16,26,26])
+**VARIABLES**
+DISCRETE puzzle_00001_00013 #
+{2..27}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00001_00013, [2,2,17,18,27,27])
+**VARIABLES**
+DISCRETE puzzle_00001_00018 #
+{10..27}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00001_00018, [10,11,15,15,27,27])
+**VARIABLES**
+DISCRETE puzzle_00001_00019 #
+{10..27}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00001_00019, [10,10,12,12,16,17,27,27])
+**VARIABLES**
+DISCRETE puzzle_00001_00023 #
+{1..18}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00001_00023, [1,1,12,12,15,16,18,18])
+**VARIABLES**
+DISCRETE puzzle_00001_00025 #
+{2..26}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00001_00025, [2,2,10,12,17,17,26,26])
+**VARIABLES**
+DISCRETE puzzle_00001_00026 #
+{1..27}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00001_00026, [1,1,5,5,16,16,26,27])
+**VARIABLES**
+DISCRETE puzzle_00001_00027 #
+{11..27}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00001_00027, [11,12,18,18,27,27])
+**VARIABLES**
+DISCRETE puzzle_00001_00029 #
+{1..26}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00001_00029, [1,2,10,10,15,16,26,26])
+**VARIABLES**
+DISCRETE puzzle_00002_00002 #
+{1..27}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00002_00002, [1,1,3,3,5,5,8,8,11,11,13,13,27,27])
+**VARIABLES**
+DISCRETE puzzle_00002_00004 #
+{1..29}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00002_00004, [1,1,8,8,11,11,24,24,29,29])
+**VARIABLES**
+DISCRETE puzzle_00002_00006 #
+{1..24}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00002_00006, [1,1,3,3,5,5,8,8,11,11,24,24])
+**VARIABLES**
+DISCRETE puzzle_00002_00009 #
+{3..27}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00002_00009, [3,3,12,12,24,24,27,27])
+**VARIABLES**
+DISCRETE puzzle_00002_00011 #
+{5..29}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00002_00011, [5,5,8,8,29,29])
+**VARIABLES**
+DISCRETE puzzle_00002_00012 #
+{1..29}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00002_00012, [1,1,3,3,8,8,11,11,29,29])
+**VARIABLES**
+DISCRETE puzzle_00002_00015 #
+{1..29}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00002_00015, [1,1,4,5,8,8,29,29])
+**VARIABLES**
+DISCRETE puzzle_00002_00017 #
+{12..29}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00002_00017, [12,13,27,27,29,29])
+**VARIABLES**
+DISCRETE puzzle_00002_00018 #
+{3..29}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00002_00018, [3,4,11,11,27,27,29,29])
+**VARIABLES**
+DISCRETE puzzle_00002_00024 #
+{3..29}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00002_00024, [3,3,29,29])
+**VARIABLES**
+DISCRETE puzzle_00002_00027 #
+{4..27}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00002_00027, [4,4,11,13,24,24,27,27])
+**VARIABLES**
+DISCRETE puzzle_00003_00002 #
+{3..27}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00003_00002, [3,3,8,8,11,11,13,13,23,23,27,27])
+**VARIABLES**
+DISCRETE puzzle_00003_00006 #
+{3..23}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00003_00006, [3,3,8,8,11,11,23,23])
+**VARIABLES**
+DISCRETE puzzle_00003_00009 #
+{3..27}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00003_00009, [3,3,12,12,16,16,23,23,27,27])
+**VARIABLES**
+DISCRETE puzzle_00003_00011 #
+{8..29}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00003_00011, [8,8,14,14,19,19,23,23,29,29])
+**VARIABLES**
+DISCRETE puzzle_00003_00012 #
+{3..29}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00003_00012, [3,3,8,8,11,11,14,14,16,16,19,19,29,29])
+**VARIABLES**
+DISCRETE puzzle_00003_00013 #
+{3..27}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00003_00013, [3,3,13,13,23,23,27,27])
+**VARIABLES**
+DISCRETE puzzle_00003_00017 #
+{12..29}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00003_00017, [12,16,27,27,29,29])
+**VARIABLES**
+DISCRETE puzzle_00003_00019 #
+{3..27}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00003_00019, [3,3,12,12,14,14,16,16,23,23,27,27])
+**VARIABLES**
+DISCRETE puzzle_00003_00021 #
+{3..29}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00003_00021, [3,3,11,11,13,13,27,27,29,29])
+**VARIABLES**
+DISCRETE puzzle_00003_00025 #
+{11..23}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00003_00025, [11,12,14,14,19,19,23,23])
+**VARIABLES**
+DISCRETE puzzle_00003_00026 #
+{16..29}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00003_00026, [16,16,19,19,27,27,29,29])
+**VARIABLES**
+DISCRETE puzzle_00003_00027 #
+{11..27}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00003_00027, [11,13,19,19,23,23,27,27])
+**VARIABLES**
+DISCRETE puzzle_00004_00008 #
+{3..23}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00004_00008, [3,3,6,7,11,11,22,23])
+**VARIABLES**
+DISCRETE puzzle_00004_00011 #
+{5..29}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00004_00011, [5,6,20,20,23,23,28,29])
+**VARIABLES**
+DISCRETE puzzle_00004_00012 #
+{3..29}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00004_00012, [3,3,7,7,11,11,16,16,22,22,29,29])
+**VARIABLES**
+DISCRETE puzzle_00004_00016 #
+{3..29}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00004_00016, [3,3,5,5,11,11,22,22,28,29])
+**VARIABLES**
+DISCRETE puzzle_00004_00017 #
+{16..29}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00004_00017, [16,16,20,20,29,29])
+**VARIABLES**
+DISCRETE puzzle_00004_00020 #
+{5..23}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00004_00020, [5,6,11,11,16,16,20,20,22,23])
+**VARIABLES**
+DISCRETE puzzle_00004_00023 #
+{6..28}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00004_00023, [6,7,16,16,20,20,28,28])
+**VARIABLES**
+DISCRETE puzzle_00004_00024 #
+{3..29}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00004_00024, [3,3,7,7,10,10,16,16,20,20,23,23,28,29])
+**VARIABLES**
+DISCRETE puzzle_00004_00025 #
+{6..23}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00004_00025, [6,6,10,11,23,23])
+**VARIABLES**
+DISCRETE puzzle_00004_00026 #
+{5..29}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00004_00026, [5,7,16,16,20,20,29,29])
+**VARIABLES**
+DISCRETE puzzle_00004_00027 #
+{6..28}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00004_00027, [6,7,11,11,23,23,28,28])
+**VARIABLES**
+DISCRETE puzzle_00004_00028 #
+{5..23}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00004_00028, [5,5,20,20,23,23])
+**VARIABLES**
+DISCRETE puzzle_00005_00001 #
+{1..29}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00005_00001, [1,1,11,12,20,20,24,24,29,29])
+**VARIABLES**
+DISCRETE puzzle_00005_00003 #
+{10..30}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00005_00003, [10,10,15,15,23,23,30,30])
+**VARIABLES**
+DISCRETE puzzle_00005_00006 #
+{1..24}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00005_00006, [1,1,10,11,22,24])
+**VARIABLES**
+DISCRETE puzzle_00005_00008 #
+{11..30}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00005_00008, [11,12,22,23,30,30])
+**VARIABLES**
+DISCRETE puzzle_00005_00009 #
+{9..30}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00005_00009, [9,9,12,12,20,20,22,24,30,30])
+**VARIABLES**
+DISCRETE puzzle_00005_00013 #
+{9..30}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00005_00013, [9,9,13,13,23,24,30,30])
+**VARIABLES**
+DISCRETE puzzle_00005_00015 #
+{1..29}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00005_00015, [1,1,15,15,23,23,29,29])
+**VARIABLES**
+DISCRETE puzzle_00005_00019 #
+{9..23}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00005_00019, [9,10,12,12,23,23])
+**VARIABLES**
+DISCRETE puzzle_00005_00020 #
+{11..23}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00005_00020, [11,11,20,20,22,23])
+**VARIABLES**
+DISCRETE puzzle_00005_00021 #
+{1..29}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00005_00021, [1,1,9,9,11,11,13,13,20,20,22,22,24,24,29,29])
+**VARIABLES**
+DISCRETE puzzle_00005_00022 #
+{1..30}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00005_00022, [1,1,10,11,20,20,22,22,30,30])
+**VARIABLES**
+DISCRETE puzzle_00005_00024 #
+{9..29}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00005_00024, [9,10,20,20,23,23,29,29])
+**VARIABLES**
+DISCRETE puzzle_00005_00026 #
+{1..30}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00005_00026, [1,1,9,9,20,20,29,30])
+**VARIABLES**
+DISCRETE puzzle_00006_00001 #
+{11..29}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00006_00001, [11,11,14,14,21,21,24,24,26,26,29,29])
+**VARIABLES**
+DISCRETE puzzle_00006_00003 #
+{14..28}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00006_00003, [14,14,17,17,23,23,28,28])
+**VARIABLES**
+DISCRETE puzzle_00006_00006 #
+{5..24}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00006_00006, [5,5,11,11,21,21,23,24])
+**VARIABLES**
+DISCRETE puzzle_00006_00008 #
+{6..23}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00006_00008, [6,6,11,11,14,14,23,23])
+**VARIABLES**
+DISCRETE puzzle_00006_00013 #
+{4..24}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00006_00013, [4,4,6,6,9,9,17,17,23,24])
+**VARIABLES**
+DISCRETE puzzle_00006_00014 #
+{4..28}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00006_00014, [4,4,9,9,21,21,24,24,26,26,28,28])
+**VARIABLES**
+DISCRETE puzzle_00006_00015 #
+{4..29}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00006_00015, [4,5,14,14,17,17,21,21,23,23,28,29])
+**VARIABLES**
+DISCRETE puzzle_00006_00017 #
+{14..29}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00006_00017, [14,14,17,17,21,21,26,26,29,29])
+**VARIABLES**
+DISCRETE puzzle_00006_00023 #
+{4..28}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00006_00023, [4,4,6,6,9,9,14,14,28,28])
+**VARIABLES**
+DISCRETE puzzle_00006_00024 #
+{9..29}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00006_00024, [9,9,23,23,26,26,28,29])
+**VARIABLES**
+DISCRETE puzzle_00006_00026 #
+{5..29}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00006_00026, [5,6,9,9,26,26,29,29])
+**VARIABLES**
+DISCRETE puzzle_00006_00029 #
+{23..29}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00006_00029, [23,23,26,26,28,29])
+**VARIABLES**
+DISCRETE puzzle_00006_00030 #
+{6..28}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00006_00030, [6,6,17,17,24,24,26,26,28,28])
+**VARIABLES**
+DISCRETE puzzle_00007_00001 #
+{1..26}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00007_00001, [1,1,3,3,11,11,18,18,20,20,26,26])
+**VARIABLES**
+DISCRETE puzzle_00007_00003 #
+{2..18}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00007_00003, [2,2,17,18])
+**VARIABLES**
+DISCRETE puzzle_00007_00006 #
+{1..22}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00007_00006, [1,3,8,8,11,11,18,18,22,22])
+**VARIABLES**
+DISCRETE puzzle_00007_00008 #
+{3..22}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00007_00008, [3,3,6,6,8,8,11,11,18,18,22,22])
+**VARIABLES**
+DISCRETE puzzle_00007_00009 #
+{3..22}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00007_00009, [3,3,9,9,20,20,22,22])
+**VARIABLES**
+DISCRETE puzzle_00007_00010 #
+{1..18}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00007_00010, [1,1,9,9,11,11,13,13,18,18])
+**VARIABLES**
+DISCRETE puzzle_00007_00011 #
+{6..20}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00007_00011, [6,6,8,9,17,17,20,20])
+**VARIABLES**
+DISCRETE puzzle_00007_00013 #
+{2..18}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00007_00013, [2,3,6,6,9,9,13,13,17,18])
+**VARIABLES**
+DISCRETE puzzle_00007_00014 #
+{1..26}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00007_00014, [1,1,3,3,9,9,26,26])
+**VARIABLES**
+DISCRETE puzzle_00007_00016 #
+{3..26}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00007_00016, [3,3,9,9,11,11,13,13,22,22,26,26])
+**VARIABLES**
+DISCRETE puzzle_00007_00022 #
+{1..22}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00007_00022, [1,3,6,6,11,11,20,20,22,22])
+**VARIABLES**
+DISCRETE puzzle_00007_00023 #
+{1..20}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00007_00023, [1,1,6,6,9,9,18,18,20,20])
+**VARIABLES**
+DISCRETE puzzle_00007_00024 #
+{3..26}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00007_00024, [3,3,9,9,18,18,20,20,26,26])
+**VARIABLES**
+DISCRETE puzzle_00008_00001 #
+{12..27}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00008_00001, [12,12,14,14,20,20,24,24,27,27])
+**VARIABLES**
+DISCRETE puzzle_00008_00003 #
+{2..25}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00008_00003, [2,2,14,17,25,25])
+**VARIABLES**
+DISCRETE puzzle_00008_00004 #
+{8..25}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00008_00004, [8,9,15,15,17,17,24,25])
+**VARIABLES**
+DISCRETE puzzle_00008_00007 #
+{12..24}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00008_00007, [12,12,16,17,20,20,24,24])
+**VARIABLES**
+DISCRETE puzzle_00008_00012 #
+{2..25}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00008_00012, [2,2,8,8,14,14,16,16,25,25])
+**VARIABLES**
+DISCRETE puzzle_00008_00014 #
+{9..27}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00008_00014, [9,9,24,24,27,27])
+**VARIABLES**
+DISCRETE puzzle_00008_00017 #
+{12..27}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00008_00017, [12,12,14,17,20,20,25,25,27,27])
+**VARIABLES**
+DISCRETE puzzle_00008_00020 #
+{5..27}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00008_00020, [5,5,8,8,14,14,16,16,20,20,25,25,27,27])
+**VARIABLES**
+DISCRETE puzzle_00008_00022 #
+{2..20}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00008_00022, [2,2,14,14,16,16,20,20])
+**VARIABLES**
+DISCRETE puzzle_00008_00025 #
+{2..17}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00008_00025, [2,2,12,12,14,14,17,17])
+**VARIABLES**
+DISCRETE puzzle_00008_00027 #
+{9..27}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00008_00027, [9,9,12,12,24,24,27,27])
+**VARIABLES**
+DISCRETE puzzle_00008_00029 #
+{2..16}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00008_00029, [2,2,8,8,15,16])
+**VARIABLES**
+DISCRETE puzzle_00008_00030 #
+{8..24}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00008_00030, [8,8,12,12,15,17,24,24])
+**VARIABLES**
+DISCRETE puzzle_00009_00003 #
+{16..23}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00009_00003, [16,16,18,18,23,23])
+**VARIABLES**
+DISCRETE puzzle_00009_00004 #
+{1..21}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00009_00004, [1,1,6,6,18,18,21,21])
+**VARIABLES**
+DISCRETE puzzle_00009_00005 #
+{1..22}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00009_00005, [1,1,13,13,21,22])
+**VARIABLES**
+DISCRETE puzzle_00009_00007 #
+{13..22}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00009_00007, [13,13,16,16,18,18,20,22])
+**VARIABLES**
+DISCRETE puzzle_00009_00009 #
+{3..23}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00009_00009, [3,3,16,16,20,23])
+**VARIABLES**
+DISCRETE puzzle_00009_00011 #
+{5..23}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00009_00011, [5,6,19,20,23,23])
+**VARIABLES**
+DISCRETE puzzle_00009_00012 #
+{1..22}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00009_00012, [1,1,3,3,16,16,19,19,22,22])
+**VARIABLES**
+DISCRETE puzzle_00009_00013 #
+{3..23}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00009_00013, [3,3,6,6,13,13,18,18,23,23])
+**VARIABLES**
+DISCRETE puzzle_00009_00018 #
+{3..22}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00009_00018, [3,3,19,19,21,22])
+**VARIABLES**
+DISCRETE puzzle_00009_00019 #
+{3..23}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00009_00019, [3,3,6,6,16,16,21,21,23,23])
+**VARIABLES**
+DISCRETE puzzle_00009_00021 #
+{1..22}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00009_00021, [1,1,3,3,5,6,13,13,20,20,22,22])
+**VARIABLES**
+DISCRETE puzzle_00009_00030 #
+{6..18}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00009_00030, [6,6,13,13,16,16,18,18])
+**VARIABLES**
+DISCRETE puzzle_00010_00003 #
+{2..30}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00010_00003, [2,2,14,16,18,18,25,25,28,28,30,30])
+**VARIABLES**
+DISCRETE puzzle_00010_00014 #
+{1..30}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00010_00014, [1,1,3,3,24,24,26,26,28,28,30,30])
+**VARIABLES**
+DISCRETE puzzle_00010_00015 #
+{1..28}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00010_00015, [1,1,14,16,28,28])
+**VARIABLES**
+DISCRETE puzzle_00010_00016 #
+{3..28}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00010_00016, [3,3,14,15,26,26,28,28])
+**VARIABLES**
+DISCRETE puzzle_00010_00017 #
+{14..30}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00010_00017, [14,16,25,26,30,30])
+**VARIABLES**
+DISCRETE puzzle_00010_00019 #
+{3..25}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00010_00019, [3,3,14,14,16,16,25,25])
+**VARIABLES**
+DISCRETE puzzle_00010_00020 #
+{14..26}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00010_00020, [14,14,16,16,25,26])
+**VARIABLES**
+DISCRETE puzzle_00010_00022 #
+{1..30}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00010_00022, [1,3,14,14,16,16,30,30])
+**VARIABLES**
+DISCRETE puzzle_00010_00024 #
+{3..28}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00010_00024, [3,3,16,16,18,18,25,26,28,28])
+**VARIABLES**
+DISCRETE puzzle_00010_00027 #
+{18..28}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00010_00027, [18,18,24,24,28,28])
+**VARIABLES**
+DISCRETE puzzle_00010_00028 #
+{1..25}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00010_00028, [1,2,15,15,18,18,25,25])
+**VARIABLES**
+DISCRETE puzzle_00010_00030 #
+{15..30}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00010_00030, [15,16,18,18,24,24,26,26,28,28,30,30])
+**VARIABLES**
+DISCRETE puzzle_00011_00002 #
+{5..23}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00011_00002, [5,5,7,7,11,11,18,18,23,23])
+**VARIABLES**
+DISCRETE puzzle_00011_00005 #
+{7..29}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00011_00005, [7,7,21,21,25,25,29,29])
+**VARIABLES**
+DISCRETE puzzle_00011_00011 #
+{5..29}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00011_00011, [5,5,14,14,23,23,25,25,29,29])
+**VARIABLES**
+DISCRETE puzzle_00011_00013 #
+{4..30}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00011_00013, [4,4,18,18,23,23,30,30])
+**VARIABLES**
+DISCRETE puzzle_00011_00016 #
+{5..29}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00011_00016, [5,5,11,11,14,14,26,26,29,29])
+**VARIABLES**
+DISCRETE puzzle_00011_00018 #
+{4..29}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00011_00018, [4,4,11,11,14,14,21,21,25,25,29,29])
+**VARIABLES**
+DISCRETE puzzle_00011_00019 #
+{4..25}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00011_00019, [4,4,14,14,21,21,23,23,25,25])
+**VARIABLES**
+DISCRETE puzzle_00011_00022 #
+{4..30}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00011_00022, [4,4,11,11,14,14,30,30])
+**VARIABLES**
+DISCRETE puzzle_00011_00023 #
+{4..25}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00011_00023, [4,4,7,7,14,14,18,18,25,25])
+**VARIABLES**
+DISCRETE puzzle_00011_00025 #
+{4..30}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00011_00025, [4,4,11,11,14,14,21,21,23,23,26,26,30,30])
+**VARIABLES**
+DISCRETE puzzle_00011_00027 #
+{4..23}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00011_00027, [4,4,7,7,11,11,18,18,23,23])
+**VARIABLES**
+DISCRETE puzzle_00011_00029 #
+{23..29}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00011_00029, [23,23,26,26,29,29])
+**VARIABLES**
+DISCRETE puzzle_00012_00004 #
+{1..11}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00012_00004, [1,1,8,9,11,11])
+**VARIABLES**
+DISCRETE puzzle_00012_00008 #
+{8..27}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00012_00008, [8,8,11,11,14,14,23,23,27,27])
+**VARIABLES**
+DISCRETE puzzle_00012_00010 #
+{1..23}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00012_00010, [1,1,4,4,9,9,11,11,14,14,19,19,23,23])
+**VARIABLES**
+DISCRETE puzzle_00012_00011 #
+{8..28}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00012_00011, [8,9,14,14,19,20,23,23,28,28])
+**VARIABLES**
+DISCRETE puzzle_00012_00014 #
+{1..28}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00012_00014, [1,1,4,4,9,9,19,19,26,28])
+**VARIABLES**
+DISCRETE puzzle_00012_00016 #
+{9..28}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00012_00016, [9,9,11,11,14,14,26,26,28,28])
+**VARIABLES**
+DISCRETE puzzle_00012_00017 #
+{14..27}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00012_00017, [14,14,16,16,20,20,26,27])
+**VARIABLES**
+DISCRETE puzzle_00012_00019 #
+{4..27}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00012_00019, [4,4,9,9,14,14,16,16,23,23,27,27])
+**VARIABLES**
+DISCRETE puzzle_00012_00020 #
+{8..27}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00012_00020, [8,8,11,11,14,14,16,16,19,20,23,23,26,27])
+**VARIABLES**
+DISCRETE puzzle_00012_00021 #
+{1..27}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00012_00021, [1,1,9,9,11,11,20,20,27,27])
+**VARIABLES**
+DISCRETE puzzle_00012_00024 #
+{9..28}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00012_00024, [9,9,16,16,19,20,23,23,26,26,28,28])
+**VARIABLES**
+DISCRETE puzzle_00012_00028 #
+{1..23}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00012_00028, [1,1,9,9,20,20,23,23])
+**VARIABLES**
+DISCRETE puzzle_00012_00030 #
+{8..28}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00012_00030, [8,8,16,16,26,26,28,28])
+**VARIABLES**
+DISCRETE puzzle_00013_00001 #
+{1..27}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00013_00001, [1,1,18,21,26,27])
+**VARIABLES**
+DISCRETE puzzle_00013_00004 #
+{1..21}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00013_00004, [1,1,6,6,8,8,15,15,18,18,21,21])
+**VARIABLES**
+DISCRETE puzzle_00013_00007 #
+{18..30}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00013_00007, [18,18,20,21,30,30])
+**VARIABLES**
+DISCRETE puzzle_00013_00011 #
+{6..23}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00013_00011, [6,6,8,8,19,20,23,23])
+**VARIABLES**
+DISCRETE puzzle_00013_00013 #
+{6..30}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00013_00013, [6,6,18,18,23,23,27,27,30,30])
+**VARIABLES**
+DISCRETE puzzle_00013_00014 #
+{1..30}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00013_00014, [1,1,19,19,21,21,26,27,30,30])
+**VARIABLES**
+DISCRETE puzzle_00013_00016 #
+{15..26}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00013_00016, [15,15,26,26])
+**VARIABLES**
+DISCRETE puzzle_00013_00020 #
+{6..27}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00013_00020, [6,6,8,8,19,20,23,23,26,27])
+**VARIABLES**
+DISCRETE puzzle_00013_00024 #
+{18..26}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00013_00024, [18,20,23,23,26,26])
+**VARIABLES**
+DISCRETE puzzle_00013_00025 #
+{6..30}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00013_00025, [6,6,19,19,21,21,23,23,26,26,30,30])
+**VARIABLES**
+DISCRETE puzzle_00013_00027 #
+{6..27}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00013_00027, [6,6,18,19,23,23,27,27])
+**VARIABLES**
+DISCRETE puzzle_00013_00028 #
+{1..23}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00013_00028, [1,1,15,15,18,18,20,20,23,23])
+**VARIABLES**
+DISCRETE puzzle_00014_00004 #
+{17..24}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00014_00004, [17,17,21,21,24,24])
+**VARIABLES**
+DISCRETE puzzle_00014_00009 #
+{3..30}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00014_00009, [3,3,12,12,16,16,21,22,24,24,30,30])
+**VARIABLES**
+DISCRETE puzzle_00014_00012 #
+{3..22}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00014_00012, [3,3,7,7,14,14,16,16,22,22])
+**VARIABLES**
+DISCRETE puzzle_00014_00017 #
+{12..30}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00014_00017, [12,12,14,14,16,17,21,21,30,30])
+**VARIABLES**
+DISCRETE puzzle_00014_00018 #
+{3..22}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00014_00018, [3,4,14,14,21,22])
+**VARIABLES**
+DISCRETE puzzle_00014_00020 #
+{14..22}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00014_00020, [14,14,16,16,22,22])
+**VARIABLES**
+DISCRETE puzzle_00014_00022 #
+{3..30}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00014_00022, [3,4,14,14,16,16,22,22,30,30])
+**VARIABLES**
+DISCRETE puzzle_00014_00024 #
+{3..28}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00014_00024, [3,3,7,7,16,16,28,28])
+**VARIABLES**
+DISCRETE puzzle_00014_00025 #
+{4..30}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00014_00025, [4,4,12,12,14,14,17,17,21,21,30,30])
+**VARIABLES**
+DISCRETE puzzle_00014_00026 #
+{7..30}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00014_00026, [7,7,16,16,30,30])
+**VARIABLES**
+DISCRETE puzzle_00014_00028 #
+{12..17}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00014_00028, [12,12,17,17])
+**VARIABLES**
+DISCRETE puzzle_00014_00029 #
+{3..28}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00014_00029, [3,3,16,16,28,28])
+**VARIABLES**
+DISCRETE puzzle_00015_00001 #
+{12..29}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00015_00001, [12,12,14,14,20,20,24,24,29,29])
+**VARIABLES**
+DISCRETE puzzle_00015_00003 #
+{14..28}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00015_00003, [14,14,25,25,28,28])
+**VARIABLES**
+DISCRETE puzzle_00015_00004 #
+{9..29}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00015_00004, [9,9,24,25,29,29])
+**VARIABLES**
+DISCRETE puzzle_00015_00010 #
+{5..25}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00015_00010, [5,5,9,9,13,14,24,25])
+**VARIABLES**
+DISCRETE puzzle_00015_00011 #
+{5..29}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00015_00011, [5,5,9,9,14,14,20,20,25,25,28,29])
+**VARIABLES**
+DISCRETE puzzle_00015_00015 #
+{5..29}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00015_00015, [5,5,14,14,28,29])
+**VARIABLES**
+DISCRETE puzzle_00015_00018 #
+{14..29}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00015_00018, [14,14,22,22,25,25,29,29])
+**VARIABLES**
+DISCRETE puzzle_00015_00019 #
+{9..25}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00015_00019, [9,9,12,12,14,14,25,25])
+**VARIABLES**
+DISCRETE puzzle_00015_00022 #
+{14..22}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00015_00022, [14,14,20,20,22,22])
+**VARIABLES**
+DISCRETE puzzle_00015_00025 #
+{12..14}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00015_00025, [12,12,14,14])
+**VARIABLES**
+DISCRETE puzzle_00015_00026 #
+{5..29}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00015_00026, [5,5,7,7,9,9,20,20,29,29])
+**VARIABLES**
+DISCRETE puzzle_00015_00028 #
+{5..25}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00015_00028, [5,5,9,9,12,13,20,20,25,25])
+**VARIABLES**
+DISCRETE puzzle_00016_00002 #
+{1..27}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00016_00002, [1,1,8,8,10,10,18,18,23,23,27,27])
+**VARIABLES**
+DISCRETE puzzle_00016_00003 #
+{10..30}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00016_00003, [10,10,14,14,16,16,18,18,23,23,25,25,30,30])
+**VARIABLES**
+DISCRETE puzzle_00016_00008 #
+{8..30}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00016_00008, [8,8,14,14,18,18,22,23,27,27,30,30])
+**VARIABLES**
+DISCRETE puzzle_00016_00010 #
+{1..25}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00016_00010, [1,1,4,4,14,14,18,18,23,23,25,25])
+**VARIABLES**
+DISCRETE puzzle_00016_00014 #
+{1..30}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00016_00014, [1,1,4,4,21,21,27,27,30,30])
+**VARIABLES**
+DISCRETE puzzle_00016_00015 #
+{1..23}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00016_00015, [1,1,4,4,8,8,14,14,16,16,21,21,23,23])
+**VARIABLES**
+DISCRETE puzzle_00016_00016 #
+{14..22}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00016_00016, [14,14,22,22])
+**VARIABLES**
+DISCRETE puzzle_00016_00017 #
+{14..30}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00016_00017, [14,14,16,16,21,21,25,25,27,27,30,30])
+**VARIABLES**
+DISCRETE puzzle_00016_00021 #
+{1..27}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00016_00021, [1,1,22,22,27,27])
+**VARIABLES**
+DISCRETE puzzle_00016_00023 #
+{1..25}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00016_00023, [1,1,4,4,14,14,16,16,18,18,25,25])
+**VARIABLES**
+DISCRETE puzzle_00016_00026 #
+{1..30}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00016_00026, [1,1,16,16,27,27,30,30])
+**VARIABLES**
+DISCRETE puzzle_00016_00027 #
+{4..27}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00016_00027, [4,4,18,18,23,23,27,27])
+**VARIABLES**
+DISCRETE puzzle_00016_00028 #
+{1..25}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00016_00028, [1,1,18,18,23,23,25,25])
+**VARIABLES**
+DISCRETE puzzle_00017_00001 #
+{3..29}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00017_00001, [3,3,11,12,18,19,27,27,29,29])
+**VARIABLES**
+DISCRETE puzzle_00017_00002 #
+{3..27}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00017_00002, [3,3,5,5,11,11,18,18,27,27])
+**VARIABLES**
+DISCRETE puzzle_00017_00004 #
+{6..29}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00017_00004, [6,6,11,11,17,18,25,25,29,29])
+**VARIABLES**
+DISCRETE puzzle_00017_00005 #
+{12..29}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00017_00005, [12,12,22,22,25,25,29,29])
+**VARIABLES**
+DISCRETE puzzle_00017_00006 #
+{3..25}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00017_00006, [3,3,5,5,11,11,18,18,22,22,25,25])
+**VARIABLES**
+DISCRETE puzzle_00017_00008 #
+{3..30}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00017_00008, [3,3,6,6,11,12,18,18,22,22,27,27,30,30])
+**VARIABLES**
+DISCRETE puzzle_00017_00012 #
+{3..29}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00017_00012, [3,3,11,11,19,19,22,22,25,25,29,29])
+**VARIABLES**
+DISCRETE puzzle_00017_00013 #
+{3..30}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00017_00013, [3,3,6,6,17,18,27,27,30,30])
+**VARIABLES**
+DISCRETE puzzle_00017_00014 #
+{3..30}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00017_00014, [3,3,19,19,27,27,30,30])
+**VARIABLES**
+DISCRETE puzzle_00017_00017 #
+{12..30}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00017_00017, [12,12,17,17,25,25,27,27,29,30])
+**VARIABLES**
+DISCRETE puzzle_00017_00018 #
+{3..29}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00017_00018, [3,3,11,11,19,19,22,22,25,25,27,27,29,29])
+**VARIABLES**
+DISCRETE puzzle_00017_00020 #
+{5..27}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00017_00020, [5,6,11,11,19,19,22,22,25,25,27,27])
+**VARIABLES**
+DISCRETE puzzle_00017_00030 #
+{6..30}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00017_00030, [6,6,12,12,17,18,30,30])
+**VARIABLES**
+DISCRETE puzzle_00018_00001 #
+{1..29}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00018_00001, [1,1,3,3,12,12,18,19,21,21,24,24,29,29])
+**VARIABLES**
+DISCRETE puzzle_00018_00007 #
+{12..24}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00018_00007, [12,13,18,18,21,21,24,24])
+**VARIABLES**
+DISCRETE puzzle_00018_00009 #
+{3..25}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00018_00009, [3,3,12,12,21,21,23,25])
+**VARIABLES**
+DISCRETE puzzle_00018_00010 #
+{1..25}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00018_00010, [1,1,13,13,15,15,18,19,23,25])
+**VARIABLES**
+DISCRETE puzzle_00018_00015 #
+{1..29}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00018_00015, [1,1,15,15,19,19,21,21,23,23,29,29])
+**VARIABLES**
+DISCRETE puzzle_00018_00019 #
+{3..25}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00018_00019, [3,3,12,12,21,21,23,23,25,25])
+**VARIABLES**
+DISCRETE puzzle_00018_00020 #
+{19..25}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00018_00020, [19,19,23,23,25,25])
+**VARIABLES**
+DISCRETE puzzle_00018_00023 #
+{1..25}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00018_00023, [1,1,12,12,15,15,18,18,25,25])
+**VARIABLES**
+DISCRETE puzzle_00018_00025 #
+{12..23}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00018_00025, [12,12,19,19,21,21,23,23])
+**VARIABLES**
+DISCRETE puzzle_00018_00026 #
+{1..29}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00018_00026, [1,1,19,19,29,29])
+**VARIABLES**
+DISCRETE puzzle_00018_00029 #
+{1..29}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00018_00029, [1,1,3,3,13,13,15,15,19,19,23,23,29,29])
+**VARIABLES**
+DISCRETE puzzle_00018_00030 #
+{12..24}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00018_00030, [12,13,15,15,18,18,24,24])
+**VARIABLES**
+DISCRETE puzzle_00019_00001 #
+{11..24}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00019_00001, [11,11,14,14,18,18,24,24])
+**VARIABLES**
+DISCRETE puzzle_00019_00003 #
+{14..30}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00019_00003, [14,14,17,18,23,23,25,25,30,30])
+**VARIABLES**
+DISCRETE puzzle_00019_00005 #
+{7..25}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00019_00005, [7,8,22,22,24,25])
+**VARIABLES**
+DISCRETE puzzle_00019_00007 #
+{4..30}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00019_00007, [4,4,11,11,17,18,22,22,24,24,30,30])
+**VARIABLES**
+DISCRETE puzzle_00019_00008 #
+{7..30}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00019_00008, [7,8,11,11,14,14,18,18,22,23,30,30])
+**VARIABLES**
+DISCRETE puzzle_00019_00012 #
+{7..25}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00019_00012, [7,8,11,11,14,14,22,22,25,25])
+**VARIABLES**
+DISCRETE puzzle_00019_00013 #
+{4..30}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00019_00013, [4,4,9,9,17,18,23,24,30,30])
+**VARIABLES**
+DISCRETE puzzle_00019_00014 #
+{4..30}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00019_00014, [4,4,7,7,9,9,24,24,30,30])
+**VARIABLES**
+DISCRETE puzzle_00019_00021 #
+{7..24}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00019_00021, [7,7,9,9,11,11,22,22,24,24])
+**VARIABLES**
+DISCRETE puzzle_00019_00022 #
+{4..30}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00019_00022, [4,4,11,11,14,14,22,22,30,30])
+**VARIABLES**
+DISCRETE puzzle_00019_00023 #
+{4..25}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00019_00023, [4,4,7,7,9,9,14,14,18,18,25,25])
+**VARIABLES**
+DISCRETE puzzle_00019_00025 #
+{4..30}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00019_00025, [4,4,11,11,14,14,17,17,23,23,30,30])
+**VARIABLES**
+DISCRETE puzzle_00019_00028 #
+{9..25}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00019_00028, [9,9,17,18,23,23,25,25])
+**VARIABLES**
+DISCRETE puzzle_00020_00001 #
+{1..29}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00020_00001, [1,1,12,12,19,19,21,21,26,27,29,29])
+**VARIABLES**
+DISCRETE puzzle_00020_00002 #
+{1..28}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00020_00002, [1,1,7,7,13,13,27,28])
+**VARIABLES**
+DISCRETE puzzle_00020_00006 #
+{1..21}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00020_00006, [1,1,21,21])
+**VARIABLES**
+DISCRETE puzzle_00020_00007 #
+{12..21}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00020_00007, [12,13,16,16,21,21])
+**VARIABLES**
+DISCRETE puzzle_00020_00008 #
+{7..27}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00020_00008, [7,7,12,12,27,27])
+**VARIABLES**
+DISCRETE puzzle_00020_00013 #
+{13..27}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00020_00013, [13,13,27,27])
+**VARIABLES**
+DISCRETE puzzle_00020_00015 #
+{1..29}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00020_00015, [1,1,15,16,19,19,21,21,28,29])
+**VARIABLES**
+DISCRETE puzzle_00020_00018 #
+{15..29}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00020_00018, [15,15,19,19,21,21,27,27,29,29])
+**VARIABLES**
+DISCRETE puzzle_00020_00020 #
+{16..27}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00020_00020, [16,16,19,19,26,27])
+**VARIABLES**
+DISCRETE puzzle_00020_00022 #
+{1..16}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00020_00022, [1,1,16,16])
+**VARIABLES**
+DISCRETE puzzle_00020_00023 #
+{1..28}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00020_00023, [1,1,7,7,12,12,15,16,28,28])
+**VARIABLES**
+DISCRETE puzzle_00020_00026 #
+{1..29}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00020_00026, [1,1,7,7,16,16,19,19,26,27,29,29])
+**VARIABLES**
+DISCRETE puzzle_00021_00002 #
+{18..23}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00021_00002, [18,18,23,23])
+**VARIABLES**
+DISCRETE puzzle_00021_00003 #
+{2..23}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00021_00003, [2,2,14,15,17,18,23,23])
+**VARIABLES**
+DISCRETE puzzle_00021_00005 #
+{2..29}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00021_00005, [2,2,15,15,24,24,29,29])
+**VARIABLES**
+DISCRETE puzzle_00021_00007 #
+{4..24}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00021_00007, [4,4,17,18,20,20,24,24])
+**VARIABLES**
+DISCRETE puzzle_00021_00009 #
+{9..24}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00021_00009, [9,9,20,20,23,24])
+**VARIABLES**
+DISCRETE puzzle_00021_00010 #
+{4..24}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00021_00010, [4,4,9,9,14,15,18,19,23,24])
+**VARIABLES**
+DISCRETE puzzle_00021_00012 #
+{2..29}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00021_00012, [2,2,14,14,19,19,26,26,29,29])
+**VARIABLES**
+DISCRETE puzzle_00021_00014 #
+{4..26}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00021_00014, [4,4,9,9,19,19,24,24,26,26])
+**VARIABLES**
+DISCRETE puzzle_00021_00022 #
+{2..20}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00021_00022, [2,2,4,4,14,14,20,20])
+**VARIABLES**
+DISCRETE puzzle_00021_00026 #
+{9..29}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00021_00026, [9,9,19,20,26,26,29,29])
+**VARIABLES**
+DISCRETE puzzle_00021_00028 #
+{2..23}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00021_00028, [2,2,9,9,15,15,17,18,20,20,23,23])
+**VARIABLES**
+DISCRETE puzzle_00021_00029 #
+{2..29}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00021_00029, [2,2,15,15,19,19,23,23,26,26,29,29])
+**VARIABLES**
+DISCRETE puzzle_00021_00030 #
+{15..26}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00021_00030, [15,15,17,18,24,24,26,26])
+**VARIABLES**
+DISCRETE puzzle_00022_00002 #
+{1..27}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00022_00002, [1,1,5,5,7,7,10,10,27,27])
+**VARIABLES**
+DISCRETE puzzle_00022_00008 #
+{7..27}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00022_00008, [7,7,12,12,27,27])
+**VARIABLES**
+DISCRETE puzzle_00022_00010 #
+{1..25}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00022_00010, [1,1,5,5,9,9,15,15,25,25])
+**VARIABLES**
+DISCRETE puzzle_00022_00011 #
+{5..25}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00022_00011, [5,5,9,9,25,25])
+**VARIABLES**
+DISCRETE puzzle_00022_00015 #
+{1..21}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00022_00015, [1,1,5,5,15,16,21,21])
+**VARIABLES**
+DISCRETE puzzle_00022_00016 #
+{5..26}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00022_00016, [5,5,9,9,12,12,15,15,26,26])
+**VARIABLES**
+DISCRETE puzzle_00022_00020 #
+{5..27}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00022_00020, [5,5,16,16,25,27])
+**VARIABLES**
+DISCRETE puzzle_00022_00023 #
+{1..25}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00022_00023, [1,1,7,7,9,9,12,12,15,16,25,25])
+**VARIABLES**
+DISCRETE puzzle_00022_00024 #
+{7..26}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00022_00024, [7,7,9,10,16,16,25,26])
+**VARIABLES**
+DISCRETE puzzle_00022_00025 #
+{2..26}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00022_00025, [2,2,10,10,12,12,21,21,26,26])
+**VARIABLES**
+DISCRETE puzzle_00022_00027 #
+{7..27}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00022_00027, [7,7,9,9,12,12,27,27])
+**VARIABLES**
+DISCRETE puzzle_00022_00028 #
+{1..25}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00022_00028, [1,2,5,5,9,9,12,12,15,15,25,25])
+**VARIABLES**
+DISCRETE puzzle_00022_00029 #
+{1..26}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00022_00029, [1,2,10,10,15,16,26,26])
+**VARIABLES**
+DISCRETE puzzle_00023_00004 #
+{6..25}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00023_00004, [6,6,8,9,11,11,18,18,21,21,25,25])
+**VARIABLES**
+DISCRETE puzzle_00023_00008 #
+{3..22}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00023_00008, [3,3,6,6,8,8,11,11,18,18,22,22])
+**VARIABLES**
+DISCRETE puzzle_00023_00009 #
+{3..25}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00023_00009, [3,3,9,9,21,22,25,25])
+**VARIABLES**
+DISCRETE puzzle_00023_00012 #
+{2..25}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00023_00012, [2,3,8,8,11,11,19,19,22,22,25,25])
+**VARIABLES**
+DISCRETE puzzle_00023_00013 #
+{2..18}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00023_00013, [2,4,6,6,9,9,18,18])
+**VARIABLES**
+DISCRETE puzzle_00023_00014 #
+{3..21}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00023_00014, [3,4,9,9,19,19,21,21])
+**VARIABLES**
+DISCRETE puzzle_00023_00017 #
+{21..25}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00023_00017, [21,21,25,25])
+**VARIABLES**
+DISCRETE puzzle_00023_00018 #
+{3..25}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00023_00018, [3,4,10,11,19,19,21,22,25,25])
+**VARIABLES**
+DISCRETE puzzle_00023_00019 #
+{3..25}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00023_00019, [3,4,6,6,9,10,21,21,25,25])
+**VARIABLES**
+DISCRETE puzzle_00023_00021 #
+{3..22}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00023_00021, [3,3,6,6,9,9,11,11,22,22])
+**VARIABLES**
+DISCRETE puzzle_00023_00022 #
+{2..22}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00023_00022, [2,4,6,6,10,11,22,22])
+**VARIABLES**
+DISCRETE puzzle_00023_00025 #
+{2..21}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00023_00025, [2,2,4,4,6,6,10,11,19,19,21,21])
+**VARIABLES**
+DISCRETE puzzle_00023_00027 #
+{4..19}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00023_00027, [4,4,6,6,9,9,11,11,18,19])
+**VARIABLES**
+DISCRETE puzzle_00024_00001 #
+{1..27}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00024_00001, [1,1,3,3,11,11,18,18,21,21,26,27])
+**VARIABLES**
+DISCRETE puzzle_00024_00002 #
+{1..28}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00024_00002, [1,1,3,3,11,11,18,18,27,28])
+**VARIABLES**
+DISCRETE puzzle_00024_00006 #
+{1..25}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00024_00006, [1,3,11,11,18,18,21,21,25,25])
+**VARIABLES**
+DISCRETE puzzle_00024_00007 #
+{4..30}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00024_00007, [4,4,11,11,18,18,21,21,30,30])
+**VARIABLES**
+DISCRETE puzzle_00024_00009 #
+{3..30}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00024_00009, [3,3,21,21,25,25,27,27,30,30])
+**VARIABLES**
+DISCRETE puzzle_00024_00010 #
+{1..25}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00024_00010, [1,1,4,4,11,11,18,18,25,25])
+**VARIABLES**
+DISCRETE puzzle_00024_00011 #
+{6..28}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00024_00011, [6,6,25,25,28,28])
+**VARIABLES**
+DISCRETE puzzle_00024_00015 #
+{1..28}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00024_00015, [1,1,4,4,21,21,28,28])
+**VARIABLES**
+DISCRETE puzzle_00024_00018 #
+{3..27}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00024_00018, [3,4,11,11,21,21,25,25,27,27])
+**VARIABLES**
+DISCRETE puzzle_00024_00019 #
+{3..27}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00024_00019, [3,4,6,6,21,21,25,25,27,27])
+**VARIABLES**
+DISCRETE puzzle_00024_00021 #
+{1..27}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00024_00021, [1,1,3,3,6,6,11,11,27,27])
+**VARIABLES**
+DISCRETE puzzle_00024_00024 #
+{3..28}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00024_00024, [3,3,18,18,25,26,28,28])
+**VARIABLES**
+DISCRETE puzzle_00024_00030 #
+{6..30}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00024_00030, [6,6,18,18,26,26,28,28,30,30])
+**VARIABLES**
+DISCRETE puzzle_00025_00004 #
+{1..15}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00025_00004, [1,1,6,6,8,9,15,15])
+**VARIABLES**
+DISCRETE puzzle_00025_00005 #
+{1..15}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00025_00005, [1,1,8,8,13,13,15,15])
+**VARIABLES**
+DISCRETE puzzle_00025_00006 #
+{1..23}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00025_00006, [1,1,3,3,8,8,10,10,23,23])
+**VARIABLES**
+DISCRETE puzzle_00025_00007 #
+{13..30}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00025_00007, [13,13,30,30])
+**VARIABLES**
+DISCRETE puzzle_00025_00010 #
+{1..23}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00025_00010, [1,1,9,9,13,13,15,15,19,19,23,23])
+**VARIABLES**
+DISCRETE puzzle_00025_00015 #
+{1..28}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00025_00015, [1,1,8,8,15,15,19,19,23,23,28,28])
+**VARIABLES**
+DISCRETE puzzle_00025_00016 #
+{3..28}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00025_00016, [3,3,9,9,13,13,15,15,28,28])
+**VARIABLES**
+DISCRETE puzzle_00025_00020 #
+{6..23}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00025_00020, [6,6,8,8,19,19,23,23])
+**VARIABLES**
+DISCRETE puzzle_00025_00021 #
+{1..13}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00025_00021, [1,1,3,3,6,6,9,9,13,13])
+**VARIABLES**
+DISCRETE puzzle_00025_00023 #
+{1..28}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00025_00023, [1,1,6,6,9,9,15,15,28,28])
+**VARIABLES**
+DISCRETE puzzle_00025_00024 #
+{3..28}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00025_00024, [3,3,9,10,19,19,23,23,28,28])
+**VARIABLES**
+DISCRETE puzzle_00025_00030 #
+{6..30}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00025_00030, [6,6,8,8,13,13,15,15,28,28,30,30])
+**VARIABLES**
+DISCRETE puzzle_00026_00001 #
+{14..29}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00026_00001, [14,14,21,21,27,27,29,29])
+**VARIABLES**
+DISCRETE puzzle_00026_00002 #
+{7..28}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00026_00002, [7,7,10,10,13,13,23,23,27,28])
+**VARIABLES**
+DISCRETE puzzle_00026_00005 #
+{2..29}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00026_00005, [2,2,7,7,13,13,21,22,25,25,29,29])
+**VARIABLES**
+DISCRETE puzzle_00026_00006 #
+{2..25}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00026_00006, [2,2,10,10,21,23,25,25])
+**VARIABLES**
+DISCRETE puzzle_00026_00014 #
+{7..28}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00026_00014, [7,7,21,21,27,28])
+**VARIABLES**
+DISCRETE puzzle_00026_00015 #
+{14..29}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00026_00015, [14,14,21,21,23,23,28,29])
+**VARIABLES**
+DISCRETE puzzle_00026_00016 #
+{13..29}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00026_00016, [13,14,22,22,28,29])
+**VARIABLES**
+DISCRETE puzzle_00026_00017 #
+{13..29}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00026_00017, [13,14,21,21,25,25,27,27,29,29])
+**VARIABLES**
+DISCRETE puzzle_00026_00019 #
+{6..27}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00026_00019, [6,6,10,10,14,14,21,21,23,23,25,25,27,27])
+**VARIABLES**
+DISCRETE puzzle_00026_00021 #
+{6..29}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00026_00021, [6,7,13,13,22,22,27,27,29,29])
+**VARIABLES**
+DISCRETE puzzle_00026_00027 #
+{6..28}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00026_00027, [6,7,13,13,23,23,27,28])
+**VARIABLES**
+DISCRETE puzzle_00026_00029 #
+{2..29}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00026_00029, [2,2,10,10,13,13,23,23,28,29])
+**VARIABLES**
+DISCRETE puzzle_00026_00030 #
+{6..28}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00026_00030, [6,6,13,13,28,28])
+**VARIABLES**
+DISCRETE puzzle_00027_00005 #
+{1..25}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00027_00005, [1,1,15,15,25,25])
+**VARIABLES**
+DISCRETE puzzle_00027_00007 #
+{16..17}
+DISCRETE puzzle_00027_00008 #
+{6..27}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00027_00008, [6,6,14,14,23,23,27,27])
+**VARIABLES**
+DISCRETE puzzle_00027_00010 #
+{1..25}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00027_00010, [1,1,9,9,14,15,19,19,23,23,25,25])
+**VARIABLES**
+DISCRETE puzzle_00027_00016 #
+{9..28}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00027_00016, [9,9,14,15,28,28])
+**VARIABLES**
+DISCRETE puzzle_00027_00018 #
+{14..27}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00027_00018, [14,15,19,19,25,25,27,27])
+**VARIABLES**
+DISCRETE puzzle_00027_00021 #
+{1..27}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00027_00021, [1,1,6,6,9,9,27,27])
+**VARIABLES**
+DISCRETE puzzle_00027_00022 #
+{1..16}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00027_00022, [1,1,6,6,14,14,16,16])
+**VARIABLES**
+DISCRETE puzzle_00027_00023 #
+{1..28}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00027_00023, [1,1,6,6,9,9,14,16,25,25,28,28])
+**VARIABLES**
+DISCRETE puzzle_00027_00025 #
+{6..23}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00027_00025, [6,6,14,14,17,17,19,19,23,23])
+**VARIABLES**
+DISCRETE puzzle_00027_00027 #
+{6..28}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00027_00027, [6,6,9,9,19,19,23,23,27,28])
+**VARIABLES**
+DISCRETE puzzle_00027_00029 #
+{1..28}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00027_00029, [1,1,15,16,19,19,23,23,28,28])
+**VARIABLES**
+DISCRETE puzzle_00028_00005 #
+{7..29}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00028_00005, [7,7,12,12,25,25,29,29])
+**VARIABLES**
+DISCRETE puzzle_00028_00006 #
+{3..25}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00028_00006, [3,3,10,10,18,18,25,25])
+**VARIABLES**
+DISCRETE puzzle_00028_00009 #
+{3..25}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00028_00009, [3,3,9,9,12,12,20,20,25,25])
+**VARIABLES**
+DISCRETE puzzle_00028_00010 #
+{4..25}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00028_00010, [4,4,9,9,14,14,18,18,25,25])
+**VARIABLES**
+DISCRETE puzzle_00028_00011 #
+{9..29}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00028_00011, [9,9,14,14,17,17,20,20,25,25,29,29])
+**VARIABLES**
+DISCRETE puzzle_00028_00012 #
+{3..29}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00028_00012, [3,3,7,7,14,14,25,25,29,29])
+**VARIABLES**
+DISCRETE puzzle_00028_00018 #
+{3..29}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00028_00018, [3,4,10,10,14,14,25,25,29,29])
+**VARIABLES**
+DISCRETE puzzle_00028_00019 #
+{3..25}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00028_00019, [3,4,9,10,12,12,14,14,17,17,25,25])
+**VARIABLES**
+DISCRETE puzzle_00028_00020 #
+{14..25}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00028_00020, [14,14,20,20,25,25])
+**VARIABLES**
+DISCRETE puzzle_00028_00021 #
+{3..29}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00028_00021, [3,3,7,7,9,9,20,20,29,29])
+**VARIABLES**
+DISCRETE puzzle_00028_00023 #
+{4..25}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00028_00023, [4,4,7,7,9,9,12,12,14,14,18,18,20,20,25,25])
+**VARIABLES**
+DISCRETE puzzle_00028_00029 #
+{3..29}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00028_00029, [3,3,10,10,29,29])
+**VARIABLES**
+DISCRETE puzzle_00029_00002 #
+{3..13}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00029_00002, [3,3,7,8,11,11,13,13])
+**VARIABLES**
+DISCRETE puzzle_00029_00003 #
+{14..17}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00029_00003, [14,14,16,17])
+**VARIABLES**
+DISCRETE puzzle_00029_00004 #
+{6..24}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00029_00004, [6,6,8,8,11,11,17,17,24,24])
+**VARIABLES**
+DISCRETE puzzle_00029_00005 #
+{7..24}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00029_00005, [7,8,12,13,24,24])
+**VARIABLES**
+DISCRETE puzzle_00029_00006 #
+{3..24}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00029_00006, [3,3,8,8,11,11,24,24])
+**VARIABLES**
+DISCRETE puzzle_00029_00007 #
+{11..24}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00029_00007, [11,13,16,17,20,20,24,24])
+**VARIABLES**
+DISCRETE puzzle_00029_00009 #
+{3..24}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00029_00009, [3,3,12,12,16,16,20,20,24,24])
+**VARIABLES**
+DISCRETE puzzle_00029_00010 #
+{11..24}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00029_00010, [11,11,13,14,19,19,24,24])
+**VARIABLES**
+DISCRETE puzzle_00029_00016 #
+{3..14}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00029_00016, [3,3,11,14])
+**VARIABLES**
+DISCRETE puzzle_00029_00026 #
+{6..20}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00029_00026, [6,7,16,16,19,20])
+**VARIABLES**
+DISCRETE puzzle_00029_00028 #
+{12..20}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00029_00028, [12,13,17,17,20,20])
+**VARIABLES**
+DISCRETE puzzle_00029_00029 #
+{3..19}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00029_00029, [3,3,8,8,13,13,16,16,19,19])
+**VARIABLES**
+DISCRETE puzzle_00029_00030 #
+{6..24}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00029_00030, [6,6,8,8,12,13,16,17,24,24])
+**VARIABLES**
+DISCRETE puzzle_00030_00001 #
+{3..24}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00030_00001, [3,3,11,11,19,20,24,24])
+**VARIABLES**
+DISCRETE puzzle_00030_00002 #
+{3..23}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00030_00002, [3,3,11,11,13,13,23,23])
+**VARIABLES**
+DISCRETE puzzle_00030_00005 #
+{13..25}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00030_00005, [13,13,24,25])
+**VARIABLES**
+DISCRETE puzzle_00030_00007 #
+{11..30}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00030_00007, [11,11,13,13,16,16,20,20,24,24,30,30])
+**VARIABLES**
+DISCRETE puzzle_00030_00010 #
+{9..25}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00030_00010, [9,9,11,11,13,13,19,19,23,25])
+**VARIABLES**
+DISCRETE puzzle_00030_00012 #
+{3..25}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00030_00012, [3,3,11,11,16,16,19,19,25,25])
+**VARIABLES**
+DISCRETE puzzle_00030_00015 #
+{16..23}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00030_00015, [16,16,19,19,23,23])
+**VARIABLES**
+DISCRETE puzzle_00030_00017 #
+{13..30}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00030_00017, [13,13,16,16,20,20,25,25,30,30])
+**VARIABLES**
+DISCRETE puzzle_00030_00021 #
+{3..24}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00030_00021, [3,3,6,6,9,9,11,11,13,13,20,20,24,24])
+**VARIABLES**
+DISCRETE puzzle_00030_00024 #
+{3..25}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00030_00024, [3,3,9,9,16,16,19,20,23,23,25,25])
+**VARIABLES**
+DISCRETE puzzle_00030_00028 #
+{9..25}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00030_00028, [9,9,13,13,20,20,23,23,25,25])
+**VARIABLES**
+DISCRETE puzzle_00030_00029 #
+{3..23}
+**CONSTRAINTS**
+w-inintervalset(puzzle_00030_00029, [3,3,13,13,16,16,19,19,23,23])
+**VARIABLES**
+**TUPLELIST**
+start 30 30
+25 14 9 0 0 0 23 20 13 7 30 0 0 6 3 4 8 0 0 29 28 19 0 22 0 0 0 24 0 21 
+9 0 0 0 19 0 6 2 0 26 0 0 28 23 0 18 0 0 30 15 10 25 22 0 20 17 0 16 7 14 
+2 0 24 30 10 0 25 4 0 21 0 0 0 18 22 1 0 9 0 28 0 26 5 17 0 0 0 6 20 7 
+30 25 1 14 9 12 2 0 26 8 0 0 19 17 27 0 0 18 15 0 21 13 0 0 0 0 0 0 24 4 
+0 17 0 19 3 0 7 0 0 2 16 4 0 14 0 25 6 8 0 0 0 0 27 0 28 0 21 26 18 5 
+0 30 0 22 27 0 3 0 2 10 12 15 0 0 0 19 0 13 1 18 16 7 0 0 25 0 20 8 0 0 
+0 15 0 7 16 0 5 0 0 0 0 28 0 0 24 0 4 23 19 21 25 0 0 0 29 12 14 10 30 27 
+0 22 0 0 26 29 0 10 1 28 11 0 7 0 18 23 0 6 13 0 19 0 21 30 0 3 0 4 0 0 
+15 26 0 0 0 7 0 29 0 30 0 0 0 10 12 24 2 0 0 4 0 27 8 11 9 25 17 28 14 0 
+8 12 0 13 5 19 29 9 10 6 22 23 21 0 0 0 0 20 0 0 17 0 11 0 7 4 0 0 27 0 
+16 0 6 3 0 28 8 24 17 22 0 27 0 2 20 0 1 0 0 13 15 0 0 12 0 10 0 19 0 9 
+17 21 7 0 6 15 10 0 18 0 0 13 25 0 30 0 0 5 0 0 0 29 2 0 24 22 3 0 12 0 
+0 2 29 0 4 14 0 16 11 3 0 5 0 0 13 0 9 17 7 0 12 28 10 0 0 24 0 0 22 25 
+23 20 27 0 18 9 1 19 0 29 26 0 5 25 6 10 0 0 8 0 2 0 13 0 0 0 15 0 0 11 
+0 19 0 0 23 26 27 15 4 0 0 10 16 11 0 6 18 0 0 2 30 0 17 1 0 0 8 0 21 3 
+28 0 0 5 17 20 19 0 15 0 3 12 26 0 0 0 0 2 24 7 0 9 0 6 13 0 0 0 11 29 
+0 0 8 0 0 0 28 0 7 20 21 0 0 0 9 16 0 0 2 0 26 24 23 13 1 15 10 14 4 0 
+0 9 22 28 11 27 0 17 0 0 10 6 8 20 0 2 7 16 0 0 14 5 0 4 0 0 26 30 0 0 
+0 16 0 27 0 13 0 0 29 12 2 0 0 0 10 20 19 26 28 3 0 0 0 15 0 21 5 0 6 1 
+0 0 20 10 14 0 0 0 6 17 24 9 0 8 0 30 5 0 18 0 4 0 0 2 3 0 22 11 25 23 
+5 0 0 12 0 6 0 28 0 0 13 0 1 0 11 27 10 7 22 30 8 0 3 21 16 0 25 0 0 0 
+6 0 4 23 30 17 14 0 19 0 0 24 29 13 0 0 3 28 20 0 18 8 0 0 0 11 0 0 0 22 
+13 24 12 0 28 16 26 0 0 27 15 0 0 0 7 17 0 0 0 1 0 0 30 14 0 23 0 29 5 20 
+0 0 19 16 20 0 0 13 0 0 0 17 22 5 0 8 23 0 0 10 0 12 24 0 15 14 29 7 9 0 
+7 4 5 0 0 0 0 25 14 0 18 20 12 29 0 0 11 24 26 0 0 21 0 0 27 2 16 22 17 0 
+0 0 11 20 0 0 9 26 5 16 4 30 15 0 0 0 0 1 0 12 0 17 19 24 8 18 0 3 0 0 
+10 29 3 4 0 30 0 0 8 0 7 18 20 12 26 0 22 0 11 24 0 0 0 5 0 13 0 21 0 2 
+22 6 13 26 0 0 15 1 0 0 0 0 11 16 2 21 24 0 0 0 0 23 0 8 5 28 30 27 0 19 
+4 0 0 0 0 0 0 5 0 0 1 21 10 22 25 0 28 30 29 9 23 15 26 27 18 0 2 0 0 0 
+0 0 26 2 0 4 0 21 28 0 27 0 14 15 0 7 0 12 5 17 0 18 29 0 22 8 1 0 0 10 
+**VARIABLES**
+ALIAS start[30,30]=[[25, 14, 9, 0, 0, 0, 23, 20, 13, 7, 30, 0, 0, 6, 3, 4, 8, 0, 0, 29, 28, 19, 0, 22, 0, 0, 0, 24, 0, 21], [9, 0, 0, 0, 19, 0, 6, 2, 0, 26, 0, 0, 28, 23, 0, 18, 0, 0, 30, 15, 10, 25, 22, 0, 20, 17, 0, 16, 7, 14], [2, 0, 24, 30, 10, 0, 25, 4, 0, 21, 0, 0, 0, 18, 22, 1, 0, 9, 0, 28, 0, 26, 5, 17, 0, 0, 0, 6, 20, 7], [30, 25, 1, 14, 9, 12, 2, 0, 26, 8, 0, 0, 19, 17, 27, 0, 0, 18, 15, 0, 21, 13, 0, 0, 0, 0, 0, 0, 24, 4], [0, 17, 0, 19, 3, 0, 7, 0, 0, 2, 16, 4, 0, 14, 0, 25, 6, 8, 0, 0, 0, 0, 27, 0, 28, 0, 21, 26, 18, 5], [0, 30, 0, 22, 27, 0, 3, 0, 2, 10, 12, 15, 0, 0, 0, 19, 0, 13, 1, 18, 16, 7, 0, 0, 25, 0, 20, 8, 0, 0], [0, 15, 0, 7, 16, 0, 5, 0, 0, 0, 0, 28, 0, 0, 24, 0, 4, 23, 19, 21, 25, 0, 0, 0, 29, 12, 14, 10, 30, 27], [0, 22, 0, 0, 26, 29, 0, 10, 1, 28, 11, 0, 7, 0, 18, 23, 0, 6, 13, 0, 19, 0, 21, 30, 0, 3, 0, 4, 0, 0], [15, 26, 0, 0, 0, 7, 0, 29, 0, 30, 0, 0, 0, 10, 12, 24, 2, 0, 0, 4, 0, 27, 8, 11, 9, 25, 17, 28, 14, 0], [8, 12, 0, 13, 5, 19, 29, 9, 10, 6, 22, 23, 21, 0, 0, 0, 0, 20, 0, 0, 17, 0, 11, 0, 7, 4, 0, 0, 27, 0], [16, 0, 6, 3, 0, 28, 8, 24, 17, 22, 0, 27, 0, 2, 20, 0, 1, 0, 0, 13, 15, 0, 0, 12, 0, 10, 0, 19, 0, 9], [17, 21, 7, 0, 6, 15, 10, 0, 18, 0, 0, 13, 25, 0, 30, 0, 0, 5, 0, 0, 0, 29, 2, 0, 24, 22, 3, 0, 12, 0], [0, 2, 29, 0, 4, 14, 0, 16, 11, 3, 0, 5, 0, 0, 13, 0, 9, 17, 7, 0, 12, 28, 10, 0, 0, 24, 0, 0, 22, 25], [23, 20, 27, 0, 18, 9, 1, 19, 0, 29, 26, 0, 5, 25, 6, 10, 0, 0, 8, 0, 2, 0, 13, 0, 0, 0, 15, 0, 0, 11], [0, 19, 0, 0, 23, 26, 27, 15, 4, 0, 0, 10, 16, 11, 0, 6, 18, 0, 0, 2, 30, 0, 17, 1, 0, 0, 8, 0, 21, 3], [28, 0, 0, 5, 17, 20, 19, 0, 15, 0, 3, 12, 26, 0, 0, 0, 0, 2, 24, 7, 0, 9, 0, 6, 13, 0, 0, 0, 11, 29], [0, 0, 8, 0, 0, 0, 28, 0, 7, 20, 21, 0, 0, 0, 9, 16, 0, 0, 2, 0, 26, 24, 23, 13, 1, 15, 10, 14, 4, 0], [0, 9, 22, 28, 11, 27, 0, 17, 0, 0, 10, 6, 8, 20, 0, 2, 7, 16, 0, 0, 14, 5, 0, 4, 0, 0, 26, 30, 0, 0], [0, 16, 0, 27, 0, 13, 0, 0, 29, 12, 2, 0, 0, 0, 10, 20, 19, 26, 28, 3, 0, 0, 0, 15, 0, 21, 5, 0, 6, 1], [0, 0, 20, 10, 14, 0, 0, 0, 6, 17, 24, 9, 0, 8, 0, 30, 5, 0, 18, 0, 4, 0, 0, 2, 3, 0, 22, 11, 25, 23], [5, 0, 0, 12, 0, 6, 0, 28, 0, 0, 13, 0, 1, 0, 11, 27, 10, 7, 22, 30, 8, 0, 3, 21, 16, 0, 25, 0, 0, 0], [6, 0, 4, 23, 30, 17, 14, 0, 19, 0, 0, 24, 29, 13, 0, 0, 3, 28, 20, 0, 18, 8, 0, 0, 0, 11, 0, 0, 0, 22], [13, 24, 12, 0, 28, 16, 26, 0, 0, 27, 15, 0, 0, 0, 7, 17, 0, 0, 0, 1, 0, 0, 30, 14, 0, 23, 0, 29, 5, 20], [0, 0, 19, 16, 20, 0, 0, 13, 0, 0, 0, 17, 22, 5, 0, 8, 23, 0, 0, 10, 0, 12, 24, 0, 15, 14, 29, 7, 9, 0], [7, 4, 5, 0, 0, 0, 0, 25, 14, 0, 18, 20, 12, 29, 0, 0, 11, 24, 26, 0, 0, 21, 0, 0, 27, 2, 16, 22, 17, 0], [0, 0, 11, 20, 0, 0, 9, 26, 5, 16, 4, 30, 15, 0, 0, 0, 0, 1, 0, 12, 0, 17, 19, 24, 8, 18, 0, 3, 0, 0], [10, 29, 3, 4, 0, 30, 0, 0, 8, 0, 7, 18, 20, 12, 26, 0, 22, 0, 11, 24, 0, 0, 0, 5, 0, 13, 0, 21, 0, 2], [22, 6, 13, 26, 0, 0, 15, 1, 0, 0, 0, 0, 11, 16, 2, 21, 24, 0, 0, 0, 0, 23, 0, 8, 5, 28, 30, 27, 0, 19], [4, 0, 0, 0, 0, 0, 0, 5, 0, 0, 1, 21, 10, 22, 25, 0, 28, 30, 29, 9, 23, 15, 26, 27, 18, 0, 2, 0, 0, 0], [0, 0, 26, 2, 0, 4, 0, 21, 28, 0, 27, 0, 14, 15, 0, 7, 0, 12, 5, 17, 0, 18, 29, 0, 22, 8, 1, 0, 0, 10]]
+**SEARCH**
+PRINT[[puzzle_00001_00004],[puzzle_00001_00005],[puzzle_00001_00006],[puzzle_00001_00012],[puzzle_00001_00013],[puzzle_00001_00018],[puzzle_00001_00019],[puzzle_00001_00023],[puzzle_00001_00025],[puzzle_00001_00026],[puzzle_00001_00027],[puzzle_00001_00029],[puzzle_00002_00002],[puzzle_00002_00004],[puzzle_00002_00006],[puzzle_00002_00009],[puzzle_00002_00011],[puzzle_00002_00012],[puzzle_00002_00015],[puzzle_00002_00017],[puzzle_00002_00018],[puzzle_00002_00024],[puzzle_00002_00027],[puzzle_00003_00002],[puzzle_00003_00006],[puzzle_00003_00009],[puzzle_00003_00011],[puzzle_00003_00012],[puzzle_00003_00013],[puzzle_00003_00017],[puzzle_00003_00019],[puzzle_00003_00021],[puzzle_00003_00025],[puzzle_00003_00026],[puzzle_00003_00027],[puzzle_00004_00008],[puzzle_00004_00011],[puzzle_00004_00012],[puzzle_00004_00016],[puzzle_00004_00017],[puzzle_00004_00020],[puzzle_00004_00023],[puzzle_00004_00024],[puzzle_00004_00025],[puzzle_00004_00026],[puzzle_00004_00027],[puzzle_00004_00028],[puzzle_00005_00001],[puzzle_00005_00003],[puzzle_00005_00006],[puzzle_00005_00008],[puzzle_00005_00009],[puzzle_00005_00013],[puzzle_00005_00015],[puzzle_00005_00019],[puzzle_00005_00020],[puzzle_00005_00021],[puzzle_00005_00022],[puzzle_00005_00024],[puzzle_00005_00026],[puzzle_00006_00001],[puzzle_00006_00003],[puzzle_00006_00006],[puzzle_00006_00008],[puzzle_00006_00013],[puzzle_00006_00014],[puzzle_00006_00015],[puzzle_00006_00017],[puzzle_00006_00023],[puzzle_00006_00024],[puzzle_00006_00026],[puzzle_00006_00029],[puzzle_00006_00030],[puzzle_00007_00001],[puzzle_00007_00003],[puzzle_00007_00006],[puzzle_00007_00008],[puzzle_00007_00009],[puzzle_00007_00010],[puzzle_00007_00011],[puzzle_00007_00013],[puzzle_00007_00014],[puzzle_00007_00016],[puzzle_00007_00022],[puzzle_00007_00023],[puzzle_00007_00024],[puzzle_00008_00001],[puzzle_00008_00003],[puzzle_00008_00004],[puzzle_00008_00007],[puzzle_00008_00012],[puzzle_00008_00014],[puzzle_00008_00017],[puzzle_00008_00020],[puzzle_00008_00022],[puzzle_00008_00025],[puzzle_00008_00027],[puzzle_00008_00029],[puzzle_00008_00030],[puzzle_00009_00003],[puzzle_00009_00004],[puzzle_00009_00005],[puzzle_00009_00007],[puzzle_00009_00009],[puzzle_00009_00011],[puzzle_00009_00012],[puzzle_00009_00013],[puzzle_00009_00018],[puzzle_00009_00019],[puzzle_00009_00021],[puzzle_00009_00030],[puzzle_00010_00003],[puzzle_00010_00014],[puzzle_00010_00015],[puzzle_00010_00016],[puzzle_00010_00017],[puzzle_00010_00019],[puzzle_00010_00020],[puzzle_00010_00022],[puzzle_00010_00024],[puzzle_00010_00027],[puzzle_00010_00028],[puzzle_00010_00030],[puzzle_00011_00002],[puzzle_00011_00005],[puzzle_00011_00011],[puzzle_00011_00013],[puzzle_00011_00016],[puzzle_00011_00018],[puzzle_00011_00019],[puzzle_00011_00022],[puzzle_00011_00023],[puzzle_00011_00025],[puzzle_00011_00027],[puzzle_00011_00029],[puzzle_00012_00004],[puzzle_00012_00008],[puzzle_00012_00010],[puzzle_00012_00011],[puzzle_00012_00014],[puzzle_00012_00016],[puzzle_00012_00017],[puzzle_00012_00019],[puzzle_00012_00020],[puzzle_00012_00021],[puzzle_00012_00024],[puzzle_00012_00028],[puzzle_00012_00030],[puzzle_00013_00001],[puzzle_00013_00004],[puzzle_00013_00007],[puzzle_00013_00011],[puzzle_00013_00013],[puzzle_00013_00014],[puzzle_00013_00016],[puzzle_00013_00020],[puzzle_00013_00024],[puzzle_00013_00025],[puzzle_00013_00027],[puzzle_00013_00028],[puzzle_00014_00004],[puzzle_00014_00009],[puzzle_00014_00012],[puzzle_00014_00017],[puzzle_00014_00018],[puzzle_00014_00020],[puzzle_00014_00022],[puzzle_00014_00024],[puzzle_00014_00025],[puzzle_00014_00026],[puzzle_00014_00028],[puzzle_00014_00029],[puzzle_00015_00001],[puzzle_00015_00003],[puzzle_00015_00004],[puzzle_00015_00010],[puzzle_00015_00011],[puzzle_00015_00015],[puzzle_00015_00018],[puzzle_00015_00019],[puzzle_00015_00022],[puzzle_00015_00025],[puzzle_00015_00026],[puzzle_00015_00028],[puzzle_00016_00002],[puzzle_00016_00003],[puzzle_00016_00008],[puzzle_00016_00010],[puzzle_00016_00014],[puzzle_00016_00015],[puzzle_00016_00016],[puzzle_00016_00017],[puzzle_00016_00021],[puzzle_00016_00023],[puzzle_00016_00026],[puzzle_00016_00027],[puzzle_00016_00028],[puzzle_00017_00001],[puzzle_00017_00002],[puzzle_00017_00004],[puzzle_00017_00005],[puzzle_00017_00006],[puzzle_00017_00008],[puzzle_00017_00012],[puzzle_00017_00013],[puzzle_00017_00014],[puzzle_00017_00017],[puzzle_00017_00018],[puzzle_00017_00020],[puzzle_00017_00030],[puzzle_00018_00001],[puzzle_00018_00007],[puzzle_00018_00009],[puzzle_00018_00010],[puzzle_00018_00015],[puzzle_00018_00019],[puzzle_00018_00020],[puzzle_00018_00023],[puzzle_00018_00025],[puzzle_00018_00026],[puzzle_00018_00029],[puzzle_00018_00030],[puzzle_00019_00001],[puzzle_00019_00003],[puzzle_00019_00005],[puzzle_00019_00007],[puzzle_00019_00008],[puzzle_00019_00012],[puzzle_00019_00013],[puzzle_00019_00014],[puzzle_00019_00021],[puzzle_00019_00022],[puzzle_00019_00023],[puzzle_00019_00025],[puzzle_00019_00028],[puzzle_00020_00001],[puzzle_00020_00002],[puzzle_00020_00006],[puzzle_00020_00007],[puzzle_00020_00008],[puzzle_00020_00013],[puzzle_00020_00015],[puzzle_00020_00018],[puzzle_00020_00020],[puzzle_00020_00022],[puzzle_00020_00023],[puzzle_00020_00026],[puzzle_00021_00002],[puzzle_00021_00003],[puzzle_00021_00005],[puzzle_00021_00007],[puzzle_00021_00009],[puzzle_00021_00010],[puzzle_00021_00012],[puzzle_00021_00014],[puzzle_00021_00022],[puzzle_00021_00026],[puzzle_00021_00028],[puzzle_00021_00029],[puzzle_00021_00030],[puzzle_00022_00002],[puzzle_00022_00008],[puzzle_00022_00010],[puzzle_00022_00011],[puzzle_00022_00015],[puzzle_00022_00016],[puzzle_00022_00020],[puzzle_00022_00023],[puzzle_00022_00024],[puzzle_00022_00025],[puzzle_00022_00027],[puzzle_00022_00028],[puzzle_00022_00029],[puzzle_00023_00004],[puzzle_00023_00008],[puzzle_00023_00009],[puzzle_00023_00012],[puzzle_00023_00013],[puzzle_00023_00014],[puzzle_00023_00017],[puzzle_00023_00018],[puzzle_00023_00019],[puzzle_00023_00021],[puzzle_00023_00022],[puzzle_00023_00025],[puzzle_00023_00027],[puzzle_00024_00001],[puzzle_00024_00002],[puzzle_00024_00006],[puzzle_00024_00007],[puzzle_00024_00009],[puzzle_00024_00010],[puzzle_00024_00011],[puzzle_00024_00015],[puzzle_00024_00018],[puzzle_00024_00019],[puzzle_00024_00021],[puzzle_00024_00024],[puzzle_00024_00030],[puzzle_00025_00004],[puzzle_00025_00005],[puzzle_00025_00006],[puzzle_00025_00007],[puzzle_00025_00010],[puzzle_00025_00015],[puzzle_00025_00016],[puzzle_00025_00020],[puzzle_00025_00021],[puzzle_00025_00023],[puzzle_00025_00024],[puzzle_00025_00030],[puzzle_00026_00001],[puzzle_00026_00002],[puzzle_00026_00005],[puzzle_00026_00006],[puzzle_00026_00014],[puzzle_00026_00015],[puzzle_00026_00016],[puzzle_00026_00017],[puzzle_00026_00019],[puzzle_00026_00021],[puzzle_00026_00027],[puzzle_00026_00029],[puzzle_00026_00030],[puzzle_00027_00005],[puzzle_00027_00007],[puzzle_00027_00008],[puzzle_00027_00010],[puzzle_00027_00016],[puzzle_00027_00018],[puzzle_00027_00021],[puzzle_00027_00022],[puzzle_00027_00023],[puzzle_00027_00025],[puzzle_00027_00027],[puzzle_00027_00029],[puzzle_00028_00005],[puzzle_00028_00006],[puzzle_00028_00009],[puzzle_00028_00010],[puzzle_00028_00011],[puzzle_00028_00012],[puzzle_00028_00018],[puzzle_00028_00019],[puzzle_00028_00020],[puzzle_00028_00021],[puzzle_00028_00023],[puzzle_00028_00029],[puzzle_00029_00002],[puzzle_00029_00003],[puzzle_00029_00004],[puzzle_00029_00005],[puzzle_00029_00006],[puzzle_00029_00007],[puzzle_00029_00009],[puzzle_00029_00010],[puzzle_00029_00016],[puzzle_00029_00026],[puzzle_00029_00028],[puzzle_00029_00029],[puzzle_00029_00030],[puzzle_00030_00001],[puzzle_00030_00002],[puzzle_00030_00005],[puzzle_00030_00007],[puzzle_00030_00010],[puzzle_00030_00012],[puzzle_00030_00015],[puzzle_00030_00017],[puzzle_00030_00021],[puzzle_00030_00024],[puzzle_00030_00028],[puzzle_00030_00029]]
+**CONSTRAINTS**
+gacalldiff([puzzle_00024_00010, puzzle_00016_00010, puzzle_00029_00010, puzzle_00012_00010, puzzle_00025_00010, puzzle_00021_00010, puzzle_00018_00010, puzzle_00030_00010, puzzle_00022_00010, puzzle_00027_00010, puzzle_00015_00010, puzzle_00007_00010, puzzle_00028_00010])
+gacalldiff([puzzle_00022_00002, puzzle_00022_00008, puzzle_00022_00010, puzzle_00022_00011, puzzle_00022_00015, puzzle_00022_00016, puzzle_00022_00020, puzzle_00022_00023, puzzle_00022_00024, puzzle_00022_00025, puzzle_00022_00027, puzzle_00022_00028, puzzle_00022_00029])
+gacalldiff([puzzle_00024_00007, puzzle_00008_00007, puzzle_00029_00007, puzzle_00020_00007, puzzle_00025_00007, puzzle_00009_00007, puzzle_00021_00007, puzzle_00013_00007, puzzle_00018_00007, puzzle_00030_00007, puzzle_00027_00007, puzzle_00019_00007])
+gacalldiff([puzzle_00011_00022, puzzle_00008_00022, puzzle_00020_00022, puzzle_00021_00022, puzzle_00005_00022, puzzle_00014_00022, puzzle_00027_00022, puzzle_00019_00022, puzzle_00010_00022, puzzle_00023_00022, puzzle_00015_00022, puzzle_00007_00022])
+gacalldiff([puzzle_00003_00026, puzzle_00016_00026, puzzle_00029_00026, puzzle_00020_00026, puzzle_00004_00026, puzzle_00021_00026, puzzle_00005_00026, puzzle_00018_00026, puzzle_00001_00026, puzzle_00014_00026, puzzle_00006_00026, puzzle_00015_00026])
+gacalldiff([puzzle_00011_00023, puzzle_00016_00023, puzzle_00020_00023, puzzle_00004_00023, puzzle_00025_00023, puzzle_00018_00023, puzzle_00001_00023, puzzle_00022_00023, puzzle_00006_00023, puzzle_00027_00023, puzzle_00019_00023, puzzle_00007_00023, puzzle_00028_00023])
+gacalldiff([puzzle_00020_00001, puzzle_00020_00002, puzzle_00020_00006, puzzle_00020_00007, puzzle_00020_00008, puzzle_00020_00013, puzzle_00020_00015, puzzle_00020_00018, puzzle_00020_00020, puzzle_00020_00022, puzzle_00020_00023, puzzle_00020_00026])
+gacalldiff([puzzle_00008_00020, puzzle_00020_00020, puzzle_00012_00020, puzzle_00004_00020, puzzle_00025_00020, puzzle_00017_00020, puzzle_00013_00020, puzzle_00005_00020, puzzle_00018_00020, puzzle_00022_00020, puzzle_00014_00020, puzzle_00010_00020, puzzle_00028_00020])
+gacalldiff([puzzle_00025_00004, puzzle_00025_00005, puzzle_00025_00006, puzzle_00025_00007, puzzle_00025_00010, puzzle_00025_00015, puzzle_00025_00016, puzzle_00025_00020, puzzle_00025_00021, puzzle_00025_00023, puzzle_00025_00024, puzzle_00025_00030])
+gacalldiff([puzzle_00027_00005, puzzle_00027_00007, puzzle_00027_00008, puzzle_00027_00010, puzzle_00027_00016, puzzle_00027_00018, puzzle_00027_00021, puzzle_00027_00022, puzzle_00027_00023, puzzle_00027_00025, puzzle_00027_00027, puzzle_00027_00029])
+gacalldiff([puzzle_00011_00025, puzzle_00003_00025, puzzle_00008_00025, puzzle_00004_00025, puzzle_00013_00025, puzzle_00018_00025, puzzle_00001_00025, puzzle_00022_00025, puzzle_00014_00025, puzzle_00027_00025, puzzle_00019_00025, puzzle_00023_00025, puzzle_00015_00025])
+gacalldiff([puzzle_00017_00001, puzzle_00017_00002, puzzle_00017_00004, puzzle_00017_00005, puzzle_00017_00006, puzzle_00017_00008, puzzle_00017_00012, puzzle_00017_00013, puzzle_00017_00014, puzzle_00017_00017, puzzle_00017_00018, puzzle_00017_00020, puzzle_00017_00030])
+gacalldiff([puzzle_00011_00002, puzzle_00003_00002, puzzle_00024_00002, puzzle_00016_00002, puzzle_00029_00002, puzzle_00020_00002, puzzle_00017_00002, puzzle_00021_00002, puzzle_00026_00002, puzzle_00030_00002, puzzle_00022_00002, puzzle_00002_00002])
+gacalldiff([puzzle_00018_00001, puzzle_00018_00007, puzzle_00018_00009, puzzle_00018_00010, puzzle_00018_00015, puzzle_00018_00019, puzzle_00018_00020, puzzle_00018_00023, puzzle_00018_00025, puzzle_00018_00026, puzzle_00018_00029, puzzle_00018_00030])
+gacalldiff([puzzle_00024_00015, puzzle_00016_00015, puzzle_00020_00015, puzzle_00025_00015, puzzle_00005_00015, puzzle_00026_00015, puzzle_00018_00015, puzzle_00030_00015, puzzle_00022_00015, puzzle_00006_00015, puzzle_00010_00015, puzzle_00002_00015, puzzle_00015_00015])
+gacalldiff([puzzle_00011_00013, puzzle_00003_00013, puzzle_00020_00013, puzzle_00017_00013, puzzle_00009_00013, puzzle_00013_00013, puzzle_00005_00013, puzzle_00001_00013, puzzle_00006_00013, puzzle_00019_00013, puzzle_00023_00013, puzzle_00007_00013])
+gacalldiff([puzzle_00008_00001, puzzle_00008_00003, puzzle_00008_00004, puzzle_00008_00007, puzzle_00008_00012, puzzle_00008_00014, puzzle_00008_00017, puzzle_00008_00020, puzzle_00008_00022, puzzle_00008_00025, puzzle_00008_00027, puzzle_00008_00029, puzzle_00008_00030])
+gacalldiff([puzzle_00016_00028, puzzle_00029_00028, puzzle_00012_00028, puzzle_00004_00028, puzzle_00021_00028, puzzle_00013_00028, puzzle_00030_00028, puzzle_00022_00028, puzzle_00014_00028, puzzle_00019_00028, puzzle_00010_00028, puzzle_00015_00028])
+gacalldiff([puzzle_00003_00017, puzzle_00016_00017, puzzle_00008_00017, puzzle_00012_00017, puzzle_00004_00017, puzzle_00017_00017, puzzle_00026_00017, puzzle_00030_00017, puzzle_00014_00017, puzzle_00006_00017, puzzle_00010_00017, puzzle_00002_00017, puzzle_00023_00017])
+gacalldiff([puzzle_00003_00012, puzzle_00008_00012, puzzle_00004_00012, puzzle_00017_00012, puzzle_00009_00012, puzzle_00021_00012, puzzle_00001_00012, puzzle_00030_00012, puzzle_00014_00012, puzzle_00019_00012, puzzle_00002_00012, puzzle_00023_00012, puzzle_00028_00012])
+gacalldiff([puzzle_00009_00003, puzzle_00009_00004, puzzle_00009_00005, puzzle_00009_00007, puzzle_00009_00009, puzzle_00009_00011, puzzle_00009_00012, puzzle_00009_00013, puzzle_00009_00018, puzzle_00009_00019, puzzle_00009_00021, puzzle_00009_00030])
+gacalldiff([puzzle_00005_00001, puzzle_00005_00003, puzzle_00005_00006, puzzle_00005_00008, puzzle_00005_00009, puzzle_00005_00013, puzzle_00005_00015, puzzle_00005_00019, puzzle_00005_00020, puzzle_00005_00021, puzzle_00005_00022, puzzle_00005_00024, puzzle_00005_00026])
+gacalldiff([puzzle_00026_00001, puzzle_00026_00002, puzzle_00026_00005, puzzle_00026_00006, puzzle_00026_00014, puzzle_00026_00015, puzzle_00026_00016, puzzle_00026_00017, puzzle_00026_00019, puzzle_00026_00021, puzzle_00026_00027, puzzle_00026_00029, puzzle_00026_00030])
+gacalldiff([puzzle_00024_00001, puzzle_00024_00002, puzzle_00024_00006, puzzle_00024_00007, puzzle_00024_00009, puzzle_00024_00010, puzzle_00024_00011, puzzle_00024_00015, puzzle_00024_00018, puzzle_00024_00019, puzzle_00024_00021, puzzle_00024_00024, puzzle_00024_00030])
+gacalldiff([puzzle_00011_00005, puzzle_00029_00005, puzzle_00025_00005, puzzle_00017_00005, puzzle_00009_00005, puzzle_00021_00005, puzzle_00026_00005, puzzle_00001_00005, puzzle_00030_00005, puzzle_00027_00005, puzzle_00019_00005, puzzle_00028_00005])
+gacalldiff([puzzle_00002_00002, puzzle_00002_00004, puzzle_00002_00006, puzzle_00002_00009, puzzle_00002_00011, puzzle_00002_00012, puzzle_00002_00015, puzzle_00002_00017, puzzle_00002_00018, puzzle_00002_00024, puzzle_00002_00027])
+gacalldiff([puzzle_00010_00003, puzzle_00010_00014, puzzle_00010_00015, puzzle_00010_00016, puzzle_00010_00017, puzzle_00010_00019, puzzle_00010_00020, puzzle_00010_00022, puzzle_00010_00024, puzzle_00010_00027, puzzle_00010_00028, puzzle_00010_00030])
+gacalldiff([puzzle_00011_00018, puzzle_00024_00018, puzzle_00020_00018, puzzle_00017_00018, puzzle_00009_00018, puzzle_00001_00018, puzzle_00014_00018, puzzle_00027_00018, puzzle_00002_00018, puzzle_00023_00018, puzzle_00015_00018, puzzle_00028_00018])
+gacalldiff([puzzle_00016_00014, puzzle_00008_00014, puzzle_00012_00014, puzzle_00017_00014, puzzle_00021_00014, puzzle_00013_00014, puzzle_00026_00014, puzzle_00006_00014, puzzle_00019_00014, puzzle_00010_00014, puzzle_00023_00014, puzzle_00007_00014])
+gacalldiff([puzzle_00029_00002, puzzle_00029_00003, puzzle_00029_00004, puzzle_00029_00005, puzzle_00029_00006, puzzle_00029_00007, puzzle_00029_00009, puzzle_00029_00010, puzzle_00029_00016, puzzle_00029_00026, puzzle_00029_00028, puzzle_00029_00029, puzzle_00029_00030])
+gacalldiff([puzzle_00001_00004, puzzle_00001_00005, puzzle_00001_00006, puzzle_00001_00012, puzzle_00001_00013, puzzle_00001_00018, puzzle_00001_00019, puzzle_00001_00023, puzzle_00001_00025, puzzle_00001_00026, puzzle_00001_00027, puzzle_00001_00029])
+gacalldiff([puzzle_00016_00003, puzzle_00008_00003, puzzle_00029_00003, puzzle_00009_00003, puzzle_00021_00003, puzzle_00005_00003, puzzle_00006_00003, puzzle_00019_00003, puzzle_00010_00003, puzzle_00015_00003, puzzle_00007_00003])
+gacalldiff([puzzle_00011_00002, puzzle_00011_00005, puzzle_00011_00011, puzzle_00011_00013, puzzle_00011_00016, puzzle_00011_00018, puzzle_00011_00019, puzzle_00011_00022, puzzle_00011_00023, puzzle_00011_00025, puzzle_00011_00027, puzzle_00011_00029])
+gacalldiff([puzzle_00019_00001, puzzle_00019_00003, puzzle_00019_00005, puzzle_00019_00007, puzzle_00019_00008, puzzle_00019_00012, puzzle_00019_00013, puzzle_00019_00014, puzzle_00019_00021, puzzle_00019_00022, puzzle_00019_00023, puzzle_00019_00025, puzzle_00019_00028])
+gacalldiff([puzzle_00016_00002, puzzle_00016_00003, puzzle_00016_00008, puzzle_00016_00010, puzzle_00016_00014, puzzle_00016_00015, puzzle_00016_00016, puzzle_00016_00017, puzzle_00016_00021, puzzle_00016_00023, puzzle_00016_00026, puzzle_00016_00027, puzzle_00016_00028])
+gacalldiff([puzzle_00011_00011, puzzle_00003_00011, puzzle_00024_00011, puzzle_00012_00011, puzzle_00004_00011, puzzle_00009_00011, puzzle_00013_00011, puzzle_00022_00011, puzzle_00002_00011, puzzle_00015_00011, puzzle_00007_00011, puzzle_00028_00011])
+gacalldiff([puzzle_00014_00004, puzzle_00014_00009, puzzle_00014_00012, puzzle_00014_00017, puzzle_00014_00018, puzzle_00014_00020, puzzle_00014_00022, puzzle_00014_00024, puzzle_00014_00025, puzzle_00014_00026, puzzle_00014_00028, puzzle_00014_00029])
+gacalldiff([puzzle_00016_00008, puzzle_00020_00008, puzzle_00012_00008, puzzle_00004_00008, puzzle_00017_00008, puzzle_00005_00008, puzzle_00022_00008, puzzle_00006_00008, puzzle_00027_00008, puzzle_00019_00008, puzzle_00023_00008, puzzle_00007_00008])
+gacalldiff([puzzle_00023_00004, puzzle_00023_00008, puzzle_00023_00009, puzzle_00023_00012, puzzle_00023_00013, puzzle_00023_00014, puzzle_00023_00017, puzzle_00023_00018, puzzle_00023_00019, puzzle_00023_00021, puzzle_00023_00022, puzzle_00023_00025, puzzle_00023_00027])
+gacalldiff([puzzle_00004_00008, puzzle_00004_00011, puzzle_00004_00012, puzzle_00004_00016, puzzle_00004_00017, puzzle_00004_00020, puzzle_00004_00023, puzzle_00004_00024, puzzle_00004_00025, puzzle_00004_00026, puzzle_00004_00027, puzzle_00004_00028])
+gacalldiff([puzzle_00013_00001, puzzle_00013_00004, puzzle_00013_00007, puzzle_00013_00011, puzzle_00013_00013, puzzle_00013_00014, puzzle_00013_00016, puzzle_00013_00020, puzzle_00013_00024, puzzle_00013_00025, puzzle_00013_00027, puzzle_00013_00028])
+gacalldiff([puzzle_00003_00002, puzzle_00003_00006, puzzle_00003_00009, puzzle_00003_00011, puzzle_00003_00012, puzzle_00003_00013, puzzle_00003_00017, puzzle_00003_00019, puzzle_00003_00021, puzzle_00003_00025, puzzle_00003_00026, puzzle_00003_00027])
+gacalldiff([puzzle_00007_00001, puzzle_00007_00003, puzzle_00007_00006, puzzle_00007_00008, puzzle_00007_00009, puzzle_00007_00010, puzzle_00007_00011, puzzle_00007_00013, puzzle_00007_00014, puzzle_00007_00016, puzzle_00007_00022, puzzle_00007_00023, puzzle_00007_00024])
+gacalldiff([puzzle_00008_00004, puzzle_00029_00004, puzzle_00012_00004, puzzle_00025_00004, puzzle_00017_00004, puzzle_00009_00004, puzzle_00013_00004, puzzle_00001_00004, puzzle_00014_00004, puzzle_00002_00004, puzzle_00023_00004, puzzle_00015_00004])
+gacalldiff([puzzle_00030_00001, puzzle_00030_00002, puzzle_00030_00005, puzzle_00030_00007, puzzle_00030_00010, puzzle_00030_00012, puzzle_00030_00015, puzzle_00030_00017, puzzle_00030_00021, puzzle_00030_00024, puzzle_00030_00028, puzzle_00030_00029])
+gacalldiff([puzzle_00011_00019, puzzle_00003_00019, puzzle_00024_00019, puzzle_00012_00019, puzzle_00009_00019, puzzle_00005_00019, puzzle_00026_00019, puzzle_00018_00019, puzzle_00001_00019, puzzle_00010_00019, puzzle_00023_00019, puzzle_00015_00019, puzzle_00028_00019])
+gacalldiff([puzzle_00012_00004, puzzle_00012_00008, puzzle_00012_00010, puzzle_00012_00011, puzzle_00012_00014, puzzle_00012_00016, puzzle_00012_00017, puzzle_00012_00019, puzzle_00012_00020, puzzle_00012_00021, puzzle_00012_00024, puzzle_00012_00028, puzzle_00012_00030])
+gacalldiff([puzzle_00011_00029, puzzle_00008_00029, puzzle_00029_00029, puzzle_00021_00029, puzzle_00026_00029, puzzle_00018_00029, puzzle_00001_00029, puzzle_00030_00029, puzzle_00022_00029, puzzle_00014_00029, puzzle_00006_00029, puzzle_00027_00029, puzzle_00028_00029])
+gacalldiff([puzzle_00015_00001, puzzle_00015_00003, puzzle_00015_00004, puzzle_00015_00010, puzzle_00015_00011, puzzle_00015_00015, puzzle_00015_00018, puzzle_00015_00019, puzzle_00015_00022, puzzle_00015_00025, puzzle_00015_00026, puzzle_00015_00028])
+gacalldiff([puzzle_00024_00030, puzzle_00008_00030, puzzle_00029_00030, puzzle_00012_00030, puzzle_00025_00030, puzzle_00017_00030, puzzle_00009_00030, puzzle_00021_00030, puzzle_00026_00030, puzzle_00018_00030, puzzle_00006_00030, puzzle_00010_00030])
+gacalldiff([puzzle_00003_00021, puzzle_00024_00021, puzzle_00016_00021, puzzle_00012_00021, puzzle_00025_00021, puzzle_00009_00021, puzzle_00005_00021, puzzle_00026_00021, puzzle_00030_00021, puzzle_00027_00021, puzzle_00019_00021, puzzle_00023_00021, puzzle_00028_00021])
+gacalldiff([puzzle_00003_00006, puzzle_00024_00006, puzzle_00029_00006, puzzle_00020_00006, puzzle_00025_00006, puzzle_00017_00006, puzzle_00005_00006, puzzle_00026_00006, puzzle_00001_00006, puzzle_00006_00006, puzzle_00002_00006, puzzle_00007_00006, puzzle_00028_00006])
+gacalldiff([puzzle_00024_00001, puzzle_00008_00001, puzzle_00020_00001, puzzle_00017_00001, puzzle_00013_00001, puzzle_00005_00001, puzzle_00026_00001, puzzle_00018_00001, puzzle_00030_00001, puzzle_00006_00001, puzzle_00019_00001, puzzle_00015_00001, puzzle_00007_00001])
+gacalldiff([puzzle_00011_00027, puzzle_00003_00027, puzzle_00016_00027, puzzle_00008_00027, puzzle_00004_00027, puzzle_00013_00027, puzzle_00026_00027, puzzle_00001_00027, puzzle_00022_00027, puzzle_00027_00027, puzzle_00010_00027, puzzle_00002_00027, puzzle_00023_00027])
+gacalldiff([puzzle_00011_00016, puzzle_00016_00016, puzzle_00029_00016, puzzle_00012_00016, puzzle_00004_00016, puzzle_00025_00016, puzzle_00013_00016, puzzle_00026_00016, puzzle_00022_00016, puzzle_00027_00016, puzzle_00010_00016, puzzle_00007_00016])
+gacalldiff([puzzle_00024_00024, puzzle_00012_00024, puzzle_00004_00024, puzzle_00025_00024, puzzle_00013_00024, puzzle_00005_00024, puzzle_00030_00024, puzzle_00022_00024, puzzle_00014_00024, puzzle_00006_00024, puzzle_00010_00024, puzzle_00002_00024, puzzle_00007_00024])
+gacalldiff([puzzle_00021_00002, puzzle_00021_00003, puzzle_00021_00005, puzzle_00021_00007, puzzle_00021_00009, puzzle_00021_00010, puzzle_00021_00012, puzzle_00021_00014, puzzle_00021_00022, puzzle_00021_00026, puzzle_00021_00028, puzzle_00021_00029, puzzle_00021_00030])
+gacalldiff([puzzle_00028_00005, puzzle_00028_00006, puzzle_00028_00009, puzzle_00028_00010, puzzle_00028_00011, puzzle_00028_00012, puzzle_00028_00018, puzzle_00028_00019, puzzle_00028_00020, puzzle_00028_00021, puzzle_00028_00023, puzzle_00028_00029])
+gacalldiff([puzzle_00006_00001, puzzle_00006_00003, puzzle_00006_00006, puzzle_00006_00008, puzzle_00006_00013, puzzle_00006_00014, puzzle_00006_00015, puzzle_00006_00017, puzzle_00006_00023, puzzle_00006_00024, puzzle_00006_00026, puzzle_00006_00029, puzzle_00006_00030])
+gacalldiff([puzzle_00003_00009, puzzle_00024_00009, puzzle_00029_00009, puzzle_00009_00009, puzzle_00021_00009, puzzle_00005_00009, puzzle_00018_00009, puzzle_00014_00009, puzzle_00002_00009, puzzle_00023_00009, puzzle_00007_00009, puzzle_00028_00009])
+sumleq([puzzle_00002_00002,puzzle_00002_00004,puzzle_00002_00006,puzzle_00002_00009,puzzle_00002_00011,puzzle_00002_00012,puzzle_00002_00015,puzzle_00002_00017,puzzle_00002_00018,puzzle_00002_00024,puzzle_00002_00027],137)
+sumgeq([puzzle_00002_00002,puzzle_00002_00004,puzzle_00002_00006,puzzle_00002_00009,puzzle_00002_00011,puzzle_00002_00012,puzzle_00002_00015,puzzle_00002_00017,puzzle_00002_00018,puzzle_00002_00024,puzzle_00002_00027],137)
+sumleq([puzzle_00016_00003,puzzle_00008_00003,puzzle_00029_00003,puzzle_00009_00003,puzzle_00021_00003,puzzle_00005_00003,puzzle_00006_00003,puzzle_00019_00003,puzzle_00010_00003,puzzle_00015_00003,puzzle_00007_00003],198)
+sumgeq([puzzle_00016_00003,puzzle_00008_00003,puzzle_00029_00003,puzzle_00009_00003,puzzle_00021_00003,puzzle_00005_00003,puzzle_00006_00003,puzzle_00019_00003,puzzle_00010_00003,puzzle_00015_00003,puzzle_00007_00003],198)
+**EOF**

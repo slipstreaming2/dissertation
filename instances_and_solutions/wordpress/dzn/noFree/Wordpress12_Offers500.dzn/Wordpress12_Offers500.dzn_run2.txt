@@ -1,0 +1,12 @@
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 58, "flatIntVars": 314, "flatBoolConstraints": 31, "flatIntConstraints": 534, "evaluatedReifiedConstraints": 57, "evaluatedHalfReifiedConstraints": 1, "method": "minimize", "flatTime": 0.278153}}
+{"type": "comment", "comment": "% Pruned 50000 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49999 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49997 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49996 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49994 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 50000 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49999 learnt clauses"}
+{"type": "statistics", "statistics": {"nodes": 653670, "failures": 449230, "restarts": 1358, "variables": 133377, "intVars": 418, "boolVariables": 132957, "propagators": 434, "propagations": 65268091, "peakDepth": 117, "nogoods": 449230, "backjumps": 66262, "peakMem": 0.0, "time": 300.332, "initTime": 0.332, "solveTime": 300.0, "objective": 4708, "optTime": 9.359, "baseMem": 0.0, "trailMem": 410.57, "randomSeed": 1668729949}}
+{"type": "solution", "output": {"json": {  "AssignmentMatrix" : [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1]],  "OccupancyVector" : [0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],  "VMType" : [1, 1, 433, 433, 433, 433, 433, 433, 433, 433, 341, 341, 341, 341, 341, 341, 341, 341, 341, 341, 341, 341, 341, 341, 278, 278],  "Price" : [0, 0, 116, 116, 116, 116, 116, 116, 116, 116, 210, 210, 210, 210, 210, 210, 210, 210, 210, 210, 210, 210, 210, 210, 420, 420]}}, "sections": ["json"]}
+{"type": "comment", "comment": "% Time limit exceeded!"}
+{"type": "statistics", "statistics": {"nSolutions": 1}}

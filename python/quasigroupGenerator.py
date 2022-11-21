@@ -1,6 +1,7 @@
 import random
+import numpy as np
 
-N = 50
+N = 75
 
 res = [[0 for _ in range(N)] for _ in range(N)]
 
@@ -43,7 +44,19 @@ for i in range(N):
         res[i][ind] = 0
         count += 1
 
-print(res)
+np_arr = np.array(res)
+
+for i in range(N//2):
+    col1 = random.randrange(N)
+    col2 = random.randrange(N)
+    row1 = random.randrange(N)
+    row2 = random.randrange(N)
+    
+    np_arr[:, [col1, col2]] = np_arr[:, [col2, col1]]
+    np_arr[[row1,row2]] = np_arr[[row2,row1]]
+
+
+print(np_arr.tolist())
 print(count)
 
 

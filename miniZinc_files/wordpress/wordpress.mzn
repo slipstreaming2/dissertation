@@ -310,6 +310,11 @@ constraint lowerBound(AssignmentMatrix, VM, Varnish, 2);
 constraint lowerBound(AssignmentMatrix, VM, MySQL, 2);
 constraint upperBound(AssignmentMatrix, VM, DNS_LoadBalancer, 1);
 
+% Break Symmetry by price
+constraint forall(k in 1..VM-1)(
+                    Price[k] <= Price[k+1]
+                );
+
 
 /***********************************
  ****                           ****

@@ -525,7 +525,7 @@ try:
         solution_file = readFile(sys.argv[2])
 
     param_file = readFile(in_param)
-    print("checking " + in_param)
+    print("checking " + in_param.split('/')[-1] + " against " + sys.argv[2].split('/')[-1])
     if 'quasigroup' in in_param:
         quasigroup(solution_file, param_file)
     elif 'wordpress' in in_param:

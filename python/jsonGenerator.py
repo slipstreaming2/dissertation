@@ -43,7 +43,7 @@ else:
     readMinizinc(statFile, statInfo, miniSolution)
     slashes = [i for i in range(len(statFile)) if statFile[i] == '/']
     # Path(statFile[:slashes[-1]+1] + "json").mkdir(parents=True, exist_ok=True)
-    with open(statFile[:slashes[-1]+1] + "json/" +  statFile[slashes[-1]+1:] + ".json", "w") as f:
+    with open(sys.argv[4] + "/" + statFile[slashes[-1]+1:] + ".json", "w") as f:
         json.dump(miniSolution, f)
 
 with open(dataSaveLocation + ".json", "w") as f:

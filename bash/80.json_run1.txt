@@ -1,0 +1,1 @@
+{"type": "statistics", "statistics": {"paths": 0, "flatIntVars": 508474, "flatIntConstraints": 19200, "method": "satisfy", "flatTime": 6.81055}}

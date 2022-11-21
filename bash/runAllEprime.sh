@@ -1,67 +1,75 @@
-# line=$(head -n 1 eprime.txt)
-# timing=$(head -n 1 timeout.txt)
-# flags = -chuffed -run-solver -solver-options -t ${timing}
-
-# for f in ${1}/*.param; do
-#     ${line} "$2" "$f" -chuffed -run-solver -out-solution "${f}.cse.solution" -out-info "${f}.cse.info" -active-ac-cse -solver-options "-t ${timing}"
-#     ${line} "$2" "$f" -chuffed -run-solver -solver-options "-t ${timing}"
-# done 
-
-
-
-# [[ -d ${1}/../solutions ]] || mkdir ${1}/../solutions
-# [[ -d ${1}/../solutions/cse ]] || mkdir ${1}/../solutions/cse
-# [[ -d ${1}/../timing ]] || mkdir ${1}/../timing
-# [[ -d ${1}/../timing/infor ]] || mkdir ${1}/../timing/infor
-# [[ -d ${1}/../timing/cse ]] || mkdir ${1}/../timing/cse
-# [[ -d ${1}/../minion ]] || mkdir ${1}/../minion
-# [[ -d ${1}/../fzn ]] || mkdir ${1}/../fzn
-
-# mv ${1}/*cse.solution ${1}/../solutions/cse
-# mv ${1}/*.solution ${1}/../solutions
-# mv ${1}/*cse.info ${1}/../timing/cse
-# mv ${1}/*.info ${1}/../timing
-# mv ${1}/*.infor ${1}/../timing/infor
-# mv ${1}/*.minion ${1}/../minion
-# mv ${1}/*.fzn ${1}/../fzn
-
 line=$(head -n 1 eprime.txt)
 timing=$(head -n 1 timeout.txt)
 declare -a opt=("O2" "O3")
-declare -a symm=("S0" "S1")
+declare -a symm=("S0" "S1" "S2")
 
-[[ -d ${1}/../solutions ]] || mkdir ${1}/../solutions
-[[ -d ${1}/../timing ]] || mkdir ${1}/../timing
-[[ -d ${1}/../minion ]] || mkdir ${1}/../minion
-[[ -d ${1}/../fzn ]] || mkdir ${1}/../fzn
-[[ -d ${1}/../timing/infor ]] || mkdir ${1}/../timing/infor
+save_location="${1}/${3}"
+
+solver_options="-t ${timing} -f"
+if [[ -z ${4} ]]; then
+    solver_options="-t ${timing}"
+fi
+
+# if [[ -z ${3} ]]; then
+#     save_location="${1}/.."
+# fi
+
+[[ -d ${save_location} ]] || mkdir ${save_location}
+[[ -d ${save_location}/solutions ]] || mkdir ${save_location}/solutions
+[[ -d ${save_location}/symmetry ]] || mkdir ${save_location}/symmetry
+[[ -d ${save_location}/timing ]] || mkdir ${save_location}/timing
+[[ -d ${save_location}/minion ]] || mkdir ${save_location}/minion
+[[ -d ${save_location}/fzn ]] || mkdir ${save_location}/fzn
+[[ -d ${save_location}/timing/infor ]] || mkdir ${save_location}/timing/infor
+
+
+function create_directories() {
+    [[ -d ${save_location}/timing/infor/${1} ]] || mkdir ${save_location}/timing/infor/${1}
+    [[ -d ${save_location}/timing/${1} ]] || mkdir ${save_location}/timing/${1}
+}
+
 
 function create_and_move() {
-    mv ${1}/*.fzn ${1}/../fzn
-    mv ${1}/*.minion ${1}/../minion
-    [[ -d ${1}/../solutions/${2} ]] || mkdir ${1}/../solutions/${2}
-    [[ -d ${1}/../timing/infor/${2} ]] || mkdir ${1}/../timing/infor/${2}
-    [[ -d ${1}/../timing/${2} ]] || mkdir ${1}/../timing/${2}
-    mv ${1}/*${2}.solution ${1}/../solutions/${2}
-    mv ${1}/*${2}.info ${1}/../timing/${2}
-    mv ${1}/*${2}.infor ${1}/../timing/infor/${2}
+    mv ${1}/*.fzn ${save_location}/fzn
+    mv ${1}/*.minion ${save_location}/minion
+    [[ -d ${save_location}/solutions/${2} ]] || mkdir ${save_location}/solutions/${2}
+    create_directories ${2}
+    create_directories ${2}/${3}
+    mv ${1}/*${2}*.solution ${save_location}/solutions/${2}
+    mv ${1}/*${2}*.info ${save_location}/timing/${2}/${3}
+    mv ${1}/*${2}*.infor ${save_location}/timing/infor/${2}/${3}
+}
+
+
+function run_instance() {
+    naming="${3}_${4}"
+    for f in ${1}/*.param; 
+    do
+        base_name=$(basename ${f})
+        for k in {1..3};
+        do 
+            ${line} "$2" "$f" -${3} -${4} -chuffed -run-solver -out-solution "${f}.${naming}.solution" -out-info "${f}_run${k}.${naming}.info" -solver-options "${solver_options}"
+            create_and_move ${1} ${naming} $base_name
+        done
+    done
 }
 
 for i in "${opt[@]}"
 do 
     for j in "${symm[@]}"
     do 
-        for f in ${1}/*.param; 
-        do
-            ${line} "$2" "$f" -${i} -${j} -chuffed -run-solver -out-solution "${f}.${i}_${j}.solution" -out-info "${f}.${i}_${j}.info" -solver-options "-t ${timing}"
-            create_and_move "${1}" "${i}_${j}"
-        done
-        
+        run_instance $1 $2 $i $j
+        if [[ j=="S2" ]]; then 
+            mv ${1}/*.json ${save_location}/symmetry
+        fi 
     done
 done 
 
-for f in ${1}/*.param; 
-do
-    ${line} "$2" "$f" -O0 -S0 -chuffed -run-solver -out-solution "${f}.O0_S0.solution" -out-info "${f}.O0_S0.info" -solver-options "-t ${timing}"
-    create_and_move "${1}" "O0_S0"
-done 
+run_instance ${1} ${2} "O0" "S0"
+
+# for f in ${1}/*.param; 
+# do
+     
+#     ${line} "$2" "$f" -O0 -S0 -chuffed -run-solver -out-solution "${f}.O0_S0.solution" -out-info "${f}.O0_S0.info" -solver-options "-t ${timing}"
+#     create_and_move "${1}" "O0_S0"
+# done 

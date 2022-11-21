@@ -16,7 +16,7 @@ Compiler stats
 ./minizinc --solver gecode Wordpress/Wordpress.mzn Wordpress/Wordpress_Offers20.dzn -c --compiler-statistics --json-stream > compiler.txt
 
 Quasigroup
-../../MiniZincIDE-2.6.4-bundle-linux-x86_64/bin/minizinc --solver chuffed ../miniZinc_files/Quasigroup/QuasigroupCompletion.mzn ../instances_and_solutions/quasigroup/dzn/qwh-o30-h374-01.dzn -s --compiler-statistics --output-mode json --json-stream
+../../MiniZincIDE-2.6.4-bundle-linux-x86_64/bin/minizinc --solver chuffed ../miniZinc_files/quasigroupOcc/quasigroupOcc.mzn ../instances_and_solutions/quasigroup/dzn/50.json -s --compiler-statistics --output-mode json --json-stream
 ../../MiniZincIDE-2.6.4-bundle-linux-x86_64/bin/minizinc ../miniZinc_files/Quasigroup/QuasigroupCompletion.mzn ../instances_and_solutions/quasigroup/dzn/qwh-o30-h374-01.dzn -c
 ../../MiniZincIDE-2.6.4-bundle-linux-x86_64/bin/minizinc ../miniZinc_files/Quasigroup/QuasigroupCompletion.mzn ../instances_and_solutions/quasigroup/dzn/test.dzn -c
 
@@ -42,6 +42,7 @@ Translate to JSON
 Quasigroup Essence
 ../../savilerow-1.9.1-linux/savilerow ../instances_and_solutions/quasigroup/param/qwh-o30-h374-01.dzn.param ../eprime_models/quasigroup/quasigroup.eprime -flatzinc
 
+../../savilerow-1.9.1-linux/savilerow ../instances_and_solutions/quasigroup/param/qwh-o30-h374-01.dzn.param ../eprime_models/quasigroupBool/quasigroupBool.eprime -chuffed -run-solver
 ../../savilerow-1.9.1-linux/savilerow ../instances_and_solutions/quasigroup/param/qwh-o30-h374-01.dzn.param ../eprime_models/quasigroup/quasigroup.eprime -chuffed -run-solver
 ../../savilerow-1.9.1-linux/savilerow ../instances_and_solutions/tournament/param/circ8abal.dzn.param ../eprime_models/tournament/tournament.eprime -chuffed -run-solver
 ../../savilerow-1.9.1-linux/savilerow ../instances_and_solutions/roster/param/Rostering-8-M-2-4.dzn.param ../eprime_models/roster/roster.eprime -chuffed -run-solver
@@ -60,6 +61,7 @@ Quasigroup Essence
 ../../savilerow-1.9.1-linux/savilerow ../eprime_models/quasigroup/quasigroup.param ../eprime_models/quasigroup/quasigroup.eprime -flatzinc
 ../../savilerow-1.9.1-linux/savilerow ../eprime_models/quasigroup/quasigroupGenerator.eprime -run-solver
 ../../savilerow-1.9.1-linux/savilerow ../eprime_models/quasigroupOcc/quasigroupOccGenerator.eprime -run-solver
+../../savilerow-1.9.1-linux/savilerow ../eprime_models/quasigroupBool/quasigroupBool.eprime ../instances_and_solutions/ -run-solver
 
 Python
 python checkSolutions.py "../instances_and_solutions/tournament/param/circ8abal.dzn.param"
@@ -81,60 +83,84 @@ Bash
 ./translateAll.sh ../instances_and_solutions/cvrptw/json
 ./translateAll.sh ../instances_and_solutions/mspsp/dzn  "{\"has_skills\": \"n_skills\", \"suc\": \"n_tasks\"}"
 
-./runAllEprime.sh ../instances_and_solutions/wordpress/param/param ../eprime_models/wordpress/wordpress.eprime
-./runAllEprime.sh ../instances_and_solutions/quasigroup/param/param ../eprime_models/quasigroup/quasigroup.eprime
-./runAllEprime.sh ../instances_and_solutions/quasigroupOcc/param/param ../eprime_models/quasigroupOcc/quasigroupOcc.eprime
-./runAllEprime.sh ../instances_and_solutions/tournament/param/param ../eprime_models/tournament/tournament.eprime
-./runAllEprime.sh ../instances_and_solutions/mspsp/param/param ../eprime_models/mspsp/mspsp.eprime
-./runAllEprime.sh ../instances_and_solutions/cvrptw/param/param ../eprime_models/cvrptw/cvrptw.eprime
-./runAllEprime.sh ../instances_and_solutions/roster/param/param ../eprime_models/roster/roster.eprime
+./runAllEprime.sh ../instances_and_solutions/wordpress/param/param ../eprime_models/wordpress/wordpress.eprime ../noFree
+./runAllEprime.sh ../instances_and_solutions/wordpress/param/param ../eprime_models/wordpressNoSymm/wordpressNoSymm.eprime ../../../wordpressNoSymm/param/noFree 
+./runAllEprime.sh ../instances_and_solutions/quasigroup/param/param ../eprime_models/quasigroup/quasigroup.eprime ../noFree
+./runAllEprime.sh ../instances_and_solutions/quasigroup/param/param ../eprime_models/quasigroupOcc/quasigroupOcc.eprime ../../../quasigroupOcc/param/noFree
+./runAllEprime.sh ../instances_and_solutions/quasigroup/param/param ../eprime_models/quasigroupBool/quasigroupBool.eprime ../../../quasigroupBool/eprime/noFree
 
-./checkEprimeSolutions.sh ../instances_and_solutions/wordpress/param
+./runAllEprime.sh ../instances_and_solutions/quasigroupOcc/param/param ../eprime_models/quasigroupOcc/quasigroupOcc.eprime
+./runAllEprime.sh ../instances_and_solutions/tournament/param/param ../eprime_models/tournament/tournament.eprime ../noFree
+./runAllEprime.sh ../instances_and_solutions/tournament/param/param ../eprime_models/tournament/tournament.eprime ../free free
+./runAllEprime.sh ../instances_and_solutions/mspsp/param/param ../eprime_models/mspsp/mspsp.eprime ../noFree
+
+./runAllEprime.sh ../instances_and_solutions/mspsp/param/param ../eprime_models/mspsp/mspsp.eprime ../solutions/mspsp/eprime/free
+./runAllEprime.sh ../instances_and_solutions/mspsp/param/param ../eprime_models/mspsp/mspsp.eprime ../noFree
+
+./runAllEprime.sh ../instances_and_solutions/cvrptw/param/param ../eprime_models/cvrptw/cvrptw.eprime ../noFree
+./runAllEprime.sh ../instances_and_solutions/roster/param/param ../eprime_models/roster/roster.eprime ../free free
+./runAllEprime.sh ../instances_and_solutions/roster/param/param ../eprime_models/roster/roster.eprime ../noFree
+
+./checkEprimeSolutions.sh ../instances_and_solutions/wordpress/param/param ../instances_and_solutions/wordpress/free/solutions
+./checkEprimeSolutions.sh ../instances_and_solutions/roster/param/param ../instances_and_solutions/roster/param/free/solutions
 ./checkEprimeSolutions.sh ../instances_and_solutions/mspsp/param
+
+
 ./checkEprimeSolutions.sh ../instances_and_solutions/cvrptw/param/param
-./checkMiniZincSolutions.sh ../instances_and_solutions/mspsp/param/non-occurrence ../instances_and_solutions/mspsp/dzn/solutions/json
+./checkMiniZincSolutions.sh ../instances_and_solutions/roster/param/param ../instances_and_solutions/roster/dzn/free/json
 ./checkMiniZincSolutions.sh ../instances_and_solutions/cvrptw/param/param ../instances_and_solutions/cvrptw/json/solutions/json
 
-./translateData.sh ../instances_and_solutions/wordpress/param/timing wordpress eprime
-./translateData.sh ../instances_and_solutions/wordpress/dzn/solutions wordpress minizinc
+./translateData.sh ../instances_and_solutions/wordpress/param/noFree/timing wordpress eprime
+./translateData.sh ../instances_and_solutions/wordpressNoSymm/param/noFree/timing wordpressNoSymm eprime
+./translateData.sh ../instances_and_solutions/wordpress/dzn/noFree wordpress minizinc
+./translateData.sh ../instances_and_solutions/wordpressNoSymm/dzn/noFree wordpressNoSymm minizinc
 
-./translateData.sh ../instances_and_solutions/quasigroup/param/timing quasigroup eprime
-./translateData.sh ../instances_and_solutions/quasigroup/dzn/solutions quasigroup minizinc
+./translateData.sh ../instances_and_solutions/quasigroup/param/noFree/timing quasigroup eprime
+./translateData.sh ../instances_and_solutions/quasigroup/dzn/noFree quasigroup minizinc
 
-./translateData.sh ../instances_and_solutions/quasigroupOcc/param/timing quasigroupOcc eprime
-./translateData.sh ../instances_and_solutions/quasigroupOcc/dzn/solutions quasigroupOcc minizinc
+./translateData.sh ../instances_and_solutions/quasigroupOcc/param/noFree/timing quasigroupOcc eprime
+./translateData.sh ../instances_and_solutions/quasigroupOcc/dzn/noFree quasigroupOcc minizinc
 
-./translateData.sh ../instances_and_solutions/mspsp/dzn/solutions mspsp minizinc
+./translateData.sh ../instances_and_solutions/quasigroupBool/eprime/noFree/timing quasigroupBool eprime
+./translateData.sh ../instances_and_solutions/quasigroupBool/minizinc/noFree quasigroupBool mini
+./translateData.sh ../instances_and_solutions/quasigroupBool/dzn/noFree quasigroupOcc minizinc
+
+./translateData.sh ../instances_and_solutions/mspsp/dzn/noFree mspsp minizinc
+./translateData.sh ../instances_and_solutions/mspsp/dzn/solutionsFree mspsp minizinc
 ./translateData.sh ../instances_and_solutions/mspsp/param/timing mspsp eprime 
+./translateData.sh ../instances_and_solutions/mspsp/param/test/timing mspsp eprime 
 
-./translateData.sh ../instances_and_solutions/cvrptw/json/solutions cvrptw minizinc
-./translateData.sh ../instances_and_solutions/cvrptw/param/timing cvrptw eprime 
+./translateData.sh ../instances_and_solutions/cvrptw/json/noFree cvrptw minizinc
+./translateData.sh ../instances_and_solutions/cvrptw/param/noFree/timing cvrptw eprime 
 
-./translateData.sh ../instances_and_solutions/roster/dzn/solutions roster minizinc
-./translateData.sh ../instances_and_solutions/roster/param/timing roster eprime 
+./translateData.sh ../instances_and_solutions/roster/dzn/noFree roster minizinc
+./translateData.sh ../instances_and_solutions/roster/dzn/free/solutions rosterFree minizinc
+./translateData.sh ../instances_and_solutions/roster/param/noFree/timing roster eprime 
+./translateData.sh ../instances_and_solutions/roster/param/free/timing rosterFree eprime 
 
-./translateData.sh ../instances_and_solutions/tournament/dzn/solutions tournament minizinc
-./translateData.sh ../instances_and_solutions/tournament/param/timing tournament eprime  NEED TO DO LATER
+./translateData.sh ../instances_and_solutions/tournament/dzn/noFree tournament minizinc
+./translateData.sh ../instances_and_solutions/tournament/dzn/free tournamentFree minizinc
+./translateData.sh ../instances_and_solutions/tournament/param/noFree/timing tournament eprime
+./translateData.sh ../instances_and_solutions/tournament/param/free/timing tournamentFree eprime
 
-./runAllMiniZinc.sh ../instances_and_solutions/wordpress/dzn ../miniZinc_files/wordpress/wordpress.mzn
-./runAllMiniZinc.sh ../instances_and_solutions/tournament/dzn ../miniZinc_files/tournament/TTPPV.mzn
-./runAllMiniZinc.sh ../instances_and_solutions/mspsp/dzn ../miniZinc_files/mspsp/mspsp.mzn
-./runAllMiniZinc.sh ../instances_and_solutions/cvrptw/json ../miniZinc_files/cvrptw/cvrptw.mzn
-./runAllMiniZinc.sh ../instances_and_solutions/quasigroup/dzn ../miniZinc_files/quasigroup/QuasigroupCompletion.mzn
-./runAllMiniZinc.sh ../instances_and_solutions/roster/dzn ../miniZinc_files/roster/RosteringProblem.mzn
+./runAllMiniZinc.sh ../instances_and_solutions/wordpress/dzn ../miniZinc_files/wordpress/wordpress.mzn noFree
+./runAllMiniZinc.sh ../instances_and_solutions/wordpress/dzn ../miniZinc_files/wordpressNoSymm/wordpressNoSymm.mzn ../../wordpressNoSymm/noFree
+
+./runAllMiniZinc.sh ../instances_and_solutions/tournament/dzn/dzn ../miniZinc_files/tournament/TTPPV.mzn ../noFree
+./runAllMiniZinc.sh ../instances_and_solutions/tournament/dzn/dzn ../miniZinc_files/tournament/TTPPV.mzn ../free free
+./runAllMiniZinc.sh ../instances_and_solutions/mspsp/dzn ../miniZinc_files/mspsp/mspsp.mzn ../noFree
+./runAllMiniZinc.sh ../instances_and_solutions/mspsp/dzn ../miniZinc_files/mspsp/mspsp.mzn ../solutionsFree free
+./runAllMiniZinc.sh ../instances_and_solutions/cvrptw/json ../miniZinc_files/cvrptw/cvrptw.mzn ../noFree
+./runAllMiniZinc.sh ../instances_and_solutions/quasigroup/dzn ../miniZinc_files/quasigroup/QuasigroupCompletion.mzn noFree
+./runAllMiniZinc.sh ../instances_and_solutions/quasigroup/dzn ../miniZinc_files/quasigroupOcc/quasigroupOcc.mzn ../../quasigroupOcc/dzn/noFree
+./runAllMiniZinc.sh ../instances_and_solutions/quasigroup/dzn ../miniZinc_files/quasigroupBool/quasigroupBool.mzn ../../quasigroupBool/minizinc/noFree
+./runAllMiniZinc.sh ../instances_and_solutions/roster/dzn/dzn ../miniZinc_files/roster/RosteringProblem.mzn ../free free
+./runAllMiniZinc.sh ../instances_and_solutions/roster/dzn/dzn ../miniZinc_files/roster/RosteringProblem.mzn ../noFree
 
 SolverTotalTime - solving only
 SavileRowTotalTime - translation only
 
-SolverNodes
-
-nodes
-
-time - total time?
-initTime
-solveTime
-flatTime
-optTime
+tournament done
 
 
 

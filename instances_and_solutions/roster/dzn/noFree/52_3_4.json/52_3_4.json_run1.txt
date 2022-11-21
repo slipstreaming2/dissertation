@@ -1,0 +1,50 @@
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 3583, "flatIntVars": 312, "flatBoolConstraints": 1945, "flatIntConstraints": 3012, "evaluatedReifiedConstraints": 3688, "method": "satisfy", "flatTime": 0.333108}}
+{"type": "comment", "comment": "% Pruned 49983 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49985 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49981 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49977 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49983 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49982 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49974 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49973 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49978 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49987 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49988 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49979 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49978 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49979 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49976 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49977 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49973 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49972 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49969 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49966 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49967 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49980 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49975 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49972 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49975 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49973 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49963 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49955 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49960 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49970 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49978 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49967 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49973 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49970 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49965 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49962 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49960 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49976 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49969 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49973 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49971 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49963 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49960 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49975 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49974 learnt clauses"}
+{"type": "comment", "comment": "% Time limit exceeded!"}
+{"type": "status", "status": "UNKNOWN"}
+{"type": "statistics", "statistics": {"nSolutions": 0}}
+{"type": "statistics", "statistics": {"nodes": 2611478, "failures": 2310588, "restarts": 0, "variables": 7388, "intVars": 327, "boolVariables": 7059, "propagators": 5393, "propagations": 1466381968, "peakDepth": 88, "nogoods": 2310588, "backjumps": 300823, "peakMem": 0.0, "time": 300.031, "initTime": 0.031, "solveTime": 300.0, "baseMem": 0.0, "trailMem": 0.12, "randomSeed": 1668910429}}
