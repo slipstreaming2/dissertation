@@ -1,0 +1,4 @@
+{"type": "statistics", "statistics": {"paths": 0, "flatIntVars": 374, "flatIntConstraints": 60, "method": "satisfy", "flatTime": 0.182445}}
+{"type": "status", "status": "UNKNOWN"}
+{"type": "statistics", "statistics": {"initTime": 0.001879, "solveTime": 3.00047, "solutions": 0, "variables": 1952, "propagators": 60, "propagations": 1534567, "nodes": 61744, "failures": 30832, "restarts": 0, "peakDepth": 101}}
+{"type": "statistics", "statistics": {"nSolutions": 0}}

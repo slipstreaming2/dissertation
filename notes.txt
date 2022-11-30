@@ -43,6 +43,7 @@ Quasigroup Essence
 ../../savilerow-1.9.1-linux/savilerow ../instances_and_solutions/quasigroup/param/qwh-o30-h374-01.dzn.param ../eprime_models/quasigroup/quasigroup.eprime -flatzinc
 
 ../../savilerow-1.9.1-linux/savilerow ../instances_and_solutions/quasigroup/param/qwh-o30-h374-01.dzn.param ../eprime_models/quasigroupBool/quasigroupBool.eprime -chuffed -run-solver
+../../savilerow-1.9.1-linux/savilerow ../instances_and_solutions/mspsp/param/param/hard_01.dzn.param ../eprime_models/mspsp/mspsp.eprime -chuffed 
 ../../savilerow-1.9.1-linux/savilerow ../instances_and_solutions/quasigroup/param/qwh-o30-h374-01.dzn.param ../eprime_models/quasigroup/quasigroup.eprime -chuffed -run-solver
 ../../savilerow-1.9.1-linux/savilerow ../instances_and_solutions/tournament/param/circ8abal.dzn.param ../eprime_models/tournament/tournament.eprime -chuffed -run-solver
 ../../savilerow-1.9.1-linux/savilerow ../instances_and_solutions/roster/param/Rostering-8-M-2-4.dzn.param ../eprime_models/roster/roster.eprime -chuffed -run-solver
@@ -96,6 +97,8 @@ Bash
 
 ./runAllEprime.sh ../instances_and_solutions/mspsp/param/param ../eprime_models/mspsp/mspsp.eprime ../solutions/mspsp/eprime/free
 ./runAllEprime.sh ../instances_and_solutions/mspsp/param/param ../eprime_models/mspsp/mspsp.eprime ../noFree
+./runAllEprimeParallel.sh ../instances_and_solutions/mspsp/param/param ../eprime_models/mspsp/mspsp.eprime ../noFreeGecode gecode
+./runAllEprime.sh ../instances_and_solutions/mspsp/param/param ../eprime_models/mspsp/mspsp.eprime ../noFreeGecode gecode 
 
 ./runAllEprime.sh ../instances_and_solutions/cvrptw/param/param ../eprime_models/cvrptw/cvrptw.eprime ../noFree
 ./runAllEprime.sh ../instances_and_solutions/roster/param/param ../eprime_models/roster/roster.eprime ../free free
@@ -111,27 +114,38 @@ Bash
 ./checkMiniZincSolutions.sh ../instances_and_solutions/cvrptw/param/param ../instances_and_solutions/cvrptw/json/solutions/json
 
 ./translateData.sh ../instances_and_solutions/wordpress/param/noFree/timing wordpress eprime
+./translateData.sh ../instances_and_solutions/wordpress/param/noFree/timing wordpressFree eprime
 ./translateData.sh ../instances_and_solutions/wordpressNoSymm/param/noFree/timing wordpressNoSymm eprime
+./translateData.sh ../instances_and_solutions/wordpressNoSymm/eprime/noFree/timing wordpressNoSymmFree eprime
 ./translateData.sh ../instances_and_solutions/wordpress/dzn/noFree wordpress minizinc
+./translateData.sh ../instances_and_solutions/wordpress/dzn/free wordpressFree minizinc
 ./translateData.sh ../instances_and_solutions/wordpressNoSymm/dzn/noFree wordpressNoSymm minizinc
+./translateData.sh ../instances_and_solutions/wordpressNoSymm/dzn/free wordpressNoSymmFree minizinc
 
 ./translateData.sh ../instances_and_solutions/quasigroup/param/noFree/timing quasigroup eprime
+./translateData.sh ../instances_and_solutions/quasigroup/param/noFree/timing quasigroupFree eprime
 ./translateData.sh ../instances_and_solutions/quasigroup/dzn/noFree quasigroup minizinc
+./translateData.sh ../instances_and_solutions/quasigroup/dzn/free quasigroupFree minizinc
 
 ./translateData.sh ../instances_and_solutions/quasigroupOcc/param/noFree/timing quasigroupOcc eprime
+./translateData.sh ../instances_and_solutions/quasigroupOcc/param/noFree/timing quasigroupOccFree eprime
 ./translateData.sh ../instances_and_solutions/quasigroupOcc/dzn/noFree quasigroupOcc minizinc
+./translateData.sh ../instances_and_solutions/quasigroupOcc/dzn/free quasigroupOccFree minizinc
 
 ./translateData.sh ../instances_and_solutions/quasigroupBool/eprime/noFree/timing quasigroupBool eprime
-./translateData.sh ../instances_and_solutions/quasigroupBool/minizinc/noFree quasigroupBool mini
+./translateData.sh ../instances_and_solutions/quasigroupBool/eprime/noFree/timing quasigroupBoolFree eprime
+./translateData.sh ../instances_and_solutions/quasigroupBool/minizinc/free quasigroupBoolFree minizinc
 ./translateData.sh ../instances_and_solutions/quasigroupBool/dzn/noFree quasigroupOcc minizinc
 
 ./translateData.sh ../instances_and_solutions/mspsp/dzn/noFree mspsp minizinc
-./translateData.sh ../instances_and_solutions/mspsp/dzn/solutionsFree mspsp minizinc
-./translateData.sh ../instances_and_solutions/mspsp/param/timing mspsp eprime 
-./translateData.sh ../instances_and_solutions/mspsp/param/test/timing mspsp eprime 
+./translateData.sh ../instances_and_solutions/mspsp/dzn/free mspspFree minizinc
+./translateData.sh ../instances_and_solutions/mspsp/param/noFree/timing mspsp eprime
+./translateData.sh ../instances_and_solutions/mspsp/eprime/noFree/timing mspspFree eprime 
 
 ./translateData.sh ../instances_and_solutions/cvrptw/json/noFree cvrptw minizinc
-./translateData.sh ../instances_and_solutions/cvrptw/param/noFree/timing cvrptw eprime 
+./translateData.sh ../instances_and_solutions/cvrptw/json/free cvrptwFree minizinc 
+./translateData.sh ../instances_and_solutions/cvrptw/param/noFree/timing cvrptw eprime
+./translateData.sh ../instances_and_solutions/cvrptw/param/noFree/timing cvrptwFree eprime 
 
 ./translateData.sh ../instances_and_solutions/roster/dzn/noFree roster minizinc
 ./translateData.sh ../instances_and_solutions/roster/dzn/free/solutions rosterFree minizinc
@@ -144,16 +158,24 @@ Bash
 ./translateData.sh ../instances_and_solutions/tournament/param/free/timing tournamentFree eprime
 
 ./runAllMiniZinc.sh ../instances_and_solutions/wordpress/dzn ../miniZinc_files/wordpress/wordpress.mzn noFree
-./runAllMiniZinc.sh ../instances_and_solutions/wordpress/dzn ../miniZinc_files/wordpressNoSymm/wordpressNoSymm.mzn ../../wordpressNoSymm/noFree
+./runAllMiniZinc.sh ../instances_and_solutions/wordpress/dzn ../miniZinc_files/wordpress/wordpress.mzn free free
+./runAllMiniZinc.sh ../instances_and_solutions/wordpress/dzn ../miniZinc_files/wordpressNoSymm/wordpressNoSymm.mzn ../../wordpressNoSymm/dzn/noFree
+./runAllMiniZinc.sh ../instances_and_solutions/wordpress/dzn/dzn ../miniZinc_files/wordpressNoSymm/wordpressNoSymm.mzn ../../../wordpressNoSymm/dzn/free free
 
 ./runAllMiniZinc.sh ../instances_and_solutions/tournament/dzn/dzn ../miniZinc_files/tournament/TTPPV.mzn ../noFree
 ./runAllMiniZinc.sh ../instances_and_solutions/tournament/dzn/dzn ../miniZinc_files/tournament/TTPPV.mzn ../free free
-./runAllMiniZinc.sh ../instances_and_solutions/mspsp/dzn ../miniZinc_files/mspsp/mspsp.mzn ../noFree
-./runAllMiniZinc.sh ../instances_and_solutions/mspsp/dzn ../miniZinc_files/mspsp/mspsp.mzn ../solutionsFree free
+./runAllMiniZinc.sh ../instances_and_solutions/mspsp/dzn/dzn ../miniZinc_files/mspsp/mspsp.mzn ../noFree
+./runAllMiniZinc.sh ../instances_and_solutions/mspsp/dzn/dzn ../miniZinc_files/mspsp/mspsp.mzn ../test
+./runAllMiniZinc.sh ../instances_and_solutions/mspsp/dzn/dzn ../miniZinc_files/mspsp/mspsp.mzn ../noFreeGecode gecode 
+./runAllMiniZinc.sh ../instances_and_solutions/mspsp/dzn ../miniZinc_files/mspsp/mspsp.mzn ../free free
 ./runAllMiniZinc.sh ../instances_and_solutions/cvrptw/json ../miniZinc_files/cvrptw/cvrptw.mzn ../noFree
+./runAllMiniZinc.sh ../instances_and_solutions/cvrptw/json ../miniZinc_files/cvrptw/cvrptw.mzn ../free free
 ./runAllMiniZinc.sh ../instances_and_solutions/quasigroup/dzn ../miniZinc_files/quasigroup/QuasigroupCompletion.mzn noFree
+./runAllMiniZinc.sh ../instances_and_solutions/quasigroup/dzn ../miniZinc_files/quasigroup/QuasigroupCompletion.mzn free free
 ./runAllMiniZinc.sh ../instances_and_solutions/quasigroup/dzn ../miniZinc_files/quasigroupOcc/quasigroupOcc.mzn ../../quasigroupOcc/dzn/noFree
+./runAllMiniZinc.sh ../instances_and_solutions/quasigroup/dzn ../miniZinc_files/quasigroupOcc/quasigroupOcc.mzn ../../quasigroupOcc/dzn/free free
 ./runAllMiniZinc.sh ../instances_and_solutions/quasigroup/dzn ../miniZinc_files/quasigroupBool/quasigroupBool.mzn ../../quasigroupBool/minizinc/noFree
+./runAllMiniZinc.sh ../instances_and_solutions/quasigroup/dzn ../miniZinc_files/quasigroupBool/quasigroupBool.mzn ../../quasigroupBool/minizinc/free free
 ./runAllMiniZinc.sh ../instances_and_solutions/roster/dzn/dzn ../miniZinc_files/roster/RosteringProblem.mzn ../free free
 ./runAllMiniZinc.sh ../instances_and_solutions/roster/dzn/dzn ../miniZinc_files/roster/RosteringProblem.mzn ../noFree
 
@@ -233,3 +255,11 @@ start_load = 0;
 
 both O3 S0 and O3 S1 timed out on 52_4_2
 minizinc does not do input dimensions matrix type checking???
+
+
+The existing Chuffed FlatZinc backend is very similar but does not decompose allDifferent or lexicographic ordering constraints.
+
+
+
+
+[Error in input!, Name already in table:aux58, Error occurred on line 231, Parser gave up around:, BOOL aux58 #Active-CSE: 2 occurrences of this expression or equivalent: ((s_00020<(2 + s_00013)) /\ (s_00013<=s_00020)), -----------------------------------------------------------------------------------------------------------------------^]

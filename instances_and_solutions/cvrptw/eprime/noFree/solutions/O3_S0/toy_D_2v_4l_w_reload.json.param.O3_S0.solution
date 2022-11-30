@@ -1,0 +1,12 @@
+language ESSENCE' 1.0
+letting arrivalTime be [54, 54, 90, 91, 6, 6, 6, 6, 6, 0, 115, 0]
+letting departureTime be [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+letting load be [0, 15, 45, 55, 15, 45, 55, 105, 105, 0, 105, 0]
+letting objective be 109
+letting predecessor be [5, 1, 2, 3, 6, 7, 8, 9, 12, 11, 4, 10]
+letting predecessorOrder be [1, 12, 11, 10, 2, 3, 4, 5, 6, 8, 9, 7]
+letting slack be [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+letting start_load be 0
+letting successor be [2, 3, 4, 11, 1, 5, 6, 7, 8, 12, 10, 9]
+letting successorOrder be [1, 2, 3, 4, 12, 11, 10, 9, 8, 6, 5, 7]
+letting vehicle be [1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 2]

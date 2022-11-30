@@ -25,13 +25,15 @@ def readMinizinc(pathToFile, statDict, solutionDict):
         lineType = lineJson["type"]
         if lineType == "statistics":
             statDict.update(lineJson["statistics"])
+            if lineJson["statistics"]["solveTime"] >= timeout_time:
+                statDict["timeout"] = True
         elif lineType == "solution":
             solutionDict.update(lineJson["output"]["json"])
         elif lineType == "comment" and lineJson["comment"] == "% Time limit exceeded!":
             statDict["timeout"] = True
             
+timeout_time = 300
 
-    
 statFile = sys.argv[1]
 dataSaveLocation = sys.argv[2]
 statInfo = {}

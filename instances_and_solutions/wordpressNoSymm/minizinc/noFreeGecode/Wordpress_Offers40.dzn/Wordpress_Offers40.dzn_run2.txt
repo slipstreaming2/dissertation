@@ -1,0 +1,5 @@
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 22, "flatIntVars": 98, "flatBoolConstraints": 13, "flatIntConstraints": 167, "evaluatedReifiedConstraints": 21, "evaluatedHalfReifiedConstraints": 1, "method": "minimize", "flatTime": 0.207547}}
+{"type": "solution", "output": {"json": {  "AssignmentMatrix" : [[0, 0, 0, 0, 0, 1, 1, 1], [0, 0, 0, 1, 1, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 1, 0, 0, 0, 0, 0], [1, 1, 0, 0, 0, 0, 0, 0]],  "OccupancyVector" : [1, 1, 1, 1, 1, 1, 1, 1],  "VMType" : [26, 26, 26, 37, 37, 37, 37, 37],  "Price" : [252, 252, 252, 128, 128, 128, 128, 128]}}, "sections": ["json"]}
+{"type": "status", "status": "OPTIMAL_SOLUTION"}
+{"type": "statistics", "statistics": {"initTime": 0.001601, "solveTime": 1.06876, "solutions": 445, "variables": 120, "propagators": 180, "propagations": 3762160, "nodes": 81361, "failures": 40001, "restarts": 0, "peakDepth": 41}}
+{"type": "statistics", "statistics": {"nSolutions": 1}}

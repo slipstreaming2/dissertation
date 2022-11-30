@@ -82,7 +82,11 @@ $                 has_skills[j,k] = 1 /\ rr,
 forAll work : Workers .
     sum(TWorkers[work,..]) > 1 -> 
         (forAll j : Tasks .
-            1 >= sum([(TWorkers[work, j] = 1) /\ (TWorkers[work, i] = 1) /\ (s[i] <= s[j]) /\ (s[j] < (s[i] + d[i])) /\ w[work,i] | i : Tasks])),
+            1 >= sum([(TWorkers[work, j] = 1) /\ 
+                        (TWorkers[work, i] = 1) /\ 
+                        (s[i] <= s[j]) /\ 
+                        (s[j] < (s[i] + d[i])) /\ 
+                        w[work,i] | i : Tasks])),
 
 $ predicate fzn_cumulative_task(array[int] of var int: s,
 $                      array[int] of var int: d,
@@ -104,7 +108,7 @@ forAll i : Tasks .
         (i < j /\ suc[i,j] = 0 /\ suc[j,i] = 0) -> 
             ((exists k : Skills .
                 rr[k,i] + rr[k,j] > rc[k]) ->
-                    $ xor basically
+                    $ or basically
                     ((s[i] + d[i] <= s[j])
                     \/
                     (s[j] + d[j] <= s[i]))),
@@ -117,7 +121,7 @@ forAll k : Skills .
     (sum([rr[k,i] > 0 | i : Tasks]) > 1 /\ sum([rr[k,i] | i : Tasks, rr[k,i] > 0]) > rc[k]) ->
         forAll j : Tasks .
             rr[k,j] > 0 ->
-                rc[k] >= sum([(s[i] <= s[j] /\ s[j] < s[i] + d[i])*rr[k,i] | i : Tasks, rr[k,i] > 0]),
+                rc[k] >= sum([(s[i] <= s[j] /\ s[j] < (s[i] + d[i]))*rr[k,i] | i : Tasks, rr[k,i] > 0]),
 
 $ rr[k,j] > 0 -> rc[k] >= sum([(s[i] <= s[j] /\ s[j] < s[i] + d[i])*rr[k,i] | i : Tasks, rr[k,i] > 0]),
 
