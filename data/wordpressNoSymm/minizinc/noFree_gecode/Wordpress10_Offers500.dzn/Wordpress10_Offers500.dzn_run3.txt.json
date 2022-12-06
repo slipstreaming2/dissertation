@@ -1,0 +1,1 @@
+{"timeout": false, "paths": 0, "flatBoolVars": 52, "flatIntVars": 278, "flatBoolConstraints": 28, "flatIntConstraints": 452, "evaluatedReifiedConstraints": 51, "evaluatedHalfReifiedConstraints": 1, "method": "minimize", "flatTime": 0.279942, "nSolutions": 0}

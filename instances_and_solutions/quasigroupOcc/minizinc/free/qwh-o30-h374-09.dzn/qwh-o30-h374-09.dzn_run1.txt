@@ -1,9 +1,0 @@
-{"type": "statistics", "statistics": {"paths": 0, "flatIntVars": 26474, "flatIntConstraints": 2700, "method": "satisfy", "flatTime": 0.493427}}
-{"type": "comment", "comment": "% Pruned 49999 learnt clauses"}
-{"type": "comment", "comment": "% Pruned 49999 learnt clauses"}
-{"type": "comment", "comment": "% Pruned 50000 learnt clauses"}
-{"type": "comment", "comment": "% Pruned 49970 learnt clauses"}
-{"type": "comment", "comment": "% Time limit exceeded!"}
-{"type": "status", "status": "UNKNOWN"}
-{"type": "statistics", "statistics": {"nSolutions": 0}}
-{"type": "statistics", "statistics": {"nodes": 386279, "failures": 292383, "restarts": 626, "variables": 158850, "intVars": 26475, "boolVariables": 132373, "propagators": 5401, "propagations": 162356979, "peakDepth": 128, "nogoods": 292383, "backjumps": 49710, "peakMem": 0.0, "time": 300.252, "initTime": 0.252, "solveTime": 300.0, "baseMem": 0.0, "trailMem": 0.42, "randomSeed": 1669155529}}

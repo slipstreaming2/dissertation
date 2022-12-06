@@ -1,4 +1,0 @@
-{"type": "statistics", "statistics": {"paths": 0, "flatIntVars": 106, "flatIntConstraints": 107, "method": "minimize", "flatTime": 0.140282}}
-{"type": "solution", "output": {"json": {  "successor" : [2, 3, 4, 11, 1, 5, 6, 7, 8, 12, 10, 9],  "predecessor" : [5, 1, 2, 3, 6, 7, 8, 9, 12, 11, 4, 10],  "vehicle" : [1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 2],  "load" : [0, 15, 45, 55, 15, 45, 55, 105, 105, 0, 105, 0],  "arrivalTime" : [54, 54, 90, 91, 6, 6, 6, 6, 6, 0, 115, 0],  "departureTime" : [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],  "slack" : [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],  "objective" : 109,  "start_load" : 0}}, "sections": ["json"]}
-{"type": "statistics", "statistics": {"initTime": 0.000993, "solveTime": 300.043, "solutions": 7, "variables": 114, "propagators": 103, "propagations": 6088740363, "nodes": 9047, "failures": 4454, "restarts": 0, "peakDepth": 48}}
-{"type": "statistics", "statistics": {"nSolutions": 1}}

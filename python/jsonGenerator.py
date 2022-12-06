@@ -25,7 +25,7 @@ def readMinizinc(pathToFile, statDict, solutionDict):
         lineType = lineJson["type"]
         if lineType == "statistics":
             statDict.update(lineJson["statistics"])
-            if lineJson["statistics"]["solveTime"] >= timeout_time:
+            if "solveTime" in lineJson["statistics"] and lineJson["statistics"]["solveTime"] >= timeout_time:
                 statDict["timeout"] = True
         elif lineType == "solution":
             solutionDict.update(lineJson["output"]["json"])
@@ -51,7 +51,7 @@ else:
 with open(dataSaveLocation + ".json", "w") as f:
     json.dump(statInfo, f)
 
-print('extracted data from ' + statFile)
+print('extracted data from ' + statFile + ' to ' + dataSaveLocation + ".json")
 # print(miniStats)
 # print(miniSolution)
 

@@ -17,6 +17,7 @@ Compiler stats
 
 Quasigroup
 ../../MiniZincIDE-2.6.4-bundle-linux-x86_64/bin/minizinc --solver chuffed ../miniZinc_files/quasigroupOcc/quasigroupOcc.mzn ../instances_and_solutions/quasigroup/dzn/50.json -s --compiler-statistics --output-mode json --json-stream
+../../MiniZincIDE-2.6.4-bundle-linux-x86_64/bin/minizinc --solver chuffed ../miniZinc_files/wordpress/wordpress.mzn ../instances_and_solutions/wordpress/minizinc/instances/Wordpress_Offers40.dzn -s -i --output-time
 ../../MiniZincIDE-2.6.4-bundle-linux-x86_64/bin/minizinc ../miniZinc_files/Quasigroup/QuasigroupCompletion.mzn ../instances_and_solutions/quasigroup/dzn/qwh-o30-h374-01.dzn -c
 ../../MiniZincIDE-2.6.4-bundle-linux-x86_64/bin/minizinc ../miniZinc_files/Quasigroup/QuasigroupCompletion.mzn ../instances_and_solutions/quasigroup/dzn/test.dzn -c
 
@@ -58,11 +59,20 @@ Quasigroup Essence
 ../../savilerow-1.9.1-linux/savilerow ../instances_and_solutions/cvrptw/json/A_7v_48l.json ../eprime_models/cvrptw/cvrptw.eprime -chuffed -run-solver -solver-options "--time-limit 600000"
 
 ../../savilerow-1.9.1-linux/savilerow ../instances_and_solutions/instances_and_solutions/mspsp/ ../eprime_models/cvrptw/cvrptw.eprime -chuffed -run-solver -solver-options "-f on"
+../../savilerow-1.9.1-linux/savilerow -O3 -S2 ../instances_and_solutions/instances_and_solutions/wordpress/ ../eprime_models/wordpressNoSymm/wordpressNoSymm.eprime -gecode -run-solver -solver-options "-t 300000"
 
 ../../savilerow-1.9.1-linux/savilerow ../eprime_models/quasigroup/quasigroup.param ../eprime_models/quasigroup/quasigroup.eprime -flatzinc
 ../../savilerow-1.9.1-linux/savilerow ../eprime_models/quasigroup/quasigroupGenerator.eprime -run-solver
 ../../savilerow-1.9.1-linux/savilerow ../eprime_models/quasigroupOcc/quasigroupOccGenerator.eprime -run-solver
 ../../savilerow-1.9.1-linux/savilerow ../eprime_models/quasigroupBool/quasigroupBool.eprime ../instances_and_solutions/ -run-solver
+
+
+../../savilerow-1.9.1-linux/savilerow ../eprime_models/wordpressNoSymm/wordpressNoSymmFree.eprime ../instances_and_solutions/wordpress/eprime/param/Wordpress_Offers40.dzn.param -O2 -S1 -gecode -run-solver -out-solution test.O2_S1.solution -out-info test.O2_S1.info -out-minion test.minion -out-flatzinc test.O2_S1.fzn -solver-options "-t 3600000 -r 1"
+../../savilerow-1.9.1-linux/savilerow ../eprime_models/wordpressNoSymm/wordpressNoSymmFree.eprime ../instances_and_solutions/wordpress/eprime/param/Wordpress_Offers40.dzn.param -O2 -S1 -gecode -run-solver -out-solution test.O2_S1.solution -out-info test.O2_S1.info -out-minion test.minion -out-flatzinc test.O2_S1.fzn -solver-options "-t 3600000 -r 1"
+../../savilerow-1.9.1-linux/savilerow ../eprime_models/wordpressNoSymm/wordpressNoSymmFree.eprime ../instances_and_solutions/wordpress/eprime/param/Wordpress_Offers40.dzn.param -chuffed -run-solver -solver-options "-t 3600000 -r 1" -all-solutions -solutions-to-stdout
+
+../../savilerow-1.9.1-linux/bin/fzn-chuffed -a -r 1 -v ../instances_and_solutions/wordpress/eprime/param/Wordpress_Offers40.dzn.param.fzn 
+../../savilerow-1.9.1-linux/bin/fzn-chuffed -a -r 1 -v ../instances_and_solutions/wordpress/eprime/param/Wordpress_Offers500.dzn.param.fzn 
 
 Python
 python checkSolutions.py "../instances_and_solutions/tournament/param/circ8abal.dzn.param"
@@ -258,8 +268,3 @@ minizinc does not do input dimensions matrix type checking???
 
 
 The existing Chuffed FlatZinc backend is very similar but does not decompose allDifferent or lexicographic ordering constraints.
-
-
-
-
-[Error in input!, Name already in table:aux58, Error occurred on line 231, Parser gave up around:, BOOL aux58 #Active-CSE: 2 occurrences of this expression or equivalent: ((s_00020<(2 + s_00013)) /\ (s_00013<=s_00020)), -----------------------------------------------------------------------------------------------------------------------^]
