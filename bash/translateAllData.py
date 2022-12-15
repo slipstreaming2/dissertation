@@ -1,7 +1,9 @@
 import os
 
 problemList = ["cvrptw", "mspsp", "quasigroup", "quasigroupOcc", "roster", "tournament", "wordpress", "wordpressNoSymm"]
-solvers = ["gecode", "chuffed"]
+# problemList = ["wordpressNoSymm"]
+# solvers = ["gecode", "chuffed"]
+solvers = ["chuffed"]
 flags = ["noFree", "free"]
 
 instances_solutions_path = "../instances_and_solutions/"
@@ -17,7 +19,7 @@ for problem in problemList:
             folder_name = flag + "_" + solver 
             os.system(first_half + minizinc_path + folder_name + " " + problem + "/minizinc/" + folder_name + " minizinc " + problem)
             # print(first_half + minizinc_path + folder_name + " " + problem + "/minizinc/" + folder_name + " minizinc " + problem)
-            if solver == "chuffed" and flag == "free":
-                continue
-            # print(first_half + eprime_path + folder_name + "/" + eprime_timing + " " + problem + "/eprime/" + folder_name + " eprime "  + problem)
-            os.system(first_half + eprime_path + folder_name + "/" + eprime_timing + " " + problem + "/eprime/" + folder_name + " eprime "  + problem)
+            # if solver == "chuffed" and flag == "free":
+            #     continue
+            # # print(first_half + eprime_path + folder_name + "/" + eprime_timing + " " + problem + "/eprime/" + folder_name + " eprime "  + problem)
+            # os.system(first_half + eprime_path + folder_name + "/" + eprime_timing + " " + problem + "/eprime/" + folder_name + " eprime "  + problem)

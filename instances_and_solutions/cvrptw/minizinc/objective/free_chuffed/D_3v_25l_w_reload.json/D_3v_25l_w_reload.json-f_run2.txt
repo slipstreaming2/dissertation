@@ -1,0 +1,51 @@
+% Generated FlatZinc statistics:
+%%%mzn-stat: paths=0
+%%%mzn-stat: flatBoolVars=428
+%%%mzn-stat: flatIntVars=747
+%%%mzn-stat: flatBoolConstraints=214
+%%%mzn-stat: flatIntConstraints=1109
+%%%mzn-stat: evaluatedReifiedConstraints=110
+%%%mzn-stat: evaluatedHalfReifiedConstraints=318
+%%%mzn-stat: method="minimize"
+%%%mzn-stat: flatTime=0.376788
+%%%mzn-stat-end
+% Pruned 49999 learnt clauses
+% Pruned 50000 learnt clauses
+% Pruned 50000 learnt clauses
+% Pruned 49996 learnt clauses
+% Pruned 49999 learnt clauses
+% Pruned 49999 learnt clauses
+% Pruned 49997 learnt clauses
+% Pruned 50000 learnt clauses
+% Pruned 49997 learnt clauses
+% Pruned 50000 learnt clauses
+% Pruned 50000 learnt clauses
+% Pruned 50000 learnt clauses
+% Pruned 50000 learnt clauses
+% Pruned 49999 learnt clauses
+% Pruned 49971 learnt clauses
+% Time limit exceeded!
+%%%mzn-stat: nodes=1107076
+%%%mzn-stat: failures=839677
+%%%mzn-stat: restarts=1599
+%%%mzn-stat: variables=235553
+%%%mzn-stat: intVars=863
+%%%mzn-stat: boolVariables=234688
+%%%mzn-stat: propagators=1030
+%%%mzn-stat: propagations=3020407185
+%%%mzn-stat: peakDepth=162
+%%%mzn-stat: nogoods=839677
+%%%mzn-stat: backjumps=169186
+%%%mzn-stat: peakMem=0.00
+%%%mzn-stat: time=3600.687
+%%%mzn-stat: initTime=0.686
+%%%mzn-stat: solveTime=3600.001
+%%%mzn-stat: objective=-1
+%%%mzn-stat: optTime=0.000
+%%%mzn-stat: baseMem=0.00
+%%%mzn-stat: trailMem=2.11
+%%%mzn-stat: randomSeed=7
+=====UNKNOWN=====
+% time elapsed: 3601.36 s
+%%%mzn-stat: nSolutions=0
+%%%mzn-stat-end

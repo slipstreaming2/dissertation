@@ -17,8 +17,7 @@ function convert_eprime() {
         for f in $path/*${save_type};
         do 
             base_name=$(basename ${f})
-            echo "yo"
-            python ../python/jsonGenerator.py ${f} ${dir_to_save}/${base_name} ${3}
+            python ../python/statsSolutionsGenerator.py ${f} ${dir_to_save}/${base_name} ${3}
         done
     done 
 }
@@ -38,8 +37,9 @@ then
         [[ -d $dir_json ]] || mkdir $dir_json
         for f in $path/*${save_type};
         do 
+            echo $f
             base_name=$(basename ${f})
-            python ../python/jsonGenerator.py ${f} ${dir_to_save}/${base_name} ${3} $dir_json
+            python ../python/statsSolutionsGenerator.py ${f} ${dir_to_save}/${base_name} ${3} $dir_json
         done
     done 
 else 

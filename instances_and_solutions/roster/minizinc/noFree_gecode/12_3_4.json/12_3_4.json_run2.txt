@@ -1,0 +1,3 @@
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 523, "flatIntVars": 144, "flatBoolConstraints": 274, "flatIntConstraints": 637, "evaluatedReifiedConstraints": 405, "evaluatedHalfReifiedConstraints": 227, "eliminatedImplications": 84, "method": "satisfy", "flatTime": 0.29279}}
+{"type": "status", "status": "ERROR"}
+{"type": "statistics", "statistics": {"nSolutions": 0}}

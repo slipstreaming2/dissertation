@@ -63,7 +63,10 @@ array[States,1..2] of int: delta =
    | 2, 6
    | 2, 7
    | 2, 0 |];
-constraint forall (i in Teams) (regular( [venue[i,k] | k in Rounds], nbStates, 2, delta, 1, States));
+constraint forall (i in Teams) (
+    regular( [venue[i,k] | k in Rounds], nbStates, 2, delta, 1, States)
+    % fzn_regular( [venue[i,k] | k in Rounds], nbStates, 2, delta, 1, States)
+);
 
 % symmetry breaking: distances are symmetric so reversing the rounds yields a schedule of same cost
 constraint (opponent[1,1] < opponent[1,nbRounds]);

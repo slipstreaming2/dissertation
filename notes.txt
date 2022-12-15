@@ -15,8 +15,16 @@ Just the solution
 Compiler stats 
 ./minizinc --solver gecode Wordpress/Wordpress.mzn Wordpress/Wordpress_Offers20.dzn -c --compiler-statistics --json-stream > compiler.txt
 
+../../MiniZincIDE-2.6.4-bundle-linux-x86_64/bin/minizinc --help
+
 Quasigroup
-../../MiniZincIDE-2.6.4-bundle-linux-x86_64/bin/minizinc --solver chuffed ../miniZinc_files/quasigroupOcc/quasigroupOcc.mzn ../instances_and_solutions/quasigroup/dzn/50.json -s --compiler-statistics --output-mode json --json-stream
+../../MiniZincIDE-2.6.4-bundle-linux-x86_64/bin/minizinc --solver chuffed ../miniZinc_files/quasigroupOcc/quasigroupOcc.mzn ../instances_and_solutions/quasigroup/minizinc/instances/50.json -s --compiler-statistics --output-mode json --json-stream
+
+../../MiniZincIDE-2.6.4-bundle-linux-x86_64/bin/minizinc --solver chuffed ../miniZinc_files/cvrptw/cvrptw.mzn ../instances_and_solutions/cvrptw/minizinc/instances/toy_D_2v_4l_w_reload.json
+../../MiniZincIDE-2.6.4-bundle-linux-x86_64/bin/minizinc --solver chuffed ../miniZinc_files/mspsp/mspsp.mzn ../instances_and_solutions/mspsp/minizinc/instances/easy_01.dzn
+
+
+../../MiniZincIDE-2.6.4-bundle-linux-x86_64/bin/minizinc --solver chuffed -s -c --ignore-stdlib ../miniZinc_files/quasigroupOcc/quasigroupOcc.mzn ../instances_and_solutions/quasigroup/minizinc/instances/50.json 
 ../../MiniZincIDE-2.6.4-bundle-linux-x86_64/bin/minizinc --solver chuffed ../miniZinc_files/wordpress/wordpress.mzn ../instances_and_solutions/wordpress/minizinc/instances/Wordpress_Offers40.dzn -s -i --output-time
 ../../MiniZincIDE-2.6.4-bundle-linux-x86_64/bin/minizinc ../miniZinc_files/Quasigroup/QuasigroupCompletion.mzn ../instances_and_solutions/quasigroup/dzn/qwh-o30-h374-01.dzn -c
 ../../MiniZincIDE-2.6.4-bundle-linux-x86_64/bin/minizinc ../miniZinc_files/Quasigroup/QuasigroupCompletion.mzn ../instances_and_solutions/quasigroup/dzn/test.dzn -c
@@ -128,6 +136,8 @@ Bash
 ./translateData.sh ../instances_and_solutions/wordpressNoSymm/param/noFree/timing wordpressNoSymm eprime
 ./translateData.sh ../instances_and_solutions/wordpressNoSymm/eprime/noFree/timing wordpressNoSymmFree eprime
 ./translateData.sh ../instances_and_solutions/wordpress/dzn/noFree wordpress minizinc
+./translateData.sh ../instances_and_solutions/mspsp/minizinc/noStdLib mspspNoStdLib minizinc
+
 ./translateData.sh ../instances_and_solutions/wordpress/dzn/free wordpressFree minizinc
 ./translateData.sh ../instances_and_solutions/wordpressNoSymm/dzn/noFree wordpressNoSymm minizinc
 ./translateData.sh ../instances_and_solutions/wordpressNoSymm/dzn/free wordpressNoSymmFree minizinc
@@ -268,3 +278,208 @@ minizinc does not do input dimensions matrix type checking???
 
 
 The existing Chuffed FlatZinc backend is very similar but does not decompose allDifferent or lexicographic ordering constraints.
+
+
+
+minizinc: MiniZinc driver.
+Usage: minizinc  [<options>] [-I <include path>] <model>.mzn [<data>.dzn ...] or just <flat>.fzn
+General options:
+  --help, -h
+    Print this help message.
+  --version
+    Print version information.
+  --solvers
+    Print list of available solvers.
+  --time-limit <ms>
+    Stop after <ms> milliseconds (includes compilation and solving).
+  --solver <solver id>, --solver <solver config file>.msc
+    Select solver to use.
+  --help <solver id>
+    Print help for a particular solver.
+  -v, -l, --verbose
+    Print progress/log statements. Note that some solvers may log to stdout.
+  --verbose-compilation
+    Print progress/log statements for compilation.
+  -s, --statistics
+    Print statistics.
+  --compiler-statistics
+    Print statistics for compilation.
+  -c, --compile
+    Compile only (do not run solver).
+  --config-dirs
+    Output configuration directories.
+  --param-file <file>
+    Load parameters from the given JSON file.
+  --json-stream
+    Print output as newline-delimited JSON message objects.
+
+Flattener input options:
+  --instance-check-only
+    Check the model instance (including data) for errors, but do not
+    convert to FlatZinc.
+  -e, --model-check-only
+    Check the model (without requiring data) for errors, but do not
+    convert to FlatZinc.
+  --model-interface-only
+    Only extract parameters and output variables.
+  --model-types-only
+    Only output variable (enum) type information.
+  --debug
+    Evaluate debugging intrinsics ending with _dbg.
+  --no-optimize
+    Do not optimize the FlatZinc
+  --no-chain-compression
+    Do not simplify chains of implication constraints.
+  -m <file>, --model <file>
+    File named <file> is the model.
+  -d <file>, --data <file>
+    File named <file> contains data used by the model.
+  -D <data>, --cmdline-data <data>
+    Include the given data assignment in the model.
+  --cmdline-json-data <data>
+    Include the given JSON data in the model.
+  --stdlib-dir <dir>
+    Path to MiniZinc standard library directory
+  -G <dir>, --globals-dir <dir>, --mzn-globals-dir <dir>
+    Search for included globals in <stdlib>/<dir>.
+  -, --input-from-stdin
+    Read problem from standard input
+  -I <dir>, --search-dir <dir>
+    Additionally search for included files in <dir>.
+  -D "fMIPdomains=true"
+    Switch on MIPDomain Unification
+  --MIPDMaxIntvEE <n>
+    MIPD: max integer domain subinterval length to enforce equality encoding, default 0
+  --MIPDMaxDensEE <n>
+    MIPD: max domain cardinality to N subintervals ratio
+    to enforce equality encoding, default 0, either condition triggers
+  --only-range-domains
+    When no MIPdomains: all domains contiguous, holes replaced by inequalities
+  --allow-multiple-assignments
+    Allow multiple assignments to the same variable (e.g. in dzn)
+  --no-half-reifications
+    Only use fully reified constraints, even when a half reified constraint is defined.
+  --compile-solution-checker <file>.mzc.mzn
+    Compile solution checker model
+
+Flattener two-pass options:
+  --two-pass
+    Flatten twice to make better flattening decisions for the target
+  --use-gecode
+    Perform root-node-propagation with Gecode (adds --two-pass)
+  --shave
+    Probe bounds of all variables at the root node (adds --use-gecode)
+  --sac
+    Probe values of all variables at the root node (adds --use-gecode)
+  --pre-passes <n>
+    Number of times to apply shave/sac pass (0 = fixed-point, 1 = default)
+  -O<n>
+    Two-pass optimisation levels:
+    -O0:    Disable optimize (--no-optimize)  -O1:    Single pass (default)
+    -O2:    Same as: --two-pass               -O3:    Same as: --use-gecode
+    -O4:    Same as: --shave                  -O5:    Same as: --sac
+  -g
+    Debug mode: Forces -O0 and records all domain changes as constraints instead of applying them
+
+Flattener output options:
+  --no-output-ozn, -O-
+    Do not output ozn file
+  --output-base <name>
+    Base name for output files
+  --fzn <file>, --output-fzn-to-file <file>
+    Filename for generated FlatZinc output
+  --ozn, --output-ozn-to-file <file>
+    Filename for model output specification (--ozn- for none)
+  --keep-paths
+    Don't remove path annotations from FlatZinc
+  --output-paths
+    Output a symbol table (.paths file)
+  --output-paths-to-file <file>
+    Output a symbol table (.paths file) to <file>
+  --output-detailed-timing
+    Output detailed profiling information of compilation time
+  --output-to-stdout, --output-fzn-to-stdout
+    Print generated FlatZinc to standard output
+  --output-ozn-to-stdout
+    Print model output specification to standard output
+  --output-paths-to-stdout
+    Output symbol table to standard output
+  --output-mode <item|dzn|json|checker>
+    Create output according to output item (default), or output compatible
+    with dzn or json format, or for solution checking
+  --output-objective
+    Print value of objective function in dzn or json output
+  --output-output-item
+    Print the output item as a string in the dzn or json output
+  --only-sections <section_1,...section_n>
+    Enable only the given comma-separated output sections.
+  --not-sections <section_1,...section_n>
+    Disable the given comma-separated output sections.
+  -Werror
+    Turn warnings into errors
+
+Solution output options:
+  --ozn-file <file>
+    Read output specification from ozn file.
+  -o <file>, --output-to-file <file>
+    Filename for generated output.
+  -i <n>, --ignore-lines <n>, --ignore-leading-lines <n>
+    Ignore the first <n> lines in the FlatZinc solution stream.
+  --soln-sep <s>, --soln-separator <s>, --solution-separator <s>
+    Specify the string printed after each solution (as a separate line).
+    The default is to use the same as FlatZinc, "----------".
+  --soln-comma <s>, --solution-comma <s>
+    Specify the string used to separate solutions.
+    The default is the empty string.
+  --unsat-msg (--unsatisfiable-msg), --unbounded-msg, --unsatorunbnd-msg,
+        --unknown-msg, --error-msg, --search-complete-msg <msg>
+    Specify solution status messages. The defaults:
+    "=====UNSATISFIABLE=====", "=====UNSATorUNBOUNDED=====", "=====UNBOUNDED=====",
+    "=====UNKNOWN=====", "=====ERROR=====", "==========", respectively.
+  --non-unique
+    Allow duplicate solutions.
+  -c, --canonicalize
+    Canonicalize the output solution stream (i.e., buffer and sort).
+  --output-non-canonical <file>
+    Non-buffered solution output file in case of canonicalization.
+  --output-raw <file>
+    File to dump the solver's raw output (not for hard-linked solvers)
+  --no-output-comments
+    Do not print comments in the FlatZinc solution stream.
+  --output-time
+    Print timing information in the FlatZinc solution stream.
+  --no-flush-output
+    Don't flush output stream after every line.
+
+Available solvers (get help using --help <solver id>):
+  Chuffed 0.10.4 (org.chuffed.chuffed, cp, lcg, int)
+  COIN-BC 2.10.8/1.17.7 (org.minizinc.mip.coin-bc, mip, float, api, osicbc, coinbc, cbc)
+  CPLEX <unknown version> (org.minizinc.mip.cplex, mip, float, api)
+  findMUS 0.7.0 (org.minizinc.findmus)
+  Gecode 6.3.0 (org.gecode.gecode, default solver, cp, int, float, set, restart)
+  Gecode Gist 6.3.0 (org.gecode.gist, cp, int, float, set, restart)
+  Globalizer 0.1.7.2 (org.minizinc.globalizer, experimental, tool)
+  Gurobi <unknown version> (org.minizinc.mip.gurobi, mip, float, api)
+  SCIP <unknown version> (org.minizinc.mip.scip, mip, float, api)
+  Xpress <unknown version> (org.minizinc.mip.xpress, mip, float, api)
+
+
+
+
+circ14enonbal - mzn gets solutions, eprime only 1
+circ20dnonbal - no eprime solutions, just mzn
+
+cvrptw A_4v_22l
+circ20inonbal
+circ20jnonbal
+circ14anonbal
+circ14bnonbal
+circ14cnonbal - O3 only 
+circ20anonbal, circ20bnonbal - late!
+circ20cnonbal
+circ20enonbal
+circ20g
+circ8d
+circ8b 
+
+

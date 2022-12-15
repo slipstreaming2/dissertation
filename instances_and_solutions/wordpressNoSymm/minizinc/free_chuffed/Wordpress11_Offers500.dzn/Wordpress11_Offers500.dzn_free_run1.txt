@@ -1,0 +1,40 @@
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 56, "flatIntVars": 302, "flatBoolConstraints": 30, "flatIntConstraints": 490, "evaluatedReifiedConstraints": 55, "evaluatedHalfReifiedConstraints": 1, "method": "minimize", "flatTime": 0.308737}}
+{"type": "comment", "comment": "% Pruned 50000 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 50000 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 50000 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49999 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 50000 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 50000 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 50000 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 50000 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 50000 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 50000 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 50000 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 50000 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 50000 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 50000 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 50000 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 50000 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 50000 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 50000 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 50000 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 50000 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49999 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49991 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49991 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 50000 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 50000 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 50000 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 50000 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 50000 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 50000 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 50000 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 50000 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 50000 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49999 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 49992 learnt clauses"}
+{"type": "comment", "comment": "% Pruned 50000 learnt clauses"}
+{"type": "statistics", "statistics": {"nodes": 2361410, "failures": 1817428, "restarts": 6903, "variables": 301339, "intVars": 402, "boolVariables": 300935, "propagators": 394, "propagations": 311059458, "peakDepth": 101, "nogoods": 1817428, "backjumps": 81698, "peakMem": 0.0, "time": 3600.628, "initTime": 0.626, "solveTime": 3600.002, "objective": 3882, "optTime": 3574.85, "baseMem": 0.0, "trailMem": 410.57, "randomSeed": 1}}
+{"type": "solution", "output": {"json": {  "AssignmentMatrix" : [[0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0, 1], [1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0]],  "OccupancyVector" : [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],  "VMType" : [433, 433, 433, 316, 433, 433, 433, 341, 341, 341, 433, 433, 433, 433, 457, 433, 495, 341, 433, 433, 433, 341, 433, 341, 316],  "Price" : [116, 116, 116, 350, 116, 116, 116, 210, 210, 210, 116, 116, 116, 116, 130, 116, 52, 210, 116, 116, 116, 210, 116, 210, 350]}}, "sections": ["json"]}
+{"type": "comment", "comment": "% Time limit exceeded!"}
+{"type": "statistics", "statistics": {"nSolutions": 1}}

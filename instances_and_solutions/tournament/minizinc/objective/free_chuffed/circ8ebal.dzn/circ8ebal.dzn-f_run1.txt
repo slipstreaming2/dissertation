@@ -1,0 +1,365 @@
+% Generated FlatZinc statistics:
+%%%mzn-stat: paths=0
+%%%mzn-stat: flatBoolVars=336
+%%%mzn-stat: flatIntVars=329
+%%%mzn-stat: flatBoolConstraints=224
+%%%mzn-stat: flatIntConstraints=625
+%%%mzn-stat: evaluatedHalfReifiedConstraints=336
+%%%mzn-stat: method="minimize"
+%%%mzn-stat: flatTime=0.58481
+%%%mzn-stat-end
+opponent = 
+[| 2, 3, 4, 5, 6, 7, 8
+ | 1, 4, 3, 6, 5, 8, 7
+ | 4, 1, 2, 7, 8, 5, 6
+ | 3, 2, 1, 8, 7, 6, 5
+ | 6, 7, 8, 1, 2, 3, 4
+ | 5, 8, 7, 2, 1, 4, 3
+ | 8, 5, 6, 3, 4, 1, 2
+ | 7, 6, 5, 4, 3, 2, 1
+ |];
+venue = 
+[| 1, 1, 1, 2, 2, 1, 2
+ | 2, 2, 2, 1, 1, 2, 1
+ | 1, 2, 1, 1, 1, 2, 2
+ | 2, 1, 2, 2, 2, 1, 1
+ | 1, 2, 1, 1, 2, 1, 2
+ | 2, 1, 2, 2, 1, 2, 1
+ | 1, 1, 1, 2, 1, 2, 2
+ | 2, 2, 2, 1, 2, 1, 1
+ |];
+travel = 
+[| 0, 0, 0, 4, 1, 3, 1, 1
+ | 1, 3, 1, 1, 0, 2, 2, 0
+ | 0, 2, 2, 0, 0, 2, 1, 3
+ | 1, 1, 3, 1, 1, 3, 0, 0
+ | 0, 2, 2, 0, 3, 3, 1, 1
+ | 1, 1, 1, 3, 4, 2, 2, 0
+ | 0, 0, 0, 4, 4, 2, 1, 3
+ | 1, 1, 1, 3, 3, 3, 0, 0
+ |];
+objective = 92;
+% time elapsed: 0.76 s
+----------
+opponent = 
+[| 2, 3, 4, 5, 6, 7, 8
+ | 1, 4, 3, 6, 5, 8, 7
+ | 4, 1, 2, 7, 8, 6, 5
+ | 3, 2, 1, 8, 7, 5, 6
+ | 6, 7, 8, 1, 2, 4, 3
+ | 5, 8, 7, 2, 1, 3, 4
+ | 8, 5, 6, 3, 4, 1, 2
+ | 7, 6, 5, 4, 3, 2, 1
+ |];
+venue = 
+[| 1, 1, 1, 2, 2, 1, 2
+ | 2, 2, 2, 1, 1, 2, 1
+ | 1, 2, 1, 1, 1, 2, 2
+ | 2, 1, 2, 2, 2, 1, 1
+ | 1, 2, 1, 1, 2, 2, 1
+ | 2, 1, 2, 2, 1, 1, 2
+ | 1, 1, 1, 2, 1, 2, 2
+ | 2, 2, 2, 1, 2, 1, 1
+ |];
+travel = 
+[| 0, 0, 0, 4, 1, 3, 1, 1
+ | 1, 3, 1, 1, 0, 2, 2, 0
+ | 0, 2, 2, 0, 0, 3, 1, 2
+ | 1, 1, 3, 1, 1, 3, 0, 0
+ | 0, 2, 2, 0, 3, 2, 1, 0
+ | 1, 1, 1, 3, 4, 0, 2, 2
+ | 0, 0, 0, 4, 4, 2, 1, 3
+ | 1, 1, 1, 3, 3, 3, 0, 0
+ |];
+objective = 90;
+% time elapsed: 0.77 s
+----------
+opponent = 
+[| 2, 3, 4, 5, 6, 7, 8
+ | 1, 4, 3, 7, 8, 5, 6
+ | 4, 1, 2, 6, 5, 8, 7
+ | 3, 2, 1, 8, 7, 6, 5
+ | 6, 7, 8, 1, 3, 2, 4
+ | 5, 8, 7, 3, 1, 4, 2
+ | 8, 5, 6, 2, 4, 1, 3
+ | 7, 6, 5, 4, 2, 3, 1
+ |];
+venue = 
+[| 1, 1, 1, 2, 2, 1, 2
+ | 2, 2, 2, 1, 2, 1, 1
+ | 1, 2, 1, 2, 2, 1, 1
+ | 2, 1, 2, 2, 2, 1, 1
+ | 1, 2, 1, 1, 1, 2, 2
+ | 2, 1, 2, 1, 1, 2, 2
+ | 1, 1, 1, 2, 1, 2, 2
+ | 2, 2, 2, 1, 1, 2, 1
+ |];
+travel = 
+[| 0, 0, 0, 4, 1, 3, 1, 1
+ | 1, 3, 1, 1, 2, 2, 0, 0
+ | 0, 2, 2, 3, 1, 2, 0, 0
+ | 1, 1, 3, 1, 1, 3, 0, 0
+ | 0, 2, 2, 0, 0, 3, 2, 1
+ | 1, 1, 1, 1, 0, 2, 2, 4
+ | 0, 0, 0, 3, 3, 2, 2, 4
+ | 1, 1, 1, 3, 0, 3, 3, 0
+ |];
+objective = 88;
+% time elapsed: 0.80 s
+----------
+opponent = 
+[| 2, 3, 4, 5, 6, 7, 8
+ | 1, 8, 6, 7, 4, 3, 5
+ | 8, 1, 5, 6, 7, 2, 4
+ | 7, 6, 1, 8, 2, 5, 3
+ | 6, 7, 3, 1, 8, 4, 2
+ | 5, 4, 2, 3, 1, 8, 7
+ | 4, 5, 8, 2, 3, 1, 6
+ | 3, 2, 7, 4, 5, 6, 1
+ |];
+venue = 
+[| 1, 1, 1, 2, 2, 1, 2
+ | 2, 2, 1, 1, 2, 2, 1
+ | 1, 2, 2, 2, 1, 1, 1
+ | 2, 1, 2, 2, 1, 1, 2
+ | 1, 2, 1, 1, 1, 2, 2
+ | 2, 2, 2, 1, 1, 1, 2
+ | 1, 1, 1, 2, 2, 2, 1
+ | 2, 1, 2, 1, 2, 2, 1
+ |];
+travel = 
+[| 0, 0, 0, 4, 1, 3, 1, 1
+ | 1, 1, 2, 0, 2, 1, 1, 0
+ | 0, 2, 4, 1, 3, 0, 0, 0
+ | 3, 3, 3, 1, 4, 0, 1, 1
+ | 0, 2, 2, 0, 0, 1, 2, 3
+ | 1, 1, 2, 4, 0, 0, 1, 1
+ | 0, 0, 0, 3, 1, 2, 2, 0
+ | 3, 3, 1, 1, 3, 1, 2, 0
+ |];
+objective = 86;
+% time elapsed: 6.69 s
+----------
+% Pruned 49996 learnt clauses
+opponent = 
+[| 2, 3, 4, 6, 5, 7, 8
+ | 1, 8, 5, 7, 4, 3, 6
+ | 8, 1, 6, 5, 7, 2, 4
+ | 5, 7, 1, 8, 2, 6, 3
+ | 4, 6, 2, 3, 1, 8, 7
+ | 7, 5, 3, 1, 8, 4, 2
+ | 6, 4, 8, 2, 3, 1, 5
+ | 3, 2, 7, 4, 6, 5, 1
+ |];
+venue = 
+[| 1, 1, 1, 2, 2, 1, 2
+ | 2, 2, 1, 1, 2, 2, 1
+ | 1, 2, 2, 2, 1, 1, 1
+ | 1, 2, 2, 2, 1, 1, 2
+ | 2, 1, 2, 1, 1, 1, 2
+ | 2, 2, 1, 1, 1, 2, 2
+ | 1, 1, 1, 2, 2, 2, 1
+ | 2, 1, 2, 1, 2, 2, 1
+ |];
+travel = 
+[| 0, 0, 0, 3, 1, 4, 1, 1
+ | 1, 1, 2, 0, 2, 1, 1, 0
+ | 0, 2, 3, 1, 2, 0, 0, 0
+ | 0, 3, 2, 1, 4, 0, 1, 1
+ | 1, 1, 3, 3, 0, 0, 2, 2
+ | 1, 2, 1, 0, 0, 2, 2, 4
+ | 0, 0, 0, 3, 1, 2, 2, 0
+ | 3, 3, 1, 1, 2, 1, 3, 0
+ |];
+objective = 84;
+% time elapsed: 129.08 s
+----------
+% Pruned 49998 learnt clauses
+opponent = 
+[| 2, 7, 8, 6, 5, 3, 4
+ | 1, 8, 7, 5, 3, 4, 6
+ | 6, 5, 4, 7, 2, 1, 8
+ | 5, 6, 3, 8, 7, 2, 1
+ | 4, 3, 6, 2, 1, 8, 7
+ | 3, 4, 5, 1, 8, 7, 2
+ | 8, 1, 2, 3, 4, 6, 5
+ | 7, 2, 1, 4, 6, 5, 3
+ |];
+venue = 
+[| 1, 1, 2, 2, 2, 1, 1
+ | 2, 2, 1, 1, 2, 2, 1
+ | 2, 2, 1, 1, 1, 2, 1
+ | 1, 1, 2, 2, 2, 1, 2
+ | 2, 1, 1, 2, 1, 1, 2
+ | 1, 2, 2, 1, 1, 2, 2
+ | 1, 2, 2, 2, 1, 1, 1
+ | 2, 1, 1, 1, 2, 2, 2
+ |];
+travel = 
+[| 0, 0, 1, 2, 1, 4, 0, 0
+ | 1, 1, 2, 0, 1, 1, 2, 0
+ | 3, 1, 2, 0, 0, 2, 2, 0
+ | 0, 0, 1, 3, 1, 3, 3, 3
+ | 1, 1, 0, 3, 3, 0, 2, 2
+ | 0, 2, 1, 1, 0, 1, 3, 4
+ | 0, 2, 1, 1, 4, 0, 0, 0
+ | 1, 1, 0, 0, 2, 1, 2, 3
+ |];
+objective = 82;
+% time elapsed: 150.48 s
+----------
+% Pruned 49997 learnt clauses
+% Pruned 49997 learnt clauses
+% Pruned 50000 learnt clauses
+% Pruned 49999 learnt clauses
+% Pruned 49998 learnt clauses
+% Pruned 49999 learnt clauses
+opponent = 
+[| 2, 3, 7, 8, 6, 5, 4
+ | 1, 4, 6, 5, 7, 8, 3
+ | 4, 1, 8, 7, 5, 6, 2
+ | 3, 2, 5, 6, 8, 7, 1
+ | 7, 8, 4, 2, 3, 1, 6
+ | 8, 7, 2, 4, 1, 3, 5
+ | 5, 6, 1, 3, 2, 4, 8
+ | 6, 5, 3, 1, 4, 2, 7
+ |];
+venue = 
+[| 1, 1, 1, 2, 2, 2, 1
+ | 2, 2, 1, 1, 1, 2, 2
+ | 1, 2, 1, 1, 2, 2, 1
+ | 2, 1, 1, 1, 2, 2, 2
+ | 2, 1, 2, 2, 1, 1, 1
+ | 1, 2, 2, 2, 1, 1, 2
+ | 1, 1, 2, 2, 2, 1, 1
+ | 2, 2, 2, 1, 1, 1, 2
+ |];
+travel = 
+[| 0, 0, 0, 1, 2, 1, 4, 0
+ | 1, 3, 2, 0, 0, 2, 3, 1
+ | 0, 2, 2, 0, 2, 1, 3, 0
+ | 1, 1, 0, 0, 4, 1, 2, 3
+ | 2, 2, 1, 2, 3, 0, 0, 0
+ | 0, 1, 3, 2, 2, 0, 1, 1
+ | 0, 0, 2, 2, 1, 3, 0, 0
+ | 2, 1, 2, 3, 0, 0, 1, 1
+ |];
+objective = 80;
+% time elapsed: 580.58 s
+----------
+% Pruned 49997 learnt clauses
+% Pruned 49997 learnt clauses
+% Pruned 50000 learnt clauses
+% Pruned 49998 learnt clauses
+% Pruned 49994 learnt clauses
+% Pruned 49999 learnt clauses
+% Pruned 49998 learnt clauses
+% Pruned 50000 learnt clauses
+% Pruned 50000 learnt clauses
+% Pruned 50000 learnt clauses
+% Pruned 49999 learnt clauses
+% Pruned 49999 learnt clauses
+% Pruned 49992 learnt clauses
+% Pruned 49998 learnt clauses
+% Pruned 49999 learnt clauses
+% Pruned 49999 learnt clauses
+% Pruned 50000 learnt clauses
+% Pruned 49998 learnt clauses
+% Pruned 49999 learnt clauses
+% Pruned 50000 learnt clauses
+% Pruned 50000 learnt clauses
+% Pruned 49997 learnt clauses
+% Pruned 49999 learnt clauses
+% Pruned 50000 learnt clauses
+% Pruned 50000 learnt clauses
+% Pruned 49996 learnt clauses
+% Pruned 49999 learnt clauses
+% Pruned 49999 learnt clauses
+% Pruned 49999 learnt clauses
+% Pruned 49999 learnt clauses
+% Pruned 49998 learnt clauses
+% Pruned 49995 learnt clauses
+% Pruned 49998 learnt clauses
+% Pruned 49999 learnt clauses
+opponent = 
+[| 2, 7, 8, 5, 6, 4, 3
+ | 1, 8, 7, 4, 3, 5, 6
+ | 4, 5, 6, 7, 2, 8, 1
+ | 3, 6, 5, 2, 7, 1, 8
+ | 6, 3, 4, 1, 8, 2, 7
+ | 5, 4, 3, 8, 1, 7, 2
+ | 8, 1, 2, 3, 4, 6, 5
+ | 7, 2, 1, 6, 5, 3, 4
+ |];
+venue = 
+[| 1, 1, 2, 2, 2, 1, 1
+ | 2, 2, 1, 2, 2, 1, 1
+ | 1, 2, 2, 1, 1, 1, 2
+ | 2, 1, 1, 1, 2, 2, 2
+ | 1, 1, 2, 1, 1, 2, 2
+ | 2, 2, 1, 1, 1, 2, 2
+ | 1, 2, 2, 2, 1, 1, 1
+ | 2, 1, 1, 2, 2, 2, 1
+ |];
+travel = 
+[| 0, 0, 1, 3, 1, 3, 0, 0
+ | 1, 1, 2, 2, 1, 1, 0, 0
+ | 0, 2, 1, 3, 0, 0, 2, 2
+ | 1, 1, 0, 0, 3, 2, 1, 4
+ | 0, 0, 1, 1, 0, 3, 3, 2
+ | 1, 1, 2, 0, 0, 1, 3, 4
+ | 0, 2, 1, 1, 4, 0, 0, 0
+ | 1, 1, 0, 2, 1, 2, 3, 0
+ |];
+objective = 78;
+% time elapsed: 2481.42 s
+----------
+% Pruned 49999 learnt clauses
+% Pruned 49999 learnt clauses
+% Pruned 49995 learnt clauses
+% Pruned 49992 learnt clauses
+% Pruned 49993 learnt clauses
+% Pruned 49990 learnt clauses
+% Pruned 49992 learnt clauses
+% Pruned 49999 learnt clauses
+% Pruned 49996 learnt clauses
+% Pruned 49991 learnt clauses
+% Pruned 49999 learnt clauses
+% Pruned 49998 learnt clauses
+% Pruned 50000 learnt clauses
+% Pruned 49997 learnt clauses
+% Pruned 50000 learnt clauses
+% Pruned 49999 learnt clauses
+% Pruned 50000 learnt clauses
+% Pruned 50000 learnt clauses
+% Pruned 49998 learnt clauses
+% Pruned 49999 learnt clauses
+% Pruned 49996 learnt clauses
+% Pruned 49998 learnt clauses
+% Pruned 49999 learnt clauses
+% Pruned 49998 learnt clauses
+% Pruned 49999 learnt clauses
+% Pruned 49998 learnt clauses
+% Time limit exceeded!
+%%%mzn-stat: nodes=3672834
+%%%mzn-stat: failures=3490606
+%%%mzn-stat: restarts=5671
+%%%mzn-stat: variables=11714
+%%%mzn-stat: intVars=385
+%%%mzn-stat: boolVariables=11327
+%%%mzn-stat: propagators=491
+%%%mzn-stat: propagations=1038232080
+%%%mzn-stat: peakDepth=31
+%%%mzn-stat: nogoods=3490606
+%%%mzn-stat: backjumps=125906
+%%%mzn-stat: peakMem=0.00
+%%%mzn-stat: time=3600.086
+%%%mzn-stat: initTime=0.085
+%%%mzn-stat: solveTime=3600.001
+%%%mzn-stat: objective=78
+%%%mzn-stat: optTime=2480.661
+%%%mzn-stat: baseMem=0.00
+%%%mzn-stat: trailMem=0.05
+%%%mzn-stat: randomSeed=1
+%%%mzn-stat: nSolutions=8
+%%%mzn-stat-end

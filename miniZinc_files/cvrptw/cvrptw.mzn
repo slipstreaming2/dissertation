@@ -133,6 +133,12 @@ constraint redundant_constraint(
    circuit(predecessor)
 );
 
+% alldiff + subtour elimination constraints
+% constraint 
+%    circuit_decomp(successor);
+% constraint redundant_constraint(
+%    circuit_decomp(predecessor)
+% );
 
 % ---- vehicle constraints ------------- %
 

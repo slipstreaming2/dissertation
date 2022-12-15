@@ -1,1 +1,1 @@
-{"SolverTotalTime": 43.812, "SavileRowClauseOut": 0, "SavileRowTotalTime": 0.456, "SolverSatisfiable": 1, "SavileRowTimeOut": 0, "SolverTimeOut": 0, "SolverNodes": 73623}
+{"SolverTotalTime": 49.141, "SavileRowClauseOut": 0, "SavileRowTotalTime": 0.53, "SolverSatisfiable": 1, "SavileRowTimeOut": 0, "SolverTimeOut": 0, "SolverNodes": 73623}

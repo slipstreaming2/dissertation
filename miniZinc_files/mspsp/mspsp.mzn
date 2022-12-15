@@ -100,6 +100,7 @@ constraint
                 }
         } in (
             if card(WTasks) > 1 then
+                % fzn_cumulative_opt_decomp(
                 cumulative(
                     [ s[i]              | i in WTasks ],
                     [ d[i]              | i in WTasks ],
@@ -140,6 +141,7 @@ constraint
             int: sum_rr = sum(i in RTasks)( rr[k,i] )
         } in (
             if card(RTasks) > 1 /\ sum_rr > rc[k] then
+                % fzn_cumulative_opt_decomp(
                 cumulative(
                     [ s[i]    | i in RTasks ],
                     [ d[i]    | i in RTasks ],
