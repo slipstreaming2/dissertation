@@ -2,7 +2,6 @@ from ast import literal_eval
 import json
 import sys
 
-# infile = sys.argv[1]
 identLocation = 1
 varLocation = 3
 
@@ -34,6 +33,138 @@ def readFile(fileName):
     toCheck[identifier] = literal_eval(builder) # last join
     return toCheck
 
+def readMinizinc(fileName):
+    f = open(fileName, "r")
+    solutions = {}
+    lines = f.readlines()
+    for line in lines:
+        lineJson = json.loads(line)
+        lineType = lineJson["type"]
+        if lineType == "solution":
+            solutions.update(lineJson["output"]["json"])
+        if lineType == "comment" and lineJson["comment"] == "% Time limit exceeded!":
+            return {}
+    f.close()
+    return solutions
+
+def readObjective(fileName):
+    f = open(fileName, "r")
+    lines = f.readlines()
+    lastSolution = []
+    currSolution = []
+    builder = ""
+    is_building = False
+    for line in lines:
+        if "-----" in line:
+            lastSolution = currSolution.copy()
+            currSolution = []
+        else:
+            if len(line) == 0 or '%' in line or ('=' not in line and not is_building):
+                continue
+            if not is_building and ';' not in line:
+                is_building = True 
+            if is_building:
+                builder += line
+            else:
+                line = line.replace(";\n", "")
+                currSolution.append(line)
+            if ';' in line and is_building:
+                builder = builder.replace(";", "")
+                builder = builder.replace("\n", "")
+                currSolution.append(builder)
+                builder = ""
+                is_building = False
+    f.close()
+    return lastSolution
+
+def readObjectiveCVR(fileName, param_file):
+    lastSolution = readObjective(fileName)
+    if len(lastSolution) == 0:
+        return {}
+    if checking_type == "minizinc":
+        return getMiniZincObjective(lastSolution)
+    
+    maxNodes = param_file["M"]+2*param_file["K"]
+    solution = {}
+    for line in lastSolution:
+        underscore_split = line.split("_")
+        equal_split = line.split("=")
+        val = literal_eval(equal_split[-1].strip())
+        if 'objective' in equal_split[0] or 'start_load' in equal_split[0]:
+            solution[equal_split[0].strip()] = val
+        else:
+            name = underscore_split[0].strip()
+            if name not in solution:
+                solution[name] = [-1 for _ in range(maxNodes)]
+            spltLine = underscore_split[1].split("=")
+            index = literal_eval(spltLine[0].lstrip("0").strip())
+            solution[name][index-1] = val
+    return solution 
+
+
+def getMiniZincObjective(lastSolution):
+    solution = {}
+    for line in lastSolution:
+        getMiniZincLine(line,solution)
+    return solution
+
+def getMiniZincLine(line, solution):
+    line = line.replace(' ', '')
+    line = line.split('=')
+    solution[line[0]] = literal_eval(line[-1])
+
+def translateArray(arrayLine):
+    splitArray = arrayLine.split('|')
+    if len(splitArray) == 1:
+        return splitArray[0]
+    newArray = splitArray[0] + "[" + splitArray[1]
+    for i in range(2, len(splitArray)-1):
+        newArray += "],[" + splitArray[i] 
+    newArray += "]" + splitArray[len(splitArray) - 1]
+    return newArray
+
+
+def getTournamentObjective(lastSolution):
+    solution = {}
+    for line in lastSolution:
+        spltline = line.split('=')
+        val = spltline[0].strip()
+        if '[' in line:
+            solution[val] = literal_eval(translateArray(spltline[1].strip()))
+        else:
+            getMiniZincLine(line, solution)
+    return solution
+
+
+def readObjectiveTTPPV(fileName):
+    lastSolution = readObjective(fileName)
+    if len(lastSolution) == 0:
+        return {}
+    if checking_type == "minizinc":
+        return getTournamentObjective(lastSolution) 
+    solution = {}
+    solution["opponent"] = [[]]
+    solution["travel"] = [[]]
+    solution["objective"] = 0
+    solution["venue"] = [[]]
+    twoDSols = ["opponent", "travel", "venue"]
+    for line in lastSolution:
+        spltLine = line.split(" ")
+        var = spltLine[0].split("_")
+        varName = var[0]
+        if varName in solution:
+            val = literal_eval(line.split('=')[-1].strip())
+            if varName in twoDSols:
+                indx1 = literal_eval(var[1].lstrip('0').strip())
+                if len(solution[varName]) < indx1:
+                    solution[varName].append([])
+                solution[varName][indx1-1].append(val)
+            else: # objective
+                solution[varName] = val
+    return solution
+
+
+
 def quasigroup(solutionFile, paramFile):
     # solutionFile = readFile("./quasigroup/quasigroup.param.solution")
     # paramFile = readFile("./quasigroup/quasigroup.param")
@@ -61,7 +192,7 @@ def quasigroup(solutionFile, paramFile):
         assert len(set(horizSet)) == paramDimensions
         assert len(set(colSet)) == paramDimensions
 
-def quasigroupOcc(paramFile, solutionFile):
+def quasigroupOcc(solutionFile, paramFile):
     paramDimensions = paramFile["N"]
     latinSquare = solutionFile["puzzle"]
     inputPuzzle = paramFile["start"]
@@ -106,14 +237,15 @@ def wordpress(solutionFile, paramFile):
     dns = 2
     http = 3
     varnish = 4
-    cpu = 0
-    memory = 1
-    storage = 2
+    # cpu = 0
+    # memory = 1
+    # storage = 2
     assignment = solutionFile["AssignmentMatrix"]
     vmType = solutionFile["VMType"]
-    cpuAssign = solutionFile["CPU"]
-    memoryAssign = solutionFile["Memory"]
-    storageAssign = solutionFile["Storage"]
+    occVect = solutionFile["OccupancyVector"]
+    # cpuAssign = solutionFile["CPU"]
+    # memoryAssign = solutionFile["Memory"]
+    # storageAssign = solutionFile["Storage"]
     priceAssign = solutionFile["Price"]
     
     # inputNumAssingments = paramFile["WPInstances"]
@@ -155,14 +287,15 @@ def wordpress(solutionFile, paramFile):
     
     # resources match the specs of each VM
     for k in range(numVM):
-        usedComp = 0
-        for i in range(numComp):
-            usedComp += assignment[i][k]
-        if usedComp >= 1:
+        # usedComp = 0
+        # for i in range(numComp):
+        #     usedComp += assignment[i][k]
+        # if usedComp >= 1:
+        if occVect[k] == 1:
             currVmType = vmType[k]-1
-            assert cpuAssign[k] == vmSpecs[currVmType][cpu]
-            assert storageAssign[k] == vmSpecs[currVmType][storage]
-            assert memoryAssign[k] == vmSpecs[currVmType][memory]
+            # assert cpuAssign[k] == vmSpecs[currVmType][cpu]
+            # assert storageAssign[k] == vmSpecs[currVmType][storage]
+            # assert memoryAssign[k] == vmSpecs[currVmType][memory]
             assert priceAssign[k] == vmPrice[currVmType]
     
     # varnish and mySQL cannot be deployed on the same machine
@@ -194,7 +327,7 @@ def cmpMiniZincEssence(essenceVal, minizincVal):
 def compareTournament(eprimeSolution, minizincSolution):
     target = "travel"
     eprimeTravel = eprimeSolution[target]
-    minizincTravel = eprimeSolution[target]
+    minizincTravel = minizincSolution[target]
     eprimeTotalTravel = sum(map(sum,eprimeTravel))
     minizincTotalTravel = sum(map(sum, minizincTravel))
     cmpMiniZincEssence(eprimeTotalTravel, minizincTotalTravel)
@@ -207,7 +340,7 @@ def checkTournament(solutionFile, paramFile):
     opponent = solutionFile["opponent"]
     venue = solutionFile["venue"]
     travel = solutionFile["travel"]
-    distance = []
+    distance = [] # circular distances between teams
 
     for i in range(1,nbTeams+1): 
         distance.append([None] * nbTeams)
@@ -294,10 +427,10 @@ def checkRoster(solutionFile, paramFile):
     s_max = paramFile["s_max"]
     shiftRequirements = paramFile["shiftRequirements"]
     
-    plan1d = solutionFile["plan1d"]
+    # plan1d = solutionFile["plan1d"]
     # plan2dT = solutionFile["plan2dT"]
     plan2d = solutionFile["plan2d"]
-    numberOfShifts = 3
+    numberOfShiftTypes = 3
 
     assert len(plan2d) == numWeeks
     assert len(plan2d[0]) == daysPerWeek
@@ -307,12 +440,9 @@ def checkRoster(solutionFile, paramFile):
         for j in range(numWeeks):
             plan2dT[i][j] = plan2d[j][i]
 
-    # print(plan2dT)
-    # print(plan2d)
-
     # shift requirements respected
     for i in range(daysPerWeek):
-        for j in range(numberOfShifts+1):
+        for j in range(numberOfShiftTypes+1):
             assert shiftRequirements[i][j] == plan2dT[i].count(j)
     
     # weekend matches
@@ -359,13 +489,16 @@ def checkRoster(solutionFile, paramFile):
 def checkCVR(solutionFile, paramFile):
     successor = solutionFile["successor"]
     predecessor = solutionFile["predecessor"]
-    vehicle = solutionFile["vehicle"] # which vehicle visits which customer
+    vehicle = {}
+    # with -O2 vehicle var deleted or not all values present
+    if 'vehicle' in solutionFile and -1 not in solutionFile["vehicle"]:
+        vehicle = solutionFile["vehicle"] # which vehicle visits which customer
     load = solutionFile["load"]
     arrivalTime = solutionFile["arrivalTime"] # arrival time at node
-    departureTime = solutionFile["departureTime"] # departure time at node UNUSED??
+    # departureTime = solutionFile["departureTime"] # departure time at node UNUSED??
     slack = solutionFile["slack"] # time waiting, slack time if necessary
     objective = solutionFile["objective"]
-    start_load = solutionFile["start_load"] # UNUSED????
+    # start_load = solutionFile["start_load"] # UNUSED????
 
     NumCustomers = paramFile["M"] # num nodes in MIP model
     NumVehicles = paramFile["K"] # num vehicles
@@ -382,29 +515,44 @@ def checkCVR(solutionFile, paramFile):
     # for n in range(NumCustomers+NumVehicles, NumCustomers+2*NumVehicles):
     #     assert successor[n] == n-NumVehicles+1
 
+    # def circuitEprime(toCheck, toCheckOrder):
+    #     maxNodes = NumCustomers + 2*NumVehicles
+    #     nonNegToCheck = [i for i in toCheck if i != -1]
+    #     nonNegToCheckOrder = [i for i in toCheckOrder if i != -1]
+
+    #     assert len(set(nonNegToCheck)) == len(nonNegToCheck)
+    #     for i in range(len(toCheck)):
+    #         if toCheck[i] != -1:
+    #             assert toCheck[i] != i+1
+        
+    #     assert len(set(nonNegToCheckOrder)) == len(nonNegToCheckOrder)
+    #     if toCheckOrder[0] != -1:
+    #         assert toCheckOrder[0] == 1
+    #     print(toCheckOrder, toCheck)
+    #     for i in range(maxNodes):
+    #         if toCheckOrder[i] != -1 and toCheck[i] != -1:
+    #             if toCheckOrder[i] == maxNodes:
+    #                 assert toCheckOrder[toCheck[i]-1] == 1
+    #             else:
+    #                 assert toCheckOrder[toCheck[i]-1] == toCheckOrder[i] + 1
+
 
     def circuit(toCheck):
         starting = toCheck[0]
         end_index = 1
         count = 1
+        assert len(set(toCheck)) == len(toCheck)
         while starting != end_index:
             count += 1
             starting = toCheck[starting-1]
         assert len(toCheck) == count
 
-        # assert len(set(toCheck)) == len(toCheck)
-        # for i in range(toCheck):
-        #     toCheck[i]  
-
-        # orderSucc = [0 for _ in range(toCheck)]
-        # orderSucc[0] = 1
-        # for i in range(toCheck):
-        #     orderSucc[toCheck[i]-1] = 1 if orderSucc[i] == len(toCheck) else orderSucc[i]+1
-        #     assert toCheck[i] != i+1
-        # assert len(set(orderSucc)) == len(orderSucc)
-
+    # if checking_type == 'minizinc':
     circuit(successor) # needed?
     circuit(predecessor) # needed?
+    # else:
+    #     circuitEprime(successor, solutionFile['successorOrder'])
+    #     circuitEprime(predecessor, solutionFile['predecessorOrder'])
 
 
     # predecessor/successor constraint
@@ -412,7 +560,8 @@ def checkCVR(solutionFile, paramFile):
         assert successor[predecessor[n]-1] == n+1
         assert predecessor[successor[n]-1] == n+1
 
-    # vehicle constraints
+    # if len(vehicle) > 0:
+        # vehicle constraints
     for n in range(NumCustomers):
         assert vehicle[predecessor[n]-1] == vehicle[n]
         assert vehicle[successor[n]-1] == vehicle[n]
@@ -420,6 +569,7 @@ def checkCVR(solutionFile, paramFile):
 
     # pickups and deliveries
     for n in range(NumCustomers):
+        # if len(vehicle) > 0:
         assert vehicle[n] == vehicle[PDs[n][1]-1]
         assert arrivalTime[n] >= arrivalTime[PDs[n][1]-1]
     # ---------------------------- #
@@ -434,6 +584,7 @@ def checkCVR(solutionFile, paramFile):
     # load constraitns
     for n in range(NumCustomers):
         assert load[n] + Demand[n] == load[successor[n]-1]
+        # if len(vehicle) > 0:
         assert load[n] <= Capacity[vehicle[n]-1]
     
     for n in START_DEPOT_NODES:
@@ -466,7 +617,7 @@ def checkMSP(solutionFile, paramFile):
     w = solutionFile["w"]
     objective = solutionFile["objective"]
 
-    # note custom eprime file
+    # note custom eprime file, non-occurrence representation
     for i in range(n_tasks):
         for j in suc[i]:
             assert s[i] + d[i] <= s[j-1]
@@ -505,40 +656,67 @@ def checkMSP(solutionFile, paramFile):
         if len(suc[i]) == 0:
             assert s[i]+d[i] <= objective
 
-    
-
-
-
-# es_solution_file = readFile("./wordpress/wordpress.param.solution")
-# es_param_file = readFile("./wordpress/wordpress.param") 
-
-
+# method determines if all variables are present to check solutions
+# O2 optimisations and above in Essence' leads to variable deletions
+# it is difficult to determine the validity of the solutions
+# note no optimisations (O0) does not delete variables and gives correct solutions
+# assuming the authors created a correct optimisation reformulation, the step up 
+# from O0 to O2 gives same valid solutions
+def determine_valid_objective():
+    if checking_type == "essence'":
+        for keys in solution_dict.keys():
+            val = solution_dict[keys]
+            if type(val) == list and -1 in val:
+                print('missing values in objective solution')
+                print()
+                return False
+    return True
 
 
 # checks inputted file solutions against params
 in_param = sys.argv[1] # eprime param
-solution_file = ""
+solution_dict = {}
+solution_filename = sys.argv[2]
+checking_type = "essence'" if len(sys.argv) <= 3 else "minizinc"
+print("checking " + checking_type + " " + in_param.split('/')[-1] + " against " + solution_filename)
 try:
-    if len(sys.argv) > 3:
-        solution_file = json.load(open(sys.argv[2], 'r')) # json solution
-    else:
-        solution_file = readFile(sys.argv[2])
-
     param_file = readFile(in_param)
-    print("checking " + in_param.split('/')[-1] + " against " + sys.argv[2].split('/')[-1])
-    if 'quasigroup' in in_param:
-        quasigroup(solution_file, param_file)
+    # if checking objective solutions
+    if 'OBJECTIVE' in solution_filename.upper():
+        if 'cvrptw' in solution_filename:
+            solution_dict = readObjectiveCVR(solution_filename, param_file)
+        else: # tournament/ttppv
+            solution_dict = readObjectiveTTPPV(solution_filename)
+        if not determine_valid_objective():
+            exit(0)        
+
+    else: # otherwise normal solution
+        if len(sys.argv) > 3: # minizinc
+            # solution_file = json.load(open(sys.argv[2], 'r')) # json solution
+            solution_dict = readMinizinc(solution_filename) # json solution
+        else:
+            solution_dict = readFile(solution_filename) # read in eprime solution file
+
+    # empty solutions file, no solution found
+    if len(solution_dict) == 0:
+        raise FileNotFoundError()
+    if 'quasigroupOcc' in solution_filename:
+        quasigroupOcc(solution_dict, param_file)
+    elif 'quasigroup' in in_param:
+        quasigroup(solution_dict, param_file)
     elif 'wordpress' in in_param:
-        wordpress(solution_file, param_file)
+        wordpress(solution_dict, param_file)
     elif 'tournament' in in_param:
-        checkTournament(solution_file, param_file)
+        checkTournament(solution_dict, param_file)
     elif 'roster' in in_param:
-        checkRoster(solution_file, param_file)
+        checkRoster(solution_dict, param_file)
     elif 'mspsp' in in_param:
-        checkMSP(solution_file, param_file)
+        checkMSP(solution_dict, param_file)
     elif 'cvr' in in_param:
-        checkCVR(solution_file, param_file)
-    print(in_param + " passed")
+        checkCVR(solution_dict, param_file)
+    print(solution_filename + " passed")
 except FileNotFoundError:
-    print('no solution found for ' + in_param)
+    print('no solution found for ' + checking_type + " " + in_param + ' using ' + solution_filename)
+
+print()
 

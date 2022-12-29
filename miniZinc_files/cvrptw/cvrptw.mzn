@@ -58,7 +58,7 @@ array[NODES] of var NODES: predecessor; % redundant predecessor variables
 array[NODES] of var VEHICLE: vehicle; % which vehicle visits which customer?
 array[NODES] of var LOAD: load; % load when arriving at node n in NODES
 array[NODES] of var TIME: arrivalTime; % the time at which the vehicle serving node i will arrive at i
-array[NODES] of var TIME: departureTime; % the time at which vehicle serving node i departs from i
+array[NODES] of var TIME: departureTime; % the time at which vehicle serving node i departs from i UNUSED?
 array[NODES] of var TIME: slack; % We must allow slack
 var 0..timeBudget: objective;
 var 0..maxCapacity: start_load;

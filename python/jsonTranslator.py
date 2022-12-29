@@ -30,7 +30,7 @@ def translateToMinizinc(newFileName, file_to_convert, fileName, directory):
     with open(newFileName.replace(".solution", ""), "w") as f:
         json.dump(json_to_save, f)
     
-    eprimeDirectory = directory + "/../eprime/param/" + fileName 
+    eprimeDirectory = directory + "/../../eprime/param/" + fileName 
     translateFile(newFileName=eprimeDirectory, data=json_to_save)
 
 input_output_file = sys.argv[1]

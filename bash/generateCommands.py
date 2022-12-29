@@ -1,12 +1,12 @@
 import os
 
 # problemList = ["cvrptw", "mspsp", "quasigroup", "roster", "tournament", "wordpress"]
-problemList = ["mspsp", "quasigroup", "roster", "wordpress", "tournament"]
-# problemList = ["wordpress"]
+problemList = ["wordpress", "mspsp", "quasigroup", "tournament"]
+# problemList = ["mspsp"]
 # solvers = ["chuffed", "gecode"]
-solvers = ["gecode"]
+solvers = ["chuffed"]
 flags = ["noFree", "free"]
-# flags = ["free"]
+# flags = ["noFree"]
 instances_solutions_path = "../instances_and_solutions/"
 eprime_path = "../eprime_models/"
 minizinc_path = "../miniZinc_files/"
@@ -45,7 +45,7 @@ for problem in problemList:
                 return ("./runAllEprimeCommands.sh " + arg1 + " " + arg2 + " " + 
                 arg3 + " " + isDeletingFzn + " " + solver + " " + toAddFlag)
             # # print(eprime_os_path())
-            # os.system(eprime_os_path()) 
+            os.system(eprime_os_path()) 
 
             if problem == "wordpress":
                 os.system(eprime_os_path(eprime_model="wordpressNoSymm", save_path="../../../wordpressNoSymm/eprime/")) 

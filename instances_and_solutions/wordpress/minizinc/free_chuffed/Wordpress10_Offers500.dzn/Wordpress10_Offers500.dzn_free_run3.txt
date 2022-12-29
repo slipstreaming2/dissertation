@@ -1,4 +1,4 @@
-{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 52, "flatIntVars": 278, "flatBoolConstraints": 28, "flatIntConstraints": 474, "evaluatedReifiedConstraints": 51, "evaluatedHalfReifiedConstraints": 1, "method": "minimize", "flatTime": 0.294862}}
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 52, "flatIntVars": 278, "flatBoolConstraints": 28, "flatIntConstraints": 474, "evaluatedReifiedConstraints": 51, "evaluatedHalfReifiedConstraints": 1, "method": "minimize", "flatTime": 0.312714}}
 {"type": "comment", "comment": "% Pruned 49998 learnt clauses"}
 {"type": "comment", "comment": "% Pruned 49998 learnt clauses"}
 {"type": "comment", "comment": "% Pruned 49996 learnt clauses"}
@@ -72,14 +72,7 @@
 {"type": "comment", "comment": "% Pruned 49985 learnt clauses"}
 {"type": "comment", "comment": "% Pruned 49982 learnt clauses"}
 {"type": "comment", "comment": "% Pruned 49971 learnt clauses"}
-{"type": "comment", "comment": "% Pruned 49969 learnt clauses"}
-{"type": "comment", "comment": "% Pruned 49936 learnt clauses"}
-{"type": "comment", "comment": "% Pruned 49940 learnt clauses"}
-{"type": "comment", "comment": "% Pruned 49939 learnt clauses"}
-{"type": "comment", "comment": "% Pruned 49981 learnt clauses"}
-{"type": "comment", "comment": "% Pruned 49983 learnt clauses"}
-{"type": "comment", "comment": "% Pruned 49997 learnt clauses"}
-{"type": "statistics", "statistics": {"nodes": 5262608, "failures": 4043045, "restarts": 23815, "variables": 404595, "intVars": 370, "boolVariables": 404223, "propagators": 386, "propagations": 309763255, "peakDepth": 158, "nogoods": 4043045, "backjumps": 306948, "peakMem": 0.0, "time": 3600.58, "initTime": 0.58, "solveTime": 3600.0, "objective": 3232, "optTime": 1037.254, "baseMem": 0.0, "trailMem": 410.57, "randomSeed": 12}}
+{"type": "statistics", "statistics": {"nodes": 4870251, "failures": 3679994, "restarts": 23410, "variables": 404576, "intVars": 370, "boolVariables": 404204, "propagators": 386, "propagations": 283471823, "peakDepth": 158, "nogoods": 3679994, "backjumps": 284041, "peakMem": 0.0, "time": 3600.594, "initTime": 0.594, "solveTime": 3600.0, "objective": 3232, "optTime": 1086.874, "baseMem": 0.0, "trailMem": 410.57, "randomSeed": 12}}
 {"type": "solution", "output": {"json": {  "AssignmentMatrix" : [[1, 0, 0, 0, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0], [0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0]],  "OccupancyVector" : [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],  "VMType" : [433, 433, 433, 433, 433, 433, 433, 433, 433, 433, 433, 433, 433, 433, 433, 433, 433, 341, 341, 341, 341, 341, 341],  "Price" : [116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 210, 210, 210, 210, 210, 210]}}, "sections": ["json"]}
 {"type": "comment", "comment": "% Time limit exceeded!"}
 {"type": "statistics", "statistics": {"nSolutions": 1}}

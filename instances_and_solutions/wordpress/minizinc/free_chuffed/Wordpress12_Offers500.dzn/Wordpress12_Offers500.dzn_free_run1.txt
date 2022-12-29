@@ -1,4 +1,4 @@
-{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 58, "flatIntVars": 314, "flatBoolConstraints": 31, "flatIntConstraints": 534, "evaluatedReifiedConstraints": 57, "evaluatedHalfReifiedConstraints": 1, "method": "minimize", "flatTime": 0.322567}}
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 58, "flatIntVars": 314, "flatBoolConstraints": 31, "flatIntConstraints": 534, "evaluatedReifiedConstraints": 57, "evaluatedHalfReifiedConstraints": 1, "method": "minimize", "flatTime": 0.314321}}
 {"type": "comment", "comment": "% Pruned 49994 learnt clauses"}
 {"type": "comment", "comment": "% Pruned 49987 learnt clauses"}
 {"type": "comment", "comment": "% Pruned 49994 learnt clauses"}
@@ -59,7 +59,7 @@
 {"type": "comment", "comment": "% Pruned 49955 learnt clauses"}
 {"type": "comment", "comment": "% Pruned 49961 learnt clauses"}
 {"type": "comment", "comment": "% Pruned 49955 learnt clauses"}
-{"type": "statistics", "statistics": {"nodes": 3987438, "failures": 3037599, "restarts": 15365, "variables": 409510, "intVars": 418, "boolVariables": 409090, "propagators": 434, "propagations": 278654699, "peakDepth": 121, "nogoods": 3037599, "backjumps": 290456, "peakMem": 0.0, "time": 3600.645, "initTime": 0.644, "solveTime": 3600.001, "objective": 3580, "optTime": 811.922, "baseMem": 0.0, "trailMem": 410.57, "randomSeed": 1}}
+{"type": "statistics", "statistics": {"nodes": 3977800, "failures": 3029024, "restarts": 15349, "variables": 409510, "intVars": 418, "boolVariables": 409090, "propagators": 434, "propagations": 277994038, "peakDepth": 121, "nogoods": 3029024, "backjumps": 289662, "peakMem": 0.0, "time": 3600.66, "initTime": 0.66, "solveTime": 3600.0, "objective": 3580, "optTime": 834.345, "baseMem": 0.0, "trailMem": 410.57, "randomSeed": 1}}
 {"type": "solution", "output": {"json": {  "AssignmentMatrix" : [[0, 0, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0], [1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1]],  "OccupancyVector" : [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],  "VMType" : [433, 433, 433, 433, 433, 433, 433, 433, 433, 433, 433, 433, 433, 433, 433, 433, 433, 433, 433, 433, 341, 341, 341, 341, 341, 341],  "Price" : [116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 210, 210, 210, 210, 210, 210]}}, "sections": ["json"]}
 {"type": "comment", "comment": "% Time limit exceeded!"}
 {"type": "statistics", "statistics": {"nSolutions": 1}}

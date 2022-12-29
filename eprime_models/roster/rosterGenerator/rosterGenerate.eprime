@@ -40,6 +40,8 @@ forAll i : int(6..7) .
         forAll k : int(3..4) .
             shiftRequirements[i, k] < shiftRequirements[j, k],
 
+$ plan1d = flatten(plan2d),
+$ flatten? 
 forAll week : int(1..numberOfWeeks) .
     forAll day : int(1..daysPerWeek) .
         plan2d[week,day] = plan1d[(week-1) * daysPerWeek + day],
@@ -56,12 +58,21 @@ forAll i : int(1..s_min) .
 $ C_shiftRepetitions:for every shift type a minimum number of consecutive assignments to this shift is given
 forAll day : int(1..numberOfDays-s_min) .
     plan1d[day] != plan1d[day+1] -> 
-        sum([plan1d[day+1]!= plan1d[i] | i : int(day+2..day+s_min)]) = 0,
+        forAll i : int(day+1..day+s_min) .
+            plan1d[i] = plan1d[i+1],
+        $ forAll i, j : int(day+1..day+1+s_min) .
+        $     i < j -> plan1d[i] = plan1d[j],
+        $ sum([plan1d[day+1] != plan1d[i] | i : int(day+2..day+s_min)]) = 0,
+
+forAll day : int(1..s_min-1) .
+    plan1d[day] = plan1d[day+1],
 
 $ the constraints over the array bounds
 forAll d : int(1..s_min) . 
     plan1d[d+numberOfDays - s_min] != plan1d[((d+numberOfDays-s_min) % numberOfDays) + 1] ->
-        sum([s_min_arrays[d, 1] != s_min_arrays[d, i] | i : int(2..s_min)]) = 0,
+        $ sum([s_min_arrays[d, 1] != s_min_arrays[d, i] | i : int(2..s_min)]) = 0,
+        forAll i : int(2..s_min) .
+            s_min_arrays[d,1] = s_min_arrays[d,i],
 
 $ create the sub arrays other the array bounds
 forAll i : int(1..s_max) .
@@ -70,13 +81,17 @@ forAll i : int(1..s_max) .
 
 $ C_shiftRepetitions:for every shift type a maximum number of consecutive assignments to this shift is given 
 forAll d : int(1..numberOfWeeks * daysPerWeek - s_max) .
+    (forAll i : int(d+1..d+s_max) .
+        plan1d[d] = plan1d[i]) ->
     $ all equal
-    sum([plan1d[d] != plan1d[j] | j : int(d+1..d+s_max)]) = 0 ->
+    $ sum([plan1d[d] != plan1d[j] | j : int(d+1..d+s_max)]) = 0 ->
         plan1d[d] != plan1d[d + s_max],
 
 $ the constraints over the array bounds
 forAll d : int(1..s_max) . 
-    sum([s_max_arrays[d,1] != s_max_arrays[d,i] | i : int(2..s_max)]) = 0 -> 
+    (forAll i : int(2..s_max) .
+        s_max_arrays[d,1] = s_max_arrays[d,i]) ->
+    $ sum([s_max_arrays[d,1] != s_max_arrays[d,i] | i : int(2..s_max)]) = 0 -> 
         plan1d[d+numberOfDays-s_max] != plan1d[d],
 
 $ C_restDays: at least 2 days must be rest days every 2 weeks
@@ -92,6 +107,7 @@ forAll day : int(2..numberOfWeeks*daysPerWeek-1) .
     (plan1d[day] <= plan1d[day+1]) 
     \/ (plan1d[day+1] = 0),
 
+$ forward rotating
 (plan1d[1] >= plan1d[numberOfDays]) \/ plan1d[1] = 0,
 
 forAll day : int(1..daysPerWeek) .

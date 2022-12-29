@@ -57,7 +57,13 @@ constraint forall(i in 1..s_min, j in 1..s_min) (
 % C_shiftRepetitions:for every shift type a minimum number of consecutive assignments to this shift is given
 constraint forall(day in 1..numberOfDays - s_min) (
                plan1d[day] != plan1d[day+1] -> all_equal(plan1d[day+1..day+s_min])
-           );     
+           );
+
+% edge case of first shift type disobeying C_shiftRepetitions
+constraint (
+    all_equal(plan1d[1..s_min])
+);
+
 % the constraints over the array bounds           
 constraint forall(d in 1..s_min) (
                plan1d[d + numberOfDays - s_min] != plan1d[((d + numberOfDays - s_min) mod numberOfDays) +1] -> all_equal(s_min_arrays[d,1..s_min])
@@ -70,7 +76,7 @@ constraint forall(i in 1..s_max, j in 1..s_max) (
            );                      
                                             
 % C_shiftRepetitions:for every shift type a maximum number of consecutive assignments to this shift is given           
-constraint forall(day in 1..numberOfWeeks * daysPerWeek - s_max) (
+constraint forall(day in 1..numberOfDays - s_max) (
                (all_equal(plan1d[day..day+s_max])) -> (plan1d[day] != plan1d[day + s_max])
            );               
 % the constraints over the array bounds             

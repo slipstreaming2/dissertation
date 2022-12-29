@@ -1,4 +1,4 @@
-{"type": "statistics", "statistics": {"paths": 0, "flatIntVars": 374, "flatIntConstraints": 60, "method": "satisfy", "flatTime": 0.218441}}
+{"type": "statistics", "statistics": {"paths": 0, "flatIntVars": 374, "flatIntConstraints": 60, "method": "satisfy", "flatTime": 0.221198}}
 {"type": "comment", "comment": "% Pruned 49998 learnt clauses"}
 {"type": "comment", "comment": "% Pruned 49998 learnt clauses"}
 {"type": "comment", "comment": "% Pruned 49999 learnt clauses"}
@@ -80,10 +80,7 @@
 {"type": "comment", "comment": "% Pruned 49992 learnt clauses"}
 {"type": "comment", "comment": "% Pruned 49998 learnt clauses"}
 {"type": "comment", "comment": "% Pruned 49998 learnt clauses"}
-{"type": "comment", "comment": "% Pruned 49980 learnt clauses"}
-{"type": "comment", "comment": "% Pruned 49991 learnt clauses"}
-{"type": "comment", "comment": "% Pruned 49995 learnt clauses"}
 {"type": "comment", "comment": "% Time limit exceeded!"}
 {"type": "status", "status": "UNKNOWN"}
 {"type": "statistics", "statistics": {"nSolutions": 0}}
-{"type": "statistics", "statistics": {"nodes": 4844520, "failures": 4255899, "restarts": 6911, "variables": 23310, "intVars": 404, "boolVariables": 22904, "propagators": 61, "propagations": 128019293, "peakDepth": 60, "nogoods": 4255899, "backjumps": 337507, "peakMem": 0.0, "time": 3600.101, "initTime": 0.1, "solveTime": 3600.001, "baseMem": 0.0, "trailMem": 0.19, "randomSeed": 7}}
+{"type": "statistics", "statistics": {"nodes": 4716671, "failures": 4147490, "restarts": 6658, "variables": 23310, "intVars": 404, "boolVariables": 22904, "propagators": 61, "propagations": 125060152, "peakDepth": 60, "nogoods": 4147490, "backjumps": 327688, "peakMem": 0.0, "time": 3600.103, "initTime": 0.102, "solveTime": 3600.001, "baseMem": 0.0, "trailMem": 0.19, "randomSeed": 7}}

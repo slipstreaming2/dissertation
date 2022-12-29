@@ -1,7 +1,7 @@
-SolverTotalTime:3600.450
+SolverTotalTime:3600.304
 SavileRowClauseOut:0
-SavileRowTotalTime:11.387
+SavileRowTotalTime:8.985
 SolverSatisfiable:1
 SavileRowTimeOut:0
 SolverTimeOut:1
-SolverNodes:1183855
+SolverNodes:1200684

@@ -1,4 +1,4 @@
-{"type": "statistics", "statistics": {"paths": 0, "flatIntVars": 1110, "flatIntConstraints": 100, "method": "satisfy", "flatTime": 0.275134}}
+{"type": "statistics", "statistics": {"paths": 0, "flatIntVars": 1110, "flatIntConstraints": 100, "method": "satisfy", "flatTime": 0.27623}}
 {"type": "comment", "comment": "% Pruned 49975 learnt clauses"}
 {"type": "comment", "comment": "% Pruned 49320 learnt clauses"}
 {"type": "comment", "comment": "% Pruned 49972 learnt clauses"}
@@ -35,13 +35,7 @@
 {"type": "comment", "comment": "% Pruned 43932 learnt clauses"}
 {"type": "comment", "comment": "% Pruned 40608 learnt clauses"}
 {"type": "comment", "comment": "% Pruned 41678 learnt clauses"}
-{"type": "comment", "comment": "% Pruned 43294 learnt clauses"}
-{"type": "comment", "comment": "% Pruned 40492 learnt clauses"}
-{"type": "comment", "comment": "% Pruned 39705 learnt clauses"}
-{"type": "comment", "comment": "% Pruned 41390 learnt clauses"}
-{"type": "comment", "comment": "% Pruned 44402 learnt clauses"}
-{"type": "comment", "comment": "% Pruned 43843 learnt clauses"}
 {"type": "comment", "comment": "% Time limit exceeded!"}
 {"type": "status", "status": "UNKNOWN"}
 {"type": "statistics", "statistics": {"nSolutions": 0}}
-{"type": "statistics", "statistics": {"nodes": 3955531, "failures": 1911401, "restarts": 3346, "variables": 113422, "intVars": 1160, "boolVariables": 112260, "propagators": 101, "propagations": 87033424, "peakDepth": 557, "nogoods": 1911401, "backjumps": 753162, "peakMem": 0.0, "time": 3600.515, "initTime": 0.515, "solveTime": 3600.0, "baseMem": 0.0, "trailMem": 0.9399999999999999, "randomSeed": 12}}
+{"type": "statistics", "statistics": {"nodes": 3518367, "failures": 1677844, "restarts": 3026, "variables": 113422, "intVars": 1160, "boolVariables": 112260, "propagators": 101, "propagations": 77552174, "peakDepth": 557, "nogoods": 1677844, "backjumps": 672714, "peakMem": 0.0, "time": 3600.507, "initTime": 0.503, "solveTime": 3600.004, "baseMem": 0.0, "trailMem": 0.9399999999999999, "randomSeed": 12}}

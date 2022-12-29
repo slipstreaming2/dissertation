@@ -1,4 +1,4 @@
-{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 56, "flatIntVars": 302, "flatBoolConstraints": 30, "flatIntConstraints": 514, "evaluatedReifiedConstraints": 55, "evaluatedHalfReifiedConstraints": 1, "method": "minimize", "flatTime": 0.319356}}
+{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 56, "flatIntVars": 302, "flatBoolConstraints": 30, "flatIntConstraints": 514, "evaluatedReifiedConstraints": 55, "evaluatedHalfReifiedConstraints": 1, "method": "minimize", "flatTime": 0.319278}}
 {"type": "comment", "comment": "% Pruned 50000 learnt clauses"}
 {"type": "comment", "comment": "% Pruned 49998 learnt clauses"}
 {"type": "comment", "comment": "% Pruned 49997 learnt clauses"}
@@ -84,20 +84,7 @@
 {"type": "comment", "comment": "% Pruned 49988 learnt clauses"}
 {"type": "comment", "comment": "% Pruned 49985 learnt clauses"}
 {"type": "comment", "comment": "% Pruned 49984 learnt clauses"}
-{"type": "comment", "comment": "% Pruned 49989 learnt clauses"}
-{"type": "comment", "comment": "% Pruned 49988 learnt clauses"}
-{"type": "comment", "comment": "% Pruned 49987 learnt clauses"}
-{"type": "comment", "comment": "% Pruned 49984 learnt clauses"}
-{"type": "comment", "comment": "% Pruned 49987 learnt clauses"}
-{"type": "comment", "comment": "% Pruned 49987 learnt clauses"}
-{"type": "comment", "comment": "% Pruned 49984 learnt clauses"}
-{"type": "comment", "comment": "% Pruned 49982 learnt clauses"}
-{"type": "comment", "comment": "% Pruned 49987 learnt clauses"}
-{"type": "comment", "comment": "% Pruned 49984 learnt clauses"}
-{"type": "comment", "comment": "% Pruned 49986 learnt clauses"}
-{"type": "comment", "comment": "% Pruned 49984 learnt clauses"}
-{"type": "comment", "comment": "% Pruned 49993 learnt clauses"}
-{"type": "statistics", "statistics": {"nodes": 5459162, "failures": 4958169, "restarts": 1337, "variables": 131300, "intVars": 402, "boolVariables": 130896, "propagators": 418, "propagations": 577766393, "peakDepth": 113, "nogoods": 4958169, "backjumps": 371284, "peakMem": 0.0, "time": 3600.611, "initTime": 0.61, "solveTime": 3600.001, "objective": 3464, "optTime": 3583.223, "baseMem": 0.0, "trailMem": 410.57, "randomSeed": 12}}
-{"type": "solution", "output": {"json": {  "AssignmentMatrix" : [[0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0], [1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0]],  "OccupancyVector" : [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],  "VMType" : [433, 433, 433, 433, 433, 433, 433, 433, 433, 433, 433, 433, 433, 433, 433, 433, 433, 433, 433, 341, 341, 341, 341, 341, 341],  "Price" : [116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 210, 210, 210, 210, 210, 210]}}, "sections": ["json"]}
+{"type": "statistics", "statistics": {"nodes": 4809834, "failures": 4343587, "restarts": 1334, "variables": 131199, "intVars": 402, "boolVariables": 130795, "propagators": 418, "propagations": 521355996, "peakDepth": 113, "nogoods": 4343587, "backjumps": 336663, "peakMem": 0.0, "time": 3600.657, "initTime": 0.657, "solveTime": 3600.0, "objective": 3558, "optTime": 2692.813, "baseMem": 0.0, "trailMem": 410.57, "randomSeed": 12}}
+{"type": "solution", "output": {"json": {  "AssignmentMatrix" : [[0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1], [0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]],  "OccupancyVector" : [0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],  "VMType" : [1, 433, 433, 433, 433, 433, 433, 433, 433, 433, 433, 433, 433, 433, 433, 433, 433, 433, 433, 341, 341, 341, 341, 341, 278],  "Price" : [0, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 210, 210, 210, 210, 210, 420]}}, "sections": ["json"]}
 {"type": "comment", "comment": "% Time limit exceeded!"}
 {"type": "statistics", "statistics": {"nSolutions": 1}}

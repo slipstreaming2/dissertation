@@ -1,6 +1,9 @@
-line=$(head -n 1 constants/eprime.txt)
-timing=$(head -n 1 constants/timeout.txt)
-runs=$(head -n 1 constants/numberOfRuns.txt)
+# line=$(head -n 1 constants/eprime.txt)
+# timing=$(head -n 1 constants/timeout.txt)
+# runs=$(head -n 1 constants/numberOfRuns.txt)
+line=$(head -n 1 eprime.txt)
+timing=$(head -n 1 timeout.txt)
+runs=$(head -n 1 numberOfRuns.txt)
 declare -a opt=("O2" "O3")
 declare -a symm=("S0" "S1" "S2")
 declare -a rnd=("1" "7" "12")
@@ -63,27 +66,13 @@ function run_instance() {
     done
 }
 
-# printf '%s\n' "${line} $2 $f -${3} -${4} -${chosen_solver} -run-solver -out-solution ${save_location}/solutions/${naming}/${base_name}${6}_${chosen_solver}.${naming}.solution -out-info ${save_location}/timing/${naming}/$base_name/${run_tag}.info -out-minion ${save_location}/minion/${run_tag}.minion -out-flatzinc ${save_location}/fzn/${run_tag}.fzn -solver-options \"${solver_options} -r ${rnd[${k}-1]}\"; mv ${save_location}/timing/${naming}/$base_name/${run_tag}.infor ${save_location}/timing/infor/${naming}/${base_name}\; ${to_rem}"
-
-# printf '%s\n' "${line} $2 $f -${3} -${4} -${chosen_solver} -run-solver
-#             -out-solution ${save_location}/solutions/${naming}/${base_name}${6}_${chosen_solver}.${naming}.solution
-#             -out-info ${save_location}/timing/${naming}/$base_name/${run_tag}.info
-#             -out-minion ${save_location}/minion/${run_tag}.minion
-#             -out-flatzinc ${save_location}/fzn/${run_tag}.fzn
-#             -solver-options \"${solver_options} -r ${rnd[${k}-1]}\";
-#             mv ${save_location}/timing/${naming}/$base_name/${run_tag}.infor ${save_location}/timing/infor/${naming}/${base_name}\; 
-#             ${to_rem}"
-
-# for i in "${opt[@]}"
-# do 
-#     for j in "${symm[@]}"
-#     do 
-#         run_instance $1 $2 $i $j $4
-#     done
-# done 
 
 run_instance ${1} ${2} "O0" "S0" $4
 run_instance ${1} ${2} "O2" "S1" $4
 run_instance ${1} ${2} "O2" "S2" $4
 # run_instance ${1} ${2} "O3" "S1" $4
 run_instance ${1} ${2} "O3" "S2" $4
+
+if [[ $4 == "y" ]]; then 
+    to_rem="rm -rf ${save_location}/symmetry ${save_location}/minion ${save_location}/fzn"
+fi  

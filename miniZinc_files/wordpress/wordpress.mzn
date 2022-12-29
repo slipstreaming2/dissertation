@@ -102,10 +102,10 @@ function var int: isDeployed(array[int, int] of var 0..1: AssignmentMatrix,
     if(sum(k in 1..VM)(AssignmentMatrix[compID,k]) > 0) then 1 else 0 endif;
     
     
-predicate deployed(array[int, int] of var 0..1: AssignmentMatrix,
-                   int: VM,
-                   int: compID) =
-    sum(k in 1..VM)(AssignmentMatrix[compID, k]) > 0;
+% predicate deployed(array[int, int] of var 0..1: AssignmentMatrix,
+%                    int: VM,
+%                    int: compID) =
+%     sum(k in 1..VM)(AssignmentMatrix[compID, k]) > 0;
     
 % Ensures the NULL (0) Type is reserved only for unused virtual machines
 %predicate setType(array[int, int] of var 0..1: AssignmentMatrix,
@@ -191,11 +191,11 @@ predicate upperBound(array[int, int] of var 0..1: AssignmentMatrix,
                      int: bound) =
     sum(k in 1..VM) (AssignmentMatrix[compID, k]) <= bound;
     
-predicate equalBound(array[int, int] of var 0..1: AssignmentMatrix,
-                     int: VM,
-                     int: compID, 
-                     int: bound) =
-    sum(k in 1..VM) (AssignmentMatrix[compID, k]) == bound;
+% predicate equalBound(array[int, int] of var 0..1: AssignmentMatrix,
+%                      int: VM,
+%                      int: compID, 
+%                      int: bound) =
+%     sum(k in 1..VM) (AssignmentMatrix[compID, k]) == bound;
    
 
 % Ensures Provide-specific constraints         
@@ -208,21 +208,21 @@ predicate requireProvide(array[int, int] of var 0..1: AssignmentMatrix,
     NoInstID1 * sum(k in 1..VM) (AssignmentMatrix[compID1, k]) <=
     NoInstID2 * sum(k in 1..VM) (AssignmentMatrix[compID2, k]);
     
-predicate provide(array[int, int] of var 0..1: AssignmentMatrix,
-                  int: VM,
-                  int: compID1, 
-                  int: compID2, 
-                  int: NoInstID1) =
-    sum(k in 1..VM) (AssignmentMatrix[compID1, k]) <=
-    sum(k in 1..VM) (AssignmentMatrix[compID2, k]) * NoInstID1;
+% predicate provide(array[int, int] of var 0..1: AssignmentMatrix,
+%                   int: VM,
+%                   int: compID1, 
+%                   int: compID2, 
+%                   int: NoInstID1) =
+%     sum(k in 1..VM) (AssignmentMatrix[compID1, k]) <=
+%     sum(k in 1..VM) (AssignmentMatrix[compID2, k]) * NoInstID1;
 
-predicate boundedRequireProvide(array[int, int] of var 0..1: AssignmentMatrix,
-                                int: VM,
-                                int: compID1, 
-                                int: compID2, 
-                                int: NoInstID2) =
-   (sum(k in 1..VM)(AssignmentMatrix[compID1, k]) * NoInstID2 - sum(k in 1..VM)(AssignmentMatrix[compID2,k]) > 0) /\ 
-   (sum(k in 1..VM)(AssignmentMatrix[compID1, k]) * NoInstID2 - sum(k in 1..VM)(AssignmentMatrix[compID2,k])  <= NoInstID2);
+% predicate boundedRequireProvide(array[int, int] of var 0..1: AssignmentMatrix,
+%                                 int: VM,
+%                                 int: compID1, 
+%                                 int: compID2, 
+%                                 int: NoInstID2) =
+%    (sum(k in 1..VM)(AssignmentMatrix[compID1, k]) * NoInstID2 - sum(k in 1..VM)(AssignmentMatrix[compID2,k]) > 0) /\ 
+%    (sum(k in 1..VM)(AssignmentMatrix[compID1, k]) * NoInstID2 - sum(k in 1..VM)(AssignmentMatrix[compID2,k])  <= NoInstID2);
      
     
 % Ensures conflicting components do not share the same VM

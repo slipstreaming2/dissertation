@@ -78,6 +78,7 @@ Quasigroup Essence
 ../../savilerow-1.9.1-linux/savilerow ../eprime_models/wordpressNoSymm/wordpressNoSymmFree.eprime ../instances_and_solutions/wordpress/eprime/param/Wordpress_Offers40.dzn.param -O2 -S1 -gecode -run-solver -out-solution test.O2_S1.solution -out-info test.O2_S1.info -out-minion test.minion -out-flatzinc test.O2_S1.fzn -solver-options "-t 3600000 -r 1"
 ../../savilerow-1.9.1-linux/savilerow ../eprime_models/wordpressNoSymm/wordpressNoSymmFree.eprime ../instances_and_solutions/wordpress/eprime/param/Wordpress_Offers40.dzn.param -O2 -S1 -gecode -run-solver -out-solution test.O2_S1.solution -out-info test.O2_S1.info -out-minion test.minion -out-flatzinc test.O2_S1.fzn -solver-options "-t 3600000 -r 1"
 ../../savilerow-1.9.1-linux/savilerow ../eprime_models/wordpressNoSymm/wordpressNoSymmFree.eprime ../instances_and_solutions/wordpress/eprime/param/Wordpress_Offers40.dzn.param -chuffed -run-solver -solver-options "-t 3600000 -r 1" -all-solutions -solutions-to-stdout
+../../savilerow-1.9.1-linux/savilerow ../eprime_models/wordpress/wordpress.eprime ../instances_and_solutions/wordpress/eprime/param/Wordpress_Offers40.dzn.param -chuffed -run-solver
 
 ../../savilerow-1.9.1-linux/bin/fzn-chuffed -a -r 1 -v ../instances_and_solutions/wordpress/eprime/param/Wordpress_Offers40.dzn.param.fzn 
 ../../savilerow-1.9.1-linux/bin/fzn-chuffed -a -r 1 -v ../instances_and_solutions/wordpress/eprime/param/Wordpress_Offers500.dzn.param.fzn 
@@ -483,3 +484,6 @@ circ8d
 circ8b 
 
 
+find -type d ! -name '*_chuffed_run1.*' -print0 | xargs -0 rm -rf
+find . -type d -name '*.json.param' -print0 | xargs -0 rm -rf
+find . -type d -name 'json' -print0 | xargs -0 rm -rf

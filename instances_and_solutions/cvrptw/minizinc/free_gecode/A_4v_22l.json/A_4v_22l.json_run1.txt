@@ -1,3 +1,0 @@
-{"type": "statistics", "statistics": {"paths": 0, "flatIntVars": 270, "flatIntConstraints": 255, "method": "minimize", "flatTime": 0.220078}}
-{"type": "status", "status": "ERROR"}
-{"type": "statistics", "statistics": {"nSolutions": 0}}

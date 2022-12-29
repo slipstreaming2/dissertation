@@ -22,12 +22,11 @@ letting MySQL be 2
 letting DNS_LoadBalancer be 3
 letting HTTP_LoadBalancer be 4
 letting Varnish be 5
-letting S be domain int(1..NoComponents)
 letting BasicAllocation be domain int(Wordpress, MySQL, Varnish)
 
-letting CPU_Index be 1
-letting Memory_Index be 2
-letting Storage_Index be 3
+$ letting CPU_Index be 1
+$ letting Memory_Index be 2
+$ letting Storage_Index be 3
 
 
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
@@ -35,14 +34,15 @@ $$$$$$  Decision Variables $$$$$$$
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 find AssignmentMatrix : matrix indexed by [int(1..NoComponents), int(1..VM)] of int(0..1)
 find VMType : matrix indexed by [int(1..VM)] of int(1..VMOffers) 
+find OccupancyVector: matrix indexed by [int(1..VM)] of int(0..1)
 
-find CPU : matrix indexed by [int(1..VM)] of int(1..64)
-find Memory : matrix indexed by [int(1..VM)] of int(1700..976000)
-find Storage : matrix indexed by [int(1..VM)] of int(1000..24000)
+$ find CPU : matrix indexed by [int(1..VM)] of int(1..64)
+$ find Memory : matrix indexed by [int(1..VM)] of int(1700..976000)
+$ find Storage : matrix indexed by [int(1..VM)] of int(1000..24000)
 find Price : matrix indexed by [int(1..VM)] of int(0..16000)
 
 
-branching on [AssignmentMatrix, VMType, Price]
+branching on [AssignmentMatrix, OccupancyVector, VMType, Price]
 
 minimising sum(Price)
 
@@ -66,23 +66,33 @@ forAll k : int(1..VM) .
         $ sum(AssignmentMatrix[..,k]) > 0 ->
             sum([AssignmentMatrix[i,k]*CompREQ[i,h] | i : int(1..NoComponents)]) <= VMSpecs[VMType[k],h],
 
+forAll k : int(1..VM) .
+    sum(AssignmentMatrix[..,k]) > 0 -> OccupancyVector[k] = 1,
+
+
 $ LINK
 $ resource arrays match VM specs
+$ forAll k : int(1..VM) .
+$     (sum(AssignmentMatrix[..,k]) >= 1) -> (
+$         CPU[k] = VMSpecs[VMType[k],CPU_Index] 
+$         /\ Memory[k] = VMSpecs[VMType[k], Memory_Index]
+$         /\ Storage[k] = VMSpecs[VMType[k], Storage_Index]
+$         /\ Price[k] = VMPrice[VMType[k]]),
 forAll k : int(1..VM) .
-    (sum(AssignmentMatrix[..,k]) >= 1) -> (
-        CPU[k] = VMSpecs[VMType[k],CPU_Index] 
-        /\ Memory[k] = VMSpecs[VMType[k], Memory_Index]
-        /\ Storage[k] = VMSpecs[VMType[k], Storage_Index]
-        /\ Price[k] = VMPrice[VMType[k]]),
+    Price[k] = VMPrice[VMType[k]] * OccupancyVector[k],
 
 $ forAll k: int(1..VM) .
 $     sum(AssignmentMatrix[..,k]) = 0 -> Price[k] = 0,
 
 $ NULL TYPE
 $ unused machines have a set default type
-forAll k : int(1..VM) .
-    $ doesn't affect the minimal price as the price for the said VM will be 0 if it is unoccupied
-    sum(AssignmentMatrix[..,k]) = 0 -> VMType[k] = 1,
+$ forAll k : int(1..VM) .
+$     $ doesn't affect the minimal price as the price for the said VM will be 0 if it is unoccupied
+$     sum(AssignmentMatrix[..,k]) = 0 -> VMType[k] = 1,
+
+$ already covered in below constraints??
+forAll i : BasicAllocation .
+    sum(AssignmentMatrix[i,..]) >= 1,
 
 $ LOWER BOUNDS
 $ Wordpress should be deployed by at least the number of WPInstances required

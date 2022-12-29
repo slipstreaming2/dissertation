@@ -19,7 +19,7 @@ function run_instance() {
         for ((k=1;k<=runs;k++));
         do 
             run_tag=${base_name}${solver_options}_run${k}.txt    
-            echo "${solver_location} ${solver_options} -a -v -r ${rnd[${k}-1]} -t ${timing} $f | python timingObjective.py > ${save_location}/objective/${naming}/${base_name}/${run_tag}"
+            echo "${solver_location} ${solver_options} -a -f -v -r ${rnd[${k}-1]} -t ${timing} $f | python timingObjective.py > ${save_location}/objective/${naming}/${base_name}/${run_tag}"
         done
     done
 }
