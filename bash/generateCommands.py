@@ -3,7 +3,6 @@ import os
 # problemList = ["cvrptw", "mspsp", "quasigroup", "roster", "tournament", "wordpress"]
 problemList = ["wordpress", "mspsp", "quasigroup", "tournament"]
 # problemList = ["mspsp"]
-# solvers = ["chuffed", "gecode"]
 solvers = ["chuffed"]
 flags = ["noFree", "free"]
 # flags = ["noFree"]
@@ -26,13 +25,10 @@ for problem in problemList:
                      arg3 + " " + solver + " " + toAddFlag)
 
             os.system(mzn_path())
-            # # print(mzn_path())
             if problem == "wordpress":
                 os.system(mzn_path(mzn_model="wordpressNoSymm", save_path="../../../wordpressNoSymm/minizinc/"))
-                # print(mzn_path(mzn_model="wordpressNoSymm", save_path="../../../wordpressNoSymm/minizinc/"))
             elif problem == "quasigroup":
                 os.system(mzn_path(mzn_model="quasigroupOcc", save_path="../../../quasigroupOcc/minizinc/"))
-                # print(mzn_path(mzn_model="quasigroupOcc", save_path="../../../quasigroupOcc/minizinc/"))
 
             if solver == "chuffed" and flag == "free":
                 continue
@@ -44,12 +40,9 @@ for problem in problemList:
                 arg3 = save_path + flag + "_" + solver
                 return ("./runAllEprimeCommands.sh " + arg1 + " " + arg2 + " " + 
                 arg3 + " " + isDeletingFzn + " " + solver + " " + toAddFlag)
-            # # print(eprime_os_path())
             os.system(eprime_os_path()) 
 
             if problem == "wordpress":
                 os.system(eprime_os_path(eprime_model="wordpressNoSymm", save_path="../../../wordpressNoSymm/eprime/")) 
-                # print(eprime_os_path(eprime_model="wordpressNoSymm", save_path="../../../wordpressNoSymm/eprime/")) 
             elif problem == "quasigroup":
                 os.system(eprime_os_path(eprime_model="quasigroupOcc", save_path="../../../quasigroupOcc/eprime/")) 
-                # print(eprime_os_path(eprime_model="quasigroupOcc", save_path="../../../quasigroupOcc/eprime/")) 

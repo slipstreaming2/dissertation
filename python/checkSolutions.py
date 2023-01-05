@@ -8,9 +8,9 @@ varLocation = 3
 
 def readFile(fileName):
     f = open(fileName, "r")
-    toCheck = {}
-    identifier = ""
-    builder = ""
+    toCheck = {} # the dictionary of identifiers and respective values
+    identifier = "" # identifier of letting
+    builder = "" # builder of letting value
     foundLetting = False # multiline letting
     lines = f.readlines()
     for line in lines: 
@@ -18,7 +18,7 @@ def readFile(fileName):
         if len(line) == 0: # empty lines
             continue
         if line[0] == 'letting':
-            if foundLetting:
+            if foundLetting: # evaluate the built value
                 toCheck[identifier] = literal_eval(builder)
                 builder = ""
             identifier = line[identLocation]
@@ -26,6 +26,7 @@ def readFile(fileName):
             foundLetting = True 
         if foundLetting:
             builder += "".join(line)
+    # replace true and false with capitalize values
     if 'true' in builder:
         builder = builder.replace('true', 'True')
     if 'false' in builder:
@@ -33,6 +34,7 @@ def readFile(fileName):
     toCheck[identifier] = literal_eval(builder) # last join
     return toCheck
 
+# reads in minizinc solutions
 def readMinizinc(fileName):
     f = open(fileName, "r")
     solutions = {}
@@ -47,28 +49,32 @@ def readMinizinc(fileName):
     f.close()
     return solutions
 
+# reads the objective files and returns the last objective solution
 def readObjective(fileName):
     f = open(fileName, "r")
     lines = f.readlines()
     lastSolution = []
     currSolution = []
-    builder = ""
+    builder = "" # builds the array line
     is_building = False
     for line in lines:
-        if "-----" in line:
+        if "-----" in line: # end of current solution
             lastSolution = currSolution.copy()
             currSolution = []
         else:
+            # skip comments or empty lines
             if len(line) == 0 or '%' in line or ('=' not in line and not is_building):
                 continue
+            # start building if multiline
             if not is_building and ';' not in line:
                 is_building = True 
             if is_building:
                 builder += line
-            else:
+            else: # not building, strip and add solution
+                # strip
                 line = line.replace(";\n", "")
                 currSolution.append(line)
-            if ';' in line and is_building:
+            if ';' in line and is_building: # end of builder line
                 builder = builder.replace(";", "")
                 builder = builder.replace("\n", "")
                 currSolution.append(builder)
@@ -77,8 +83,9 @@ def readObjective(fileName):
     f.close()
     return lastSolution
 
+# reads in cvr objective
 def readObjectiveCVR(fileName, param_file):
-    lastSolution = readObjective(fileName)
+    lastSolution = readObjective(fileName) # gets array of values
     if len(lastSolution) == 0:
         return {}
     if checking_type == "minizinc":
@@ -87,16 +94,22 @@ def readObjectiveCVR(fileName, param_file):
     maxNodes = param_file["M"]+2*param_file["K"]
     solution = {}
     for line in lastSolution:
+        # eprime identifier formed of underscores, need to match 
+        # solution format without underscores
         underscore_split = line.split("_")
         equal_split = line.split("=")
+        # value of line
         val = literal_eval(equal_split[-1].strip())
+        # add value into dictionary
         if 'objective' in equal_split[0] or 'start_load' in equal_split[0]:
             solution[equal_split[0].strip()] = val
         else:
+            # add in solution
             name = underscore_split[0].strip()
             if name not in solution:
                 solution[name] = [-1 for _ in range(maxNodes)]
             spltLine = underscore_split[1].split("=")
+            # index of array
             index = literal_eval(spltLine[0].lstrip("0").strip())
             solution[name][index-1] = val
     return solution 
@@ -113,6 +126,7 @@ def getMiniZincLine(line, solution):
     line = line.split('=')
     solution[line[0]] = literal_eval(line[-1])
 
+# translates the minizinc array into eprime array
 def translateArray(arrayLine):
     splitArray = arrayLine.split('|')
     if len(splitArray) == 1:
@@ -128,6 +142,7 @@ def getTournamentObjective(lastSolution):
     solution = {}
     for line in lastSolution:
         spltline = line.split('=')
+        # identfier
         val = spltline[0].strip()
         if '[' in line:
             solution[val] = literal_eval(translateArray(spltline[1].strip()))
@@ -135,7 +150,8 @@ def getTournamentObjective(lastSolution):
             getMiniZincLine(line, solution)
     return solution
 
-
+# reads in TTPPV values
+# an absolute pain given it is formed of 2d arrays
 def readObjectiveTTPPV(fileName):
     lastSolution = readObjective(fileName)
     if len(lastSolution) == 0:
@@ -153,9 +169,13 @@ def readObjectiveTTPPV(fileName):
         var = spltLine[0].split("_")
         varName = var[0]
         if varName in solution:
+            # the value
             val = literal_eval(line.split('=')[-1].strip())
+            # has a 2d solution
             if varName in twoDSols:
+                # get the index for the first dimension
                 indx1 = literal_eval(var[1].lstrip('0').strip())
+                # if the index does not exist yet, append on new array
                 if len(solution[varName]) < indx1:
                     solution[varName].append([])
                 solution[varName][indx1-1].append(val)
@@ -166,8 +186,6 @@ def readObjectiveTTPPV(fileName):
 
 
 def quasigroup(solutionFile, paramFile):
-    # solutionFile = readFile("./quasigroup/quasigroup.param.solution")
-    # paramFile = readFile("./quasigroup/quasigroup.param")
     paramDimensions = paramFile["N"]
     latinSquare = solutionFile["puzzle"]
     inputPuzzle = paramFile["start"]
@@ -342,6 +360,7 @@ def checkTournament(solutionFile, paramFile):
     travel = solutionFile["travel"]
     distance = [] # circular distances between teams
 
+    # create circular distances
     for i in range(1,nbTeams+1): 
         distance.append([None] * nbTeams)
         for j in range(1,nbTeams+1):
@@ -372,13 +391,16 @@ def checkTournament(solutionFile, paramFile):
         for j in range(nbRounds):
             assert opponent[opponent[i][j]-1][j] == i+1
     
+    # opponent is all different
     for i in range(nbTeams):
         assert len(set(opponent[i])) == len(opponent[i])
     
+    # all different column of opponent
     for i in range(nbRounds):
         column = [opponent[j][i] for j in range(nbTeams)]
         assert len(set(column)) == len(column)
 
+    # teams cannot play three consecutive games at home or away
     for i in range(nbTeams):
         currStreak = 0
         currPiece = 1
@@ -390,12 +412,14 @@ def checkTournament(solutionFile, paramFile):
                 currPiece = venue[i][j]
                 currStreak = 0
 
+    # assert starting travel
     for i in range(nbTeams):
         if venue[i][0] == 1:
             assert travel[i][0] == 0
         else:
             assert travel[i][0] == distance[i][opponent[i][0]-1]
     
+    # assert travel matches distance
     for i in range(nbTeams):
         for j in range(nbRounds-1):
             if venue[i][j] == 1 and venue[i][j+1] == 1: 
@@ -407,6 +431,7 @@ def checkTournament(solutionFile, paramFile):
             elif venue[i][j] == 2 and venue[i][j+1] == 2:
                 assert travel[i][j+1] == distance[opponent[i][j]-1][opponent[i][j+1]-1]
     
+    # assert ending travel
     for i in range(nbTeams):
         if venue[i][nbRounds-1] == 1:
             assert travel[i][nbRounds] == 0
@@ -432,6 +457,7 @@ def checkRoster(solutionFile, paramFile):
     plan2d = solutionFile["plan2d"]
     numberOfShiftTypes = 3
 
+    # matches number of weeks and days, ie dimensions of arrays
     assert len(plan2d) == numWeeks
     assert len(plan2d[0]) == daysPerWeek
 
@@ -511,9 +537,9 @@ def checkCVR(solutionFile, paramFile):
     START_DEPOT_NODES = range(NumCustomers, NumCustomers+NumVehicles)
     END_DEPOT_NODES = range(NumCustomers+NumVehicles, NumCustomers+2*NumVehicles)
 
-
-    # for n in range(NumCustomers+NumVehicles, NumCustomers+2*NumVehicles):
-    #     assert successor[n] == n-NumVehicles+1
+    
+    for n in range(NumCustomers+NumVehicles+1, NumCustomers+2*NumVehicles-1):
+        assert successor[n] == n+1-NumVehicles+1
 
     # def circuitEprime(toCheck, toCheckOrder):
     #     maxNodes = NumCustomers + 2*NumVehicles
@@ -553,7 +579,6 @@ def checkCVR(solutionFile, paramFile):
     # else:
     #     circuitEprime(successor, solutionFile['successorOrder'])
     #     circuitEprime(predecessor, solutionFile['predecessorOrder'])
-
 
     # predecessor/successor constraint
     for n in range(NumCustomers+2*NumVehicles):
@@ -595,11 +620,6 @@ def checkCVR(solutionFile, paramFile):
     assert objective == sum([arrivalTime[depot] for depot in END_DEPOT_NODES]) - sum([arrivalTime[depot] for depot in START_DEPOT_NODES])
 
 
-
-
-
-        
-    
 
 
 def checkMSP(solutionFile, paramFile):
@@ -719,4 +739,3 @@ except FileNotFoundError:
     print('no solution found for ' + checking_type + " " + in_param + ' using ' + solution_filename)
 
 print()
-

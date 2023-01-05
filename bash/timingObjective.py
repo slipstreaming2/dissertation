@@ -4,8 +4,8 @@ import sys
 start_time = time.time()
 
 for line in sys.stdin:
+    # solution found, print time
     if  "--" in line:
-        # d.append(time.time()-start_time)
         p = (time.time()-start_time)
         print(p)
     sys.stdout.write(line)

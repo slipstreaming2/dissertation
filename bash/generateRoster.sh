@@ -8,6 +8,7 @@ do
         for s_max in {3..4}
         do 
             ${line} ${roster} -params "letting numberOfWeeks=${weeks} letting s_min=${s_min} letting s_max=${s_max}" -chuffed -run-solver -out-solution "${weeks}_${s_min}_${s_max}.solution"
+            # if the solution exists for the configuration, translate it into instance files for MiniZinc and Essence'
             if [ -f "${weeks}_${s_min}_${s_max}.solution" ]; then 
                 ${line} ${roster} -in-param "${weeks}_${s_min}_${s_max}.solution" -param-to-json
                 python ../python/jsonTranslator.py "${weeks}_${s_min}_${s_max}.solution.json" ../instances_and_solutions/roster/minizinc/instances "${weeks}_${s_min}_${s_max}"
