@@ -1,11 +1,11 @@
-# line=$(head -n 1 constants/eprime.txt)
-# timing=$(head -n 1 constants/timeout.txt)
-# runs=$(head -n 1 constants/numberOfRuns.txt)
-line=$(head -n 1 eprime.txt)
-timing=$(head -n 1 timeout.txt)
-runs=$(head -n 1 numberOfRuns.txt)
-declare -a opt=("O2" "O3")
-declare -a symm=("S0" "S1" "S2")
+line=$(head -n 1 constants/eprime.txt)
+timing=$(head -n 1 constants/timeout.txt)
+runs=$(head -n 1 constants/numberOfRuns.txt)
+# line=$(head -n 1 eprime.txt)
+# timing=$(head -n 1 timeout.txt)
+# runs=$(head -n 1 numberOfRuns.txt)
+# declare -a opt=("O2" "O3")
+# declare -a symm=("S0" "S1" "S2")
 declare -a rnd=("1" "7" "12")
 
 save_location="${1}/${3}"
@@ -70,7 +70,6 @@ function run_instance() {
 run_instance ${1} ${2} "O0" "S0" $4
 run_instance ${1} ${2} "O2" "S1" $4
 run_instance ${1} ${2} "O2" "S2" $4
-# run_instance ${1} ${2} "O3" "S1" $4
 run_instance ${1} ${2} "O3" "S2" $4
 
 if [[ $4 == "y" ]]; then 

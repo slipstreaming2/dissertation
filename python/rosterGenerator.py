@@ -1,5 +1,7 @@
 import math
 
+# randomly creates roster files based off of CSPLib method
+# https://www.csplib.org/Problems/prob087/data/
 rows = 7
 cols = 4
 

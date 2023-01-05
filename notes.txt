@@ -90,13 +90,13 @@ python checkSolutions.py "../instances_and_solutions/quasigroup/param/qwh-o30-h3
 python checkSolutions.py "../instances_and_solutions/mspsp/param/non-occurrence/easy_01.dzn.param"
 python checkSolutions.py "../instances_and_solutions/mspsp/param/non-occurrence/easy_01.dzn.param"
 
-python translator.py ./easy_01.dzn . "{\"has_skills\": \"n_skills\", \"suc\": \"n_tasks\"}"
+python translator.py ../instances_and_solutions/mspsp/easy_01.dzn ../instances_and_solutions/mspsp/eprime/param "{\"has_skills\": \"n_skills\", \"suc\": \"n_tasks\"}"
 
 python jsonTranslator.py ../instances_and_solutions/cvrptw/json/A_7v_48l.json ../instances_and_solutions/cvrptw/param
 
 
 Bash
-./translateAll.sh ../instances_and_solutions/wordpress/dzn
+./translateAll.sh ../instances_and_solutions/wordpress/minizinc/instances
 ./translateAll.sh ../instances_and_solutions/quasigroup/dzn
 ./translateAll.sh ../instances_and_solutions/tournament/dzn 
 ./translateAll.sh ../instances_and_solutions/roster/dzn 
@@ -123,13 +123,13 @@ Bash
 ./runAllEprime.sh ../instances_and_solutions/roster/param/param ../eprime_models/roster/roster.eprime ../free free
 ./runAllEprime.sh ../instances_and_solutions/roster/param/param ../eprime_models/roster/roster.eprime ../noFree
 
-./checkEprimeSolutions.sh ../instances_and_solutions/wordpress/param/param ../instances_and_solutions/wordpress/free/solutions
+./checkEprimeSolutions.sh ../instances_and_solutions/wordpress/eprime/param ../instances_and_solutions/wordpress/eprime/noFree_chuffed/solutions
 ./checkEprimeSolutions.sh ../instances_and_solutions/roster/param/param ../instances_and_solutions/roster/param/free/solutions
 ./checkEprimeSolutions.sh ../instances_and_solutions/mspsp/param
 
 
 ./checkEprimeSolutions.sh ../instances_and_solutions/cvrptw/param/param
-./checkMiniZincSolutions.sh ../instances_and_solutions/roster/param/param ../instances_and_solutions/roster/dzn/free/json
+./checkMiniZincSolutions.sh ../instances_and_solutions/roster/eprime/param ../instances_and_solutions/roster/minizinc/noFree_chuffed
 ./checkMiniZincSolutions.sh ../instances_and_solutions/cvrptw/param/param ../instances_and_solutions/cvrptw/json/solutions/json
 
 ./translateData.sh ../instances_and_solutions/wordpress/param/noFree/timing wordpress eprime
