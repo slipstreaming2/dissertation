@@ -17,13 +17,13 @@ Contains all of the python scripts and bash files used for the experiments.
 
 ### constants
  - eprime.txt 
-  The relative path location of the savilerow executable
+    - The relative path location of the savilerow executable
  - minizinc.txt
-  The relative path location of the minizinc executable
+    - The relative path location of the minizinc executable
  - numberOfRuns.txt
-  The number of runs to perform for the experiments
+    - The number of runs to perform for the experiments
  - timeout.txt
-  The timeout to impose upon the solvers
+    - The timeout to impose upon the solvers
 
 ### checkAllSolutions.py
  - checks all solutions and objective intermediate solutions
@@ -31,18 +31,18 @@ Contains all of the python scripts and bash files used for the experiments.
 to run: `python checkAllSolutions.py`
 
 ### checkEprimeSolutions.sh
- - bash script to check all eprime solutions of based off of param and solution path passed in
+ - bash script to check all eprime solutions based off of param and solution path passed in
  
-to run: `.\checkEprimeSolutions.sh <eprime_param_path> <solution_path>`
+to run: `./checkEprimeSolutions.sh <eprime_param_path> <solution_path>`
 
-example: `.\checkEprimeSolutions.sh ..\instances_and_solutions\wordpress\eprime\param ..\instances_and_solutions\wordpress\eprime\noFree_chuffed\solutions`
+example: `./checkEprimeSolutions.sh ../instances_and_solutions/wordpress/eprime/param ../instances_and_solutions/wordpress/eprime/noFree_chuffed/solutions`
 
 ### checkMiniZincSolutions.sh
  - bash script to check all minizinc solutions based off of ESSENCE' PARAM path and solution path passed in
 
-to run: `.\checkMiniZincSolutions.sh <eprime_param_path> <solution_path>`
+to run: `./checkMiniZincSolutions.sh <eprime_param_path> <solution_path>`
 
-example: `.\checkMiniZincSolutions.sh ..\instances_and_solutions\roster\eprime\param ..\instances_and_solutions\roster\minizinc\noFree_chuffed`
+example: `./checkMiniZincSolutions.sh ../instances_and_solutions/roster/eprime/param ../instances_and_solutions/roster/minizinc/noFree_chuffed`
 
 ### generateCommands.py
  - script to print out all commands to run for the experiments
@@ -62,31 +62,31 @@ example: `.\checkMiniZincSolutions.sh ..\instances_and_solutions\roster\eprime\p
  - runs the respective eprime flatzinc geneated file with a solver (Chuffed)
  - NOTE the flatzinc files MUST exist before this command is run, this is assuming this script file is run after normal timing experiments have concluded
  
- to run: `.\generateEprimeOptCommands.sh <solver_executable_location> <txt_file_save_location> <flag -f|>`
+ to run: `./generateEprimeOptCommands.sh <solver_executable_location> <txt_file_save_location> <flag -f|>`
  
- example: `.\generateEprimeOptCommands.sh ..\..\savilerow-1.9.1-linux\bin\fzn-chuffed ..\instances_and_solutions\cvrptw\eprime\noFree_chuffed`
+ example: `./generateEprimeOptCommands.sh ../../savilerow-1.9.1-linux/bin/fzn-chuffed ../instances_and_solutions/cvrptw/eprime/noFree_chuffed`
 
 ### generateMinizincCommands.sh
  - script to print minizinc experiment commands
  - usually this script is piped into a text file then run with GNU parallel
 
-to run: `.\generateMinizincCommands.sh <path_to_minizinc_instance_folder> <path_to_minizinc_model> <path_to_save_under_relative_to_instance_folder> <solver> <-f|>`
+to run: `./generateMinizincCommands.sh <path_to_minizinc_instance_folder> <path_to_minizinc_model> <path_to_save_under_relative_to_instance_folder> <solver> <-f|>`
 
-example: `.\generateMinizincCommands.sh ..\instances_and_solutions\tournament\minizinc\instances ..\miniZinc_files\tournament\tournament.mzn ..\free_chuffed chuffed -f`
+example: `./generateMinizincCommands.sh ../instances_and_solutions/tournament/minizinc/instances ../miniZinc_files/tournament/tournament.mzn ../free_chuffed chuffed -f`
 
 Above example runs with free flag
 
 ### generateRoster.sh
  - script to generate and create eprime and minizinc instance files plus directories for the rostering problem
 
-to run: `.\generateRoster.sh`
+to run: `./generateRoster.sh`
 
 ### genMiniZincObjectiveComms.sh
  - prints objective experiment commands to time intermediate solutions from CVRPTW and TTPPV (tournament)
  
-to run: `.\genMiniZincObjectiveComms.sh <path_to_minizinc_instance_folder> <path_to_minizinc_model> <path_to_save_under_relative_to_instance_folder> <solver> <flag -f|>`
+to run: `./genMiniZincObjectiveComms.sh <path_to_minizinc_instance_folder> <path_to_minizinc_model> <path_to_save_under_relative_to_instance_folder> <solver> <flag -f|>`
 
-example: `.\genMiniZincObjectiveComms.sh ..\instances_and_solutions\tournament\minizinc\instances ..\miniZinc_files\tournament\tournament.mzn ..\noFree_chuffed chuffed`
+example: `./genMiniZincObjectiveComms.sh ../instances_and_solutions/tournament/minizinc/instances ../miniZinc_files/tournament/tournament.mzn ../noFree_chuffed chuffed`
 
 Above example does not run with free flag
 
@@ -99,9 +99,9 @@ to run: `python genObjectiveComms.py`
 ### runAllEprimeCommands.sh
  - prints all eprime experiment commands for passed in param folder
 
-to run: `.\runAllEprimeCommands.sh <path_to_param_folder> <path_to_eprime_model> <save_path_relative_to_param_folder> <y|n to remove fzn and minion files> <solver> <flag -f|>`
+to run: `./runAllEprimeCommands.sh <path_to_param_folder> <path_to_eprime_model> <save_path_relative_to_param_folder> <y|n to remove fzn and minion files> <solver> <flag -f|>`
 
-example: `.\runAllEprimeCommands.sh ..\instances_and_solutions\wordpress\eprime\param ..\eprime_models\wordpressNoSymm\wordpressNoSymm.eprime ..\..\..\wordpressNoSymm\param\noFree_chuffed y chuffed`
+example: `./runAllEprimeCommands.sh ../instances_and_solutions/wordpress/eprime/param ../eprime_models/wordpressNoSymm/wordpressNoSymm.eprime ../../../wordpressNoSymm/param/noFree_chuffed y chuffed`
 
 ### timingObjective.py
  - python file to read in output of eprime intermediate solutions and print timing
@@ -115,13 +115,13 @@ example: `fzn-chuffed -a -v example.fzn | python timingObjective.py`
  - translates all passed in minzinc dzn or json files into param files in same problem directory
  - if the minizinc file has sets, expect a json string in the second argument giving the occurrence sizes of the sets from the parameter file 
 
-to run: `.\translateAll.sh <path_to_minizinc_instance> <optional_json_for_occurrence_translation>`
+to run: `./translateAll.sh <path_to_minizinc_instance> <optional_json_for_occurrence_translation>`
 
-example: `.\translateAll.sh ..\instances_and_solutions\wordpress\minizinc\instances`
+example: `./translateAll.sh ../instances_and_solutions/wordpress/minizinc/instances`
 
-example: `.\translateAll.sh ..\instances_and_solutions\mspsp\minizinc\instances  "{\"has_skills\": \"n_skills\", \"suc\": \"n_tasks\"}"`
+example: `./translateAll.sh ../instances_and_solutions/mspsp/minizinc/instances  "{\"has_skills\": \"n_skills\", \"suc\": \"n_tasks\"}"`
 
-In the above example, n_skills gives the size of the occurrence representation of the set for has_skills
+In the above example, n_skills gives the size of the occurrence representation of the set for has_skills in the parameter file
 
 # eprime_models
 All of the Essence' (Eprime) models and generators used for the experiments  
@@ -132,37 +132,56 @@ For each respective problem, it contains the Essence' and MiniZinc timings, solu
 This is broken down as:
 ```
 problem_name
-    |
-    --- eprime
+|
+└───eprime
+    |    
+    └───<noFree|free>_chuffed
+        |    
+        └───solutions
+            |    
+            └───O<0|2|3>_S<0|1|2> (optimisation)
+                |   <instance_name>_chuffed.O<0|2|3>_S<0|1|2>.solution
         |
-        --- `<noFree|free>_<chuffed>`
+        └───timing
             |
-            --- solutions
+            └───<instance_name>
+                |   <instance_name>_<solver>_run<1|2|3>.O<0|2|3>_S<0|1|2>.info
+            |
+            └───infor
                 |
-                ---optimisation `<O(0|2|3)_S(0|1|2)>`
+                └───O<0|2|3>_S<0|1|2>
                     |
-                    ---`<instance_name>_<solver>.<O(0|2|3)_S(0|1|2)>.solution`
-            --- timings
-                |
-                ---instance_name
-                    |
-                    ---`<instance_name>_<solver>_run<1|2|3>.<O(0|2|3)_S(0|1|2)>.info`
+                    └───<instance_name>
+                        |   <instance_name>_<solver>_run<1|2|3>.O<0|2|3>_S<0|1|2>.infor
         |
-        --- param
+        └───<objective>
             |
-            ---`<instance_name>`
+            └───O<0|2|3>_S<0|1|2>
+                |
+                └───<instance_name>_chuffed_run1.O<0|2|3>_S<0|1|2>.fzn
+                    |   <instance_name>_chuffed_run1.O<0|2|3>_S<0|1|2>.fzn_run<1|2|3>.txt   
+                    
+        |
+        └───<param>
+            |   <instance_name>.param
+|
+|
+└───minizinc
     |
-    --- minizinc
+    └───<noFree|free>_chuffed
         |
-        ---<noFree|free>_<chuffed>
-            |
-            ---instance_name
-                |
-                ---<instance_name>_<free|noFree>_run<1|2|3>.txt
+        └───<instance_name>
+            |   <instance_name>_<free|noFree>_run<1|2|3>.txt
+    |
+    └───<instances>
+        |   <instance_name>
+    |
+    └───<noStdLibObjective|objective>
         |
-        ---instances
+        └───<noFree|free>_chuffed
             |
-            ---<instance_name>
+            └───<instance_name>
+                |   <instance_name>_<-f|>_run<1|2|3>.txt
 ```
 
 # miniZinc_files
@@ -183,12 +202,12 @@ To run:
 NOTE the parameter file MUST be a essence' .param file, even when checking MiniZinc solutions
 
 Example:
-`python checkSolutions.py ..\instances_and_solutions\tournament\param\circ8abal.dzn.param ..\instances_and_solutions\tournament\minizinc\noFree_chuffed\circ8abal.dzn\circ8abal.dzn_run1.txt minizinc`
+`python checkSolutions.py ../instances_and_solutions/wordpress/eprime/param/Wordpress_Offers20.dzn.param ../instances_and_solutions/wordpress/minizinc/free_chuffed/Wordpress_Offers20.dzn/Wordpress_Offers20.dzn_free_run1.txt minizinc`
 
 The above example checks the MiniZinc solution
 
 Example:
-`python checkSolutions.py ..\instances_and_solutions\tournament\param\circ8abal.dzn.param ..\instances_and_solutions\tournament\eprime\noFree_chuffed\solutions\O0_S0\circ8abal.dzn.param_chuffed.O0_S0.solution`
+`python checkSolutions.py ../instances_and_solutions/wordpress/eprime/param/Wordpress_Offers20.dzn.param ../instances_and_solutions/wordpress/eprime/noFree_chuffed/solutions/O0_S0/Wordpress_Offers20.dzn.param_chuffed.O0_S0.solution`
 
 The above example checks the Eprime solution
 
@@ -206,15 +225,15 @@ To run:
 `python jsonTranslator.py <minizinc_json_file_path> <eprime_save_location_path>`
 
 Example:
-`python jsonTranslator.py ..\instances_and_solutions\cvrptw\json\A_7v_48l.json ..\instances_and_solutions\cvrptw\param`
+`python jsonTranslator.py ../instances_and_solutions/cvrptw/minizinc/instances/A_7v_48l.json ../instances_and_solutions/cvrptw/eprime/param`
 
 Translates Roster generated JSON files into MiniZinc instance files
 
 To run:
-`python jsonTranslator.py <minizinc_json_file_path> <eprime_save_location_path>`
+`python jsonTranslator.py <roster_json_file_path> <minizinc_save_location_path> <filename>`
 
 Example:
-`python jsonTranslator.py "${weeks}_${s_min}_${s_max}.solution.json" ..\instances_and_solutions\roster\minizinc\instances "${weeks}_${s_min}_${s_max}"`
+`python jsonTranslator.py ../instances_and_solutions/roster/generatedInstances/json/12_2_4.solution.json ../instances_and_solutions/roster/minizinc/instances 12_2_4`
 
 
 ### objectiveGraphs.ipynb
@@ -229,6 +248,9 @@ To run:
 ### rosterGenerator.py
 - creates random roster shift requirements as described by the [CSPLib](https://www.csplib.org/Problems/prob087/data/)
 
+To run:
+`python rosterGenerator.py`
+
 ### translator.py
 - translates inputted MiniZinc dzn file into a Essence' param file, including translating sets into an occurrence representation
 
@@ -236,9 +258,9 @@ To run:
 `python translator.py <mzn_file_path_to_translate> <eprime_directory_to_save_into>`
 
 Example:
-`python translator.py ..\instances_and_solutions\quasigroup\minizinc\instances\qwh-o30-h374-01.dzn ..\instances_and_solutions\quasigroup\eprime\param`
+`python translator.py ../instances_and_solutions/quasigroup/minizinc/instances/qwh-o30-h374-01.dzn ../instances_and_solutions/quasigroup/eprime/param`
 
 If converting a MiniZinc file with sets, a third argument in JSON format gives the variable with the set reprepsentation mapped to the variable in the parameter file of the size of the set. In the below example, n_skills gives the size of the occurrence representation of the set
 
 Example:
-`python translator.py ..\instances_and_solutions\mspsp\easy_01.dzn ..\instances_and_solutions\mspsp\eprime\param "{\"has_skills\": \"n_skills\", \"suc\": \"n_tasks\"}"`
+`python translator.py ../instances_and_solutions/mspsp/minizinc/instances/easy_01.dzn ../instances_and_solutions/mspsp/eprime/param "{\"has_skills\": \"n_skills\", \"suc\": \"n_tasks\"}"`

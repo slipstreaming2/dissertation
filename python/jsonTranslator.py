@@ -10,7 +10,7 @@ def translateFile(newFileName, file_to_convert="", data=None):
     if data == None:
         mini_file = open(file_to_convert, "r")
         data = json.load(mini_file) 
-    print(newFileName)
+    print(newFileName + ".param")
     param_file = open(newFileName + ".param", "w")
     param_file.write("language ESSENCE' 1.0\n")
 
@@ -36,6 +36,7 @@ def translateToMinizinc(newFileName, file_to_convert, fileName, directory):
     json_to_save["s_min"] = int(splitFileName[s_minIndex])
     json_to_save["s_max"] = int(splitFileName[s_maxIndex])
     
+    print(newFileName.replace(".solution", ""))
     # place json file into instances folder under MiniZinc directory (instances_and_solutions\roster\minizinc\instances)
     with open(newFileName.replace(".solution", ""), "w") as f:
         json.dump(json_to_save, f)

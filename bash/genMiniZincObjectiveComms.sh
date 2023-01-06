@@ -1,6 +1,6 @@
-line=$(head -n 1 minizinc.txt)
-timing=$(head -n 1 timeout.txt)
-runs=$(head -n 1 numberOfRuns.txt)
+line=$(head -n 1 constants/minizinc.txt)
+timing=$(head -n 1 constants/timeout.txt)
+runs=$(head -n 1 constants/numberOfRuns.txt)
 declare -a rnd=("1" "7" "12")
 
 objectiveDir=${3}
