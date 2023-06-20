@@ -322,11 +322,24 @@ constraint forall(k in 1..VM-1)(
  ****                           ****
  ***********************************/
 var int: objective = sum(k in 1..VM)(Price[k]);
+
+% ORIGINAL SEARCH ORDER
+% solve :: int_search(
+%   array1d(AssignmentMatrix) ++
+%   OccupancyVector ++
+%   VMType ++
+%   Price,
+%   first_fail,
+%   indomain_min
+% ) minimize objective;
+
+% STANDARDIZED SEARCH ORDER
 solve :: int_search(
   array1d(AssignmentMatrix) ++
   OccupancyVector ++
   VMType ++
   Price,
-  first_fail,
-  indomain_min
+  input_order,
+  indomain_min,
+  complete
 ) minimize objective;

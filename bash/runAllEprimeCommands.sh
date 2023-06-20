@@ -1,16 +1,13 @@
 line=$(head -n 1 constants/eprime.txt)
+mzn_chuffed=$(head -n 1 constants/eprime_chuffed_path.txt)
 timing=$(head -n 1 constants/timeout.txt)
 runs=$(head -n 1 constants/numberOfRuns.txt)
-# line=$(head -n 1 eprime.txt)
-# timing=$(head -n 1 timeout.txt)
-# runs=$(head -n 1 numberOfRuns.txt)
-# declare -a opt=("O2" "O3")
-# declare -a symm=("S0" "S1" "S2")
+# TODO MOVE THIS OUT
 declare -a rnd=("1" "7" "12")
 
 save_location="${1}/${3}"
 
-chosen_solver=$5
+chosen_solver=${5}
 
 # printf "using ${chosen_solver} \n"
 
@@ -32,7 +29,6 @@ function create_directories() {
     [[ -d ${save_location}/timing/${1} ]] || mkdir ${save_location}/timing/${1}
 }
 
-
 function create_and_move() {
     [[ -d ${save_location}/solutions/${2} ]] || mkdir ${save_location}/solutions/${2}
     create_directories ${2}
@@ -40,7 +36,7 @@ function create_and_move() {
 }
 
 
-function run_instance() {
+function print_eprime_commands() {
     naming="${3}_${4}"
     to_rem="mv ${save_location}/minion/*.json ${save_location}/symmetry"
     for f in ${1}/*.param; 
@@ -50,6 +46,7 @@ function run_instance() {
         for ((k=1;k<=runs;k++));
         do 
             run_tag=${base_name}${6}_${chosen_solver}_run${k}.${naming}
+            # delete all unnecessary files
             if [[ $5 == "y" ]]; then 
                 to_rem="rm -rf ${save_location}/minion/${run_tag}.minion; rm -rf ${save_location}/minion/*.json; rm -rf ${save_location}/fzn/${run_tag}.fzn"
             fi    
@@ -58,20 +55,16 @@ function run_instance() {
             -out-info ${save_location}/timing/${naming}/$base_name/${run_tag}.info \
             -out-minion ${save_location}/minion/${run_tag}.minion \
             -out-flatzinc ${save_location}/fzn/${run_tag}.fzn \
-            -solver-options \"${solver_options} -r ${rnd[${k}-1]}\"; \
+            -solver-options \"${solver_options} -r ${rnd[${k}-1]}\" \
+            -chuffed-bin ${mzn_chuffed}; \
             mv ${save_location}/timing/${naming}/$base_name/${run_tag}.infor ${save_location}/timing/infor/${naming}/${base_name}; \
             ${to_rem}"
-
         done
     done
 }
 
 
-run_instance ${1} ${2} "O0" "S0" $4
-run_instance ${1} ${2} "O2" "S1" $4
-run_instance ${1} ${2} "O2" "S2" $4
-run_instance ${1} ${2} "O3" "S2" $4
-
-if [[ $4 == "y" ]]; then 
-    to_rem="rm -rf ${save_location}/symmetry ${save_location}/minion ${save_location}/fzn"
-fi  
+print_eprime_commands ${1} ${2} "O0" "S0" $4
+print_eprime_commands ${1} ${2} "O2" "S1" $4
+# print_eprime_commands ${1} ${2} "O2" "S2" $4
+print_eprime_commands ${1} ${2} "O3" "S2" $4

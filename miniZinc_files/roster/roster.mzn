@@ -104,12 +104,10 @@ constraint plan1d[1] >= plan1d[numberOfDays] \/ plan1d[1] == 0;
 constraint forall(day in 1..daysPerWeek) (
               (global_cardinality(row(plan2dT,day),[0,1,2,3],row(shiftRequirements,day)))   
            );    
-           
+
 % solve the problem           
 solve :: int_search(plan1d, input_order, indomain_min, complete)
-      satisfy;      
-
-% solve satisfy;           
+      satisfy;  
       
 % print the problem      
 % output [ show(row(plan2d,j)) ++ "\n" | j in 1..numberOfWeeks ] ++ ["\n"];      

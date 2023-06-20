@@ -1,0 +1,1 @@
+{"type": "error", "what": "syntax error", "location": {"filename": "/home/csoban/Documents/uni-work/constraints/dissertation/miniZinc_files/roster/roster.mzn", "firstLine": 114, "firstColumn": 7, "lastLine": 114, "lastColumn": 16}, "message": "syntax error, unexpected identifier, expecting maximize or minimize or satisfy"}

@@ -1,10 +1,10 @@
 import os
 
-# problemList = ["cvrptw", "mspsp", "quasigroup", "roster", "tournament", "wordpress"]
-problemList = ["wordpress", "mspsp", "quasigroup", "tournament"]
+problemList = ["cvrptw", "mspsp", "quasigroup", "roster", "tournament", "wordpress"]
+# problemList = ["wordpress", "mspsp", "quasigroup", "tournament"]
 # problemList = ["mspsp"]
 solvers = ["chuffed"]
-flags = ["noFree", "free"]
+flags = ["free"]
 # flags = ["noFree"]
 instances_solutions_path = "../instances_and_solutions/"
 eprime_path = "../eprime_models/"
@@ -30,8 +30,8 @@ for problem in problemList:
             elif problem == "quasigroup":
                 os.system(mzn_path(mzn_model="quasigroupOcc", save_path="../../../quasigroupOcc/minizinc/"))
 
-            if solver == "chuffed" and flag == "free":
-                continue
+            # if solver == "chuffed" and flag == "free":
+            #     continue
             
             def eprime_os_path(eprime_model=problem, save_path="../"):
                 isDeletingFzn = "y"

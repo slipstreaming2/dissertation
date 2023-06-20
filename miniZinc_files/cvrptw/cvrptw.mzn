@@ -126,19 +126,19 @@ constraint redundant_constraint(
    )
 );
 
-% alldiff + subtour elimination constraints
-constraint 
-   circuit(successor);
-constraint redundant_constraint(
-   circuit(predecessor)
-);
-
-% alldiff + subtour elimination constraints
+% original alldiff + subtour elimination constraints
 % constraint 
-%    circuit_decomp(successor);
+%    circuit(successor);
 % constraint redundant_constraint(
-%    circuit_decomp(predecessor)
+%    circuit(predecessor)
 % );
+
+% standardised alldiff + subtour elimination constraints
+constraint 
+   circuit_decomp(successor);
+constraint redundant_constraint(
+   circuit_decomp(predecessor)
+);
 
 % ---- vehicle constraints ------------- %
 
@@ -213,12 +213,14 @@ constraint
 constraint
 objective = sum (depot in END_DEPOT_NODES) (arrivalTime[depot]) - sum (depot in START_DEPOT_NODES) (arrivalTime[depot]);
 
-solve :: seq_search([int_search(successor, first_fail, indomain_split, complete),
-		     int_search(vehicle, first_fail, indomain_split, complete),
-               int_search(arrivalTime, first_fail, indomain_min, complete)
-              ])   
-minimize objective; % traveltime
-% solve :: int_search(successor, first_fail, indomain_split, complete) minimize objective;
+% ORIGINAL SEARCH ORDER
+% solve :: seq_search([int_search(successor, first_fail, indomain_split, complete),
+% 		     int_search(vehicle, first_fail, indomain_split, complete),
+%                int_search(arrivalTime, first_fail, indomain_min, complete)
+%               ])   
+
+% STANDARDIZED SEARCH ORDER
+solve :: int_search(successor ++ vehicle ++ arrivalTime, input_order, indomain_min, complete) minimize objective;
 
 
 

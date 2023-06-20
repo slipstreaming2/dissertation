@@ -1,0 +1,6 @@
+{"type": "statistics", "statistics": {"paths": 309, "flatBoolVars": 165, "flatIntVars": 56, "flatBoolConstraints": 90, "flatIntConstraints": 195, "evaluatedReifiedConstraints": 110, "method": "minimize", "flatTime": 0.249474}}
+{"type": "statistics", "statistics": {"nodes": 69474, "failures": 50084, "restarts": 131, "variables": 3540, "intVars": 94, "boolVariables": 3444, "propagators": 367, "propagations": 4981765, "peakDepth": 39, "nogoods": 50084, "backjumps": 17712, "peakMem": 0.0, "time": 1.957, "initTime": 0.003, "solveTime": 1.954, "objective": 35, "optTime": 0.005, "baseMem": 0.0, "trailMem": 0.05, "randomSeed": 1}}
+{"type": "solution", "output": {"json": {  "s" : [0, 4, 9, 0, 4, 13, 6, 11, 16, 16, 17, 20, 23, 13, 23, 27, 18, 31, 32, 27, 21, 24, 25, 33, 30],  "w" : [[true, true, true, false, false, true, false, false, false, true, true, true, false, false, true, true, false, true, true, false, false, true, true, true, false], [false, false, false, true, true, false, true, true, true, false, false, false, true, true, false, false, true, false, false, true, true, false, false, false, true]],  "objective" : 35}}, "sections": ["json"]}
+{"type": "status", "status": "OPTIMAL_SOLUTION"}
+{"type": "comment", "comment": "% [objective > 34]\n"}
+{"type": "statistics", "statistics": {"nSolutions": 1}}

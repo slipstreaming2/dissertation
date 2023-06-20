@@ -1,3 +1,0 @@
-output ["puzzle = \n",let {array [int] of string: idx1 = [], array [int] of string: idx2 = [], array [int,int] of string: x = [(i, j) : show(puzzle[i,j]) | i in 1..40, j in 1..40]} in (show2d_indexed(idx1,idx2,x)),";\n"];
-int: N = 40;
-array [1..N,1..N] of int: puzzle;

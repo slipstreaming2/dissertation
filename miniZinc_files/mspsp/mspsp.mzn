@@ -165,15 +165,25 @@ constraint
 %-----------------------------------------------------------------------------%
 % Objective.
 
+% ORIGINAL SEARCH ORDER
+% solve
+%     :: seq_search([
+%         int_search(s, smallest, indomain_split, complete),
+%         bool_search([w[i,j] | i in Workers, j in Tasks], input_order, 
+%             indomain_max, complete),
+%         int_search([objective], input_order, indomain_min, complete)
+%     ])
+%     minimize objective;
+
+% STANDARDIZED SEARCH ORDER
 solve
     :: seq_search([
-        int_search(s, smallest, indomain_split, complete),
+        int_search(s, input_order, indomain_min, complete),
         bool_search([w[i,j] | i in Workers, j in Tasks], input_order, 
-            indomain_max, complete),
+            indomain_min, complete),
         int_search([objective], input_order, indomain_min, complete)
     ])
     minimize objective;
-
 %-----------------------------------------------------------------------------%
 % Output.
 

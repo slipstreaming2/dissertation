@@ -1,0 +1,5 @@
+{"type": "statistics", "statistics": {"paths": 0, "flatIntVars": 900, "flatIntConstraints": 60, "method": "satisfy", "flatTime": 0.036169}}
+{"type": "comment", "comment": "% Time limit exceeded!\n"}
+{"type": "status", "status": "UNKNOWN"}
+{"type": "statistics", "statistics": {"nSolutions": 0}}
+{"type": "statistics", "statistics": {"nodes": 40152, "failures": 30795, "restarts": 95, "variables": 25294, "intVars": 900, "boolVariables": 24392, "propagators": 121, "propagations": 1794743, "peakDepth": 50, "nogoods": 30795, "backjumps": 6151, "peakMem": 0.0, "time": 3.614, "initTime": 0.014, "solveTime": 3.6, "baseMem": 0.0, "trailMem": 0.19, "randomSeed": 1}}

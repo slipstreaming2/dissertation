@@ -1,5 +1,0 @@
-language ESSENCE' 1.0
-letting shiftRequirements = [[13, 7, 10, 6], [5, 6, 7, 18], [5, 6, 7, 18], [1, 6, 7, 22], [8, 1, 10, 17], [24, 1, 6, 5], [24, 1, 6, 5]]
-letting numberOfWeeks = 36
-letting s_min = 2
-letting s_max = 4

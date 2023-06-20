@@ -1,0 +1,1 @@
+{"type": "error", "what": "type error", "location": {"filename": "/home/csoban/Documents/uni-work/constraints/dissertation/miniZinc_files/cvrptw/cvrptw.mzn", "firstLine": 138, "firstColumn": 4, "lastLine": 138, "lastColumn": 28}, "message": "no function or predicate with name `circuit_decomp' found"}

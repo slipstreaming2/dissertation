@@ -64,8 +64,10 @@ array[States,1..2] of int: delta =
    | 2, 7
    | 2, 0 |];
 constraint forall (i in Teams) (
-    regular( [venue[i,k] | k in Rounds], nbStates, 2, delta, 1, States)
-    % fzn_regular( [venue[i,k] | k in Rounds], nbStates, 2, delta, 1, States)
+    % ORIGINAL regular
+    % regular( [venue[i,k] | k in Rounds], nbStates, 2, delta, 1, States)
+    % standardized regular for testing
+    fzn_regular( [venue[i,k] | k in Rounds], nbStates, 2, delta, 1, States)
 );
 
 % symmetry breaking: distances are symmetric so reversing the rounds yields a schedule of same cost
@@ -89,12 +91,29 @@ int: maxObj = sum(i in Teams, k in Travels)(ub(travel[i, k]));
 var 0..maxObj: objective; 
 constraint objective = sum (i in Teams, k in Travels) (travel[i,k]);
 
+% ORIGINAL SEARCH ORDER
+% solve 
+%     :: seq_search([
+%         int_search([opponent[i, j] | i in Teams, j in Rounds], input_order, indomain_min, complete),
+%         int_search([venue[i, j] | i in Teams, j in Rounds], input_order, indomain_min, complete),
+%         int_search([travel[i, j] | i in Teams, j in Travels], first_fail, indomain_min, complete),
+%     ])
+%     minimize objective;
+
+% STANDARDIZED SEARCH ORDER
+% solve 
+%     :: seq_search([
+%         int_search([opponent[i, j] | i in Teams, j in Rounds], input_order, indomain_min, complete),
+%         int_search([venue[i, j] | i in Teams, j in Rounds], input_order, indomain_min, complete),
+%         int_search([travel[i, j] | i in Teams, j in Travels], input_order, indomain_min, complete),
+%     ])
+%     minimize objective;
+
 solve 
-    :: seq_search([
-        int_search([opponent[i, j] | i in Teams, j in Rounds], input_order, indomain_min, complete),
-        int_search([venue[i, j] | i in Teams, j in Rounds], input_order, indomain_min, complete),
-        int_search([travel[i, j] | i in Teams, j in Travels], first_fail, indomain_min, complete),
-    ])
+    :: 
+        int_search([opponent[i, j] | i in Teams, j in Rounds] ++ 
+        [venue[i, j] | i in Teams, j in Rounds] ++
+        [travel[i, j] | i in Teams, j in Travels], input_order, indomain_min, complete)
     minimize objective;
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

@@ -1,3 +1,0 @@
-output ["puzzle = array3d(1..40, 1..40, 1..40, ",show(puzzle),");\n"];
-int: N = 40;
-array [1..N,1..N,1..N] of int: puzzle;

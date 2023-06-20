@@ -1,1 +1,1 @@
-../../MiniZincIDE-2.6.4-bundle-linux-x86_64/bin/minizinc
+../../MiniZincIDE-2.7.5-bundle-linux-x86_64/bin/minizinc

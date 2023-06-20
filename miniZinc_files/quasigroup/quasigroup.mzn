@@ -20,7 +20,7 @@ constraint forall (i in PuzzleRange) (
 % All different in columns.
 constraint forall (j in PuzzleRange) (
                    alldifferent( [ puzzle[i,j] | i in PuzzleRange ] ) );
- 
+
 solve satisfy;
  
 % output [ show_int(digs,puzzle[i,j]) ++ " " ++

@@ -1,3 +1,0 @@
-{"type": "statistics", "statistics": {"paths": 0, "flatBoolVars": 340304, "flatIntVars": 340304, "flatIntConstraints": 355004, "method": "satisfy", "flatTime": 9.56003}}
-{"type": "status", "status": "UNKNOWN"}
-{"type": "statistics", "statistics": {"nSolutions": 0}}

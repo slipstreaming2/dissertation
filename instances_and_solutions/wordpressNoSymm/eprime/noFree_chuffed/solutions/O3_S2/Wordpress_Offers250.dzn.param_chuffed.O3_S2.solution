@@ -1,9 +1,0 @@
-language ESSENCE' 1.0
-letting AssignmentMatrix be [[0, 0, 0, 0, 0, 1, 1, 1], 
-[0, 0, 0, 1, 1, 0, 0, 0], 
-[0, 0, 0, 0, 0, 0, 0, 0], 
-[0, 0, 1, 0, 0, 0, 0, 0], 
-[1, 1, 0, 0, 0, 0, 0, 0]]
-letting OccupancyVector be [1, 1, 1, 1, 1, 1, 1, 1]
-letting Price be [210, 210, 210, 126, 126, 126, 126, 126]
-letting VMType be [182, 182, 182, 225, 225, 225, 225, 225]

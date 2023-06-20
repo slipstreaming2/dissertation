@@ -1,9 +1,5 @@
 % Quasigroup with Holes (aka Latin Square Completion)
- 
-% include "alldifferent.mzn";
- 
 int: N;
-% int: digs = ceil(log(10.0,int2float(N))); % digits for output
 set of int: PuzzleRange = 1..N;
  
 array[1..N,1..N] of 0..N: start; %% initial board 0 = empty

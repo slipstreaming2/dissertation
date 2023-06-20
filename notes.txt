@@ -6,6 +6,9 @@ MiniZinc commands
 ../../MiniZincIDE-2.6.4-bundle-linux-x86_64/bin/minizinc --solver chuffed ../instances_and_solutions/cvrptw/json/toy_D_2v_4l_w_reload.json ../miniZinc_files/cvrptw/cvrptw.mzn
 ../../MiniZincIDE-2.6.4-bundle-linux-x86_64/bin/minizinc --solver chuffed ../instances_and_solutions/mspsp/dzn/easy_01.dzn ../miniZinc_files/mspsp/mspsp.mzn
 
+../../MiniZincIDE-2.7.5-bundle-linux-x86_64/bin/minizinc --solver chuffed ../instances_and_solutions/tournament/minizinc/instances/circ8abal.dzn ../miniZinc_files/tournament/tournament.mzn --fzn test.fzn
+../../MiniZincIDE-2.7.5-bundle-linux-x86_64/bin/minizinc --solver chuffed ../instances_and_solutions/cvrptw/minizinc/instances/toy_D_2v_4l_w_reload.json ../miniZinc_files/cvrptw/cvrptw.mzn --fzn test.fzn
+
 ./minizinc --solver chuffed Wordpress/Wordpress.mzn Wordpress/Wordpress_Offers20.dzn -s --compiler-statistics --output-mode json --json-stream
 --output-time??? compared to other times 
 
@@ -54,7 +57,7 @@ Quasigroup Essence
 ../../savilerow-1.9.1-linux/savilerow ../instances_and_solutions/quasigroup/param/qwh-o30-h374-01.dzn.param ../eprime_models/quasigroupBool/quasigroupBool.eprime -chuffed -run-solver
 ../../savilerow-1.9.1-linux/savilerow ../instances_and_solutions/mspsp/param/param/hard_01.dzn.param ../eprime_models/mspsp/mspsp.eprime -chuffed 
 ../../savilerow-1.9.1-linux/savilerow ../instances_and_solutions/quasigroup/param/qwh-o30-h374-01.dzn.param ../eprime_models/quasigroup/quasigroup.eprime -chuffed -run-solver
-../../savilerow-1.9.1-linux/savilerow ../instances_and_solutions/tournament/param/circ8abal.dzn.param ../eprime_models/tournament/tournament.eprime -chuffed -run-solver
+../../savilerow-1.9.1-linux/savilerow ../instances_and_solutions/tournament/eprime/param/circ8abal.dzn.param ../eprime_models/tournament/tournament.eprime -chuffed -run-solver
 ../../savilerow-1.9.1-linux/savilerow ../instances_and_solutions/roster/param/Rostering-8-M-2-4.dzn.param ../eprime_models/roster/roster.eprime -chuffed -run-solver
 ../../savilerow-1.9.1-linux/savilerow ../instances_and_solutions/mspsp/param/easy_01.dzn.param ../eprime_models/mspsp/mspsp.eprime -chuffed -run-solver
 

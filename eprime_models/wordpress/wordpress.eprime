@@ -41,7 +41,6 @@ $ find Memory : matrix indexed by [int(1..VM)] of int(1700..976000)
 $ find Storage : matrix indexed by [int(1..VM)] of int(1000..24000)
 find Price : matrix indexed by [int(1..VM)] of int(0..16000)
 
-
 branching on [AssignmentMatrix, OccupancyVector, VMType, Price]
 
 minimising sum(Price)

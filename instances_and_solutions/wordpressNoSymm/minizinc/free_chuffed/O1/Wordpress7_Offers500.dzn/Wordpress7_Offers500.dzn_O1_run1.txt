@@ -1,0 +1,1 @@
+{"type": "error", "what": "syntax error", "location": {"filename": "/home/csoban/Documents/uni-work/constraints/dissertation/miniZinc_files/wordpressNoSymm/wordpressNoSymm.mzn", "firstLine": 332, "firstColumn": 7, "lastLine": 332, "lastColumn": 16}, "message": "syntax error, unexpected identifier, expecting maximize or minimize or satisfy"}

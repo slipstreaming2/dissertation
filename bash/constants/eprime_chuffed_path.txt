@@ -1,0 +1,4 @@
+fzn-chuffed
+
+BELOW PATH DOES NOT WORK DUE TO table_int and all_different_int CONSTRAINT! Example in circ14dnonbal.dzn.param using O2 S1 and O3 S2
+../../MiniZincIDE-2.7.5-bundle-linux-x86_64/bin/fzn-chuffed
