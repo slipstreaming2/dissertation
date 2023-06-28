@@ -1,5 +1,5 @@
 line=$(head -n 1 constants/eprime.txt)
-mzn_chuffed=$(head -n 1 constants/eprime_chuffed_path.txt)
+# mzn_chuffed=$(head -n 1 constants/eprime_chuffed_path.txt) #TODO fix later
 timing=$(head -n 1 constants/timeout.txt)
 runs=$(head -n 1 constants/numberOfRuns.txt)
 # TODO MOVE THIS OUT
@@ -55,8 +55,8 @@ function print_eprime_commands() {
             -out-info ${save_location}/timing/${naming}/$base_name/${run_tag}.info \
             -out-minion ${save_location}/minion/${run_tag}.minion \
             -out-flatzinc ${save_location}/fzn/${run_tag}.fzn \
-            -solver-options \"${solver_options} -r ${rnd[${k}-1]}\" \
-            -chuffed-bin ${mzn_chuffed}; \
+            -solver-options \"${solver_options} -r ${rnd[${k}-1]}\"; \
+            # -chuffed-bin ${mzn_chuffed}; \ # give a different bin for chuffed than default
             mv ${save_location}/timing/${naming}/$base_name/${run_tag}.infor ${save_location}/timing/infor/${naming}/${base_name}; \
             ${to_rem}"
         done
