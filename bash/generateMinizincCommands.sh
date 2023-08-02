@@ -29,7 +29,7 @@ function print_mzn_command() {
             target=${solutionDir}/${optimize_level}/${base_name}/${base_name}_${optimize_level}${5}_run${i}.txt
             # empty flag, no free flag
             if [[ -z ${4} ]]; then
-                echo "${to_run} -${optimize_level} -r  ${rnd[${i}-1]} > ${target}"
+                echo "${to_run} -${optimize_level} -r ${rnd[${i}-1]} > ${target}"
             else
                 echo "${to_run} -f -${optimize_level} -r ${rnd[${i}-1]} > ${target}"
             fi
